@@ -1,0 +1,127 @@
+.motta-icon-box__section {
+	margin-top: 10px;
+}
+
+.motta-icon-box__actions {
+	text-align: center;
+}
+
+.motta-icon-box__actions .motta-icon-box__add-new {
+	font-weight: 700;
+}
+
+.motta-icon-box__field {
+	margin-bottom: 10px;
+}
+
+.motta-icon-box__field-top {
+	overflow: hidden;
+	border: 1px solid #ccd0d4;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.motta-icon-box__field-top:hover {
+	border-color: #999;
+}
+
+.motta-icon-box__field-top .motta-icon-box__field-toggle {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+.motta-icon-box__field-toggle-indicator {
+	color: #999;
+}
+
+.motta-icon-box__field-toggle-indicator:before {
+	content: "\f140";
+	font: normal 20px/1 dashicons;
+	speak: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+}
+
+.motta-icon-box__field-title {
+	flex: auto;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 0 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.motta-icon-box__field-options {
+	display: none;
+	padding: 5px 15px;
+	border: 1px solid #ccd0d4;
+	border-top: 0;
+}
+
+.motta-icon-box__field-actions {
+	text-align: center;
+	line-height: 1;
+}
+
+.motta-icon-box__field-top .motta-icon-box__field-actions button {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.motta-icon-box__field.open .motta-icon-box__field-top {
+	background: #fafafa;
+	border-color: #ccd0d4;
+}
+
+.motta-icon-box__field.open .motta-icon-box__field-toggle-indicator:before {
+	content: "\f142";
+}
+
+.motta-icon-box-form__message {
+	text-align: center;
+}
+
+.motta-icon-box__field-option .wp-picker-container {
+	position: relative;
+}
+
+.motta-icon-box__field-option .wp-picker-container .wp-picker-holder {
+	position: absolute;
+}
+
+.editor-styles-wrapper button.wp-color-result {
+	background-color: transparent;
+	border: 1px solid #8c8f94;
+	color: #1d2327;
+	border-radius: 3px;
+	box-shadow: none;
+}
+
+.wp-block-legacy-widget__edit-form .widget-inside.widget-inside input[type=text].wp-color-picker,
+.wp-picker-container input[type="text"].wp-color-picker {
+	margin: 0;
+    padding: 0 5px;
+}
+
+.editor-styles-wrapper input[type="button"].wp-picker-clear {
+	min-width: auto;
+	color: #fff;
+	font-weight: 500;
+}
+
+.editor-styles-wrapper input[type="button"].wp-picker-clear:hover {
+	border: 1px solid var(--mt-color__primary);
+	color: var(--mt-color__primary);
+}
+
+.editor-styles-wrapper .wp-picker-holder {
+	box-sizing: unset;
+}

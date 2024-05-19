@@ -1,0 +1,275 @@
+@import "variables";
+@import "lib/bootstrap-checkboxes";
+@import "fonts";
+@import "fonts/ert-icons";
+@import "reset";
+@import "ui-kit";
+@import "partials/widgets";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/agent";
+@import "partials/shortcodes";
+@import "partials/404";
+@import "estatik/content-archive";
+@import "estatik/content-single";
+@import "estatik/post";
+
+.ert-scrolled-content {
+  overflow-y: scroll;
+  height: 90vh;
+
+  @media screen and(max-width: 991px) {
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .ert-search {
+    box-shadow: none;
+  }
+}
+
+.ert-search-map {
+  padding: 0;
+
+  .es-widget-map-wrap {
+    padding: 0;
+  }
+
+  .es-properties-map {
+    height: 90vh !important;
+  }
+}
+
+.es-widget-map-wrap {
+  .gm-style-iw.gm-style-iw-c {
+    background: transparent;
+    box-shadow: none;
+    padding: 14px;
+    border-radius: 0;
+
+    .gm-style-iw-d {
+      overflow: visible !important;
+      background: transparent;
+    }
+  }
+
+  .es-map-vertical {
+    .ert-property-item__image {
+      padding-bottom: 0;
+
+      .ert-property-control {
+        display: none;
+      }
+
+      .ert-property-item__image-price {
+        .es-price {
+          font-size: 18px;
+        }
+      }
+
+      .badge {
+        font-size: 10px;
+        padding: 7px;
+      }
+    }
+
+    .ert-property-item__content {
+      padding: 10px !important;
+      border-bottom: none;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    .ert-property-item__fields {
+      display: none;
+    }
+
+    .gm-style-iw {
+      min-width: 220px;
+
+      .gm-style-iw-d {
+        max-width: 220px;
+        min-width: 220px;
+      }
+    }
+  }
+
+  .ert-property-item__content {
+    border: 0;
+  }
+
+  .ert-property-item {
+    padding-right: 15px;
+  }
+
+  .gm-style-iw-t:after {
+    content: initial;
+  }
+}
+
+.archive {
+  .page-title {
+    margin: 50px 0 70px;
+  }
+}
+
+.es_calc_container {
+  font-family: 'Lato', sans-serif;
+}
+
+.es_calc_form {
+  border-radius: 0 !important;
+
+  .es_calc_option {
+    input {
+      border: 0 !important;
+    }
+  }
+
+  input.es_calc_submit{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 9px 28px;
+    text-transform: uppercase;
+    line-height: initial;
+    height: initial;
+  }
+}
+
+.heading-styled {
+  font-weight: 300;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: '';
+    border-top: 1px solid #fff;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+  }
+
+  &:after {
+    margin: 0 0 0 20px;
+  }
+}
+
+.ert-contact-form {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+
+  p {
+    margin: 0;
+  }
+
+  .widget-title {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 26px !important;
+    color: #FBFBFB !important;
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+
+    &:before, &:after {
+      border-top: 1px solid #fff!important;
+    }
+  }
+
+  .wpcf7-form {
+    padding: 30px;
+  }
+
+  .wpcf7-form-control-wrap {
+    display: block;
+  }
+
+  .ajax-loader {
+    display: none !important;
+
+    &.is-active {
+      display: inline-block !important;
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .wpcf7-response-output {
+    margin: 20px 0 0;
+    font-weight: 300;
+    padding: 5px 10px;
+    font-size: 14px;
+
+    &.wpcf7-validation-errors {
+      border: 1px solid #ff0000;
+    }
+
+    &.wpcf7-mail-sent-ok {
+      border: 1px solid #398f14;
+    }
+  }
+}
+
+.ert-contact-content {
+  h3 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .es-property-single-fields li {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .es-property-single-fields li {
+    flex: 0 0 100%;
+  }
+}
+
+#ui-datepicker-div {
+  z-index:1300 !important;
+  border: 1px solid #c5c5c5 !important;
+}
+
+.es-map-popup {
+  .ert-property-item {
+    position: relative;
+
+    .es-overlay__close {
+      position: absolute;
+      top:-10px;
+      right: -10px;
+      display: block;
+      padding: 5px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}
+
+.widget-title, .widgettitle {
+    word-break: break-word;
+}

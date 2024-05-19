@@ -1,0 +1,138 @@
+2024-05-02T01:40:49+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T03:40:59+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T05:41:52+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T07:42:07+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T09:42:10+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T11:42:29+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T12:39:35+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1PByv8JB8lUwOLytWj2VEATI",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1714653570,
+  "data": {
+    "object": {
+      "id": "cus_Q231u9DelzodDu",
+      "object": "customer",
+      "address": null,
+      "balance": 0,
+      "created": 1714653569,
+      "currency": null,
+      "default_currency": null,
+      "default_source": null,
+      "delinquent": false,
+      "description": "Name:  , Username: crossco",
+      "discount": null,
+      "email": "admin@crossandco.ca",
+      "invoice_prefix": "CF42BE68",
+      "invoice_settings": {
+        "custom_fields": null,
+        "default_payment_method": null,
+        "footer": null,
+        "rendering_options": null
+      },
+      "livemode": true,
+      "metadata": {
+      },
+      "name": null,
+      "next_invoice_sequence": 1,
+      "phone": null,
+      "preferred_locales": [
+
+      ],
+      "shipping": null,
+      "tax_exempt": "none",
+      "test_clock": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_6Jlh3Pyy1fUGuS",
+    "idempotency_key": "fbf3c717-62ac-49bb-b106-bbe11fd41d8b"
+  },
+  "type": "customer.created"
+}
+====End Log====
+
+2024-05-02T13:42:33+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T15:42:36+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T17:42:37+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T19:42:41+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T21:42:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-02T23:42:50+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+

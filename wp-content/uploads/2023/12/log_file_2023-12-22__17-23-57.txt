@@ -1,0 +1,63 @@
+
+---Downloaded files---
+The import files for: Estatik 4 Demo Import were successfully downloaded!
+Initial max execution time = 6000
+Files info:
+Site URL = https://wwmalls.com
+Data file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/demo-content-major.xml
+Widget file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/widgets-major.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---Importing widgets---
+Footer Left Area : 
+
+SiteOrigin Editor - Keep In Touch - Widget already exists
+
+Footer Center Area : 
+
+Navigation Menu - Information - Widget already exists
+
+Footer Right Area : 
+
+yikes_easy_mc_widget - Newsletter - Site does not support widget
+Estatik Social - No Title - Widget already exists
+
+Page Sidebar : 
+
+Estatik Property Carousel - No Title - Widget already exists
+Estatik Taxonomies - No Title - Widget already exists
+
+Post Sidebar : 
+
+Categories - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Calendar - No Title - Widget already exists
+Tag Cloud - No Title - Widget already exists
+
+Blog Sidebar : 
+
+Calendar - No Title - Widget already exists
+Recent Comments - Recent Comments - Widget already exists
+Tag Cloud - Tags - Widget already exists
+
+Single Property Sidebar : 
+
+Estatik Taxonomies - No Title - Widget already exists
+Estatik Properties Sidebar List - No Title - Widget already exists
+Estatik Property Carousel - Estatik Property Carousel - Widget already exists
+Estatik Property Item - Estatik Property Item - Widget already exists
+
+Before Blog Archive : 
+
+Layout Builder - No Title - Widget already exists
+
+Properties Archive Sidebar : 
+
+Estatik Property Carousel - Featured Properties - Widget already exists
+
+
+
+---ocdi/after_import---
+

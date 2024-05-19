@@ -1,0 +1,32 @@
+.wp-list-table .motta_product_tab_type-default .check-column input[type="checkbox"] {
+	display: none;
+}
+
+.wp-list-table .motta_product_tab_type-default .row-actions > *:not('.inline') {
+	display: none;
+}
+
+.post-type-motta_product_tab .wp-list-table .column-date {
+	display: none;
+}
+
+.wp-list-table .inline-edit-motta_product_tab .inline-edit-status,
+.wp-list-table .inline-edit-motta_product_tab .inline-edit-date,
+.wp-list-table .inline-edit-motta_product_tab .inline-edit-group {
+	display: none;
+}
+
+.motta-product-tabs-settings .form-field > label {
+	min-width: 150px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.motta-product-tabs-settings .motta-product-tabs--type > label {
+	padding-right: 30px;
+}
+
+.motta-product-tabs-settings .motta-product-tabs--categories,
+.motta-product-tabs-settings .motta-product-tabs--product {
+	display: none;
+}

@@ -1,0 +1,460 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: user-role\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-30 17:17+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
+
+#: includes/class-srrl-settings.php:29
+msgid "Misc"
+msgstr "Остало"
+
+#: includes/class-srrl-settings.php:30
+msgid "License Key"
+msgstr "Лиценцни кључ"
+
+#: includes/class-user-role.php:113
+msgid "Roles not found"
+msgstr "Улоге нису пронађене"
+
+#: includes/class-user-role.php:123 includes/class-user-role.php:228
+msgid "Recover"
+msgstr "Опоравити се"
+
+#: includes/class-user-role.php:163 includes/edit-role-page.php:245
+msgid "Role Name"
+msgstr "Име улоге"
+
+#: includes/class-user-role.php:164 includes/edit-role-page.php:249
+msgid "Role Slug"
+msgstr "Пуж улоге"
+
+#: includes/class-user-role.php:165
+msgid "Type"
+msgstr "Тип"
+
+#: includes/class-user-role.php:166
+msgid "Users"
+msgstr "Корисници"
+
+#: includes/class-user-role.php:167 includes/edit-role-page.php:257
+msgid "Capabilities"
+msgstr "Способности"
+
+#: includes/class-user-role.php:227
+msgid "Edit"
+msgstr "Уреди"
+
+#: includes/class-user-role.php:229
+msgid "Reset"
+msgstr "Очисти све"
+
+#: includes/class-user-role.php:230
+msgid "Delete"
+msgstr "Брисање "
+
+#: includes/class-user-role.php:235
+msgid "Edit role capabilities"
+msgstr "Уређивање могућности улога"
+
+#: includes/class-user-role.php:241
+msgid ""
+"The default WordPress role will be restored to the default WordPress "
+"capabilities. This option is available in Pro version of plugin"
+msgstr ""
+"Подразумевана WордПресс улога ће бити враћена на подразумеване WордПресс "
+"могућности. Ова опција је доступна у Про верзији додатне компоненте"
+
+#: includes/class-user-role.php:246
+msgid ""
+"Restore role capabilities that were set at the time of the plugin activation "
+"or when the role was created"
+msgstr ""
+"Враћање могућности улога које су постављене у време активирања додатне "
+"компоненте или када је улога креирана"
+
+#: includes/class-user-role.php:252
+msgid "Delete role. This option is available in Pro version of plugin"
+msgstr "Избриши улогу. Ова опција је доступна у Про верзији додатка"
+
+#: includes/class-user-role.php:288
+msgid "default"
+msgstr "подразумевани"
+
+#: includes/class-user-role.php:292
+msgid "Built-in"
+msgstr "Уграђено"
+
+#: includes/class-user-role.php:292
+msgid "Custom"
+msgstr "Прилагођено"
+
+#: includes/class-user-role.php:347
+msgid "Unknown action"
+msgstr "Непозната радња"
+
+#: includes/edit-role-page.php:44
+msgid "Actions with posts"
+msgstr "Радње са објавама"
+
+#: includes/edit-role-page.php:45
+msgid "Actions with pages"
+msgstr "Радње са страницама"
+
+#: includes/edit-role-page.php:46
+msgid "Actions with themes"
+msgstr "Акције са темама"
+
+#: includes/edit-role-page.php:47
+msgid "Actions with users"
+msgstr "Радње са корисницима"
+
+#: includes/edit-role-page.php:48
+msgid "Actions with plugins"
+msgstr "Акције са додацима"
+
+#: includes/edit-role-page.php:49
+msgid "Other default actions"
+msgstr "Остале подразумеване радње"
+
+#: includes/edit-role-page.php:50
+msgid "Other custom actions"
+msgstr "Остале прилагођене радње"
+
+#: includes/edit-role-page.php:52
+msgid "Update Role"
+msgstr "Ажурирајте улогу"
+
+#: includes/edit-role-page.php:187
+msgid "role doesn't exists"
+msgstr "улога не постоји"
+
+#: includes/edit-role-page.php:199 includes/edit-role-page.php:263
+msgid "All"
+msgstr "Све"
+
+#: includes/edit-role-page.php:201
+msgid ""
+"The role will be created automatically for blogs where it does not exist"
+msgstr "Улога ће се аутоматски креирати за блогове у којима не постоји"
+
+#: includes/edit-role-page.php:224
+msgid "Warning:"
+msgstr "Упозорење:"
+
+#: includes/edit-role-page.php:224
+msgid "You are trying to edit your own role. Please read before"
+msgstr "Покушавате да уредите сопствену улогу. Прочитајте раније"
+
+#: includes/edit-role-page.php:224
+msgid "Roles and Capabilities"
+msgstr "Улоге и могућности"
+
+#: includes/edit-role-page.php:225
+msgid ""
+"Changes will be applied immediately after saving. If you are not sure - do "
+"not click \"Update Role\" button."
+msgstr ""
+"Промене ће бити примењене одмах након чувања. Ако нисте сигурни - немојте "
+"кликнути на дугме \"Ажурирај улогу\"."
+
+#: includes/edit-role-page.php:252
+msgid ""
+"Slug must contain only latin letters. Also You can add numbers and symbols "
+"\"-\" or \"_\""
+msgstr ""
+"Метак мора да садржи само латинична слова. Такође можете да додате бројеве и "
+"симболе \"-\" или \"_\""
+
+#: includes/edit-role-page.php:267
+msgid "Copy from"
+msgstr "Копирај из"
+
+#: includes/edit-role-page.php:275
+msgid "Select role"
+msgstr "Изаберите улогу"
+
+#: includes/edit-role-page.php:278
+msgid "Apply"
+msgstr "Пријави ме"
+
+#: includes/edit-role-page.php:307
+msgid "This tab contains Pro options only."
+msgstr "Ова картица садржи само про опције."
+
+#: includes/edit-role-page.php:309
+#, php-format
+msgid "%1$sChange the settings%2$s to view the Pro options."
+msgstr "%1$sПромените подешавања%2$s да бисте видели Про опције."
+
+#: user-role.php:38 user-role.php:39 user-role.php:287
+msgid "Roles"
+msgstr "Улоге"
+
+#: user-role.php:41
+msgid "Edit Role"
+msgstr "Уреди улогу"
+
+#: user-role.php:41 user-role.php:43 user-role.php:739
+msgid "Add New"
+msgstr "Додај нови"
+
+#: user-role.php:45 user-role.php:241
+msgid "User Role Settings"
+msgstr "Подешавања корисничке улоге"
+
+#: user-role.php:45 user-role.php:570 user-role.php:605
+msgid "Settings"
+msgstr "Подешавања"
+
+#: user-role.php:50 user-role.php:649
+msgid "Upgrade to Pro"
+msgstr "Унапреди се у професионалца"
+
+#: user-role.php:143
+msgid "Are you sure, you want to recover selected role(s)?"
+msgstr "Да ли сте сигурни да желите да вратите изабране улоге?"
+
+#: user-role.php:338
+msgid "Please enter role name"
+msgstr "Унесите назив улоге"
+
+#: user-role.php:341
+msgid "Please enter role slug"
+msgstr "Унесите роле слуг"
+
+#: user-role.php:344
+msgid "Please select some capabilities for role"
+msgstr "Молимо изаберите неке могућности за улогу"
+
+#: user-role.php:356
+msgid "Wrong slug. See allowed symbols"
+msgstr "Погрешан пуж. Погледајте дозвољене симболе"
+
+#: user-role.php:359
+msgid "Some error occured"
+msgstr "Дошло је до грешке"
+
+#: user-role.php:361
+msgid "Role was successfully updated"
+msgstr "Улога је успешно ажурирана"
+
+#: user-role.php:393
+msgid "Can not get capabilities of the selected role"
+msgstr "Не могу добити могућности изабране улоге"
+
+#: user-role.php:397
+msgid "Capabilities were successfully loaded"
+msgstr "Могућности су успешно учитане"
+
+#: user-role.php:397
+msgid "Save Changes"
+msgstr "Сачувај промене"
+
+#: user-role.php:399
+msgid "Selected role is not exists. Capabilities not loaded"
+msgstr "Изабрана улога не постоји. Могућности нису учитане"
+
+#: user-role.php:474
+msgid "Can not recover selected roles"
+msgstr "Није могуће спасити изабране улоге"
+
+#: user-role.php:485
+msgid "Selected roles were recovered successfully"
+msgstr "Изабране улоге су успешно спасене"
+
+#: user-role.php:487
+msgid "Can not recover next roles"
+msgstr "Није могуће спасити следеће улоге"
+
+#: user-role.php:606
+msgid "FAQ"
+msgstr "Често постављана питања"
+
+#: user-role.php:607
+msgid "Support"
+msgstr "Подршка"
+
+#: user-role.php:642
+msgid "Close"
+msgstr "Затвори"
+
+#: user-role.php:669
+msgid "Switch to Blog"
+msgstr "Пребаци се на блог"
+
+#: user-role.php:682
+msgid "Allow for blogs"
+msgstr "Дозволи блогове"
+
+#: user-role.php:697
+msgid "Access to plugins (menu items)"
+msgstr "Приступ додатним компонентама (ставке менија)"
+
+#: user-role.php:725
+msgid "Select blog"
+msgstr "Изаберите блог"
+
+#~ msgid "Notice"
+#~ msgstr "Obaveštenje"
+
+#, fuzzy
+#~ msgid "The role's settings have been changed."
+#~ msgstr "Podešavanja su obnovljena zbog trenutne uloge"
+
+#~ msgid "Go PRO"
+#~ msgstr "Go PRO"
+
+#, fuzzy
+#~ msgid "No, go back to the roles list"
+#~ msgstr "Назад до WordPress"
+
+#, fuzzy
+#~ msgid "This option is available in Pro version of plugin"
+#~ msgstr "Podešavanje je dostupno u Pro verziji"
+
+#~ msgid "Learn More"
+#~ msgstr "Saznajte više"
+
+#, fuzzy
+#~ msgid "Are you sure, that you want to recover selected role(s)?"
+#~ msgstr "Da li ste sigurni da želite da povratite podešavanja po default-u?"
+
+#, fuzzy
+#~ msgid "Are you sure, that you want to do selected action?"
+#~ msgstr "Da li ste sigurni da želite da povratite podešavanja po default-u?"
+
+#, fuzzy
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Otključajte premijum opcije putem nadogradnje na PRO verziju."
+
+#, fuzzy
+#~ msgid "Edit capabilities of the role"
+#~ msgstr "Kategorija sposobnosti"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Podešavanja plugin-a su izmenjena. Da biste ih sačuvali, molimo ne "
+#~ "zaboravite da kliknete na dugme ‘Save Changes’ (sačuvaj izmene)"
+
+#~ msgid "Table View"
+#~ msgstr "Pregled u tabeli"
+
+#~ msgid "Flat View"
+#~ msgstr "“Ravan” pregled"
+
+#~ msgid "The changes has been saved"
+#~ msgstr "Promene su sačuvane"
+
+#~ msgid "The settings have been restored for all roles"
+#~ msgstr "Podešavanja su obnovljena zbog svih uloga"
+
+#~ msgid "Show"
+#~ msgstr "Prikazati"
+
+#~ msgid "Chosen role"
+#~ msgstr "Odabrana uloga"
+
+#~ msgid "All roles"
+#~ msgstr "Sve uloge"
+
+#~ msgid "Add"
+#~ msgstr "Dodajte"
+
+#~ msgid "Delete Custom Role"
+#~ msgstr "Izbrišite uobičajenu ulogu"
+
+#~ msgid "Go"
+#~ msgstr "Krenite"
+
+#~ msgid "Changes will be applied to the site"
+#~ msgstr "Promene će biti primenjene na sajt"
+
+#~ msgid "Display the list of permissions for"
+#~ msgstr "Prikažite listu dopuštenja za"
+
+#~ msgid "Select none"
+#~ msgstr "Nijedna odabrana"
+
+#~ msgid "For site"
+#~ msgstr "Za sajt"
+
+#~ msgid "Capabitity\\Site"
+#~ msgstr "Sposobnost\\Sajt"
+
+#~ msgid "Capabilities without category"
+#~ msgstr "Sposobnosti bez kategorije"
+
+#~ msgid "Recover:"
+#~ msgstr "Відновити:"
+
+#~ msgid "Notice: "
+#~ msgstr "Увага: "
+
+#~ msgid "You do not have sufficient permissions to access this page."
+#~ msgstr "У вас недостатньо прав для доступу до цієї сторінки."
+
+#~ msgid "Reset: "
+#~ msgstr "Скидання:"
+
+#~ msgid "requires"
+#~ msgstr "потребує "
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "або вище, ось чому плагін ьуло деактивовано! Будь ласка, оновіть "
+#~ "WordPress та спробуйте ще раз."
+
+#~ msgid "Plugins page"
+#~ msgstr "Сторінка плагінів"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr ""
+#~ "Якщо вам сподобався наш плагін, будь ласка, оцініть його у п’ять зірочок "
+#~ "на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оцінити плагін"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Якщо у вас виникли певні проблеми, будь ласка, зв’яжіться з нами"
+
+#~ msgid "From site "
+#~ msgstr "Сайту"
+
+#~ msgid "If none selected the changes will be applied to the site:"
+#~ msgstr "Якщо сайти не обрано, то зміни будуть застосовані до сайту:"
+
+#~ msgid "User role"
+#~ msgstr "Роли Пользователей"
+
+#~ msgid "Setting privileges"
+#~ msgstr "Настройки привилегий"
+
+#~ msgid "Interface v1"
+#~ msgstr "Интерфейс v1"
+
+#~ msgid "Interface v2"
+#~ msgstr "Интерфейс v2"
+
+#~ msgid "Recover chosen role for all blogs"
+#~ msgstr "Восстановить выбраную роль для всех блогов"
+
+#~ msgid "Recover all roles for all blogs"
+#~ msgstr "Восстановить все роли для всех блогов"

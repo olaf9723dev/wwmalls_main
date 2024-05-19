@@ -1,0 +1,7 @@
+{
+    "0" : "= 7.1.9 24/04/2024 =",
+    "1" : "* FIXED - SHIPPING & ORDERS - Order Numbers - Fixed the order renumbering issue that occurred with the generation of new orders.",
+    "2" : "* FIXED - SHIPPING & ORDERS - Order Numbers - Addressed the problem encountered when searching orders by their custom numbers with WooCommerce HPOS.",
+    "3" : "* WooCommerce 8.8.2 Tested",
+    "4" : "* WordPress 6.5.2 Tested"
+}

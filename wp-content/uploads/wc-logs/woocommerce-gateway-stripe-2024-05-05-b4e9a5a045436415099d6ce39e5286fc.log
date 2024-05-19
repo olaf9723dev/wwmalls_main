@@ -1,0 +1,98 @@
+2024-05-05T00:09:19+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T02:10:49+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T04:13:02+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T05:37:57+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Could not find order via charge ID: ch_3PCxlkJB8lUwOLyt0l0O0jmk
+====End Log====
+
+2024-05-05T06:23:49+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T08:23:55+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T10:25:49+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T12:23:03+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Could not find order via charge ID: ch_3PD45jJB8lUwOLyt0KzuOdSC
+====End Log====
+
+2024-05-05T12:25:50+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T14:26:15+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T16:26:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T18:26:48+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T20:27:47+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-05-05T22:28:47+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+

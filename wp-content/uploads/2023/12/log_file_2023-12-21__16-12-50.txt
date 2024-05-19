@@ -1,0 +1,116 @@
+
+---Downloaded files---
+The import files for: Estatik 3 Demo Import were successfully downloaded!
+Initial max execution time = 6000
+Files info:
+Site URL = https://wwmalls.com
+Data file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/demo-content.xml
+Widget file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import es_tags 3 bedrooms
+[WARNING] Failed to import es_amenities dishwasher
+[WARNING] Failed to import es_labels Featured
+[WARNING] Failed to import es_tags for rent
+[WARNING] Failed to import es_tags for sale
+[WARNING] Failed to import es_labels Foreclosure
+[WARNING] Failed to import es_tags heated garage
+[WARNING] Failed to import es_labels Hot
+[WARNING] Failed to import es_amenities iron
+[WARNING] Failed to import es_amenities microwave
+[WARNING] Failed to import es_labels Open House
+[WARNING] Failed to import es_amenities oven
+[WARNING] Failed to import es_tags pool
+[WARNING] Failed to import es_amenities tv
+[WARNING] Failed to import es_amenities wifi
+[ERROR] Failed to import "image 3" (Media)
+[ERROR] Failed to import "Frame" (Media)
+[ERROR] Failed to import "image 3" (Media)
+[ERROR] Failed to import "image 5" (Media)
+[ERROR] Failed to import "agent" (Media)
+[ERROR] Failed to import "image-1" (Media)
+[ERROR] Failed to import "15120-architecture-blue-269077-min" (Media)
+[ERROR] Failed to import "abstract-architectural-design-architecture-136419-min" (Media)
+[ERROR] Failed to import "apartment-architectural-design-architecture-323775-min" (Media)
+[ERROR] Failed to import "apartment-architecture-book-265004-min" (Media)
+[ERROR] Failed to import "apartment-architecture-carpet-584399-min" (Media)
+[ERROR] Failed to import "apartment-architecture-ceiling-259962-min" (Media)
+[ERROR] Failed to import "apartment-architecture-ceiling-276554-min" (Media)
+[ERROR] Failed to import "Contact Us" (Media)
+[ERROR] Failed to import "Contact Us" (Media)
+[ERROR] Failed to import "matthew-t-rader-9ZaqDVDdMwg-unsplash" (Media)
+[ERROR] Failed to import "neonbrand-Wp7t4cWN-68-unsplash" (Media)
+[ERROR] Failed to import "rustic-vegan-AwOG1tC5buE-unsplash" (Media)
+[ERROR] Failed to import "images-1" (Media)
+[ERROR] Failed to import "2d16fa8d9336e9aa602ed553daf8addf" (Media)
+[ERROR] Failed to import "2105d45f431b32d64dfc2b04c3c38dd7" (Media)
+[ERROR] Failed to import "a47a2b87ce95b48949f2d051e9dc6c6e" (Media)
+[ERROR] Failed to import "1706-Текст-статті-1706-1-10-20151108" (Media)
+[ERROR] Failed to import "jason-briscoe-UV81E0oXXWQ-unsplash" (Media)
+[ERROR] Failed to import "house-floor-plan" (Media)
+[ERROR] Failed to import "element5-digital-2cwqJgtQ3D0-unsplash" (Media)
+[ERROR] Failed to import "jason-briscoe-UV81E0oXXWQ-unsplash" (Media)
+
+
+---Importing widgets---
+Footer Left Area : 
+
+SiteOrigin Editor - Keep In Touch - Widget already exists
+
+Footer Center Area : 
+
+Navigation Menu - Information - Widget already exists
+
+Footer Right Area : 
+
+yikes_easy_mc_widget - Newsletter - Site does not support widget
+Estatik Social - No Title - Imported
+
+Page Sidebar : 
+
+es_search_widget - No Title - Site does not support widget
+Estatik Property Carousel - No Title - Imported
+Estatik Taxonomies - No Title - Widget already exists
+es_property_map_widget - Estatik Map View - Site does not support widget
+
+Post Sidebar : 
+
+Categories - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Calendar - No Title - Widget already exists
+Estatik Property Item - No Title - Imported
+Tag Cloud - No Title - Widget already exists
+
+Blog Sidebar : 
+
+Calendar - No Title - Widget already exists
+Estatik Taxonomies - No Title - Imported
+Estatik Properties Sidebar List - No Title - Imported
+Recent Comments - Recent Comments - Widget already exists
+Tag Cloud - Tags - Widget already exists
+
+Single Property Sidebar : 
+
+es_request_widget - Learn more about this property - Site does not support widget
+Estatik Taxonomies - No Title - Widget already exists
+Estatik Properties Sidebar List - No Title - Widget already exists
+Estatik Property Carousel - Estatik Property Carousel - Imported
+
+Before Blog Archive : 
+
+Layout Builder - No Title - Imported
+
+Properties Archive Sidebar : 
+
+es_request_widget - Learn more about this property - Site does not support widget
+es_search_widget - No Title - Site does not support widget
+Estatik Property Carousel - Featured Properties - Widget already exists
+
+
+
+---ocdi/after_import---
+

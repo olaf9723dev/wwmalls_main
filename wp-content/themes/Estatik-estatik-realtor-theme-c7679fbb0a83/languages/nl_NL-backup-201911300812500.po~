@@ -1,0 +1,796 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Estatik Realtor Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-01 09:40+0000\n"
+"PO-Revision-Date: 2019-11-30 07:58+0000\n"
+"Last-Translator: lliucqdj <shmorgunlana@gmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#: comments.php:27
+#, php-format
+msgid "%d Review"
+msgid_plural "%d Reviews"
+msgstr[0] ""
+"%d Beoordeling\n"
+msgstr[1] ""
+
+#: functions.php:973 functions.php:975 functions.php:977
+#, php-format
+msgid "%s"
+msgstr ""
+"%s\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:65
+msgid "About"
+msgstr ""
+"Wat betreft\n"
+
+#: inc/widgets/class-about-widget.php:58
+msgid "About Company"
+msgstr ""
+"Over bedrijf\n"
+
+#: functions.php:1242 inc/property-hooks.php:328
+msgid "Add to favorites"
+msgstr ""
+"Toevoegen aan favorieten\n"
+
+#: functions.php:208
+msgid "After Blog Archive"
+msgstr ""
+"Na Blog Archive\n"
+
+#: functions.php:215
+msgid "After Property Single"
+msgstr ""
+"Na onroerend goed single\n"
+
+#: template-parts/partials/agent-partial.php:11
+msgid "Agent Photo"
+msgstr ""
+"Agentfoto\n"
+
+#: estatik/property/filter.php:12
+msgid "All"
+msgstr ""
+"Alle\n"
+
+#: inc/framework_config.php:33
+msgid "Allowed sizes are 16x16 or 32x32"
+msgstr ""
+"Toegestane formaten zijn 16x16 of 32x32\n"
+
+#: inc/framework_config.php:25 inc/framework_config.php:60
+#, php-format
+msgid "Allowed values examples: 50px, 50% or auto."
+msgstr ""
+"Voorbeelden van toegestane waarden: 50 px, 50% of automatisch.\n"
+
+#: functions.php:672 inc/widgets/class-taxonomy-widget.php:35
+msgid "Amenities"
+msgstr "Voorzieningen"
+
+#: inc/framework_config.php:72
+msgid "Archive page name"
+msgstr ""
+"Paginanaam archiveren\n"
+
+#: 404.php:14
+msgid "Back to home"
+msgstr ""
+"Terug naar huis\n"
+
+#: functions.php:209
+msgid "Before Blog Archive"
+msgstr ""
+"Voor Blog Archive\n"
+
+#: functions.php:214
+msgid "Before Property Single"
+msgstr ""
+"Voor onroerend goed Single\n"
+
+#: functions.php:157
+msgid "Blog"
+msgstr ""
+"blog\n"
+
+#: functions.php:979
+msgid "Blog Archives"
+msgstr ""
+"Blog archieven\n"
+
+#: functions.php:206
+msgid "Blog Sidebar"
+msgstr ""
+"Zijbalk van blog\n"
+
+#: inc/widgets/class-property-slider-widget.php:53
+msgid "Carousel layout"
+msgstr ""
+"Carrousel lay-out\n"
+
+#: inc/widgets/class-taxonomy-widget.php:40
+msgid "Categories"
+msgstr "Categorieën"
+
+#: inc/framework_config.php:162
+msgid "Categories To Show"
+msgstr ""
+"Categorieën om te tonen\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:46
+msgid "Company"
+msgstr ""
+"Bedrijf\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:49
+msgid "Company Website"
+msgstr ""
+"Bedrijfswebsite\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:59
+msgid "Confirm Password"
+msgstr ""
+"Bevestig wachtwoord\n"
+
+#: functions.php:804
+msgid "Contact Form 7"
+msgstr ""
+"Contactformulier 7\n"
+
+#: inc/widgets/class-about-widget.php:49
+msgid "Content Sub Title"
+msgstr ""
+"Inhoud subtitel\n"
+
+#: inc/widgets/class-about-widget.php:45
+msgid "Content Title"
+msgstr ""
+"Inhoudstitel\n"
+
+#: inc/framework_config.php:65
+msgid "Copyright"
+msgstr ""
+"Auteursrechten\n"
+
+#: inc/framework_config.php:130 inc/framework_config.php:148
+msgid "Disable Sidebar"
+msgstr "Schakel Sidebar uit"
+
+#: inc/framework_config.php:85
+msgid "Disabled"
+msgstr ""
+"Invalide\n"
+
+#: inc/widgets/class-taxonomy-widget.php:17
+msgid "Display estatik taxonomy terms."
+msgstr ""
+"Estatik-taxonomietermen weergeven.\n"
+
+#: inc/widgets/class-property-slider-widget.php:16
+msgid "Display Properties Carousel."
+msgstr ""
+"Weergave-eigenschappen Carrousel.\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:16
+msgid "Display Properties List. The widget uses in sidebar."
+msgstr ""
+"Lijst met eigenschappen weergeven. De widget wordt in de zijbalk gebruikt.\n"
+
+#: inc/widgets/class-property-types-widget.php:16
+msgid "Display Properties Types Block with Images."
+msgstr ""
+"Typen weergave-eigenschappen Blok met afbeeldingen.\n"
+
+#: inc/widgets/class-property-item-widget.php:16
+msgid "Display Property Item."
+msgstr ""
+"Eigenschap item weergeven.\n"
+
+#: inc/widgets/class-social-widget.php:16
+msgid "Display social icons."
+msgstr ""
+"Geef sociale pictogrammen weer.\n"
+
+#: inc/widgets/class-performance-widget.php:16
+msgid "Display Statistics."
+msgstr "Statistieken weergeven."
+
+#: inc/widgets/class-title-widget.php:16
+msgid "Display Styled Title."
+msgstr ""
+"Titel weergeven.\n"
+
+#: inc/widgets/class-testimonials-widget.php:16
+msgid "Displays testimonials in a slider widget."
+msgstr ""
+"Toont getuigenissen in een schuifregelaarwidget.\n"
+
+#: inc/framework_config.php:6
+msgid "Documentation"
+msgstr ""
+"Documentatie\n"
+
+#: functions.php:788
+msgid "Easy Forms for MailChimp"
+msgstr ""
+"Eenvoudige formulieren voor MailChimp\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:18
+msgid "Edit Your Profile"
+msgstr ""
+"Pas je profiel aan\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:36
+msgid "Email"
+msgstr ""
+"E-mail\n"
+
+#: inc/framework_config.php:92
+msgid "Enable Breadcrumbs"
+msgstr ""
+"Paneermeel inschakelen\n"
+
+#: 404.php:9
+msgid "Error 404"
+msgstr "Foutmelding 404"
+
+#. Author of the theme
+msgid "Estatik"
+msgstr ""
+"Estatik\n"
+
+#: inc/widgets/class-about-widget.php:14
+msgid "Estatik About Block"
+msgstr ""
+"Estatik Over Block\n"
+
+#: inc/widgets/class-performance-widget.php:14
+msgid "Estatik Performance Blocks"
+msgstr ""
+"Estatik prestatieblokken\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:14
+msgid "Estatik Properties Sidebar List"
+msgstr ""
+"Estatik Properties Sidebar List\n"
+
+#: inc/widgets/class-property-slider-widget.php:14
+msgid "Estatik Property Carousel"
+msgstr ""
+"Estatik Property Carrousel\n"
+
+#: inc/widgets/class-property-item-widget.php:14
+msgid "Estatik Property Item"
+msgstr ""
+"Estatik onroerend goed\n"
+
+#: inc/widgets/class-property-types-widget.php:14
+msgid "Estatik Property Types Blocks"
+msgstr ""
+"Estatik Type onroerend goed Blokken\n"
+
+#: functions.php:793
+msgid "Estatik Real Estate"
+msgstr ""
+"Estatik onroerend goed\n"
+
+#. Name of the theme
+#: functions.php:79 inc/framework_config.php:4
+msgid "Estatik Realtor Theme"
+msgstr "Estatik makelaarsthema"
+
+#: inc/widgets/class-social-widget.php:14
+msgid "Estatik Social"
+msgstr ""
+"Estatik Social\n"
+
+#: inc/widgets/class-taxonomy-widget.php:14
+msgid "Estatik Taxonomies"
+msgstr ""
+"Estatik taxonomieën\n"
+
+#: inc/widgets/class-testimonials-widget.php:14
+msgid "Estatik Testimonials"
+msgstr "Estatik getuigenissen"
+
+#: inc/widgets/class-social-widget.php:53
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/framework_config.php:30
+msgid "Favicon Image"
+msgstr ""
+"Favicon afbeelding\n"
+
+#: functions.php:689 inc/widgets/class-taxonomy-widget.php:34
+msgid "Features"
+msgstr ""
+"Kenmerken\n"
+
+#: template-parts/shortcodes/management/filter.php:1
+msgid "Filter by"
+msgstr ""
+"Filteren op\n"
+
+#: functions.php:171
+msgid "Footer"
+msgstr ""
+"Footer\n"
+
+#: functions.php:202
+msgid "Footer Center Area"
+msgstr ""
+"Voettekst middengebied\n"
+
+#: functions.php:200
+msgid "Footer Left Area"
+msgstr ""
+"Footer Left Area\n"
+
+#: functions.php:203
+msgid "Footer Right Area"
+msgstr ""
+"Footer Right Area\n"
+
+#: functions.php:174
+msgid "Footer Settings"
+msgstr "Voettekstinstellingen"
+
+#: functions.php:125
+msgid "General"
+msgstr ""
+"Algemeen\n"
+
+#: functions.php:128 functions.php:146
+msgid "General Settings"
+msgstr ""
+"Algemene instellingen\n"
+
+#: inc/widgets/class-social-widget.php:56
+msgid "Google+"
+msgstr ""
+"Google+\n"
+
+#: inc/framework_config.php:124
+msgid "Grid"
+msgstr ""
+"Rooster\n"
+
+#. Name of the template
+msgid "Half Map Listings"
+msgstr ""
+"Halve kaartvermeldingen\n"
+
+#: estatik/shortcodes/register.php:105
+msgid "Have an account ?"
+msgstr ""
+"Een account hebben ?\n"
+
+#: functions.php:232
+msgid "Header Menu"
+msgstr ""
+"Menu koptekst\n"
+
+#: functions.php:234
+msgid "Header Menu Authorized"
+msgstr ""
+"Kopmenu Geautoriseerd\n"
+
+#: inc/framework_config.php:48
+msgid "Header Menu Hover"
+msgstr ""
+"Header Menu Hover\n"
+
+#: functions.php:233
+msgid "Header Menu Unauthorized"
+msgstr ""
+"Koptekstmenu Niet geautoriseerd\n"
+
+#. Author URI of the theme
+msgid "https://Estatik.net"
+msgstr ""
+"https://Estatik.net\n"
+
+#: inc/widgets/class-social-widget.php:55
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/framework_config.php:137
+msgid "Items per row"
+msgstr ""
+"Items per rij\n"
+
+#: inc/widgets/class-taxonomy-widget.php:36
+msgid "Labels"
+msgstr ""
+"labels\n"
+
+#: inc/framework_config.php:86
+msgid "Left"
+msgstr ""
+"Links\n"
+
+#: inc/widgets/class-about-widget.php:57
+msgid "Link Name"
+msgstr ""
+"Linknaam\n"
+
+#: inc/framework_config.php:125
+msgid "List"
+msgstr ""
+"Lijst\n"
+
+#: inc/framework_config.php:119
+msgid "Listing Layout"
+msgstr ""
+"Lijstindeling\n"
+
+#: inc/framework_config.php:54
+msgid "Logo Height"
+msgstr ""
+"Logo hoogte\n"
+
+#: inc/framework_config.php:12
+msgid "Logo Image"
+msgstr ""
+"Logo afbeelding\n"
+
+#: inc/framework_config.php:19
+msgid "Logo Width"
+msgstr ""
+"Logo breedte\n"
+
+#: functions.php:975
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/widgets/class-about-widget.php:62
+msgid "More Link"
+msgstr ""
+"Meer link\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:27
+msgid "Name"
+msgstr "Naam"
+
+#: inc/blog-hooks.php:155 estatik/shortcodes/my-listing.php:32
+#: template-parts/shortcodes/property-slider.php:21
+#: estatik/shortcodes/partials/saved-homes-tab.php:26
+msgid "Next"
+msgstr ""
+"Volgende\n"
+
+#: inc/post-hooks.php:194
+msgid "Next Post"
+msgstr ""
+"Volgende bericht\n"
+
+#: functions.php:799
+msgid "One Click Demo Import"
+msgstr ""
+"Demo importeren met één klik\n"
+
+#: 404.php:11
+msgid "Opps! Page Not Found."
+msgstr ""
+"Oeps! Pagina niet gevonden.\n"
+
+#. Name of the template
+msgid "Page Builder Template"
+msgstr ""
+"Sjabloon voor paginabouwer\n"
+
+#: functions.php:204
+msgid "Page Sidebar"
+msgstr ""
+"Pagina zijbalk\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:56
+msgid "Password"
+msgstr ""
+"Wachtwoord\n"
+
+#: inc/property-hooks.php:174
+msgid "PDF"
+msgstr ""
+"PDF\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:39
+msgid "Phone number"
+msgstr ""
+"Telefoonnummer\n"
+
+#: estatik/shortcodes/register.php:76
+#: estatik/shortcodes/partials/my-profile-tab.php:70
+msgid "Photo/Logo"
+msgstr "Photo / Logo"
+
+#: functions.php:160
+msgid "Post Displays Settings"
+msgstr ""
+"Post toont instellingen\n"
+
+#: functions.php:205
+msgid "Post Sidebar"
+msgstr ""
+"Zijbalk posten\n"
+
+#: inc/blog-hooks.php:154 estatik/shortcodes/my-listing.php:31
+#: template-parts/shortcodes/property-slider.php:19
+#: estatik/shortcodes/partials/saved-homes-tab.php:25
+msgid "Prev"
+msgstr ""
+"Vorige\n"
+
+#: inc/post-hooks.php:183
+msgid "Previous Post"
+msgstr ""
+"Vorige post\n"
+
+#: functions.php:143
+msgid "Properties"
+msgstr ""
+"Eigenschappen\n"
+
+#: functions.php:216
+msgid "Properties Archive Sidebar"
+msgstr ""
+"Eigenschappen Archief Sidebar\n"
+
+#: template-parts/shortcodes/management/filter.php:40
+msgid "Property ID"
+msgstr "Eigendom ID"
+
+#: inc/framework_config.php:80
+msgid "Property Sidebar"
+msgstr ""
+"Eigenschap zijbalk\n"
+
+#: estatik/property/fields.php:3
+msgid "Quick Info"
+msgstr ""
+"Snelle info\n"
+
+#: functions.php:762
+msgid "Rating"
+msgstr ""
+"Beoordeling\n"
+
+#: template-parts/content/content-archive.php:21
+msgid "Read more"
+msgstr ""
+"Lees verder\n"
+
+#: estatik/shortcodes/register.php:23
+msgid "Register As"
+msgstr ""
+"Registreren als\n"
+
+#: functions.php:1240 inc/property-hooks.php:324
+msgid "Remove from favourites"
+msgstr ""
+"Verwijder uit favorieten\n"
+
+#: inc/widgets/class-taxonomy-widget.php:39
+msgid "Rent Periods"
+msgstr ""
+"Huurperioden\n"
+
+#: comments.php:29
+msgid "Reviews"
+msgstr ""
+"Beoordelingen\n"
+
+#: inc/framework_config.php:87
+msgid "Right"
+msgstr ""
+"Rechts\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:83
+msgid "Save edits"
+msgstr ""
+"Bewerkingen opslaan\n"
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+"Zoeken\n"
+
+#: searchform.php:2
+msgid "Search here"
+msgstr ""
+"Zoek hier\n"
+
+#: comments.php:65
+msgid "Send Message"
+msgstr "Bericht versturen"
+
+#: inc/framework_config.php:59
+msgid "Set your logo custom height"
+msgstr ""
+"Stel uw logo aangepaste hoogte in\n"
+
+#: inc/framework_config.php:24
+msgid "Set your logo custom width"
+msgstr ""
+"Stel uw logo aangepaste breedte in\n"
+
+#: inc/post-hooks.php:95 inc/property-hooks.php:179
+msgid "Share"
+msgstr ""
+"Delen\n"
+
+#: inc/property-hooks.php:188
+msgid "Share this property"
+msgstr ""
+"Deel deze woning\n"
+
+#: inc/framework_config.php:101
+msgid "Show Author"
+msgstr ""
+"Auteur weergeven\n"
+
+#: inc/widgets/class-property-slider-widget.php:41
+msgid "Show Dots?"
+msgstr ""
+"Punten weergeven?\n"
+
+#: inc/framework_config.php:110
+msgid "Show Featured Image"
+msgstr ""
+"Toon uitgelichte afbeelding\n"
+
+#: inc/framework_config.php:155
+msgid "Show Sort By"
+msgstr ""
+"Toon sorteren op\n"
+
+#: estatik/shortcodes/login.php:6
+msgid "Sign In to your Account"
+msgstr ""
+"Meld u aan bij uw account\n"
+
+#: functions.php:207
+msgid "Single Property Sidebar"
+msgstr ""
+"Sidebar met enkele eigenschap\n"
+
+#: functions.php:778
+msgid "SiteOrigin Page Builder"
+msgstr ""
+"SiteOrigin Page Builder\n"
+
+#: functions.php:783
+msgid "SiteOrigin Widgets Bundle"
+msgstr "SiteOrigin Widgets-bundel"
+
+#: inc/widgets/class-property-slider-widget.php:45
+msgid "Slides To Show"
+msgstr ""
+"Dia's om te tonen\n"
+
+#: inc/widgets/class-taxonomy-widget.php:37
+msgid "Statuses"
+msgstr ""
+"Statussen\n"
+
+#: inc/widgets/class-taxonomy-widget.php:51
+msgid "Taxonomy to show"
+msgstr ""
+"Taxonomie om te laten zien\n"
+
+#: inc/widgets/class-about-widget.php:53
+msgid "Text"
+msgstr ""
+"Tekst\n"
+
+#: inc/framework_config.php:40
+msgid "Theme Color"
+msgstr ""
+"Thema kleur\n"
+
+#: functions.php:78
+msgid "Theme Options"
+msgstr ""
+"Thema opties\n"
+
+#: inc/blog-hooks.php:76
+msgid "There are no posts to show"
+msgstr ""
+"Er zijn geen berichten om te tonen\n"
+
+#: inc/widgets/class-title-widget.php:14
+msgid "Title"
+msgstr ""
+"Titel\n"
+
+#: header.php:35
+msgid "Toggle navigation"
+msgstr "Schakel navigatie in"
+
+#: inc/widgets/class-social-widget.php:54
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/widgets/class-taxonomy-widget.php:38
+msgid "Types"
+msgstr ""
+"Soorten\n"
+
+#: inc/post-hooks.php:149
+msgid "User Image"
+msgstr ""
+"Gebruiker afbeelding\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:30
+msgid "Username"
+msgstr ""
+"Gebruikersnaam\n"
+
+#: inc/widgets/class-about-widget.php:16
+msgid "Uses for Agent Info."
+msgstr ""
+"Gebruikt voor agentinfo.\n"
+
+#: inc/widgets/class-property-slider-widget.php:56
+msgid "v1"
+msgstr ""
+"v1\n"
+
+#: inc/widgets/class-property-slider-widget.php:57
+msgid "v2"
+msgstr ""
+"v2\n"
+
+#: estatik/content-archive-inner.php:29
+#: template-parts/shortcodes/property-hero-gallery.php:39
+msgid "View Details"
+msgstr ""
+"Details bekijken\n"
+
+#: estatik/property/agent.php:69
+msgid "View properties"
+msgstr ""
+"Toon eigenschappen\n"
+
+#: 404.php:12
+msgid "We couldn't find the page you were looking for."
+msgstr ""
+"We konden de pagina die u zocht niet vinden.\n"
+
+#: inc/post-hooks.php:100
+msgid "Write a comment"
+msgstr ""
+"Schrijf een reactie\n"
+
+#: functions.php:977
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: comments.php:59
+msgid "Your Email"
+msgstr "Jouw email"
+
+#: comments.php:62
+msgid "Your message"
+msgstr ""
+
+#: estatik/widgets/es-request-widget.php:43
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:55
+msgid "Your name"
+msgstr ""

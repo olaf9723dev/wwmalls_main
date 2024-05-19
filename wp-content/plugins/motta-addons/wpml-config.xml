@@ -1,0 +1,275 @@
+<wpml-config>
+	<taxonomies>
+		<taxonomy translate="1">product_brand</taxonomy>
+	</taxonomies>
+	<elementor-widgets>
+		<widget name="motta-button">
+			<fields>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-icon-box">
+			<fields>
+				<field>title</field>
+				<field editor_type="AREA">description</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-icons-box-carousel">
+			<fields-in-item items_of="icons">
+				<field>title</field>
+				<field editor_type="AREA">description</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-image-box">
+			<fields>
+				<field editor_type="AREA">title</field>
+				<field editor_type="AREA">description</field>
+				<field>external_url</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+				<field>sale_text</field>
+				<field>sale_unit</field>
+			</fields>
+		</widget>
+		<widget name="motta-image-box-grid">
+			<fields-in-item items_of="image_box">
+				<field editor_type="AREA">title</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-image-box-carousel">
+			<fields-in-item items_of="image_box">
+				<field editor_type="AREA">title</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-image-grid">
+			<fields-in-item items_of="images">
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-images-carousel">
+			<fields-in-item items_of="images">
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-heading">
+			<fields>
+				<field editor_type="AREA">title</field>
+				<field>primary_button_text</field>
+				<field>primary_mobile_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-navigation-menu">
+			<fields>
+				<field editor_type="AREA">title</field>
+			</fields>
+		</widget>
+		<widget name="motta-social-icons">
+			<fields-in-item items_of="social_icon_list">
+				<field>external_url</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-share-socials">
+			<fields-in-item items_of="social_icon_list">
+				<field>whatsapp_number</field>
+				<field>title</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-checklist">
+			<fields-in-item items_of="list">
+				<field editor_type="AREA">title</field>
+				<field editor_type="AREA">description</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-team-member-grid">
+			<fields-in-item items_of="items">
+				<field editor_type="AREA">title</field>
+				<field editor_type="AREA">description</field>
+				<field editor_type="AREA">tag</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-team-member-carousel">
+			<fields-in-item items_of="items">
+				<field editor_type="AREA">title</field>
+				<field editor_type="AREA">description</field>
+				<field editor_type="AREA">tag</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-tabs">
+			<fields-in-item items_of="tabs">
+				<field>tab_title</field>
+				<field editor_type="AREA">tab_content</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-slides">
+			<fields-in-item items_of="slides">
+				<field>subtitle</field>
+				<field>subtitle_external_url</field>
+				<field>title</field>
+				<field>before_description</field>
+				<field editor_type="AREA">description</field>
+				<field>after_description</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+				<field>second_button_text</field>
+				<field editor_type="LINK">second_button_link>url</field>
+				<field>after_button</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-banner">
+			<fields>
+				<field>before_title</field>
+				<field editor_type="AREA">title</field>
+				<field>title_external_url</field>
+				<field editor_type="AREA">description</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+				<field>second_button_text</field>
+				<field editor_type="LINK">second_button_link>url</field>
+				<field>external_url</field>
+				<field editor_type="AREA">countdown_text</field>
+				<field>sale_text</field>
+				<field>sale_unit</field>
+			</fields>
+		</widget>
+		<widget name="motta-counter">
+			<fields>
+				<field>prefix</field>
+				<field>suffix</field>
+				<field>title</field>
+			</fields>
+		</widget>
+		<widget name="motta-search">
+			<fields>
+				<field editor_type="AREA">placeholder</field>
+			</fields>
+			<fields-in-item items_of="elements">
+				<field>text</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-navigation-bar">
+			<fields-in-item items_of="items">
+				<field editor_type="AREA">title</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-quick-link">
+			<fields-in-item items_of="quick_links">
+				<field editor_type="AREA">title</field>
+				<field editor_type="LINK">link>url</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-products-tabs-carousel">
+			<fields-in-item items_of="groups">
+				<field>title</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-products-tabs">
+			<fields-in-item items_of="groups">
+				<field>title</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-product-deals">
+			<fields>
+				<field editor_type="AREA">title</field>
+				<field editor_type="AREA">after_title</field>
+				<field editor_type="AREA">sale_text</field>
+				<field>primary_button_text</field>
+				<field>primary_mobile_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-products-listing">
+			<fields-in-item items_of="products">
+				<field>title</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-products-recently-viewed-carousel">
+			<fields>
+				<field editor_type="AREA">empty_product_description</field>
+				<field>empty_product_text</field>
+				<field editor_type="LINK">empty_product_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-products-recently-viewed-grid">
+			<fields>
+				<field editor_type="AREA">empty_product_description</field>
+				<field>empty_product_text</field>
+				<field editor_type="LINK">empty_product_link>url</field>
+			</fields>
+		</widget>
+		<widget name="motta-accordion">
+			<fields-in-item items_of="tabs">
+				<field>tab_title</field>
+				<field editor_type="AREA">tab_content</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-blockquote">
+			<fields>
+				<field editor_type="AREA">blockquote_content</field>
+				<field>author_name</field>
+			</fields>
+		</widget>
+		<widget name="motta-alert">
+			<fields>
+				<field>alert_title</field>
+				<field editor_type="AREA">alert_description</field>
+			</fields>
+		</widget>
+		<widget name="motta-modal-popup">
+			<fields>
+				<field>title</field>
+				<field editor_type="AREA">description</field>
+				<field>button_text</field>
+			</fields>
+		</widget>
+		<widget name="motta-pricing-table">
+			<fields>
+				<field>heading</field>
+				<field editor_type="AREA">sub_heading</field>
+				<field>price</field>
+				<field>period</field>
+				<field>ribbon_title</field>
+				<field>primary_button_text</field>
+				<field editor_type="LINK">primary_button_link>url</field>
+			</fields>
+			<fields-in-item items_of="features_list">
+				<field>item_text</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-testimonial-carousel">
+			<fields-in-item items_of="testimonials">
+				<field>testimonial_name</field>
+				<field>testimonial_company</field>
+				<field editor_type="AREA">testimonial_content</field>
+			</fields-in-item>
+		</widget>
+		<widget name="motta-google-map">
+			<fields>
+				<field>address</field>
+			</fields>
+			<fields-in-item items_of="markers">
+				<field>address</field>
+				<field>info</field>
+				<field>phone</field>
+				<field>store_time_label_1</field>
+				<field>store_time_value_1</field>
+				<field>store_time_label_2</field>
+				<field>store_time_value_2</field>
+				<field>store_time_label_3</field>
+				<field>store_time_value_3</field>
+			</fields-in-item>
+		</widget>
+	</elementor-widgets>
+</wpml-config>

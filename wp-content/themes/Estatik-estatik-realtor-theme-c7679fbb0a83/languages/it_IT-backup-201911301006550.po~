@@ -1,0 +1,774 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Estatik Realtor Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-01 09:40+0000\n"
+"PO-Revision-Date: 2019-11-30 10:04+0000\n"
+"Last-Translator: lliucqdj <shmorgunlana@gmail.com>\n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#: comments.php:27
+#, php-format
+msgid "%d Review"
+msgid_plural "%d Reviews"
+msgstr[0] ""
+"%d Recensione\n"
+msgstr[1] ""
+
+#: functions.php:973 functions.php:975 functions.php:977
+#, php-format
+msgid "%s"
+msgstr ""
+"%s\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:65
+msgid "About"
+msgstr ""
+"Di\n"
+
+#: inc/widgets/class-about-widget.php:58
+msgid "About Company"
+msgstr ""
+"Circa la società\n"
+
+#: functions.php:1242 inc/property-hooks.php:328
+msgid "Add to favorites"
+msgstr ""
+"Aggiungi ai preferiti\n"
+
+#: functions.php:208
+msgid "After Blog Archive"
+msgstr ""
+"Dopo Blog Archive\n"
+
+#: functions.php:215
+msgid "After Property Single"
+msgstr ""
+"After Property Single\n"
+
+#: template-parts/partials/agent-partial.php:11
+msgid "Agent Photo"
+msgstr "Foto dell'agente"
+
+#: estatik/property/filter.php:12
+msgid "All"
+msgstr ""
+"Tutti\n"
+
+#: inc/framework_config.php:33
+msgid "Allowed sizes are 16x16 or 32x32"
+msgstr ""
+"Le dimensioni consentite sono 16x16 o 32x32\n"
+
+#: inc/framework_config.php:25 inc/framework_config.php:60
+#, php-format
+msgid "Allowed values examples: 50px, 50% or auto."
+msgstr ""
+"Esempi di valori consentiti: 50px, 50% o auto.\n"
+
+#: functions.php:672 inc/widgets/class-taxonomy-widget.php:35
+msgid "Amenities"
+msgstr ""
+"Servizi\n"
+
+#: inc/framework_config.php:72
+msgid "Archive page name"
+msgstr ""
+"Nome della pagina di archivio\n"
+
+#: 404.php:14
+msgid "Back to home"
+msgstr ""
+"Tornare a casa\n"
+
+#: functions.php:209
+msgid "Before Blog Archive"
+msgstr ""
+"Prima dell'archivio blog\n"
+
+#: functions.php:214
+msgid "Before Property Single"
+msgstr ""
+"Prima della proprietà singola\n"
+
+#: functions.php:157
+msgid "Blog"
+msgstr ""
+"Blog\n"
+
+#: functions.php:979
+msgid "Blog Archives"
+msgstr ""
+"Archivi del blog\n"
+
+#: functions.php:206
+msgid "Blog Sidebar"
+msgstr ""
+"Blog Sidebar\n"
+
+#: inc/widgets/class-property-slider-widget.php:53
+msgid "Carousel layout"
+msgstr ""
+"Layout a giostra\n"
+
+#: inc/widgets/class-taxonomy-widget.php:40
+msgid "Categories"
+msgstr ""
+"Categorie\n"
+
+#: inc/framework_config.php:162
+msgid "Categories To Show"
+msgstr ""
+"Categorie da mostrare\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:46
+msgid "Company"
+msgstr ""
+"Azienda\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:49
+msgid "Company Website"
+msgstr "Sito web aziendale"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:59
+msgid "Confirm Password"
+msgstr ""
+"Conferma password\n"
+
+#: functions.php:804
+msgid "Contact Form 7"
+msgstr ""
+"Modulo di contatto 7\n"
+
+#: inc/widgets/class-about-widget.php:49
+msgid "Content Sub Title"
+msgstr ""
+"Sottotitolo contenuto\n"
+
+#: inc/widgets/class-about-widget.php:45
+msgid "Content Title"
+msgstr ""
+"Titolo del contenuto\n"
+
+#: inc/framework_config.php:65
+msgid "Copyright"
+msgstr ""
+"Diritto d'autore\n"
+
+#: inc/framework_config.php:130 inc/framework_config.php:148
+msgid "Disable Sidebar"
+msgstr ""
+"Disabilita la barra laterale\n"
+
+#: inc/framework_config.php:85
+msgid "Disabled"
+msgstr ""
+"Disabilitato\n"
+
+#: inc/widgets/class-taxonomy-widget.php:17
+msgid "Display estatik taxonomy terms."
+msgstr ""
+"Mostra i termini della tassonomia estatik.\n"
+
+#: inc/widgets/class-property-slider-widget.php:16
+msgid "Display Properties Carousel."
+msgstr "Proprietà dello schermo Carosello."
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:16
+msgid "Display Properties List. The widget uses in sidebar."
+msgstr ""
+"Visualizza elenco proprietà. Il widget utilizza nella barra laterale.\n"
+
+#: inc/widgets/class-property-types-widget.php:16
+msgid "Display Properties Types Block with Images."
+msgstr ""
+"Tipi di proprietà di visualizzazione Blocco con immagini.\n"
+
+#: inc/widgets/class-property-item-widget.php:16
+msgid "Display Property Item."
+msgstr ""
+"Visualizza oggetto di proprietà.\n"
+
+#: inc/widgets/class-social-widget.php:16
+msgid "Display social icons."
+msgstr ""
+"Visualizza icone social.\n"
+
+#: inc/widgets/class-performance-widget.php:16
+msgid "Display Statistics."
+msgstr ""
+"Visualizza statistiche.\n"
+
+#: inc/widgets/class-title-widget.php:16
+msgid "Display Styled Title."
+msgstr ""
+"Visualizza titolo con stile.\n"
+
+#: inc/widgets/class-testimonials-widget.php:16
+msgid "Displays testimonials in a slider widget."
+msgstr ""
+"Visualizza le testimonianze in un widget a scorrimento.\n"
+
+#: inc/framework_config.php:6
+msgid "Documentation"
+msgstr "Documentazione"
+
+#: functions.php:788
+msgid "Easy Forms for MailChimp"
+msgstr ""
+"Moduli facili per MailChimp\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:18
+msgid "Edit Your Profile"
+msgstr ""
+"Modifica il tuo profilo\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:36
+msgid "Email"
+msgstr ""
+"E-mail\n"
+
+#: inc/framework_config.php:92
+msgid "Enable Breadcrumbs"
+msgstr ""
+"Abilita Breadcrumb\n"
+
+#: 404.php:9
+msgid "Error 404"
+msgstr ""
+"Errore 404\n"
+
+#. Author of the theme
+msgid "Estatik"
+msgstr "Estatik"
+
+#: inc/widgets/class-about-widget.php:14
+msgid "Estatik About Block"
+msgstr ""
+"Estatik About Block\n"
+
+#: inc/widgets/class-performance-widget.php:14
+msgid "Estatik Performance Blocks"
+msgstr ""
+"Estatik Performance Blocks\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:14
+msgid "Estatik Properties Sidebar List"
+msgstr ""
+"Elenco barra laterale Proprietà Estatik\n"
+
+#: inc/widgets/class-property-slider-widget.php:14
+msgid "Estatik Property Carousel"
+msgstr ""
+"Carosello di proprietà di Estatik\n"
+
+#: inc/widgets/class-property-item-widget.php:14
+msgid "Estatik Property Item"
+msgstr ""
+"Articolo di proprietà di Estatik\n"
+
+#: inc/widgets/class-property-types-widget.php:14
+msgid "Estatik Property Types Blocks"
+msgstr ""
+"Blocchi di tipi di proprietà Estatik\n"
+
+#: functions.php:793
+msgid "Estatik Real Estate"
+msgstr ""
+"Estatik Real Estate\n"
+
+#. Name of the theme
+#: functions.php:79 inc/framework_config.php:4
+msgid "Estatik Realtor Theme"
+msgstr "Tema agente immobiliare Estatik"
+
+#: inc/widgets/class-social-widget.php:14
+msgid "Estatik Social"
+msgstr ""
+"Estatik Social\n"
+
+#: inc/widgets/class-taxonomy-widget.php:14
+msgid "Estatik Taxonomies"
+msgstr ""
+"Tassonomie Estatik\n"
+
+#: inc/widgets/class-testimonials-widget.php:14
+msgid "Estatik Testimonials"
+msgstr "Testimonianze di Estatik"
+
+#: inc/widgets/class-social-widget.php:53
+msgid "Facebook"
+msgstr ""
+"Facebook\n"
+
+#: inc/framework_config.php:30
+msgid "Favicon Image"
+msgstr ""
+"Favicon Image\n"
+
+#: functions.php:689 inc/widgets/class-taxonomy-widget.php:34
+msgid "Features"
+msgstr ""
+"Caratteristiche\n"
+
+#: template-parts/shortcodes/management/filter.php:1
+msgid "Filter by"
+msgstr ""
+"Filtra per\n"
+
+#: functions.php:171
+msgid "Footer"
+msgstr ""
+"Footer\n"
+
+#: functions.php:202
+msgid "Footer Center Area"
+msgstr "Footer Center Area"
+
+#: functions.php:200
+msgid "Footer Left Area"
+msgstr ""
+"Piè di pagina a sinistra\n"
+
+#: functions.php:203
+msgid "Footer Right Area"
+msgstr ""
+"Footer Right Area\n"
+
+#: functions.php:174
+msgid "Footer Settings"
+msgstr ""
+"Impostazioni piè di pagina\n"
+
+#: functions.php:125
+msgid "General"
+msgstr ""
+"Generale\n"
+
+#: functions.php:128 functions.php:146
+msgid "General Settings"
+msgstr ""
+"Impostazioni generali\n"
+
+#: inc/widgets/class-social-widget.php:56
+msgid "Google+"
+msgstr ""
+"Google+\n"
+
+#: inc/framework_config.php:124
+msgid "Grid"
+msgstr ""
+"Griglia\n"
+
+#. Name of the template
+msgid "Half Map Listings"
+msgstr "Elenchi di mezza mappa"
+
+#: estatik/shortcodes/register.php:105
+msgid "Have an account ?"
+msgstr ""
+"Avere un conto ?\n"
+
+#: functions.php:232
+msgid "Header Menu"
+msgstr ""
+"Menu intestazione\n"
+
+#: functions.php:234
+msgid "Header Menu Authorized"
+msgstr ""
+"Menu intestazione autorizzato\n"
+
+#: inc/framework_config.php:48
+msgid "Header Menu Hover"
+msgstr ""
+"Hover Menu Header\n"
+
+#: functions.php:233
+msgid "Header Menu Unauthorized"
+msgstr ""
+"Menu intestazione non autorizzato\n"
+
+#. Author URI of the theme
+msgid "https://Estatik.net"
+msgstr ""
+"https://Estatik.net\n"
+
+#: inc/widgets/class-social-widget.php:55
+msgid "Instagram"
+msgstr ""
+"Instagram\n"
+
+#: inc/framework_config.php:137
+msgid "Items per row"
+msgstr "Articoli per riga"
+
+#: inc/widgets/class-taxonomy-widget.php:36
+msgid "Labels"
+msgstr ""
+"Etichette\n"
+
+#: inc/framework_config.php:86
+msgid "Left"
+msgstr ""
+"Sinistra\n"
+
+#: inc/widgets/class-about-widget.php:57
+msgid "Link Name"
+msgstr ""
+"Nome collegamento\n"
+
+#: inc/framework_config.php:125
+msgid "List"
+msgstr ""
+"Elenco\n"
+
+#: inc/framework_config.php:119
+msgid "Listing Layout"
+msgstr ""
+"Layout dell'elenco\n"
+
+#: inc/framework_config.php:54
+msgid "Logo Height"
+msgstr ""
+"Altezza del logo\n"
+
+#: inc/framework_config.php:12
+msgid "Logo Image"
+msgstr ""
+"Immagine logo\n"
+
+#: inc/framework_config.php:19
+msgid "Logo Width"
+msgstr ""
+"Larghezza logo\n"
+
+#: functions.php:975
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/widgets/class-about-widget.php:62
+msgid "More Link"
+msgstr ""
+"Più link\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:27
+msgid "Name"
+msgstr ""
+"Nome\n"
+
+#: inc/blog-hooks.php:155 estatik/shortcodes/my-listing.php:32
+#: template-parts/shortcodes/property-slider.php:21
+#: estatik/shortcodes/partials/saved-homes-tab.php:26
+msgid "Next"
+msgstr "Il prossimo"
+
+#: inc/post-hooks.php:194
+msgid "Next Post"
+msgstr ""
+"Post successivo\n"
+
+#: functions.php:799
+msgid "One Click Demo Import"
+msgstr ""
+"One Click Demo Import\n"
+
+#: 404.php:11
+msgid "Opps! Page Not Found."
+msgstr ""
+"Opps! Pagina non trovata.\n"
+
+#. Name of the template
+msgid "Page Builder Template"
+msgstr ""
+"Modello di generatore di pagine\n"
+
+#: functions.php:204
+msgid "Page Sidebar"
+msgstr ""
+"Barra laterale della pagina\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:56
+msgid "Password"
+msgstr ""
+"Parola d'ordine\n"
+
+#: inc/property-hooks.php:174
+msgid "PDF"
+msgstr "PDF"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:39
+msgid "Phone number"
+msgstr "Numero di telefono"
+
+#: estatik/shortcodes/register.php:76
+#: estatik/shortcodes/partials/my-profile-tab.php:70
+msgid "Photo/Logo"
+msgstr ""
+"Foto / Logo\n"
+
+#: functions.php:160
+msgid "Post Displays Settings"
+msgstr ""
+"Posta visualizza le impostazioni\n"
+
+#: functions.php:205
+msgid "Post Sidebar"
+msgstr ""
+"Post Sidebar\n"
+
+#: inc/blog-hooks.php:154 estatik/shortcodes/my-listing.php:31
+#: template-parts/shortcodes/property-slider.php:19
+#: estatik/shortcodes/partials/saved-homes-tab.php:25
+msgid "Prev"
+msgstr ""
+"Prev\n"
+
+#: inc/post-hooks.php:183
+msgid "Previous Post"
+msgstr ""
+"Messaggio precedente\n"
+
+#: functions.php:143
+msgid "Properties"
+msgstr ""
+"Proprietà\n"
+
+#: functions.php:216
+msgid "Properties Archive Sidebar"
+msgstr ""
+"Barra laterale Archivio proprietà\n"
+
+#: template-parts/shortcodes/management/filter.php:40
+msgid "Property ID"
+msgstr ""
+"ID proprietà\n"
+
+#: inc/framework_config.php:80
+msgid "Property Sidebar"
+msgstr "Barra laterale della proprietà"
+
+#: estatik/property/fields.php:3
+msgid "Quick Info"
+msgstr ""
+"Informazioni rapide\n"
+
+#: functions.php:762
+msgid "Rating"
+msgstr ""
+"Valutazione\n"
+
+#: template-parts/content/content-archive.php:21
+msgid "Read more"
+msgstr ""
+"Leggi di più\n"
+
+#: estatik/shortcodes/register.php:23
+msgid "Register As"
+msgstr ""
+"Registrati come\n"
+
+#: functions.php:1240 inc/property-hooks.php:324
+msgid "Remove from favourites"
+msgstr ""
+"Rimuovi dai preferiti\n"
+
+#: inc/widgets/class-taxonomy-widget.php:39
+msgid "Rent Periods"
+msgstr ""
+"Periodi di affitto\n"
+
+#: comments.php:29
+msgid "Reviews"
+msgstr "Recensioni"
+
+#: inc/framework_config.php:87
+msgid "Right"
+msgstr ""
+"Destra\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:83
+msgid "Save edits"
+msgstr ""
+"Salva modifiche\n"
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+"Ricerca\n"
+
+#: searchform.php:2
+msgid "Search here"
+msgstr ""
+"Cerca qui\n"
+
+#: comments.php:65
+msgid "Send Message"
+msgstr ""
+"Invia messaggio\n"
+
+#: inc/framework_config.php:59
+msgid "Set your logo custom height"
+msgstr ""
+"Imposta l'altezza personalizzata del tuo logo\n"
+
+#: inc/framework_config.php:24
+msgid "Set your logo custom width"
+msgstr "Imposta la larghezza personalizzata del tuo logo"
+
+#: inc/post-hooks.php:95 inc/property-hooks.php:179
+msgid "Share"
+msgstr ""
+"Condividere\n"
+
+#: inc/property-hooks.php:188
+msgid "Share this property"
+msgstr ""
+"Condividi questa proprietà\n"
+
+#: inc/framework_config.php:101
+msgid "Show Author"
+msgstr ""
+"Mostra autore\n"
+
+#: inc/widgets/class-property-slider-widget.php:41
+msgid "Show Dots?"
+msgstr ""
+"Mostra punti?\n"
+
+#: inc/framework_config.php:110
+msgid "Show Featured Image"
+msgstr ""
+"Mostra immagine in primo piano\n"
+
+#: inc/framework_config.php:155
+msgid "Show Sort By"
+msgstr ""
+"Mostra ordina per\n"
+
+#: estatik/shortcodes/login.php:6
+msgid "Sign In to your Account"
+msgstr ""
+"Accedi al tuo account\n"
+
+#: functions.php:207
+msgid "Single Property Sidebar"
+msgstr "Barra laterale a singola proprietà"
+
+#: functions.php:778
+msgid "SiteOrigin Page Builder"
+msgstr ""
+
+#: functions.php:783
+msgid "SiteOrigin Widgets Bundle"
+msgstr ""
+
+#: inc/widgets/class-property-slider-widget.php:45
+msgid "Slides To Show"
+msgstr ""
+
+#: inc/widgets/class-taxonomy-widget.php:37
+msgid "Statuses"
+msgstr ""
+
+#: inc/widgets/class-taxonomy-widget.php:51
+msgid "Taxonomy to show"
+msgstr ""
+
+#: inc/widgets/class-about-widget.php:53
+msgid "Text"
+msgstr ""
+
+#: inc/framework_config.php:40
+msgid "Theme Color"
+msgstr ""
+
+#: functions.php:78
+msgid "Theme Options"
+msgstr ""
+
+#: inc/blog-hooks.php:76
+msgid "There are no posts to show"
+msgstr ""
+
+#: inc/widgets/class-title-widget.php:14
+msgid "Title"
+msgstr ""
+
+#: header.php:35
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/widgets/class-social-widget.php:54
+msgid "Twitter"
+msgstr ""
+
+#: inc/widgets/class-taxonomy-widget.php:38
+msgid "Types"
+msgstr ""
+
+#: inc/post-hooks.php:149
+msgid "User Image"
+msgstr ""
+
+#: estatik/shortcodes/partials/my-profile-tab.php:30
+msgid "Username"
+msgstr ""
+
+#: inc/widgets/class-about-widget.php:16
+msgid "Uses for Agent Info."
+msgstr ""
+
+#: inc/widgets/class-property-slider-widget.php:56
+msgid "v1"
+msgstr ""
+
+#: inc/widgets/class-property-slider-widget.php:57
+msgid "v2"
+msgstr ""
+
+#: estatik/content-archive-inner.php:29
+#: template-parts/shortcodes/property-hero-gallery.php:39
+msgid "View Details"
+msgstr ""
+
+#: estatik/property/agent.php:69
+msgid "View properties"
+msgstr ""
+
+#: 404.php:12
+msgid "We couldn't find the page you were looking for."
+msgstr ""
+
+#: inc/post-hooks.php:100
+msgid "Write a comment"
+msgstr ""
+
+#: functions.php:977
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: comments.php:59
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:62
+msgid "Your message"
+msgstr ""
+
+#: estatik/widgets/es-request-widget.php:43
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:55
+msgid "Your name"
+msgstr ""

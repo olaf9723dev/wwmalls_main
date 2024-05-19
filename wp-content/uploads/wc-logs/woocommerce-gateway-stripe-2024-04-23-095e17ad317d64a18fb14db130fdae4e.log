@@ -1,0 +1,573 @@
+2024-04-23T00:30:13+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T02:30:24+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T04:30:25+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T06:30:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T07:39:39+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers request: Array
+(
+    [email] => acui_9dJWBp@Nj6LTE.com
+    [description] => Name:  , Username: 1
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => en-US
+        )
+
+    [address] => Array
+        (
+            [line1] => 
+            [line2] => 
+            [postal_code] => 
+            [city] => 
+            [state] => 
+            [country] => 
+        )
+
+)
+
+====End Log====
+
+2024-04-23T07:39:40+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T07:39:40+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods/pm_1P8dwwJB8lUwOLytHO6qndrW
+====End Log====
+
+2024-04-23T07:39:40+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+setup_intents request: Array
+(
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [confirm] => true
+    [payment_method] => pm_1P8dwwJB8lUwOLytHO6qndrW
+)
+
+====End Log====
+
+2024-04-23T07:39:41+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+setup_intents response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T07:39:45+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods/pm_1P8dwwJB8lUwOLytHO6qndrW
+====End Log====
+
+2024-04-23T07:39:46+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods/pm_1P8dwwJB8lUwOLytHO6qndrW
+====End Log====
+
+2024-04-23T07:39:46+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods request: Array
+(
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [type] => card
+    [limit] => 100
+)
+
+====End Log====
+
+2024-04-23T07:39:46+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T07:39:46+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_Pyb9vI7BkyqpN2 request: Array
+(
+    [invoice_settings] => Array
+        (
+            [default_payment_method] => pm_1P8dwwJB8lUwOLytHO6qndrW
+        )
+
+)
+
+====End Log====
+
+2024-04-23T07:39:47+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_Pyb9vI7BkyqpN2 response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T07:39:51+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods request: Array
+(
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [type] => card
+    [limit] => 100
+)
+
+====End Log====
+
+2024-04-23T07:39:51+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_Pyb9vI7BkyqpN2 request: Array
+(
+    [email] => acui_9dJWBp@Nj6LTE.com
+    [description] => Name: James Bond, Username: 1
+    [name] => James Bond
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => en-US
+        )
+
+    [address] => Array
+        (
+            [line1] => street 1
+            [line2] => 
+            [postal_code] => A1A 1A1
+            [city] => Nanaimo
+            [state] => BC
+            [country] => CA
+        )
+
+)
+
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_Pyb9vI7BkyqpN2 response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Info: Begin processing payment for order 23025 for the amount of 539.00
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents request: Array
+(
+    [amount] => 53900
+    [currency] => cad
+    [description] => WWMalls.Com - Order 23025
+    [metadata] => Array
+        (
+            [customer_name] => James Bond
+            [customer_email] => acui_9dJWBp@Nj6LTE.com
+            [order_id] => 23025
+            [site_url] => https://wwmalls.com
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [payment_method] => pm_1P8dwwJB8lUwOLytHO6qndrW
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [shipping] => Array
+        (
+            [name] => James Bond
+            [address] => Array
+                (
+                    [line1] => street 1
+                    [line2] => 
+                    [city] => Nanaimo
+                    [country] => CA
+                    [postal_code] => A1A 1A1
+                    [state] => BC
+                )
+
+        )
+
+)
+
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T08:26:43+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Stripe PaymentIntent pi_3P8egZJB8lUwOLyt1tB0tIAw initiated for order 23025
+====End Log====
+
+2024-04-23T08:26:44+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents/pi_3P8egZJB8lUwOLyt1tB0tIAw/confirm request: Array
+(
+    [payment_method] => pm_1P8dwwJB8lUwOLytHO6qndrW
+)
+
+====End Log====
+
+2024-04-23T08:26:45+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents/pi_3P8egZJB8lUwOLyt1tB0tIAw/confirm response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T08:26:45+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Stripe PaymentIntent pi_3P8egZJB8lUwOLyt1tB0tIAw succeeded for order 23025
+====End Log====
+
+2024-04-23T08:26:45+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_3P8egZJB8lUwOLyt1OYacEEf
+    [object] => charge
+    [amount] => 53900
+    [amount_captured] => 53900
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_3P8egZJB8lUwOLyt17fCAKgx
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => acui_9dJWBp@Nj6LTE.com
+            [name] =>  
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => WWMALLS.COM
+    [captured] => 1
+    [created] => 1713860804
+    [currency] => cad
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [description] => WWMalls.Com - Order 23025
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_balance_transaction] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_email] => acui_9dJWBp@Nj6LTE.com
+            [customer_name] => James Bond
+            [order_id] => 23025
+            [site_url] => https://wwmalls.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 8
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_3P8egZJB8lUwOLyt1tB0tIAw
+    [payment_method] => pm_1P8dwwJB8lUwOLytHO6qndrW
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [amount_authorized] => 53900
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => 
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2030
+                    [extended_authorization] => stdClass Object
+                        (
+                            [status] => disabled
+                        )
+
+                    [fingerprint] => msLvFdqwPmyPpqzp
+                    [funding] => credit
+                    [incremental_authorization] => stdClass Object
+                        (
+                            [status] => unavailable
+                        )
+
+                    [installments] => 
+                    [last4] => 4242
+                    [mandate] => 
+                    [multicapture] => stdClass Object
+                        (
+                            [status] => unavailable
+                        )
+
+                    [network] => visa
+                    [network_token] => stdClass Object
+                        (
+                            [used] => 
+                        )
+
+                    [overcapture] => stdClass Object
+                        (
+                            [maximum_amount_capturable] => 53900
+                            [status] => unavailable
+                        )
+
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [radar_options] => stdClass Object
+        (
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUNWSGxKQjhsVXdPTHl0KMXhnbEGMgbqzx_pekw6LBYDUf1G0A4wVK7Vfw_DJh9ppUEcOZyDcrQDIUm5kiKbFS-5cb8AgGjkA9Pl
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_3P8egZJB8lUwOLyt1OYacEEf/refunds
+        )
+
+    [review] => 
+    [shipping] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Nanaimo
+                    [country] => CA
+                    [line1] => street 1
+                    [line2] => 
+                    [postal_code] => A1A 1A1
+                    [state] => BC
+                )
+
+            [carrier] => 
+            [name] => James Bond
+            [phone] => 
+            [tracking_number] => 
+        )
+
+    [source] => 
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+2024-04-23T08:26:45+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+balance/history/txn_3P8egZJB8lUwOLyt17fCAKgx
+====End Log====
+
+2024-04-23T08:30:35+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T08:53:29+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T09:11:57+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T09:31:13+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods request: Array
+(
+    [customer] => cus_Pyb9vI7BkyqpN2
+    [type] => card
+    [limit] => 100
+)
+
+====End Log====
+
+2024-04-23T09:31:13+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-23T11:12:05+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T13:12:09+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T15:12:12+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T17:12:14+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T19:12:23+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T21:12:25+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-23T23:12:47+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+

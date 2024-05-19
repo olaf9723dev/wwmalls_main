@@ -1,0 +1,36 @@
+.ert-404-container {
+  text-align: center;
+  background-image: url("../images/404.png");
+  background-size: cover;
+  padding: 100px 20px;
+
+  .es-404-content {
+    margin: 25px 0 45px;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 75px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(33, 33, 33, 0.8);
+  }
+
+  .btn {
+    max-width: 360px;
+    width: 90%;
+  }
+}

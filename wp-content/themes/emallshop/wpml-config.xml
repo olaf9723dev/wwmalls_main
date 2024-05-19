@@ -1,0 +1,43 @@
+<wpml-config>
+	<admin-texts>
+        <key name="emallshop_options">
+            <key name="google-analytics"/>
+            <key name="topbar-news" />
+            <key name="topbar-welcome-message"/>
+			<key name="service-title1"/> 
+			<key name="service-des1"/> 
+			<key name="service-title2"/> 
+			<key name="service-des2"/> 
+			<key name="service-title3"/> 
+			<key name="service-des3"/> 
+			<key name="shopping-categories-text"/> 
+			<key name="copyright-text"/> 
+			<key name="sale-highlight-percentages-label-text"/> 
+			<key name="sale-highlight-label-text"/> 
+			<key name="new-highlight-label-text"/> 
+			<key name="featured-highlight-label-text"/> 
+			<key name="outofstock-highlight-label-text"/> 
+			<key name="post-readmore-text"/> 
+			<key name="blog-load-more-button-text"/> 
+			<key name="portfolio-load-more-button-text"/> 
+			<key name="previous-link-title"/> 
+			<key name="cookie_title"/> 
+			<key name="cookie_message_text"/> 
+			<key name="cookie_accept_text"/> 
+			<key name="cookie_see_more_text"/> 
+			<key name="cookie_refuse_text"/> 
+			<key name="cookie_refuse_code"/> 
+			<key name="cookie_on_scroll_offset"/> 
+			<key name="newsletter-title"/> 
+			<key name="newsletter-tag-line"/> 
+			<key name="newsletter-dont-show"/> 
+        </key>
+    </admin-texts>
+	<custom-fields>   
+		<custom-field action="translate">es_post_format_quote</custom-field>
+		<custom-field action="translate">es_post_format_quote_author</custom-field>
+		<custom-field action="translate">es_portfolio_client_name</custom-field>
+        <custom-field action="translate">es_client_designation</custom-field>
+        <custom-field action="translate">es_client_company</custom-field>	
+    </custom-fields>     
+</wpml-config>

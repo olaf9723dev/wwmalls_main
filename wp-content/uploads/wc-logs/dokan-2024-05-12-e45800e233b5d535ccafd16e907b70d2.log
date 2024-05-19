@@ -1,0 +1,12 @@
+2024-05-12T05:31:11+00:00 INFO Vendor Zone Data Sync completed
+2024-05-12T06:06:24+00:00 INFO Vendor Zone Data Sync completed
+2024-05-12T13:45:15+00:00 INFO Vendor Zone Data Sync completed
+2024-05-12T13:51:46+00:00 INFO Vendor Zone Data Sync completed
+2024-05-12T23:10:24+00:00 DEBUG Creating sub order for vendor: #6753
+2024-05-12T23:10:24+00:00 DEBUG #23651 - Creating Shipping.
+2024-05-12T23:10:24+00:00 DEBUG #23651 - Adding shipping item.
+2024-05-12T23:10:25+00:00 DEBUG Created sub order : #23651
+2024-05-12T23:10:25+00:00 DEBUG Creating sub order for vendor: #30
+2024-05-12T23:10:26+00:00 DEBUG #23652 - Creating Shipping.
+2024-05-12T23:10:26+00:00 DEBUG #23652 - Adding shipping item.
+2024-05-12T23:10:26+00:00 DEBUG Created sub order : #23652

@@ -1,0 +1,801 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Estatik Realtor Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-01 09:40+0000\n"
+"PO-Revision-Date: 2019-11-29 08:53+0000\n"
+"Last-Translator: lliucqdj <shmorgunlana@gmail.com>\n"
+"Language-Team: Hungarian\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#: comments.php:27
+#, php-format
+msgid "%d Review"
+msgid_plural "%d Reviews"
+msgstr[0] ""
+"%d áttekintés\n"
+msgstr[1] ""
+
+#: functions.php:973 functions.php:975 functions.php:977
+#, php-format
+msgid "%s"
+msgstr ""
+"%s\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:65
+msgid "About"
+msgstr ""
+"Ról ről\n"
+
+#: inc/widgets/class-about-widget.php:58
+msgid "About Company"
+msgstr ""
+"A cégről\n"
+
+#: functions.php:1242 inc/property-hooks.php:328
+msgid "Add to favorites"
+msgstr ""
+"Add hozzá a kedvencekhez\n"
+
+#: functions.php:208
+msgid "After Blog Archive"
+msgstr ""
+"Blog-archívum után\n"
+
+#: functions.php:215
+msgid "After Property Single"
+msgstr ""
+"Utolsó tulajdonság után\n"
+
+#: template-parts/partials/agent-partial.php:11
+msgid "Agent Photo"
+msgstr ""
+"Agent fénykép\n"
+
+#: estatik/property/filter.php:12
+msgid "All"
+msgstr ""
+"Minden\n"
+
+#: inc/framework_config.php:33
+msgid "Allowed sizes are 16x16 or 32x32"
+msgstr ""
+"Megengedett méretek 16x16 vagy 32x32\n"
+
+#: inc/framework_config.php:25 inc/framework_config.php:60
+#, php-format
+msgid "Allowed values examples: 50px, 50% or auto."
+msgstr ""
+"Példák az engedélyezett értékekre: 50 képpont, 50% vagy automatikus.\n"
+
+#: functions.php:672 inc/widgets/class-taxonomy-widget.php:35
+msgid "Amenities"
+msgstr ""
+"Felszerelés\n"
+
+#: inc/framework_config.php:72
+msgid "Archive page name"
+msgstr ""
+"Archív oldal neve\n"
+
+#: 404.php:14
+msgid "Back to home"
+msgstr ""
+"Vissza a főoldalra\n"
+
+#: functions.php:209
+msgid "Before Blog Archive"
+msgstr ""
+"A Blog Archívum előtt\n"
+
+#: functions.php:214
+msgid "Before Property Single"
+msgstr ""
+"A Property Single előtt\n"
+
+#: functions.php:157
+msgid "Blog"
+msgstr ""
+"Blog\n"
+
+#: functions.php:979
+msgid "Blog Archives"
+msgstr ""
+"Blog Archívum\n"
+
+#: functions.php:206
+msgid "Blog Sidebar"
+msgstr ""
+"Blog oldalsáv\n"
+
+#: inc/widgets/class-property-slider-widget.php:53
+msgid "Carousel layout"
+msgstr ""
+"Körhinta elrendezés\n"
+
+#: inc/widgets/class-taxonomy-widget.php:40
+msgid "Categories"
+msgstr ""
+"Kategóriák\n"
+
+#: inc/framework_config.php:162
+msgid "Categories To Show"
+msgstr ""
+"Megjelenítendő kategóriák\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:46
+msgid "Company"
+msgstr ""
+"Vállalat\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:49
+msgid "Company Website"
+msgstr ""
+"A társaság weboldala\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:59
+msgid "Confirm Password"
+msgstr ""
+"Jelszó megerősítése\n"
+
+#: functions.php:804
+msgid "Contact Form 7"
+msgstr ""
+"Kapcsolatfelvételi űrlap 7\n"
+
+#: inc/widgets/class-about-widget.php:49
+msgid "Content Sub Title"
+msgstr ""
+"Tartalom alcím\n"
+
+#: inc/widgets/class-about-widget.php:45
+msgid "Content Title"
+msgstr "Tartalom címe"
+
+#: inc/framework_config.php:65
+msgid "Copyright"
+msgstr ""
+"Szerzői jog\n"
+
+#: inc/framework_config.php:130 inc/framework_config.php:148
+msgid "Disable Sidebar"
+msgstr ""
+"Az oldalsáv letiltása\n"
+
+#: inc/framework_config.php:85
+msgid "Disabled"
+msgstr ""
+"Tiltva\n"
+
+#: inc/widgets/class-taxonomy-widget.php:17
+msgid "Display estatik taxonomy terms."
+msgstr ""
+"Az estatik taxonómia kifejezéseinek megjelenítése.\n"
+
+#: inc/widgets/class-property-slider-widget.php:16
+msgid "Display Properties Carousel."
+msgstr ""
+"Kijelző tulajdonságok körhinta.\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:16
+msgid "Display Properties List. The widget uses in sidebar."
+msgstr ""
+"Megjeleníti a tulajdonságok listáját. A widget használja az oldalsávban.\n"
+
+#: inc/widgets/class-property-types-widget.php:16
+msgid "Display Properties Types Block with Images."
+msgstr ""
+"Megjelenítési tulajdonságok típusai Blokkolja a képeket.\n"
+
+#: inc/widgets/class-property-item-widget.php:16
+msgid "Display Property Item."
+msgstr ""
+"Megjeleníti az ingatlan elemet.\n"
+
+#: inc/widgets/class-social-widget.php:16
+msgid "Display social icons."
+msgstr ""
+"Társadalmi ikonok megjelenítése.\n"
+
+#: inc/widgets/class-performance-widget.php:16
+msgid "Display Statistics."
+msgstr "A statisztikák megjelenítése."
+
+#: inc/widgets/class-title-widget.php:16
+msgid "Display Styled Title."
+msgstr ""
+"A stílusos cím megjelenítése.\n"
+
+#: inc/widgets/class-testimonials-widget.php:16
+msgid "Displays testimonials in a slider widget."
+msgstr ""
+"A beszámolókat egy csúszó widgetben jeleníti meg.\n"
+
+#: inc/framework_config.php:6
+msgid "Documentation"
+msgstr ""
+"Dokumentáció\n"
+
+#: functions.php:788
+msgid "Easy Forms for MailChimp"
+msgstr ""
+"Egyszerű űrlapok a MailChimp számára\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:18
+msgid "Edit Your Profile"
+msgstr ""
+"Profil szerkesztése\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:36
+msgid "Email"
+msgstr ""
+"Email\n"
+
+#: inc/framework_config.php:92
+msgid "Enable Breadcrumbs"
+msgstr ""
+"Engedélyezze a zsemlemorzsát\n"
+
+#: 404.php:9
+msgid "Error 404"
+msgstr ""
+"404-es hibakód\n"
+
+#. Author of the theme
+msgid "Estatik"
+msgstr "Estatik"
+
+#: inc/widgets/class-about-widget.php:14
+msgid "Estatik About Block"
+msgstr ""
+"Estatik a blokkról\n"
+
+#: inc/widgets/class-performance-widget.php:14
+msgid "Estatik Performance Blocks"
+msgstr ""
+"Estatik teljesítményblokkok\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:14
+msgid "Estatik Properties Sidebar List"
+msgstr ""
+"Estatik Properties Sidebar List\n"
+
+#: inc/widgets/class-property-slider-widget.php:14
+msgid "Estatik Property Carousel"
+msgstr ""
+"Estatik ingatlan körhinta\n"
+
+#: inc/widgets/class-property-item-widget.php:14
+msgid "Estatik Property Item"
+msgstr ""
+"Estatik ingatlan tétel\n"
+
+#: inc/widgets/class-property-types-widget.php:14
+msgid "Estatik Property Types Blocks"
+msgstr ""
+"Estatik tulajdonságtípusok blokkok\n"
+
+#: functions.php:793
+msgid "Estatik Real Estate"
+msgstr ""
+"Estatik Real Estate\n"
+
+#. Name of the theme
+#: functions.php:79 inc/framework_config.php:4
+msgid "Estatik Realtor Theme"
+msgstr ""
+"Estatik ingatlanügynök téma\n"
+
+#: inc/widgets/class-social-widget.php:14
+msgid "Estatik Social"
+msgstr ""
+"Estatik Social\n"
+
+#: inc/widgets/class-taxonomy-widget.php:14
+msgid "Estatik Taxonomies"
+msgstr ""
+"Estatik taxonómiák\n"
+
+#: inc/widgets/class-testimonials-widget.php:14
+msgid "Estatik Testimonials"
+msgstr "Estatik ajánlások"
+
+#: inc/widgets/class-social-widget.php:53
+msgid "Facebook"
+msgstr ""
+"Facebook\n"
+
+#: inc/framework_config.php:30
+msgid "Favicon Image"
+msgstr ""
+"Favicon kép\n"
+
+#: functions.php:689 inc/widgets/class-taxonomy-widget.php:34
+msgid "Features"
+msgstr ""
+"Jellemzők\n"
+
+#: template-parts/shortcodes/management/filter.php:1
+msgid "Filter by"
+msgstr ""
+"Szűrés vlami alapján\n"
+
+#: functions.php:171
+msgid "Footer"
+msgstr ""
+"Lábjegyzet\n"
+
+#: functions.php:202
+msgid "Footer Center Area"
+msgstr ""
+"Lábléc központ területe\n"
+
+#: functions.php:200
+msgid "Footer Left Area"
+msgstr ""
+"Lábláb bal területe\n"
+
+#: functions.php:203
+msgid "Footer Right Area"
+msgstr ""
+"Lábak jobb területe\n"
+
+#: functions.php:174
+msgid "Footer Settings"
+msgstr ""
+"Lábléc beállításai\n"
+
+#: functions.php:125
+msgid "General"
+msgstr "Tábornok"
+
+#: functions.php:128 functions.php:146
+msgid "General Settings"
+msgstr ""
+"Általános beállítások\n"
+
+#: inc/widgets/class-social-widget.php:56
+msgid "Google+"
+msgstr ""
+"Google+\n"
+
+#: inc/framework_config.php:124
+msgid "Grid"
+msgstr ""
+"Rács\n"
+
+#. Name of the template
+msgid "Half Map Listings"
+msgstr ""
+"Fele térkép lista\n"
+
+#: estatik/shortcodes/register.php:105
+msgid "Have an account ?"
+msgstr ""
+"Fiókot birtokolni ?\n"
+
+#: functions.php:232
+msgid "Header Menu"
+msgstr ""
+"Fejléc menü\n"
+
+#: functions.php:234
+msgid "Header Menu Authorized"
+msgstr ""
+"Fejléc menü engedélyezett\n"
+
+#: inc/framework_config.php:48
+msgid "Header Menu Hover"
+msgstr ""
+"Fejléc menü lebeg\n"
+
+#: functions.php:233
+msgid "Header Menu Unauthorized"
+msgstr ""
+"A fejléc menü nem engedélyezett\n"
+
+#. Author URI of the theme
+msgid "https://Estatik.net"
+msgstr ""
+"https://Estatik.net\n"
+
+#: inc/widgets/class-social-widget.php:55
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/framework_config.php:137
+msgid "Items per row"
+msgstr ""
+"Tételek soronként\n"
+
+#: inc/widgets/class-taxonomy-widget.php:36
+msgid "Labels"
+msgstr ""
+"Címkék\n"
+
+#: inc/framework_config.php:86
+msgid "Left"
+msgstr ""
+"Balra\n"
+
+#: inc/widgets/class-about-widget.php:57
+msgid "Link Name"
+msgstr ""
+"Link neve\n"
+
+#: inc/framework_config.php:125
+msgid "List"
+msgstr ""
+"Lista\n"
+
+#: inc/framework_config.php:119
+msgid "Listing Layout"
+msgstr ""
+"A lista elrendezése\n"
+
+#: inc/framework_config.php:54
+msgid "Logo Height"
+msgstr ""
+"Logó magassága\n"
+
+#: inc/framework_config.php:12
+msgid "Logo Image"
+msgstr "Logo kép"
+
+#: inc/framework_config.php:19
+msgid "Logo Width"
+msgstr ""
+"Logó szélessége\n"
+
+#: functions.php:975
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/widgets/class-about-widget.php:62
+msgid "More Link"
+msgstr ""
+"További link\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:27
+msgid "Name"
+msgstr ""
+"Név\n"
+
+#: inc/blog-hooks.php:155 estatik/shortcodes/my-listing.php:32
+#: template-parts/shortcodes/property-slider.php:21
+#: estatik/shortcodes/partials/saved-homes-tab.php:26
+msgid "Next"
+msgstr ""
+"Következő\n"
+
+#: inc/post-hooks.php:194
+msgid "Next Post"
+msgstr ""
+"Következő üzenet\n"
+
+#: functions.php:799
+msgid "One Click Demo Import"
+msgstr ""
+"Egy kattintással bemutató importálás\n"
+
+#: 404.php:11
+msgid "Opps! Page Not Found."
+msgstr "Hoppá! Az oldal nem"
+
+#. Name of the template
+msgid "Page Builder Template"
+msgstr ""
+"Oldalkészítő sablon\n"
+
+#: functions.php:204
+msgid "Page Sidebar"
+msgstr ""
+"Oldal oldalsáv\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:56
+msgid "Password"
+msgstr ""
+"Jelszó\n"
+
+#: inc/property-hooks.php:174
+msgid "PDF"
+msgstr ""
+"PDF\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:39
+msgid "Phone number"
+msgstr ""
+"Telefonszám\n"
+
+#: estatik/shortcodes/register.php:76
+#: estatik/shortcodes/partials/my-profile-tab.php:70
+msgid "Photo/Logo"
+msgstr ""
+"Fotó / Logo\n"
+
+#: functions.php:160
+msgid "Post Displays Settings"
+msgstr ""
+"A hozzászólás megjelenítése\n"
+
+#: functions.php:205
+msgid "Post Sidebar"
+msgstr ""
+"Oldalsáv közzététele\n"
+
+#: inc/blog-hooks.php:154 estatik/shortcodes/my-listing.php:31
+#: template-parts/shortcodes/property-slider.php:19
+#: estatik/shortcodes/partials/saved-homes-tab.php:25
+msgid "Prev"
+msgstr ""
+"Előző\n"
+
+#: inc/post-hooks.php:183
+msgid "Previous Post"
+msgstr ""
+"Előző poszt\n"
+
+#: functions.php:143
+msgid "Properties"
+msgstr ""
+"Tulajdonságok\n"
+
+#: functions.php:216
+msgid "Properties Archive Sidebar"
+msgstr ""
+"Tulajdonságok Archív oldalsáv\n"
+
+#: template-parts/shortcodes/management/filter.php:40
+msgid "Property ID"
+msgstr ""
+"Ingatlan azonosítója\n"
+
+#: inc/framework_config.php:80
+msgid "Property Sidebar"
+msgstr ""
+"Ingatlan oldalsáv\n"
+
+#: estatik/property/fields.php:3
+msgid "Quick Info"
+msgstr "Gyors információ"
+
+#: functions.php:762
+msgid "Rating"
+msgstr ""
+"Értékelés\n"
+
+#: template-parts/content/content-archive.php:21
+msgid "Read more"
+msgstr ""
+"Olvass tovább\n"
+
+#: estatik/shortcodes/register.php:23
+msgid "Register As"
+msgstr ""
+"Regisztrálj\n"
+
+#: functions.php:1240 inc/property-hooks.php:324
+msgid "Remove from favourites"
+msgstr ""
+"Eltávolítás a kedvencek közül\n"
+
+#: inc/widgets/class-taxonomy-widget.php:39
+msgid "Rent Periods"
+msgstr ""
+"Bérleti periódusok\n"
+
+#: comments.php:29
+msgid "Reviews"
+msgstr ""
+"Vélemények\n"
+
+#: inc/framework_config.php:87
+msgid "Right"
+msgstr ""
+"Jobb\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:83
+msgid "Save edits"
+msgstr ""
+"Mentés a szerkesztésekre\n"
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+"Keresés\n"
+
+#: searchform.php:2
+msgid "Search here"
+msgstr ""
+"Itt keress\n"
+
+#: comments.php:65
+msgid "Send Message"
+msgstr "Üzenet küldése"
+
+#: inc/framework_config.php:59
+msgid "Set your logo custom height"
+msgstr ""
+"Állítsa be a logó egyedi magasságát\n"
+
+#: inc/framework_config.php:24
+msgid "Set your logo custom width"
+msgstr ""
+"Állítsa be a logó egyedi szélességét\n"
+
+#: inc/post-hooks.php:95 inc/property-hooks.php:179
+msgid "Share"
+msgstr ""
+"Ossza meg\n"
+
+#: inc/property-hooks.php:188
+msgid "Share this property"
+msgstr ""
+"Ossza meg ezt az ingatlant\n"
+
+#: inc/framework_config.php:101
+msgid "Show Author"
+msgstr ""
+"Mutasd a szerzőt\n"
+
+#: inc/widgets/class-property-slider-widget.php:41
+msgid "Show Dots?"
+msgstr ""
+"Pontok megjelenítése?\n"
+
+#: inc/framework_config.php:110
+msgid "Show Featured Image"
+msgstr ""
+"Kiemelt kép megjelenítése\n"
+
+#: inc/framework_config.php:155
+msgid "Show Sort By"
+msgstr "Show Sort Sort"
+
+#: estatik/shortcodes/login.php:6
+msgid "Sign In to your Account"
+msgstr ""
+"Jelentkezz be a fiókodba\n"
+
+#: functions.php:207
+msgid "Single Property Sidebar"
+msgstr ""
+"Egyetlen ingatlan oldalsáv\n"
+
+#: functions.php:778
+msgid "SiteOrigin Page Builder"
+msgstr ""
+"SiteOrigin oldalkészítő\n"
+
+#: functions.php:783
+msgid "SiteOrigin Widgets Bundle"
+msgstr ""
+"SiteOrigin Widgets Bundle\n"
+
+#: inc/widgets/class-property-slider-widget.php:45
+msgid "Slides To Show"
+msgstr ""
+"Megmutatható diák\n"
+
+#: inc/widgets/class-taxonomy-widget.php:37
+msgid "Statuses"
+msgstr ""
+"Állapotok\n"
+
+#: inc/widgets/class-taxonomy-widget.php:51
+msgid "Taxonomy to show"
+msgstr ""
+"Mutatni kívánt taxonómia\n"
+
+#: inc/widgets/class-about-widget.php:53
+msgid "Text"
+msgstr "Szöveg"
+
+#: inc/framework_config.php:40
+msgid "Theme Color"
+msgstr ""
+"Téma színe\n"
+
+#: functions.php:78
+msgid "Theme Options"
+msgstr ""
+"Téma beállítások\n"
+
+#: inc/blog-hooks.php:76
+msgid "There are no posts to show"
+msgstr ""
+"Nincs megjeleníthető üzenet\n"
+
+#: inc/widgets/class-title-widget.php:14
+msgid "Title"
+msgstr ""
+"Cím\n"
+
+#: header.php:35
+msgid "Toggle navigation"
+msgstr "Váltás a navigációhoz"
+
+#: inc/widgets/class-social-widget.php:54
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/widgets/class-taxonomy-widget.php:38
+msgid "Types"
+msgstr ""
+"Típusai\n"
+
+#: inc/post-hooks.php:149
+msgid "User Image"
+msgstr ""
+"Felhasználói kép\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:30
+msgid "Username"
+msgstr ""
+"Felhasználónév\n"
+
+#: inc/widgets/class-about-widget.php:16
+msgid "Uses for Agent Info."
+msgstr ""
+"Felhasználók az Agent Agent számára.\n"
+
+#: inc/widgets/class-property-slider-widget.php:56
+msgid "v1"
+msgstr ""
+"v1\n"
+
+#: inc/widgets/class-property-slider-widget.php:57
+msgid "v2"
+msgstr ""
+"v2\n"
+
+#: estatik/content-archive-inner.php:29
+#: template-parts/shortcodes/property-hero-gallery.php:39
+msgid "View Details"
+msgstr ""
+"Részletek megtekintése\n"
+
+#: estatik/property/agent.php:69
+msgid "View properties"
+msgstr ""
+"Tulajdonságok megtekintése\n"
+
+#: 404.php:12
+msgid "We couldn't find the page you were looking for."
+msgstr ""
+"Nem található a keresett oldal.\n"
+
+#: inc/post-hooks.php:100
+msgid "Write a comment"
+msgstr ""
+"Írj hozzászólást\n"
+
+#: functions.php:977
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: comments.php:59
+msgid "Your Email"
+msgstr "Az email címed"
+
+#: comments.php:62
+msgid "Your message"
+msgstr ""
+"Az üzeneted\n"
+
+#: estatik/widgets/es-request-widget.php:43
+msgid "Your Name"
+msgstr "A neved"
+
+#: comments.php:55
+msgid "Your name"
+msgstr ""
+"A neved\n"

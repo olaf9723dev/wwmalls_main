@@ -1,0 +1,65 @@
+.imageslide-container {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    --motta-image-slide-bg-control: #fff;
+}
+
+.imageslide-container img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.imageslide-container * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.imageslide-container .imageslide-handle {
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -22px;
+    margin-top: -2px;
+    background-color: var(--motta-image-slide-bg-control);
+    border-radius: 50%;
+    z-index: 40;
+    cursor: pointer;
+}
+
+.imageslide-container .imageslide-handle:before,
+.imageslide-container .imageslide-handle:after {
+    content: " ";
+    display: block;
+    background-color: var(--motta-image-slide-bg-control);
+    position: absolute;
+    z-index: 30;
+    width: 4px;
+    height: 9999px;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.imageslide-container .imageslide-handle:before {
+    bottom: 50%;
+    margin-bottom: 22px;
+}
+
+.imageslide-container .imageslide-handle:after {
+    top: 50%;
+    margin-top: 22px;
+}

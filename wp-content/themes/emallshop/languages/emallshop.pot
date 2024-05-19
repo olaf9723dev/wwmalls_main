@@ -1,0 +1,5089 @@
+# Copyright (C) 2017 PressLayouts
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EmallShop 1.0\n"
+"Report-Msgid-Bugs-To: https://demo.presslayouts.com/emallshop/\n"
+"POT-Creation-Date: 2023-12-05 14:33+0530\n"
+"PO-Revision-Date: 2016-03-21 21:12+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:25
+msgid "404 Image"
+msgstr ""
+
+#: 404.php:27
+msgid "Image Not Set"
+msgstr ""
+
+#: archive-portfolio.php:58 inc/integrations/woocommerce/woo-functions.php:534
+#: taxonomy-portfolio_cat.php:59 taxonomy-portfolio_skill.php:58
+msgid "Show All"
+msgstr ""
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr ""
+
+#: author-bio.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:54
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:29 content.php:58 image.php:58 page.php:48
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:33 content.php:62 image.php:62
+#: inc/admin/theme_options.php:2751 page.php:52
+msgid "Page"
+msgstr ""
+
+#: content-page.php:39 content-search.php:24 content-search.php:29
+#: content.php:40 image.php:71 templates/blog/grid_column.php:48
+#: templates/blog/large_image.php:36 templates/blog/small_image.php:39
+#: templates/blog/timeline.php:44 woocommerce/myaccount/my-address.php:52
+msgid "Edit"
+msgstr ""
+
+#: content.php:52 templates/blog/grid_column.php:60
+#: templates/blog/large_image.php:48 templates/blog/small_image.php:51
+#: templates/blog/timeline.php:56
+#, php-format
+msgid "Read more %s"
+msgstr ""
+
+#: functions.php:66
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:67
+msgid "Vertical Menu"
+msgstr ""
+
+#: functions.php:83
+msgid "Widget Area"
+msgstr ""
+
+#: functions.php:85
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: functions.php:92
+msgid "Shop Page Widget Area"
+msgstr ""
+
+#: functions.php:94
+msgid "Add widgets here to appear in shop page sidebar."
+msgstr ""
+
+#: functions.php:101
+msgid "Single Product Widget Area"
+msgstr ""
+
+#: functions.php:103
+msgid "Add widgets here to appear in single product page sidebar."
+msgstr ""
+
+#: functions.php:110 inc/integrations/dokan/dokan-functions.php:31
+msgid "Dokan Widget Area"
+msgstr ""
+
+#: functions.php:112
+msgid "Add widgets here to appear in dokan page sidebar."
+msgstr ""
+
+#: functions.php:119
+msgid "Menu Widget Area 1"
+msgstr ""
+
+#: functions.php:121 functions.php:130 functions.php:139
+msgid "Add widgets here to appear in your menu."
+msgstr ""
+
+#: functions.php:128
+msgid "Menu Widget Area 2"
+msgstr ""
+
+#: functions.php:137
+msgid "Menu Widget Area 3"
+msgstr ""
+
+#: functions.php:147
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: functions.php:149 functions.php:158 functions.php:167 functions.php:176
+#: functions.php:185
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:156
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: functions.php:165
+msgid "Footer Widget Area 3"
+msgstr ""
+
+#: functions.php:174
+msgid "Footer Widget Area 4"
+msgstr ""
+
+#: functions.php:183
+msgid "Footer Widget Area 5"
+msgstr ""
+
+#: header.php:40
+msgid "loader"
+msgstr ""
+
+#: image.php:23
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:23
+msgid "Next Image"
+msgstr ""
+
+#: image.php:85
+msgctxt "Parent post link"
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-"
+"title\">%title</span>"
+msgstr ""
+
+#: inc/admin/admin-function.php:19
+msgid "Header Style 1"
+msgstr ""
+
+#: inc/admin/admin-function.php:20
+msgid "Header Style 2"
+msgstr ""
+
+#: inc/admin/admin-function.php:21
+msgid "Header Style 3"
+msgstr ""
+
+#: inc/admin/admin-function.php:22
+msgid "Header Style 4"
+msgstr ""
+
+#: inc/admin/admin-function.php:23
+msgid "Header Style 5"
+msgstr ""
+
+#: inc/admin/admin-function.php:24
+msgid "Header Style 6"
+msgstr ""
+
+#: inc/admin/admin-function.php:25
+msgid "Header Style 7"
+msgstr ""
+
+#: inc/admin/admin-function.php:26
+msgid "Header Style 8"
+msgstr ""
+
+#: inc/admin/admin-function.php:27
+msgid "Header Style 9"
+msgstr ""
+
+#: inc/admin/admin-function.php:28
+msgid "Header Style 10"
+msgstr ""
+
+#: inc/admin/admin-function.php:29
+msgid "Header Style 11"
+msgstr ""
+
+#: inc/admin/admin-function.php:39
+msgid "Page Heading Style 1"
+msgstr ""
+
+#: inc/admin/admin-function.php:40
+msgid "Page Heading Style 2"
+msgstr ""
+
+#: inc/admin/admin-function.php:41
+msgid "Page Heading Style 3"
+msgstr ""
+
+#: inc/admin/admin-function.php:42
+msgid "Page Heading Style 4"
+msgstr ""
+
+#: inc/admin/admin-function.php:52
+msgid "Footer Style 1"
+msgstr ""
+
+#: inc/admin/admin-function.php:53
+msgid "Footer Style 2"
+msgstr ""
+
+#: inc/admin/admin-function.php:54
+msgid "Footer Style 3"
+msgstr ""
+
+#: inc/admin/class-admin.php:45 inc/admin/class-admin.php:46
+msgid "EmallShop"
+msgstr ""
+
+#: inc/admin/class-admin.php:54 inc/admin/class-admin.php:55
+msgid "Welcome"
+msgstr ""
+
+#: inc/admin/class-admin.php:61 inc/admin/class-admin.php:62
+#: inc/admin/dashboard/header.php:16
+msgid "System Status"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:15
+msgid "Dashboard"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:17 inc/admin/theme_options.php:38
+#: inc/admin/theme_options.php:39
+msgid "Theme Options"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:22
+msgid "Welcome to"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:24
+msgid ""
+"Thank you for purchasing our premium Emallshop theme. Here you are able\n"
+"            to start creating your awesome web store by importing our dummy "
+"content and theme options."
+msgstr ""
+
+#: inc/admin/dashboard/header.php:27 inc/admin/dashboard/welcome.php:123
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:29 inc/admin/dashboard/welcome.php:87
+#: inc/admin/dashboard/welcome.php:92
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/dashboard/header.php:30
+msgid "Rate our theme"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:22
+msgid ""
+"Please copy and paste this information in your ticket when contacting "
+"support:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:23
+msgid "Get System Report"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:27
+msgid "Please press Ctrl/Cmd+C to copy."
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:35
+msgid "Theme Information"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:41
+msgid "Theme Name:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:45
+msgid "Current Version:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:49
+msgid "Installation Path:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:53
+msgid "Child Theme:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:54
+#: inc/admin/dashboard/system_status.php:64
+#: inc/admin/dashboard/system_status.php:69 inc/admin/theme_options.php:211
+#: inc/admin/theme_options.php:220 inc/admin/theme_options.php:1689
+#: inc/admin/theme_options.php:1707 inc/admin/theme_options.php:1728
+#: inc/admin/theme_options.php:1803 inc/admin/theme_options.php:1825
+#: inc/admin/theme_options.php:2133 inc/admin/theme_options.php:2350
+#: inc/admin/theme_options.php:2359 inc/admin/theme_options.php:2368
+#: inc/admin/theme_options.php:2525 inc/admin/theme_options.php:2534
+#: inc/admin/theme_options.php:2570 inc/admin/theme_options.php:2630
+#: inc/admin/theme_options.php:2650 inc/admin/theme_options.php:2659
+#: inc/admin/theme_options.php:3296 inc/admin/theme_options.php:3306
+#: inc/admin/theme_options.php:3880 inc/meta-boxes.php:212
+#: inc/meta-boxes.php:224
+msgid "No"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:58
+msgid "Child Theme Path:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:63
+msgid "License Activated:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:67
+msgid "emallshop Server Available:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:80
+msgid "WordPress Environment"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:86
+msgid "Home URL:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:90
+msgid "Site URL:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:94
+msgid "WordPress Version:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:98
+msgid "WordPress Multisite:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:102
+msgid "WordPress Memory Limit:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:108
+#, php-format
+msgid ""
+"%1$s - We recommend setting memory to at least <strong>256MB</strong>. <br /"
+"> Please define memory limit in <strong>wp-config.php</strong> file. To "
+"learn how, see: <a href=\"%2$s\" target=\"_blank\">Increasing memory "
+"allocated to PHP.</a>"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:112
+msgid ""
+"Your current memory limit is sufficient, but if you installed many plugins "
+"or need to import demo content, the required memory limit is <strong>256MB.</"
+"strong>"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:119
+msgid "WordPress Debug Mode:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:123
+msgid "Language:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:134
+msgid "Server Environment"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:141
+msgid "Server Info:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:146
+msgid "PHP Version:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:152
+#: inc/admin/dashboard/system_status.php:156
+msgid "Currently:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:153
+msgid "(min: 5.6)"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:154
+msgid "Please contact Host provider to fix it."
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:159
+msgid "Couldn't determine PHP version because phpversion() doesn't exist."
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:165
+msgid "PHP Post Max Size:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:169
+msgid "PHP Time Limit:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:175
+#, php-format
+msgid ""
+"%1$s - We recommend setting max execution time to at least 600. <br /> To "
+"import demo content, <strong>600</strong> seconds of max execution time is "
+"required.<br />See: <a href=\"%2$s\" target=\"_blank\">Increasing max "
+"execution to PHP</a>"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:179
+msgid ""
+"Current time limit is sufficient, but if you need import demo content, the "
+"required time is <strong>600</strong>."
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:186
+msgid "PHP Max Input Vars:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:195
+msgid "ZipArchive:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:199
+msgid "Max Upload Size:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:203
+msgid "MySQL Version:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:207
+msgid "GD Library:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:210
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:212
+msgid "Installed"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:223
+msgid "cURL:"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:226
+msgid "Not Enabled"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:243
+msgid "Active Plugins"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:259
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: inc/admin/dashboard/system_status.php:265
+#, php-format
+msgctxt "admin status"
+msgid "by %s"
+msgstr ""
+
+#: inc/admin/dashboard/theme-options.php:15
+msgid "Pleaes Activete theme license"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:37
+msgid "Activate Theme"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:41
+msgid "No Activated"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:49
+msgid "Deactivate Theme"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:54
+msgid "Activated"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:63
+msgid "Purchase Code"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:69 inc/admin/dashboard/welcome.php:71
+msgid "Purchase code"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:77
+#, php-format
+msgid ""
+"You can learn how to find your purchase key <a href=\"%s\" "
+"target=\"_blank\"> here </a>"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:90
+msgid ""
+"Our documentation is simple and functional wit full details and cover all "
+"essential aspects from beginning to the most advanced parts."
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:100
+msgid "Support"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:103
+msgid ""
+"emallshop theme comes with 6 months of free support for every license you "
+"purchase. Support can be extended through subscriptions via ThemeForest."
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:105
+msgid "Send Request"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:116
+msgid "Installation Required Plugins"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:122
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:124
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: inc/admin/dashboard/welcome.php:125
+msgid "Action"
+msgstr ""
+
+#: inc/admin/theme_options.php:67
+msgid "General Settings"
+msgstr ""
+
+#: inc/admin/theme_options.php:74
+msgid "Theme Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:75
+msgid "Choose theme wide or boxed layout."
+msgstr ""
+
+#: inc/admin/theme_options.php:92
+msgid "Page Width"
+msgstr ""
+
+#: inc/admin/theme_options.php:93
+msgid "Choose one of the pre-defined widths or enter custom one."
+msgstr ""
+
+#: inc/admin/theme_options.php:103
+msgid "Pre-defined Page Width"
+msgstr ""
+
+#: inc/admin/theme_options.php:105
+msgid "Wide Screen"
+msgstr ""
+
+#: inc/admin/theme_options.php:106
+msgid "NoteBook"
+msgstr ""
+
+#: inc/admin/theme_options.php:114
+msgid "Custom Page Width"
+msgstr ""
+
+#: inc/admin/theme_options.php:123
+msgid "Header Logo"
+msgstr ""
+
+#: inc/admin/theme_options.php:125
+msgid "Upload header logo."
+msgstr ""
+
+#: inc/admin/theme_options.php:132
+msgid "Sticky Header Logo"
+msgstr ""
+
+#: inc/admin/theme_options.php:134
+msgid "Upload sticky header logo."
+msgstr ""
+
+#: inc/admin/theme_options.php:141
+msgid "Favicon Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:143
+msgid "Upload site favicon icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:149
+msgid "Back To Top Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:150
+msgid "Show back to top button."
+msgstr ""
+
+#: inc/admin/theme_options.php:152 inc/admin/theme_options.php:161
+#: inc/admin/theme_options.php:1536 inc/admin/theme_options.php:1557
+msgid "On"
+msgstr ""
+
+#: inc/admin/theme_options.php:153 inc/admin/theme_options.php:162
+#: inc/admin/theme_options.php:1537 inc/admin/theme_options.php:1558
+#: inc/admin/theme_options.php:1899
+msgid "Off"
+msgstr ""
+
+#: inc/admin/theme_options.php:158
+msgid "Login Register Popup"
+msgstr ""
+
+#: inc/admin/theme_options.php:159
+msgid "Show login register in popen or redirect on My Account page."
+msgstr ""
+
+#: inc/admin/theme_options.php:167
+msgid "Tracking Code"
+msgstr ""
+
+#: inc/admin/theme_options.php:168
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: inc/admin/theme_options.php:178
+msgid "Mobile"
+msgstr ""
+
+#: inc/admin/theme_options.php:185
+msgid "Product Columns On Mobile"
+msgstr ""
+
+#: inc/admin/theme_options.php:186
+msgid "How many product you want to show per row on mobile?"
+msgstr ""
+
+#: inc/admin/theme_options.php:188
+msgid "1"
+msgstr ""
+
+#: inc/admin/theme_options.php:189
+msgid "2"
+msgstr ""
+
+#: inc/admin/theme_options.php:201
+msgid "Footer Navbar"
+msgstr ""
+
+#: inc/admin/theme_options.php:208
+msgid "Mobile Bottom Navbar"
+msgstr ""
+
+#: inc/admin/theme_options.php:209
+msgid "Show mobile bottom navbar in mobile device."
+msgstr ""
+
+#: inc/admin/theme_options.php:210 inc/admin/theme_options.php:219
+#: inc/admin/theme_options.php:1688 inc/admin/theme_options.php:1706
+#: inc/admin/theme_options.php:1727 inc/admin/theme_options.php:1802
+#: inc/admin/theme_options.php:1824 inc/admin/theme_options.php:2132
+#: inc/admin/theme_options.php:2349 inc/admin/theme_options.php:2358
+#: inc/admin/theme_options.php:2367 inc/admin/theme_options.php:2524
+#: inc/admin/theme_options.php:2533 inc/admin/theme_options.php:2569
+#: inc/admin/theme_options.php:2629 inc/admin/theme_options.php:2649
+#: inc/admin/theme_options.php:2658 inc/admin/theme_options.php:3295
+#: inc/admin/theme_options.php:3305 inc/meta-boxes.php:211
+#: inc/meta-boxes.php:223
+msgid "Yes"
+msgstr ""
+
+#: inc/admin/theme_options.php:217
+msgid "Navbar Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:218
+msgid "Show navbar label."
+msgstr ""
+
+#: inc/admin/theme_options.php:226
+msgid "Product Page Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:227
+msgid ""
+"Enable/Disable Sticky Add to Cart/Buy Now button on single product page."
+msgstr ""
+
+#: inc/admin/theme_options.php:228 inc/admin/theme_options.php:237
+#: inc/admin/theme_options.php:246 inc/admin/theme_options.php:707
+#: inc/admin/theme_options.php:1367 inc/admin/theme_options.php:1375
+#: inc/admin/theme_options.php:1527 inc/admin/theme_options.php:1834
+#: inc/admin/theme_options.php:1861 inc/admin/theme_options.php:2186
+#: inc/admin/theme_options.php:2340 inc/admin/theme_options.php:2780
+#: inc/admin/theme_options.php:2789 inc/admin/theme_options.php:2798
+#: inc/admin/theme_options.php:3051 inc/admin/theme_options.php:3070
+#: inc/admin/theme_options.php:3783 inc/admin/theme_options.php:3813
+#: inc/admin/theme_options.php:3870 inc/admin/theme_options.php:3895
+#: inc/admin/theme_options.php:3985 inc/admin/theme_options.php:4066
+#: inc/admin/theme_options.php:4143 inc/admin/theme_options.php:4151
+#: inc/admin/theme_options.php:4159
+msgid "Enable"
+msgstr ""
+
+#: inc/admin/theme_options.php:229 inc/admin/theme_options.php:238
+#: inc/admin/theme_options.php:247 inc/admin/theme_options.php:708
+#: inc/admin/theme_options.php:1368 inc/admin/theme_options.php:1376
+#: inc/admin/theme_options.php:1528 inc/admin/theme_options.php:1835
+#: inc/admin/theme_options.php:1862 inc/admin/theme_options.php:2187
+#: inc/admin/theme_options.php:2341 inc/admin/theme_options.php:2781
+#: inc/admin/theme_options.php:2790 inc/admin/theme_options.php:2799
+#: inc/admin/theme_options.php:3052 inc/admin/theme_options.php:3071
+#: inc/admin/theme_options.php:3784 inc/admin/theme_options.php:3814
+#: inc/admin/theme_options.php:3871 inc/admin/theme_options.php:3896
+#: inc/admin/theme_options.php:3986 inc/admin/theme_options.php:4067
+#: inc/admin/theme_options.php:4144 inc/admin/theme_options.php:4152
+#: inc/admin/theme_options.php:4160
+msgid "Disable"
+msgstr ""
+
+#: inc/admin/theme_options.php:235
+msgid "Cart Page Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:236
+msgid "Enable/Disable Sticky Proceed To Checkout button on cart page."
+msgstr ""
+
+#: inc/admin/theme_options.php:244
+msgid "Checkout Page Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:245
+msgid "Enable/Disable Sticky Place Order button on checkout page."
+msgstr ""
+
+#: inc/admin/theme_options.php:253
+msgid "Navbar Elements"
+msgstr ""
+
+#: inc/admin/theme_options.php:257 inc/admin/theme_options.php:281
+#: inc/theme-function.php:72 inc/theme-function.php:80
+#: inc/theme-function.php:1686 inc/theme-function.php:1699
+msgid "Shop"
+msgstr ""
+
+#: inc/admin/theme_options.php:258 inc/theme-function.php:73
+#: inc/theme-function.php:81 inc/theme-function.php:1687
+#: inc/theme-function.php:1700
+msgid "Sidebar/Filters"
+msgstr ""
+
+#: inc/admin/theme_options.php:259 inc/admin/theme_options.php:295
+#: inc/theme-function.php:74 inc/theme-function.php:82
+#: inc/theme-function.php:528 inc/theme-function.php:1688
+#: inc/theme-function.php:1701 inc/theme-function.php:1734
+msgid "Wishlist"
+msgstr ""
+
+#: inc/admin/theme_options.php:260 inc/admin/theme_options.php:309
+#: inc/admin/theme_options.php:2620 inc/theme-function.php:75
+#: inc/theme-function.php:83 inc/theme-function.php:426
+#: inc/theme-function.php:685 inc/theme-function.php:1689
+#: inc/theme-function.php:1702 inc/theme-function.php:1747
+msgid "Cart"
+msgstr ""
+
+#: inc/admin/theme_options.php:261 inc/admin/theme_options.php:323
+#: inc/theme-function.php:76 inc/theme-function.php:84
+#: inc/theme-function.php:1690 inc/theme-function.php:1703
+#: inc/theme-function.php:1759
+msgid "Account"
+msgstr ""
+
+#: inc/admin/theme_options.php:264 inc/admin/theme_options.php:337
+#: inc/breadcrumbs.php:19 inc/theme-function.php:1775
+msgid "Home"
+msgstr ""
+
+#: inc/admin/theme_options.php:265 inc/admin/theme_options.php:351
+#: inc/admin/theme_options.php:993 inc/theme-function.php:800
+#: inc/theme-function.php:821 inc/theme-function.php:1784
+msgid "Menu"
+msgstr ""
+
+#: inc/admin/theme_options.php:266 inc/admin/theme_options.php:365
+#: inc/theme-function.php:436 inc/theme-function.php:549
+#: inc/theme-function.php:1801
+msgid "Compare"
+msgstr ""
+
+#: inc/admin/theme_options.php:267 inc/admin/theme_options.php:393
+#: inc/theme-function.php:1841
+msgid "Order"
+msgstr ""
+
+#: inc/admin/theme_options.php:268 inc/admin/theme_options.php:407
+#: inc/theme-function.php:1855
+msgid "Order Tracking"
+msgstr ""
+
+#: inc/admin/theme_options.php:269 inc/admin/theme_options.php:435
+#: inc/admin/theme_options.php:2820 inc/theme-function.php:1861
+msgid "Blog"
+msgstr ""
+
+#: inc/admin/theme_options.php:270
+msgid "Custom Link 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:271
+msgid "Custom Link 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:272
+msgid "Custom Link 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:279
+msgid "Shop Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:280
+msgid "Enter shop navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:286
+msgid "Shop Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:287 inc/admin/theme_options.php:343
+msgid "Enter font awesome icon class. Ex. fa fa-home"
+msgstr ""
+
+#: inc/admin/theme_options.php:288 inc/admin/theme_options.php:344
+msgid "fa fa-home"
+msgstr ""
+
+#: inc/admin/theme_options.php:293
+msgid "Wishlist Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:294
+msgid "Enter wishlist navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:300
+msgid "Wishlist Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:301
+msgid "Enter font awesome icon class. Ex. fa fa-heart"
+msgstr ""
+
+#: inc/admin/theme_options.php:302
+msgid "fa fa-heart"
+msgstr ""
+
+#: inc/admin/theme_options.php:307
+msgid "Cart Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:308
+msgid "Enter cart navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:314
+msgid "Cart Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:315
+msgid "Enter font awesome icon class. Ex. fa fa-shopping-cart"
+msgstr ""
+
+#: inc/admin/theme_options.php:316
+msgid "fa fa-shopping-cart"
+msgstr ""
+
+#: inc/admin/theme_options.php:321
+msgid "Account Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:322
+msgid "Enter account navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:328
+msgid "Account Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:329
+msgid "Enter font awesome icon class. Ex. fa fa-user"
+msgstr ""
+
+#: inc/admin/theme_options.php:330
+msgid "fa fa-user"
+msgstr ""
+
+#: inc/admin/theme_options.php:335
+msgid "Home Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:336
+msgid "Enter home navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:342
+msgid "Home Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:349
+msgid "Menu Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:350
+msgid "Enter menu navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:356
+msgid "Menu Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:357
+msgid "Enter font awesome icon class. Ex. fa fa-bars"
+msgstr ""
+
+#: inc/admin/theme_options.php:358
+msgid "fa fa-bars"
+msgstr ""
+
+#: inc/admin/theme_options.php:363
+msgid "Compare Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:364
+msgid "Enter compare navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:370
+msgid "Compare Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:371
+msgid "Enter font awesome icon class. Ex. fa fa-refresh"
+msgstr ""
+
+#: inc/admin/theme_options.php:372
+msgid "fa fa-refresh"
+msgstr ""
+
+#: inc/admin/theme_options.php:377
+msgid "Filter Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:378
+msgid "Enter filter navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:379 inc/theme-function.php:1814
+msgid "Filters"
+msgstr ""
+
+#: inc/admin/theme_options.php:384
+msgid "Filter Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:385
+msgid "Enter font awesome icon class. Ex. fa fa-sliders"
+msgstr ""
+
+#: inc/admin/theme_options.php:386
+msgid "fa fa-sliders"
+msgstr ""
+
+#: inc/admin/theme_options.php:391
+msgid "Order Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:392
+msgid "Enter order navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:398
+msgid "Order Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:399
+msgid "Enter font awesome icon class. Ex. fa fa-file-text-o"
+msgstr ""
+
+#: inc/admin/theme_options.php:400
+msgid "fa fa-file-text-o"
+msgstr ""
+
+#: inc/admin/theme_options.php:405
+msgid "Order Tracking Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:406
+msgid "Enter order tracking navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:412
+msgid "Order Tracking Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:413
+msgid "Enter font awesome icon class. Ex. fa fa-plane"
+msgstr ""
+
+#: inc/admin/theme_options.php:414
+msgid "fa fa-plane"
+msgstr ""
+
+#: inc/admin/theme_options.php:419
+msgid "Sidebar Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:420
+msgid "Enter sidebar navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:421 inc/theme-function.php:1819
+msgid "Sidebar"
+msgstr ""
+
+#: inc/admin/theme_options.php:426
+msgid "Sidebar Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:427
+msgid "Enter font awesome icon class. Ex. fa fa-columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:428
+msgid "fa fa-columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:433
+msgid "Blog Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:434
+msgid "Enter blog navbar label"
+msgstr ""
+
+#: inc/admin/theme_options.php:440
+msgid "Blog Label Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:441
+msgid "Enter font awesome icon class. Ex. fa fa-pencil-square"
+msgstr ""
+
+#: inc/admin/theme_options.php:442
+msgid "fa fa-pencil-square"
+msgstr ""
+
+#: inc/admin/theme_options.php:448
+msgid "Custom Links"
+msgstr ""
+
+#: inc/admin/theme_options.php:453
+msgid "Custom Link 1 Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:454
+msgid "Enter custom link 1 label."
+msgstr ""
+
+#: inc/admin/theme_options.php:455
+msgid "Custom 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:460
+msgid "Custom Link 1 Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:461 inc/admin/theme_options.php:482
+#: inc/admin/theme_options.php:503
+msgid "Enter font awesome icon class."
+msgstr ""
+
+#: inc/admin/theme_options.php:467
+msgid "Custom Link 1 URL"
+msgstr ""
+
+#: inc/admin/theme_options.php:468
+msgid "Enter custom link 1 url."
+msgstr ""
+
+#: inc/admin/theme_options.php:474
+msgid "Custom Link 2 Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:475
+msgid "Enter custom link 2 label."
+msgstr ""
+
+#: inc/admin/theme_options.php:476
+msgid "Custom 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:481
+msgid "Custom Link 2 Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:488
+msgid "Custom Link 2 URL"
+msgstr ""
+
+#: inc/admin/theme_options.php:489
+msgid "Enter custom link 2 url."
+msgstr ""
+
+#: inc/admin/theme_options.php:495
+msgid "Custom Link 3 Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:496
+msgid "Enter custom link 3 label."
+msgstr ""
+
+#: inc/admin/theme_options.php:497
+msgid "Custom 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:502
+msgid "Custom Link 3 Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:509
+msgid "Custom Link 3 URL"
+msgstr ""
+
+#: inc/admin/theme_options.php:510
+msgid "Enter custom link 3 url."
+msgstr ""
+
+#: inc/admin/theme_options.php:520
+msgid "Colors"
+msgstr ""
+
+#: inc/admin/theme_options.php:527
+msgid "Google Theme Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:528
+#, php-format
+msgid ""
+"Applied only on mobile devices Android on chrome browser toolbar, <a "
+"href=\"%s\" target=\"_blank\">click here</a> plugin."
+msgstr ""
+
+#: inc/admin/theme_options.php:544
+msgid "Theme Styling"
+msgstr ""
+
+#: inc/admin/theme_options.php:552
+msgid "Body"
+msgstr ""
+
+#: inc/admin/theme_options.php:559
+msgid "Primary Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:565
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:571
+msgid "Body Background"
+msgstr ""
+
+#: inc/admin/theme_options.php:572
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:586
+msgid "Wrapper Background"
+msgstr ""
+
+#: inc/admin/theme_options.php:587
+msgid "Body wrapper/content background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:601 inc/admin/theme_options.php:735
+#: inc/admin/theme_options.php:813 inc/admin/theme_options.php:831
+#: inc/admin/theme_options.php:890 inc/admin/theme_options.php:950
+#: inc/admin/theme_options.php:1006 inc/admin/theme_options.php:1066
+#: inc/admin/theme_options.php:1168 inc/admin/theme_options.php:1259
+#: inc/admin/theme_options.php:3961
+msgid "Text Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:607
+msgid "Heading/Title Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:608
+msgid "Body heading color h1, h2, h3, h4, h5, and h6."
+msgstr ""
+
+#: inc/admin/theme_options.php:614 inc/admin/theme_options.php:741
+#: inc/admin/theme_options.php:819 inc/admin/theme_options.php:878
+#: inc/admin/theme_options.php:956 inc/admin/theme_options.php:1174
+msgid "Input Field Background( TextBox, SelectBox, etc..)"
+msgstr ""
+
+#: inc/admin/theme_options.php:620 inc/admin/theme_options.php:747
+#: inc/admin/theme_options.php:825 inc/admin/theme_options.php:884
+#: inc/admin/theme_options.php:962 inc/admin/theme_options.php:1180
+msgid "Input Field Color( TextBox, SelectBox, etc..)"
+msgstr ""
+
+#: inc/admin/theme_options.php:626 inc/admin/theme_options.php:753
+#: inc/admin/theme_options.php:896 inc/admin/theme_options.php:968
+#: inc/admin/theme_options.php:1012 inc/admin/theme_options.php:1072
+#: inc/admin/theme_options.php:1186 inc/admin/theme_options.php:1265
+msgid "Link Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:636
+msgid "Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:637
+msgid "General border of theme."
+msgstr ""
+
+#: inc/admin/theme_options.php:650
+msgid "Border Radius"
+msgstr ""
+
+#: inc/admin/theme_options.php:651
+msgid "General border radius of theme."
+msgstr ""
+
+#: inc/admin/theme_options.php:665
+msgid "Body Wrapper Padding"
+msgstr ""
+
+#: inc/admin/theme_options.php:666
+msgid "Default padding in px: 0 0"
+msgstr ""
+
+#: inc/admin/theme_options.php:677 inc/admin/theme_options.php:1350
+#: inc/admin/theme_options.php:3930
+msgid "Header"
+msgstr ""
+
+#: inc/admin/theme_options.php:685
+msgid "Header Wrapper Background."
+msgstr ""
+
+#: inc/admin/theme_options.php:690 inc/admin/theme_options.php:720
+#: inc/admin/theme_options.php:798 inc/admin/theme_options.php:928
+#: inc/admin/theme_options.php:1000 inc/admin/theme_options.php:1044
+#: inc/admin/theme_options.php:1125 inc/admin/theme_options.php:1146
+#: inc/admin/theme_options.php:1232 inc/admin/theme_options.php:4024
+msgid "Background Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:691
+msgid "Header wrapper background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:705
+msgid "Header Overlay"
+msgstr ""
+
+#: inc/admin/theme_options.php:706
+msgid ""
+"Header overlay on home page slider. Note:- When you use header overlay on "
+"home page slider, at this time no any effect background color on topbar, "
+"header and navigation in home page header. But background color  work/effect "
+"in other all pages."
+msgstr ""
+
+#: inc/admin/theme_options.php:715
+msgid "Header Middle Background."
+msgstr ""
+
+#: inc/admin/theme_options.php:721
+msgid "Header middle background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:763
+msgid "Header Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:764 inc/admin/theme_options.php:842
+msgid "Set Header border."
+msgstr ""
+
+#: inc/admin/theme_options.php:781 inc/admin/theme_options.php:1100
+#: inc/admin/theme_options.php:1213 inc/admin/theme_options.php:1292
+msgid "Content Padding"
+msgstr ""
+
+#: inc/admin/theme_options.php:782
+msgid "Default padding in px: 24 24"
+msgstr ""
+
+#: inc/admin/theme_options.php:793 inc/admin/theme_options.php:1366
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/admin/theme_options.php:799
+msgid "Sticky Header background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:841
+msgid "Sticky Header Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:856
+msgid "Topbar"
+msgstr ""
+
+#: inc/admin/theme_options.php:863
+msgid " Topbar Background"
+msgstr ""
+
+#: inc/admin/theme_options.php:864
+msgid "Topbar background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:906
+msgid "Topbar Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:907
+msgid "Set topbar border."
+msgstr ""
+
+#: inc/admin/theme_options.php:921
+msgid "Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:929
+msgid "Navigation background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:943
+msgid "Secondary Background Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:944
+msgid "Secondary navigation background color."
+msgstr ""
+
+#: inc/admin/theme_options.php:978
+msgid "Navigation Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:979
+msgid "Set Navigation border."
+msgstr ""
+
+#: inc/admin/theme_options.php:1022
+msgid "Menu Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:1023
+msgid "Set Menu border."
+msgstr ""
+
+#: inc/admin/theme_options.php:1037 inc/admin/theme_options.php:1680
+msgid "Page Heading"
+msgstr ""
+
+#: inc/admin/theme_options.php:1045
+msgid "Page heading background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:1059
+msgid "Page Heading/Title Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:1060
+msgid "Page heading/title color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1082
+msgid "Page Heading Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:1083
+msgid "Set page heading border."
+msgstr ""
+
+#: inc/admin/theme_options.php:1101
+msgid "Default padding in px: 10 10"
+msgstr ""
+
+#: inc/admin/theme_options.php:1112 inc/admin/theme_options.php:1737
+#: inc/admin/theme_options.php:3931
+msgid "Footer"
+msgstr ""
+
+#: inc/admin/theme_options.php:1120
+msgid "Footer Wrapper Background."
+msgstr ""
+
+#: inc/admin/theme_options.php:1126
+msgid "Footer wrapper background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:1141
+msgid "Footer Top/Middle Background."
+msgstr ""
+
+#: inc/admin/theme_options.php:1147
+msgid "Footer top/middle background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:1161
+msgid "Heading Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:1162
+msgid "Footer heading color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1196
+msgid "Footer Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:1214
+msgid "Default padding in px: 42 42"
+msgstr ""
+
+#: inc/admin/theme_options.php:1225 inc/admin/theme_options.php:1764
+msgid "Copyright"
+msgstr ""
+
+#: inc/admin/theme_options.php:1233
+msgid "Copyright background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:1247
+msgid "Background Opacity"
+msgstr ""
+
+#: inc/admin/theme_options.php:1248
+msgid "Copyright background opacity."
+msgstr ""
+
+#: inc/admin/theme_options.php:1275
+msgid "Copyright Border"
+msgstr ""
+
+#: inc/admin/theme_options.php:1293
+msgid "Default padding: 14 14"
+msgstr ""
+
+#: inc/admin/theme_options.php:1305
+msgid "Theme Typography"
+msgstr ""
+
+#: inc/admin/theme_options.php:1313
+msgid "Google Font Character Sets"
+msgstr ""
+
+#: inc/admin/theme_options.php:1314
+msgid "Select google font character sets"
+msgstr ""
+
+#: inc/admin/theme_options.php:1329
+msgid "Body Font"
+msgstr ""
+
+#: inc/admin/theme_options.php:1358
+msgid "Header Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:1359
+msgid "Choose Your header style/layout."
+msgstr ""
+
+#: inc/admin/theme_options.php:1374
+msgid "Sticky Header In Mobile"
+msgstr ""
+
+#: inc/admin/theme_options.php:1383
+msgid "Select Sticky Header Part"
+msgstr ""
+
+#: inc/admin/theme_options.php:1385
+msgid "Topbar Header"
+msgstr ""
+
+#: inc/admin/theme_options.php:1386
+msgid "Middle Header"
+msgstr ""
+
+#: inc/admin/theme_options.php:1387
+msgid "Navigation Header"
+msgstr ""
+
+#: inc/admin/theme_options.php:1395
+msgid "Show Header Topbar"
+msgstr ""
+
+#: inc/admin/theme_options.php:1396
+msgid "Show header topbar on header."
+msgstr ""
+
+#: inc/admin/theme_options.php:1397 inc/admin/theme_options.php:1406
+#: inc/admin/theme_options.php:1416 inc/admin/theme_options.php:1426
+#: inc/admin/theme_options.php:1444 inc/admin/theme_options.php:1462
+#: inc/admin/theme_options.php:1480 inc/admin/theme_options.php:1490
+#: inc/admin/theme_options.php:1508 inc/admin/theme_options.php:1574
+#: inc/admin/theme_options.php:1583 inc/admin/theme_options.php:1592
+#: inc/admin/theme_options.php:1655 inc/admin/theme_options.php:1773
+#: inc/admin/theme_options.php:1843 inc/admin/theme_options.php:1852
+#: inc/admin/theme_options.php:1870 inc/admin/theme_options.php:1878
+#: inc/admin/theme_options.php:1920 inc/admin/theme_options.php:1954
+#: inc/admin/theme_options.php:1977 inc/admin/theme_options.php:2073
+#: inc/admin/theme_options.php:2204 inc/admin/theme_options.php:2212
+#: inc/admin/theme_options.php:2220 inc/admin/theme_options.php:2229
+#: inc/admin/theme_options.php:2237 inc/admin/theme_options.php:2246
+#: inc/admin/theme_options.php:2255 inc/admin/theme_options.php:2264
+#: inc/admin/theme_options.php:2273 inc/admin/theme_options.php:2282
+#: inc/admin/theme_options.php:2376 inc/admin/theme_options.php:2384
+#: inc/admin/theme_options.php:2393 inc/admin/theme_options.php:2402
+#: inc/admin/theme_options.php:2411 inc/admin/theme_options.php:2420
+#: inc/admin/theme_options.php:2428 inc/admin/theme_options.php:2437
+#: inc/admin/theme_options.php:2445 inc/admin/theme_options.php:2453
+#: inc/admin/theme_options.php:2472 inc/admin/theme_options.php:2494
+#: inc/admin/theme_options.php:2502 inc/admin/theme_options.php:2541
+#: inc/admin/theme_options.php:2549 inc/admin/theme_options.php:2708
+#: inc/admin/theme_options.php:2740 inc/admin/theme_options.php:2760
+#: inc/admin/theme_options.php:2869 inc/admin/theme_options.php:2877
+#: inc/admin/theme_options.php:2911 inc/admin/theme_options.php:2919
+#: inc/admin/theme_options.php:2927 inc/admin/theme_options.php:2951
+#: inc/admin/theme_options.php:2971 inc/admin/theme_options.php:3018
+#: inc/admin/theme_options.php:3026 inc/admin/theme_options.php:3034
+#: inc/admin/theme_options.php:3060 inc/admin/theme_options.php:3080
+#: inc/admin/theme_options.php:3140 inc/admin/theme_options.php:3148
+#: inc/admin/theme_options.php:3246 inc/admin/theme_options.php:3254
+#: inc/admin/theme_options.php:3262 inc/admin/theme_options.php:3270
+#: inc/admin/theme_options.php:3314 inc/admin/theme_options.php:3323
+#: inc/admin/theme_options.php:3385 inc/admin/theme_options.php:3393
+#: inc/admin/theme_options.php:3453 inc/admin/theme_options.php:3461
+#: inc/admin/theme_options.php:3498 inc/admin/theme_options.php:3626
+#: inc/admin/theme_options.php:3645 inc/admin/theme_options.php:3654
+#: inc/admin/theme_options.php:3663 inc/admin/theme_options.php:3672
+#: inc/admin/theme_options.php:3681 inc/admin/theme_options.php:3690
+#: inc/admin/theme_options.php:3699 inc/admin/theme_options.php:3708
+#: inc/admin/theme_options.php:3717 inc/admin/theme_options.php:3726
+#: inc/admin/theme_options.php:3735 inc/admin/theme_options.php:3744
+#: inc/admin/theme_options.php:3754
+msgid "Show"
+msgstr ""
+
+#: inc/admin/theme_options.php:1398 inc/admin/theme_options.php:1407
+#: inc/admin/theme_options.php:1417 inc/admin/theme_options.php:1427
+#: inc/admin/theme_options.php:1445 inc/admin/theme_options.php:1463
+#: inc/admin/theme_options.php:1481 inc/admin/theme_options.php:1491
+#: inc/admin/theme_options.php:1509 inc/admin/theme_options.php:1575
+#: inc/admin/theme_options.php:1584 inc/admin/theme_options.php:1593
+#: inc/admin/theme_options.php:1656 inc/admin/theme_options.php:1774
+#: inc/admin/theme_options.php:1844 inc/admin/theme_options.php:1853
+#: inc/admin/theme_options.php:1871 inc/admin/theme_options.php:1879
+#: inc/admin/theme_options.php:1921 inc/admin/theme_options.php:1955
+#: inc/admin/theme_options.php:1978 inc/admin/theme_options.php:2074
+#: inc/admin/theme_options.php:2205 inc/admin/theme_options.php:2213
+#: inc/admin/theme_options.php:2221 inc/admin/theme_options.php:2230
+#: inc/admin/theme_options.php:2238 inc/admin/theme_options.php:2247
+#: inc/admin/theme_options.php:2256 inc/admin/theme_options.php:2265
+#: inc/admin/theme_options.php:2274 inc/admin/theme_options.php:2283
+#: inc/admin/theme_options.php:2377 inc/admin/theme_options.php:2385
+#: inc/admin/theme_options.php:2394 inc/admin/theme_options.php:2403
+#: inc/admin/theme_options.php:2412 inc/admin/theme_options.php:2421
+#: inc/admin/theme_options.php:2429 inc/admin/theme_options.php:2438
+#: inc/admin/theme_options.php:2446 inc/admin/theme_options.php:2454
+#: inc/admin/theme_options.php:2473 inc/admin/theme_options.php:2495
+#: inc/admin/theme_options.php:2503 inc/admin/theme_options.php:2542
+#: inc/admin/theme_options.php:2550 inc/admin/theme_options.php:2709
+#: inc/admin/theme_options.php:2741 inc/admin/theme_options.php:2761
+#: inc/admin/theme_options.php:2870 inc/admin/theme_options.php:2878
+#: inc/admin/theme_options.php:2912 inc/admin/theme_options.php:2920
+#: inc/admin/theme_options.php:2928 inc/admin/theme_options.php:2952
+#: inc/admin/theme_options.php:2972 inc/admin/theme_options.php:3019
+#: inc/admin/theme_options.php:3027 inc/admin/theme_options.php:3035
+#: inc/admin/theme_options.php:3061 inc/admin/theme_options.php:3081
+#: inc/admin/theme_options.php:3141 inc/admin/theme_options.php:3149
+#: inc/admin/theme_options.php:3247 inc/admin/theme_options.php:3255
+#: inc/admin/theme_options.php:3263 inc/admin/theme_options.php:3271
+#: inc/admin/theme_options.php:3315 inc/admin/theme_options.php:3324
+#: inc/admin/theme_options.php:3386 inc/admin/theme_options.php:3394
+#: inc/admin/theme_options.php:3454 inc/admin/theme_options.php:3462
+#: inc/admin/theme_options.php:3499 inc/admin/theme_options.php:3627
+#: inc/admin/theme_options.php:3646 inc/admin/theme_options.php:3655
+#: inc/admin/theme_options.php:3664 inc/admin/theme_options.php:3673
+#: inc/admin/theme_options.php:3682 inc/admin/theme_options.php:3691
+#: inc/admin/theme_options.php:3700 inc/admin/theme_options.php:3709
+#: inc/admin/theme_options.php:3718 inc/admin/theme_options.php:3727
+#: inc/admin/theme_options.php:3736 inc/admin/theme_options.php:3745
+#: inc/admin/theme_options.php:3755
+msgid "Hide"
+msgstr ""
+
+#: inc/admin/theme_options.php:1404
+msgid "Show Language Switcher"
+msgstr ""
+
+#: inc/admin/theme_options.php:1405
+msgid "Show language switcher on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1414
+msgid "Show Currency Switcher"
+msgstr ""
+
+#: inc/admin/theme_options.php:1415
+msgid "Show currency switcher on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1424
+msgid "Show Topbar Email"
+msgstr ""
+
+#: inc/admin/theme_options.php:1425
+msgid "Show email address on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1434
+msgid "Enter Topbar Email"
+msgstr ""
+
+#: inc/admin/theme_options.php:1435
+msgid "Enter topbar email address."
+msgstr ""
+
+#: inc/admin/theme_options.php:1442
+msgid "Show Topbar Number"
+msgstr ""
+
+#: inc/admin/theme_options.php:1443
+msgid "Show mobile number on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1452
+msgid "Enter Topbar Number"
+msgstr ""
+
+#: inc/admin/theme_options.php:1453
+msgid "Enter topbar mobile number."
+msgstr ""
+
+#: inc/admin/theme_options.php:1460
+msgid "Show Topbar News"
+msgstr ""
+
+#: inc/admin/theme_options.php:1461
+msgid "Show news on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1470
+msgid "Enter Topbar News"
+msgstr ""
+
+#: inc/admin/theme_options.php:1471
+msgid "Enter topbar news in \"a\" tab."
+msgstr ""
+
+#: inc/admin/theme_options.php:1478
+msgid "Show Topbar Social Link"
+msgstr ""
+
+#: inc/admin/theme_options.php:1479
+msgid "Show social link on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1488
+msgid "Show Topbar Welcome Message"
+msgstr ""
+
+#: inc/admin/theme_options.php:1489
+msgid "Show welcome message on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1498
+msgid "Enter Topbar Welcome Message"
+msgstr ""
+
+#: inc/admin/theme_options.php:1499
+msgid "Enter topbar welcome message."
+msgstr ""
+
+#: inc/admin/theme_options.php:1506
+msgid "Show Topbar Help"
+msgstr ""
+
+#: inc/admin/theme_options.php:1507
+msgid "Show help on topbar."
+msgstr ""
+
+#: inc/admin/theme_options.php:1516
+msgid "Enter Help Link"
+msgstr ""
+
+#: inc/admin/theme_options.php:1517
+msgid "Enter help link. of topbar"
+msgstr ""
+
+#: inc/admin/theme_options.php:1525
+msgid "Product Live/Ajax Search"
+msgstr ""
+
+#: inc/admin/theme_options.php:1526
+msgid "Live product search or not on header."
+msgstr ""
+
+#: inc/admin/theme_options.php:1534
+msgid "Show Categories Dropdown"
+msgstr ""
+
+#: inc/admin/theme_options.php:1535
+msgid "Show categories dropdow in product search."
+msgstr ""
+
+#: inc/admin/theme_options.php:1543
+msgid "Search Categories Dropdown"
+msgstr ""
+
+#: inc/admin/theme_options.php:1544
+msgid "Display categories in search categories dropdow."
+msgstr ""
+
+#: inc/admin/theme_options.php:1546
+msgid "Show All Categories"
+msgstr ""
+
+#: inc/admin/theme_options.php:1547
+msgid "Only Parent(top level) Categories"
+msgstr ""
+
+#: inc/admin/theme_options.php:1555
+msgid "Show Categories Hierarchical"
+msgstr ""
+
+#: inc/admin/theme_options.php:1556
+msgid ""
+"Show categories in hierarchical (Must be need to select above option Show "
+"All Categories)."
+msgstr ""
+
+#: inc/admin/theme_options.php:1565
+msgid "Search Palceholder Text"
+msgstr ""
+
+#: inc/admin/theme_options.php:1566
+msgid "Enter search palceholder text"
+msgstr ""
+
+#: inc/admin/theme_options.php:1572
+msgid "Show Cart"
+msgstr ""
+
+#: inc/admin/theme_options.php:1573
+msgid "Show cart on header."
+msgstr ""
+
+#: inc/admin/theme_options.php:1581
+msgid "Show Wishlist"
+msgstr ""
+
+#: inc/admin/theme_options.php:1582
+msgid "Show wishlist on header."
+msgstr ""
+
+#: inc/admin/theme_options.php:1590
+msgid "Show Compare"
+msgstr ""
+
+#: inc/admin/theme_options.php:1591
+msgid "Show compare on header."
+msgstr ""
+
+#: inc/admin/theme_options.php:1599
+msgid "Header Services Icon 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:1605
+msgid "Enter Service Title 1."
+msgstr ""
+
+#: inc/admin/theme_options.php:1611
+msgid "Enter Service Sort Description 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:1617 inc/admin/theme_options.php:1635
+msgid "Header Services Icon 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:1623
+msgid "Enter Service Title 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:1624 inc/theme-function.php:643
+#: inc/theme-function.php:652
+msgid "Free Shipping"
+msgstr ""
+
+#: inc/admin/theme_options.php:1629
+msgid "Enter Service Sort Description 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:1630 inc/theme-function.php:644
+msgid "all order over $100."
+msgstr ""
+
+#: inc/admin/theme_options.php:1641
+msgid "Enter Service Title 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:1642 inc/theme-function.php:653
+msgid "Return & Exchange"
+msgstr ""
+
+#: inc/admin/theme_options.php:1647
+msgid "Enter Service Sort Description 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:1653
+msgid "Show Categories Menu"
+msgstr ""
+
+#: inc/admin/theme_options.php:1654
+msgid "Show shopping categories menu on header or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:1662
+msgid "Open Categories(Vertical) Menu In Home Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:1663
+msgid "Categories(Vertical) menu open in home page. See demo ex. Electronic."
+msgstr ""
+
+#: inc/admin/theme_options.php:1664
+msgid "Open"
+msgstr ""
+
+#: inc/admin/theme_options.php:1665
+msgid "Close"
+msgstr ""
+
+#: inc/admin/theme_options.php:1671
+msgid "Shopping Categories Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:1687
+msgid "Show Page Heading"
+msgstr ""
+
+#: inc/admin/theme_options.php:1696
+msgid "Page Heading Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:1697
+msgid "Choose Your page heading style/layout."
+msgstr ""
+
+#: inc/admin/theme_options.php:1705 inc/admin/theme_options.php:3147
+#: inc/admin/theme_options.php:3392 inc/admin/theme_options.php:3460
+msgid "Show Page Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:1714
+msgid "Show Title In Page Heading Or Page Content"
+msgstr ""
+
+#: inc/admin/theme_options.php:1715
+msgid "Show page title in page heading area or page content area."
+msgstr ""
+
+#: inc/admin/theme_options.php:1717
+msgid "In  Page Heading"
+msgstr ""
+
+#: inc/admin/theme_options.php:1718
+msgid "In Page Content"
+msgstr ""
+
+#: inc/admin/theme_options.php:1726 inc/admin/theme_options.php:3139
+#: inc/admin/theme_options.php:3384 inc/admin/theme_options.php:3452
+msgid "Show Page Breadcrumb"
+msgstr ""
+
+#: inc/admin/theme_options.php:1745
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:1746
+msgid "Choose Your footer style/layout."
+msgstr ""
+
+#: inc/admin/theme_options.php:1757
+msgid "Select Your Popular Categories"
+msgstr ""
+
+#: inc/admin/theme_options.php:1758
+msgid ""
+"Select your populare categories and display on footer. But need to be first "
+"select footer style third. "
+msgstr ""
+
+#: inc/admin/theme_options.php:1765
+msgid "Enter copyright text. Use {current_year} for get dynamic current year."
+msgstr ""
+
+#: inc/admin/theme_options.php:1771
+msgid "Show Payments Logo"
+msgstr ""
+
+#: inc/admin/theme_options.php:1780
+msgid "Payments Logo Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:1782
+msgid "Upload payments logo image."
+msgstr ""
+
+#: inc/admin/theme_options.php:1793
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/admin/theme_options.php:1800
+msgid "Manage Password Strength"
+msgstr ""
+
+#: inc/admin/theme_options.php:1801
+msgid ""
+"Reduce the strength requirement on the woocommerce use login/signup password "
+msgstr ""
+
+#: inc/admin/theme_options.php:1809
+msgid "User Password Strength"
+msgstr ""
+
+#: inc/admin/theme_options.php:1811
+msgid "Strong (default)"
+msgstr ""
+
+#: inc/admin/theme_options.php:1812
+msgid "Medium"
+msgstr ""
+
+#: inc/admin/theme_options.php:1813
+msgid "Weak"
+msgstr ""
+
+#: inc/admin/theme_options.php:1814
+msgid "Very Weak"
+msgstr ""
+
+#: inc/admin/theme_options.php:1822
+msgid "Live Search By Product SKU"
+msgstr ""
+
+#: inc/admin/theme_options.php:1823
+msgid "Live search by product sku or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:1832
+msgid "Add to Cart Using Ajax"
+msgstr ""
+
+#: inc/admin/theme_options.php:1833
+msgid "Enable or disable add to cart product using ajax without load page. "
+msgstr ""
+
+#: inc/admin/theme_options.php:1841
+msgid "Show Cart Popup"
+msgstr ""
+
+#: inc/admin/theme_options.php:1842
+msgid "Show cart popup after added product in cart. "
+msgstr ""
+
+#: inc/admin/theme_options.php:1850
+msgid "Quantity Field in Mini Cart"
+msgstr ""
+
+#: inc/admin/theme_options.php:1851
+msgid "Show quantity field in mini cart. "
+msgstr ""
+
+#: inc/admin/theme_options.php:1859
+#: inc/integrations/woocommerce/template-tags.php:156
+msgid "Login To See Price"
+msgstr ""
+
+#: inc/admin/theme_options.php:1860
+msgid "Show product price after login user. "
+msgstr ""
+
+#: inc/admin/theme_options.php:1868 inc/admin/theme_options.php:2374
+msgid "Show Product Highlight Labels"
+msgstr ""
+
+#: inc/admin/theme_options.php:1869 inc/admin/theme_options.php:2375
+msgid ""
+"Show product highlight labels sale, featured, new and out of stock on "
+"product."
+msgstr ""
+
+#: inc/admin/theme_options.php:1877
+msgid "Show Sale Product Highlight Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:1887
+msgid "Show sale product label in percentages or text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1889
+msgid "Percentages"
+msgstr ""
+
+#: inc/admin/theme_options.php:1890 inc/meta-boxes.php:141
+msgid "Text"
+msgstr ""
+
+#: inc/admin/theme_options.php:1898
+msgid "Sale product highlight percentages label text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1905
+msgid "Sale product highlight label text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1906 inc/classes/mega-menus.php:544
+msgid "Sale"
+msgstr ""
+
+#: inc/admin/theme_options.php:1912
+msgid "Sale product highlight label color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1919
+msgid "Show New Product Highlight Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:1928
+msgid "New product highlight label text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1929 inc/classes/mega-menus.php:538
+#: inc/integrations/woocommerce/woo-functions.php:886
+msgid "New"
+msgstr ""
+
+#: inc/admin/theme_options.php:1935
+msgid "Enter number of days to newness."
+msgstr ""
+
+#: inc/admin/theme_options.php:1946
+msgid "New product highlight label color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1953
+msgid "Show Featured Product Highlight Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:1962
+msgid "Featured product highlight label text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1963
+#: inc/integrations/woocommerce/woo-functions.php:896 inc/template-tags.php:50
+msgid "Featured"
+msgstr ""
+
+#: inc/admin/theme_options.php:1969
+msgid "Featured product highlight label color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1976
+msgid "Show Out Of Stock Product Highlight Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:1985
+msgid "out of stock product highlight label text."
+msgstr ""
+
+#: inc/admin/theme_options.php:1986
+#: inc/integrations/woocommerce/woo-functions.php:874
+msgid "Out Of Stock"
+msgstr ""
+
+#: inc/admin/theme_options.php:1992
+msgid "out of stock product highlight label color."
+msgstr ""
+
+#: inc/admin/theme_options.php:1999
+msgid "Apply opacity on out of stock product."
+msgstr ""
+
+#: inc/admin/theme_options.php:2015
+msgid "Shop/Category"
+msgstr ""
+
+#: inc/admin/theme_options.php:2022
+msgid "Shop Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:2023
+msgid "Select shop page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:2044
+msgid "Select widget and display in sidebar on shop page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2052
+msgid "Show Banner, Sub Categories & Brands"
+msgstr ""
+
+#: inc/admin/theme_options.php:2053
+msgid "Show category banner, sub categories and brands on category page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2056
+msgid "Category Banner"
+msgstr ""
+
+#: inc/admin/theme_options.php:2057
+msgid "Sub Category"
+msgstr ""
+
+#: inc/admin/theme_options.php:2058
+msgid "Category Brands"
+msgstr ""
+
+#: inc/admin/theme_options.php:2065
+msgid "Sub Categories Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2066
+msgid "Only Sub Categories"
+msgstr ""
+
+#: inc/admin/theme_options.php:2066
+msgid "Sub Categories With Inner"
+msgstr ""
+
+#: inc/admin/theme_options.php:2072
+msgid "Show Product Category Description"
+msgstr ""
+
+#: inc/admin/theme_options.php:2080
+msgid "Show Product Description Position"
+msgstr ""
+
+#: inc/admin/theme_options.php:2082 inc/admin/theme_options.php:3941
+msgid "Top"
+msgstr ""
+
+#: inc/admin/theme_options.php:2083 inc/admin/theme_options.php:3942
+msgid "Bottom"
+msgstr ""
+
+#: inc/admin/theme_options.php:2091
+msgid "Product Layout Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2093
+msgid "Product Style 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:2094
+msgid "Product Style 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:2095
+msgid "Product Style 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:2102
+msgid "Product Image Hover Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2104 inc/admin/theme_options.php:2168
+#: inc/admin/theme_options.php:2987 inc/admin/theme_options.php:3179
+#: inc/admin/theme_options.php:3217 inc/customizer.php:92
+msgid "Default"
+msgstr ""
+
+#: inc/admin/theme_options.php:2105
+msgid "Image Switch"
+msgstr ""
+
+#: inc/admin/theme_options.php:2106
+msgid "Image Auto Play Slider"
+msgstr ""
+
+#: inc/admin/theme_options.php:2107
+msgid "Image Slider"
+msgstr ""
+
+#: inc/admin/theme_options.php:2113
+msgid "Show Products Per Row"
+msgstr ""
+
+#: inc/admin/theme_options.php:2117
+msgid "6 (In full width)"
+msgstr ""
+
+#: inc/admin/theme_options.php:2124
+msgid "Show Number Of Products Per Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:2131
+msgid "Show Grid/List View Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2139
+msgid "Enable Product View Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2142 inc/admin/theme_options.php:2155
+msgid "Grid"
+msgstr ""
+
+#: inc/admin/theme_options.php:2143 inc/admin/theme_options.php:2156
+msgid "Expand Grid"
+msgstr ""
+
+#: inc/admin/theme_options.php:2144 inc/admin/theme_options.php:2157
+msgid "List"
+msgstr ""
+
+#: inc/admin/theme_options.php:2145 inc/admin/theme_options.php:2158
+msgid "Thin List"
+msgstr ""
+
+#: inc/admin/theme_options.php:2153
+msgid "Default Product View Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2166
+msgid "Products Pagination Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2169 inc/admin/theme_options.php:2988
+#: inc/admin/theme_options.php:3218
+msgid "Infinity Scroll"
+msgstr ""
+
+#: inc/admin/theme_options.php:2170 inc/admin/theme_options.php:2989
+#: inc/admin/theme_options.php:3219
+msgid "Load More Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2171 inc/admin/theme_options.php:2990
+#: inc/admin/theme_options.php:3220
+msgid "AJAX Pagination"
+msgstr ""
+
+#: inc/admin/theme_options.php:2178 inc/admin/theme_options.php:2997
+#: inc/admin/theme_options.php:3227
+msgid "Load More Button Text"
+msgstr ""
+
+#: inc/admin/theme_options.php:2184
+msgid "Enable Lazy Load"
+msgstr ""
+
+#: inc/admin/theme_options.php:2185
+msgid "Enable lazy load product image."
+msgstr ""
+
+#: inc/admin/theme_options.php:2193
+msgid "Lazy Load Animation Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2194
+msgid "Different styles of lazy load animation."
+msgstr ""
+
+#: inc/admin/theme_options.php:2202
+msgid "Show Products Per Page Dropdown"
+msgstr ""
+
+#: inc/admin/theme_options.php:2203
+msgid "Show products per page dropdow on shop page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2211
+msgid "Show Product Price"
+msgstr ""
+
+#: inc/admin/theme_options.php:2219 inc/admin/theme_options.php:2427
+msgid "Show Product Rating"
+msgstr ""
+
+#: inc/admin/theme_options.php:2227
+msgid "Show Product Buttons"
+msgstr ""
+
+#: inc/admin/theme_options.php:2228
+msgid "Show product buttons cart, wishlist, compare, quick view etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:2236
+msgid "Show Cart Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2245
+msgid "Show Wishlist Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2254
+msgid "Show Compare Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2263
+msgid "Show Quick View Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2272
+msgid "Show short Description"
+msgstr ""
+
+#: inc/admin/theme_options.php:2280
+msgid "Show Product Variation(Options)"
+msgstr ""
+
+#: inc/admin/theme_options.php:2281
+msgid ""
+"Show product variation(attribute) on product hover. Like Color, Size, ..."
+msgstr ""
+
+#: inc/admin/theme_options.php:2293
+msgid "Single Product"
+msgstr ""
+
+#: inc/admin/theme_options.php:2300
+msgid "Single Product Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:2301
+msgid "Select product page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:2330 inc/admin/theme_options.php:2697
+#: inc/admin/theme_options.php:2860 inc/admin/theme_options.php:3131
+#: inc/admin/theme_options.php:3443
+msgid "Select Sidebar Widget Area"
+msgstr ""
+
+#: inc/admin/theme_options.php:2331
+msgid "Select widget and display in sidebar on single product page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2339
+msgid "Product Image Zoom"
+msgstr ""
+
+#: inc/admin/theme_options.php:2347
+msgid "Sticky Product Image Part"
+msgstr ""
+
+#: inc/admin/theme_options.php:2348
+msgid ""
+"When you scroll the product page at this time you want to stick product "
+"image part or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2356
+msgid "Sticky Product Summary Part"
+msgstr ""
+
+#: inc/admin/theme_options.php:2357
+msgid ""
+"When you scroll the product page at this time you want to stick product "
+"summary part or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2365
+msgid "Sticky Add to Cart Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2366
+msgid "Sticky add to cart button on bottom when scroll the page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2383
+msgid "Show Product Highlight Label Sale"
+msgstr ""
+
+#: inc/admin/theme_options.php:2392
+msgid "Show Product Highlight Label Featured"
+msgstr ""
+
+#: inc/admin/theme_options.php:2401
+msgid "Show Product Highlight Label New"
+msgstr ""
+
+#: inc/admin/theme_options.php:2410
+msgid "Show Product Highlight Label Out Of Stock"
+msgstr ""
+
+#: inc/admin/theme_options.php:2419
+msgid "Show Product Next/Previous Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:2435
+msgid "Show Product Availability"
+msgstr ""
+
+#: inc/admin/theme_options.php:2436
+msgid "Show or hide stock in availability."
+msgstr ""
+
+#: inc/admin/theme_options.php:2444
+msgid "Show Product CountDown"
+msgstr ""
+
+#: inc/admin/theme_options.php:2452
+msgid "Show Size Guide"
+msgstr ""
+
+#: inc/admin/theme_options.php:2461
+msgid "Choose Size Guide Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:2462
+msgid "You use global image size guide for all products"
+msgstr ""
+
+#: inc/admin/theme_options.php:2470
+msgid "Show Product Meta"
+msgstr ""
+
+#: inc/admin/theme_options.php:2471
+msgid "Show or hide product brand, category, tag, etc..."
+msgstr ""
+
+#: inc/admin/theme_options.php:2479
+msgid "Show Specific Product Meta"
+msgstr ""
+
+#: inc/admin/theme_options.php:2482
+msgid "Brand"
+msgstr ""
+
+#: inc/admin/theme_options.php:2483
+msgid "SKU"
+msgstr ""
+
+#: inc/admin/theme_options.php:2484 inc/theme-function.php:1790
+#: single-portfolio.php:87
+msgid "Category"
+msgstr ""
+
+#: inc/admin/theme_options.php:2485
+msgid "Tag"
+msgstr ""
+
+#: inc/admin/theme_options.php:2493
+msgid "Show Related Products"
+msgstr ""
+
+#: inc/admin/theme_options.php:2501
+msgid "Show Up Sell Products"
+msgstr ""
+
+#: inc/admin/theme_options.php:2509
+msgid "Show Number Of Related/Up Sell Products"
+msgstr ""
+
+#: inc/admin/theme_options.php:2516
+msgid "Select Related/Up Sell Products Show Per Row"
+msgstr ""
+
+#: inc/admin/theme_options.php:2523 inc/admin/theme_options.php:3050
+#: inc/admin/theme_options.php:3294
+msgid "Enable Carousel Autoplay Mode"
+msgstr ""
+
+#: inc/admin/theme_options.php:2531 inc/admin/theme_options.php:3303
+msgid "Enables Carousel Inifnity Loop"
+msgstr ""
+
+#: inc/admin/theme_options.php:2532
+msgid ""
+"Enables related/up sell products carousel Inifnity loop. Duplicate last and "
+"first products to get loop illusion."
+msgstr ""
+
+#: inc/admin/theme_options.php:2540 inc/admin/theme_options.php:3059
+#: inc/admin/theme_options.php:3313
+msgid "Show Carousel Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:2548 inc/admin/theme_options.php:3322
+msgid "Show Carousel Dots Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:2560 inc/admin/theme_options.php:2567
+msgid "Free Shipping Bar"
+msgstr ""
+
+#: inc/admin/theme_options.php:2568
+msgid "You want to enable free shipping bar or not?"
+msgstr ""
+
+#: inc/admin/theme_options.php:2576
+msgid "Enter Required Amount"
+msgstr ""
+
+#: inc/admin/theme_options.php:2577
+#, php-format
+msgid ""
+"You can set frees hipping method amount from Woocommerce => settings => "
+"shipping => shipping zones => manage shipping method.For more read <a "
+"href=\"%s\" target=\"_blank\"> WooCommerce documentation </a> guide."
+msgstr ""
+
+#: inc/admin/theme_options.php:2590
+msgid ""
+"Enter free shipping message text. Use {missing_amount} - The remaing amount "
+"for free shipping."
+msgstr ""
+
+#: inc/admin/theme_options.php:2591
+msgid "Free Shipping Message"
+msgstr ""
+
+#: inc/admin/theme_options.php:2597
+msgid "Free Shipping Success Message"
+msgstr ""
+
+#: inc/admin/theme_options.php:2598
+msgid "Message show after reaching progress bar 100%."
+msgstr ""
+
+#: inc/admin/theme_options.php:2599
+msgid "Congratulation! You have got free shipping"
+msgstr ""
+
+#: inc/admin/theme_options.php:2604
+msgid "Shipping Bar Background Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:2610
+msgid "Shipping Bar Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:2627
+msgid "Auto Update Cart "
+msgstr ""
+
+#: inc/admin/theme_options.php:2628
+msgid "Auto update cart when change product quantity."
+msgstr ""
+
+#: inc/admin/theme_options.php:2640 inc/theme-function.php:425
+#: inc/theme-function.php:493
+msgid "Checkout"
+msgstr ""
+
+#: inc/admin/theme_options.php:2647
+msgid "Product Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:2648
+msgid "Show product image on checkout page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2656
+msgid "Product Quantity Filed"
+msgstr ""
+
+#: inc/admin/theme_options.php:2657
+msgid "Show product quantity filed on checkout page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2669
+msgid "Dokan"
+msgstr ""
+
+#: inc/admin/theme_options.php:2676
+msgid "Dokan Store Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:2677
+msgid "Select dokan store page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:2698
+msgid "Select widget area and display in sidebar on dokan store page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2706 inc/admin/theme_options.php:2738
+msgid "Show Sold By Label"
+msgstr ""
+
+#: inc/admin/theme_options.php:2707
+msgid "Show sold by label or not on product listing page and single page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2719
+msgid "WC Vendors"
+msgstr ""
+
+#: inc/admin/theme_options.php:2726
+msgid "Show Vendors Per Row"
+msgstr ""
+
+#: inc/admin/theme_options.php:2727
+msgid "Show vendors per row in vendor list page."
+msgstr ""
+
+#: inc/admin/theme_options.php:2739
+msgid "Show sold by label or not on product."
+msgstr ""
+
+#: inc/admin/theme_options.php:2758
+msgid "Page Comment"
+msgstr ""
+
+#: inc/admin/theme_options.php:2759
+msgid "Show page comments and comment form or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2771 inc/meta-boxes.php:247
+#: inc/meta-boxes.php:290
+msgid "Sidebar Widget"
+msgstr ""
+
+#: inc/admin/theme_options.php:2778
+msgid "Enable Widget Toggle"
+msgstr ""
+
+#: inc/admin/theme_options.php:2779
+msgid "Enable page widget toggle or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2787
+msgid "Enable Widget Menu Toggle"
+msgstr ""
+
+#: inc/admin/theme_options.php:2788
+msgid "Enable page widget menu toggle or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2796
+msgid "Enable Widget Items Hide"
+msgstr ""
+
+#: inc/admin/theme_options.php:2797
+msgid "Enable widget items hide max limit."
+msgstr ""
+
+#: inc/admin/theme_options.php:2805
+msgid "Show Number Of Widget Items"
+msgstr ""
+
+#: inc/admin/theme_options.php:2832
+msgid "Blog/Archive Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:2839
+msgid "Select Blog Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:2840
+msgid "Select blog/archive page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:2868
+msgid "Show Blog Page Breadcrumb"
+msgstr ""
+
+#: inc/admin/theme_options.php:2876
+msgid "Show Blog Page Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:2884
+msgid "Select Blog Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:2885
+msgid "Large Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:2885
+msgid "Small Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:2885
+msgid "Grid Column (Masonry Grid)"
+msgstr ""
+
+#: inc/admin/theme_options.php:2891 inc/admin/theme_options.php:2900
+msgid "Select Blog Grid Columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:2892 inc/admin/theme_options.php:2901
+msgid ""
+"Show blog grid column of the post/blog page. Column option apply only on "
+"above masorny grid column option."
+msgstr ""
+
+#: inc/admin/theme_options.php:2893 inc/admin/theme_options.php:2902
+#: inc/admin/theme_options.php:3194 inc/admin/theme_options.php:3402
+msgid "2 Columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:2893 inc/admin/theme_options.php:2902
+#: inc/admin/theme_options.php:3195 inc/admin/theme_options.php:3403
+msgid "3 Columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:2893 inc/admin/theme_options.php:2902
+#: inc/admin/theme_options.php:3404
+msgid "4 Columns (In Full Width)"
+msgstr ""
+
+#: inc/admin/theme_options.php:2909
+msgid "Show Blogs Thumbnail"
+msgstr ""
+
+#: inc/admin/theme_options.php:2910
+msgid "Show blogs thumbnail or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:2918
+msgid "Show Blogs Date"
+msgstr ""
+
+#: inc/admin/theme_options.php:2926
+msgid "Show Blogs Meta"
+msgstr ""
+
+#: inc/admin/theme_options.php:2934
+msgid "Show Specific Post Meta"
+msgstr ""
+
+#: inc/admin/theme_options.php:2937
+msgid "Post Format"
+msgstr ""
+
+#: inc/admin/theme_options.php:2938
+msgid "Post Author"
+msgstr ""
+
+#: inc/admin/theme_options.php:2939
+msgid "Post Cats"
+msgstr ""
+
+#: inc/admin/theme_options.php:2940
+msgid "Post Tags"
+msgstr ""
+
+#: inc/admin/theme_options.php:2941
+msgid "Comments"
+msgstr ""
+
+#: inc/admin/theme_options.php:2950
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/admin/theme_options.php:2958
+msgid "Excerpt Length (words)"
+msgstr ""
+
+#: inc/admin/theme_options.php:2959
+msgid "Show blogs listing content length (words)."
+msgstr ""
+
+#: inc/admin/theme_options.php:2970
+msgid "Show Read More Button"
+msgstr ""
+
+#: inc/admin/theme_options.php:2978
+msgid "Read More Button Text"
+msgstr ""
+
+#: inc/admin/theme_options.php:2979 inc/admin/theme_options.php:3823
+msgid "Read more"
+msgstr ""
+
+#: inc/admin/theme_options.php:2985
+msgid "Select Pagination Style Of Blog Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:2998 inc/admin/theme_options.php:3228
+#: inc/theme-function.php:1302 inc/theme-function.php:1353
+msgid "Load More"
+msgstr ""
+
+#: inc/admin/theme_options.php:3009
+msgid "Single Post"
+msgstr ""
+
+#: inc/admin/theme_options.php:3016
+msgid "Show Post Thumbnail"
+msgstr ""
+
+#: inc/admin/theme_options.php:3017
+msgid "Show post thumbnail or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:3025
+msgid "Show Post Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:3033
+msgid "Show Related Post"
+msgstr ""
+
+#: inc/admin/theme_options.php:3041
+msgid "Show Post Per Row"
+msgstr ""
+
+#: inc/admin/theme_options.php:3042
+msgid "Show number of post per row."
+msgstr ""
+
+#: inc/admin/theme_options.php:3068
+msgid "Enable Carousel loop"
+msgstr ""
+
+#: inc/admin/theme_options.php:3069
+msgid "Enable blog carousel continue loop."
+msgstr ""
+
+#: inc/admin/theme_options.php:3078
+msgid "Show Post Comment"
+msgstr ""
+
+#: inc/admin/theme_options.php:3079
+msgid "Show post comments and comment form or not."
+msgstr ""
+
+#: inc/admin/theme_options.php:3091
+msgid "Portfolio"
+msgstr ""
+
+#: inc/admin/theme_options.php:3103
+msgid "Portfolio Archive"
+msgstr ""
+
+#: inc/admin/theme_options.php:3110
+msgid "Select Archive Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:3111
+msgid "Select portfolio archive page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:3155
+msgid "Portfolio Listing Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:3157
+msgid "Portfolio Grid"
+msgstr ""
+
+#: inc/admin/theme_options.php:3165
+msgid "Portfolio Grid Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:3167
+msgid "Normal Grid"
+msgstr ""
+
+#: inc/admin/theme_options.php:3168
+msgid "Masonry Grid"
+msgstr ""
+
+#: inc/admin/theme_options.php:3176
+msgid "Grid Hover Effect"
+msgstr ""
+
+#: inc/admin/theme_options.php:3177
+msgid "Select portfolio grid hover effect."
+msgstr ""
+
+#: inc/admin/theme_options.php:3180
+msgid "Effect 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:3181
+msgid "Effect 3"
+msgstr ""
+
+#: inc/admin/theme_options.php:3182
+msgid "Effect 4"
+msgstr ""
+
+#: inc/admin/theme_options.php:3183
+msgid "Effect 5"
+msgstr ""
+
+#: inc/admin/theme_options.php:3191
+msgid "Select Portfolio Columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:3193
+msgid "1 Column"
+msgstr ""
+
+#: inc/admin/theme_options.php:3196
+msgid "4 Columns"
+msgstr ""
+
+#: inc/admin/theme_options.php:3204
+msgid "Show Portfolio Per Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:3205
+msgid "Show number of portfolio per page."
+msgstr ""
+
+#: inc/admin/theme_options.php:3215
+msgid "Pagination Type"
+msgstr ""
+
+#: inc/admin/theme_options.php:3238
+msgid "Single Portfolio"
+msgstr ""
+
+#: inc/admin/theme_options.php:3245
+msgid "Show Project Navigation"
+msgstr ""
+
+#: inc/admin/theme_options.php:3253
+msgid "Show Project Informations"
+msgstr ""
+
+#: inc/admin/theme_options.php:3261 inc/admin/theme_options.php:3625
+msgid "Show Social Share Links"
+msgstr ""
+
+#: inc/admin/theme_options.php:3269
+msgid "Show Related Projects"
+msgstr ""
+
+#: inc/admin/theme_options.php:3277
+msgid "Show Number Of Projects"
+msgstr ""
+
+#: inc/admin/theme_options.php:3278
+msgid "Show number of related projects"
+msgstr ""
+
+#: inc/admin/theme_options.php:3286
+msgid "Show Projects Per Row"
+msgstr ""
+
+#: inc/admin/theme_options.php:3304
+msgid ""
+"Enables portfolios carousel Inifnity loop. Duplicate last and first projects "
+"to get loop illusion."
+msgstr ""
+
+#: inc/admin/theme_options.php:3335
+msgid "Testimonial"
+msgstr ""
+
+#: inc/admin/theme_options.php:3347
+msgid "Testimonial Archive"
+msgstr ""
+
+#: inc/admin/theme_options.php:3354 inc/admin/theme_options.php:3422
+msgid "Select Page Layout"
+msgstr ""
+
+#: inc/admin/theme_options.php:3355 inc/admin/theme_options.php:3423
+msgid "Select page layout with sidebar postion."
+msgstr ""
+
+#: inc/admin/theme_options.php:3376
+msgid "Select widget display in sidebar on testimonial archive page."
+msgstr ""
+
+#: inc/admin/theme_options.php:3400
+msgid "Select Testimonial Column"
+msgstr ""
+
+#: inc/admin/theme_options.php:3415
+msgid "Single Testimonial"
+msgstr ""
+
+#: inc/admin/theme_options.php:3444
+msgid "Select widget display in sidebar on testimonial page."
+msgstr ""
+
+#: inc/admin/theme_options.php:3472
+msgid "404 Page"
+msgstr ""
+
+#: inc/admin/theme_options.php:3479
+msgid "Use Text Or Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:3480
+msgid "What a show on 404 page? Text or Image."
+msgstr ""
+
+#: inc/admin/theme_options.php:3490
+msgid "404 Page Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:3497
+msgid "Show Previous Page Link"
+msgstr ""
+
+#: inc/admin/theme_options.php:3506
+msgid "404 Page Tag Line"
+msgstr ""
+
+#: inc/admin/theme_options.php:3513
+msgid "Previous Page Link Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:3521
+msgid "404 Page Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:3523
+msgid "Upload 404 page image and show on 404 page."
+msgstr ""
+
+#: inc/admin/theme_options.php:3534
+msgid "Social Link/Share"
+msgstr ""
+
+#: inc/admin/theme_options.php:3542
+msgid "Show or Hide Social link Icon on Header And Footer"
+msgstr ""
+
+#: inc/admin/theme_options.php:3547
+msgid "Facebook"
+msgstr ""
+
+#: inc/admin/theme_options.php:3548
+msgid ""
+"Enter your custom link to show the facebook icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3554
+msgid "Twitter"
+msgstr ""
+
+#: inc/admin/theme_options.php:3555
+msgid ""
+"Enter your custom link to show the twitter icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3561
+msgid "Instagram"
+msgstr ""
+
+#: inc/admin/theme_options.php:3562
+msgid ""
+"Enter your custom link to show the instagram icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3568
+msgid "Linkedin"
+msgstr ""
+
+#: inc/admin/theme_options.php:3569
+msgid ""
+"Enter your custom link to show the linkedin icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3575
+msgid "Flickr"
+msgstr ""
+
+#: inc/admin/theme_options.php:3576
+msgid ""
+"Enter your custom link to show the flickr icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3582
+msgid "Youtube"
+msgstr ""
+
+#: inc/admin/theme_options.php:3583
+msgid ""
+"Enter your custom link to show the youtube icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3589
+msgid "RSS"
+msgstr ""
+
+#: inc/admin/theme_options.php:3590
+msgid "Enter your custom link to show the rss icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3596
+msgid "Pinterest"
+msgstr ""
+
+#: inc/admin/theme_options.php:3597
+msgid ""
+"Enter your custom link to show the pinterest icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3604
+msgid "Github"
+msgstr ""
+
+#: inc/admin/theme_options.php:3605
+msgid ""
+"Enter your custom link to show the github icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3611
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/admin/theme_options.php:3612
+msgid ""
+"Enter your custom link to show the whatsapp icon. Leave blank to hide icon."
+msgstr ""
+
+#: inc/admin/theme_options.php:3620
+msgid "Show or Hide Social Sharing Icon on Product, Post and Portfolio"
+msgstr ""
+
+#: inc/admin/theme_options.php:3633
+msgid "Social Sharing Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:3635
+msgid "Style 1"
+msgstr ""
+
+#: inc/admin/theme_options.php:3636
+msgid "Style 2"
+msgstr ""
+
+#: inc/admin/theme_options.php:3644
+msgid "Facebook Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3653
+msgid "Twitter Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3662
+msgid "Linkedin Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3671
+msgid "Telegram Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3680
+msgid "Pinterest Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3689
+msgid "StumbleUpon Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3698
+msgid "Tumblr Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3707
+msgid "Reddit Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3716
+msgid "VK Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3725
+msgid "Odnoklassniki Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3734
+msgid "Pocket Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3743
+msgid "WhatsApp Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3753
+msgid "Email Icon"
+msgstr ""
+
+#: inc/admin/theme_options.php:3775
+msgid "Cookie Notice"
+msgstr ""
+
+#: inc/admin/theme_options.php:3782
+msgid "Cookie Enable or Disable."
+msgstr ""
+
+#: inc/admin/theme_options.php:3785
+msgid "Cookie notice enable or disable in your site."
+msgstr ""
+
+#: inc/admin/theme_options.php:3792
+msgid "Enter the cookie title/name."
+msgstr ""
+
+#: inc/admin/theme_options.php:3793
+msgid "Cookies Notice"
+msgstr ""
+
+#: inc/admin/theme_options.php:3798
+msgid "Message"
+msgstr ""
+
+#: inc/admin/theme_options.php:3799
+msgid "Enter the cookie notice message."
+msgstr ""
+
+#: inc/admin/theme_options.php:3800
+msgid ""
+"We use cookies to ensure that we give you the best experience on our "
+"website. If you continue to use this site we will assume that you are happy "
+"with it."
+msgstr ""
+
+#: inc/admin/theme_options.php:3805
+msgid "Button text"
+msgstr ""
+
+#: inc/admin/theme_options.php:3806
+msgid ""
+"The text of the option to accept the usage of the cookies and make the "
+"notification disappear."
+msgstr ""
+
+#: inc/admin/theme_options.php:3807
+msgid "Yes, I'm Accept"
+msgstr ""
+
+#: inc/admin/theme_options.php:3812
+msgid "More info link"
+msgstr ""
+
+#: inc/admin/theme_options.php:3815
+msgid "Enable Read more link."
+msgstr ""
+
+#: inc/admin/theme_options.php:3822
+msgid "The text of the more info button."
+msgstr ""
+
+#: inc/admin/theme_options.php:3830
+msgid "Select where to redirect user for more information about cookies."
+msgstr ""
+
+#: inc/admin/theme_options.php:3832
+msgid "Custom link"
+msgstr ""
+
+#: inc/admin/theme_options.php:3833
+msgid "Page link"
+msgstr ""
+
+#: inc/admin/theme_options.php:3842
+msgid "Enter the full URL starting with http://"
+msgstr ""
+
+#: inc/admin/theme_options.php:3852
+msgid "Select from one of your site's pages"
+msgstr ""
+
+#: inc/admin/theme_options.php:3858
+msgid "Link target"
+msgstr ""
+
+#: inc/admin/theme_options.php:3859 inc/admin/theme_options.php:3912
+msgid "Select the link target for more info page."
+msgstr ""
+
+#: inc/admin/theme_options.php:3869
+msgid "Refuse button"
+msgstr ""
+
+#: inc/admin/theme_options.php:3872
+msgid ""
+"Give to the user the possibility to refuse third party non functional "
+"cookies."
+msgstr ""
+
+#: inc/admin/theme_options.php:3879
+msgid ""
+"The text of the option to refuse the usage of the cookies. To get the cookie "
+"notice status use emallshop_cn_cookies_accepted() function."
+msgstr ""
+
+#: inc/admin/theme_options.php:3887
+msgid ""
+"Enter non functional cookies Javascript code here (for e.g. Google "
+"Analitycs). It will be used after cookies are accepted."
+msgstr ""
+
+#: inc/admin/theme_options.php:3894
+msgid "On scroll"
+msgstr ""
+
+#: inc/admin/theme_options.php:3897
+msgid "Enable cookie notice acceptance when users scroll."
+msgstr ""
+
+#: inc/admin/theme_options.php:3904
+msgid ""
+"Number of pixels user has to scroll to accept the usage of the cookies and "
+"make the notification disappear."
+msgstr ""
+
+#: inc/admin/theme_options.php:3911
+msgid "Cookie expiry"
+msgstr ""
+
+#: inc/admin/theme_options.php:3914
+msgid "1 day"
+msgstr ""
+
+#: inc/admin/theme_options.php:3915
+msgid "1 week"
+msgstr ""
+
+#: inc/admin/theme_options.php:3916
+msgid "1 month"
+msgstr ""
+
+#: inc/admin/theme_options.php:3917
+msgid "3 months"
+msgstr ""
+
+#: inc/admin/theme_options.php:3918
+msgid "6 months"
+msgstr ""
+
+#: inc/admin/theme_options.php:3919
+msgid "1 year"
+msgstr ""
+
+#: inc/admin/theme_options.php:3920
+msgid "infinity"
+msgstr ""
+
+#: inc/admin/theme_options.php:3927
+msgid "Script placement"
+msgstr ""
+
+#: inc/admin/theme_options.php:3928
+msgid "Select where all the plugin scripts should be placed."
+msgstr ""
+
+#: inc/admin/theme_options.php:3938
+msgid "Position"
+msgstr ""
+
+#: inc/admin/theme_options.php:3939
+msgid "Select location for your cookie notice."
+msgstr ""
+
+#: inc/admin/theme_options.php:3949
+msgid "Cookie Style"
+msgstr ""
+
+#: inc/admin/theme_options.php:3950
+msgid "Select style of cookie notice on bottom."
+msgstr ""
+
+#: inc/admin/theme_options.php:3952
+msgid "Bar"
+msgstr ""
+
+#: inc/admin/theme_options.php:3953
+msgid "Box"
+msgstr ""
+
+#: inc/admin/theme_options.php:3967
+msgid "Bar Background Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:3977 templates/footer/footer-2.php:16
+msgid "Newsletter"
+msgstr ""
+
+#: inc/admin/theme_options.php:3984
+msgid "Newsletter Enable or Disable."
+msgstr ""
+
+#: inc/admin/theme_options.php:3987
+msgid "Newsletter popup enable or disable in your site."
+msgstr ""
+
+#: inc/admin/theme_options.php:3994
+msgid "Newsletter Logo"
+msgstr ""
+
+#: inc/admin/theme_options.php:3996
+msgid "Upload newsletter logo."
+msgstr ""
+
+#: inc/admin/theme_options.php:4003
+msgid "Newsletter Title"
+msgstr ""
+
+#: inc/admin/theme_options.php:4004
+msgid "Join Us Now!"
+msgstr ""
+
+#: inc/admin/theme_options.php:4010
+msgid "Newsletter Tag Line"
+msgstr ""
+
+#: inc/admin/theme_options.php:4011
+msgid ""
+"Signup today for free and be the first to hear of special promotions, new "
+"arrivals and designer news."
+msgstr ""
+
+#: inc/admin/theme_options.php:4017
+msgid "Newsletter Don't Show Msg"
+msgstr ""
+
+#: inc/admin/theme_options.php:4018
+msgid "Don't show this popup again"
+msgstr ""
+
+#: inc/admin/theme_options.php:4025
+msgid "Newsletter background with image, color, etc."
+msgstr ""
+
+#: inc/admin/theme_options.php:4040
+msgid "Newsletter Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:4047
+msgid "Newsletter Button Color"
+msgstr ""
+
+#: inc/admin/theme_options.php:4058
+msgid "Advanced"
+msgstr ""
+
+#: inc/admin/theme_options.php:4065
+msgid "Site Loader Enable or Disable."
+msgstr ""
+
+#: inc/admin/theme_options.php:4068
+msgid "Site loader enable or disable in your site."
+msgstr ""
+
+#: inc/admin/theme_options.php:4074
+msgid "Site Loading Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:4075
+msgid "Choose one of the pre-defined Loading Image or choose custom one."
+msgstr ""
+
+#: inc/admin/theme_options.php:4086
+msgid "Site Loader Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:4104
+msgid "Choose your Loading Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:4106
+msgid "Choose your own loading image."
+msgstr ""
+
+#: inc/admin/theme_options.php:4113
+msgid "Pagination Loading Image"
+msgstr ""
+
+#: inc/admin/theme_options.php:4141
+msgid "Single Image Hover Effect."
+msgstr ""
+
+#: inc/admin/theme_options.php:4142
+msgid "Enable or disable single image banner hover effect on home page."
+msgstr ""
+
+#: inc/admin/theme_options.php:4150
+msgid "Touch Slider Desktop"
+msgstr ""
+
+#: inc/admin/theme_options.php:4158
+msgid "Touch Slider In Mobile"
+msgstr ""
+
+#: inc/admin/theme_options.php:4171
+msgid "Custom Code"
+msgstr ""
+
+#: inc/admin/theme_options.php:4178
+msgid "CSS Code"
+msgstr ""
+
+#: inc/admin/theme_options.php:4179
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: inc/admin/theme_options.php:4187
+msgid "JS Code"
+msgstr ""
+
+#: inc/admin/theme_options.php:4188
+msgid "Paste your JS code here."
+msgstr ""
+
+#: inc/admin/theme_options.php:4277
+msgid "Section via hook"
+msgstr ""
+
+#: inc/admin/theme_options.php:4278
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+#, php-format
+msgid ""
+"EmallShop requires at least WordPress version 4.1. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: inc/breadcrumbs.php:57
+#, php-format
+msgid "Tag - %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:59
+#, php-format
+msgid "Product Tag - %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:188
+#, php-format
+msgid "Search - %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:192
+msgid "404"
+msgstr ""
+
+#: inc/classes/mega-menus.php:26
+msgid "Enable EmallShop Mega Menu (only for main menu)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:32
+msgid "Full Width Mega Menu (overrides column width)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:37
+msgid "Mega Menu Number of Columns"
+msgstr ""
+
+#: inc/classes/mega-menus.php:39
+msgid "Auto"
+msgstr ""
+
+#: inc/classes/mega-menus.php:51
+msgid "Mega Menu Column Width (in percentage, ex: 30%)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:58
+msgid "Disable Mega Menu Column Title"
+msgstr ""
+
+#: inc/classes/mega-menus.php:64
+msgid "Enable Mega Menu Column Title"
+msgstr ""
+
+#: inc/classes/mega-menus.php:69
+msgid "Mega Menu Widget Area"
+msgstr ""
+
+#: inc/classes/mega-menus.php:71
+msgid "Select Widget Area"
+msgstr ""
+
+#: inc/classes/mega-menus.php:85
+msgid "New Label"
+msgstr ""
+
+#: inc/classes/mega-menus.php:88
+msgid "Hot Label"
+msgstr ""
+
+#: inc/classes/mega-menus.php:91
+msgid "Sale Label"
+msgstr ""
+
+#: inc/classes/mega-menus.php:97
+msgid "Menu Icon"
+msgstr ""
+
+#: inc/classes/mega-menus.php:99
+msgid "Quick search"
+msgstr ""
+
+#: inc/classes/mega-menus.php:108
+msgid "Custom Icon"
+msgstr ""
+
+#: inc/classes/mega-menus.php:113
+msgid "Remove Image"
+msgstr ""
+
+#: inc/classes/mega-menus.php:461 inc/classes/mega-menus.php:515
+msgid "thumbnail image"
+msgstr ""
+
+#: inc/classes/mega-menus.php:541
+msgid "Hot"
+msgstr ""
+
+#: inc/classes/mega-menus.php:669
+#, php-format
+msgid ""
+"Add your &nbsp; <a href=\"%s\"><strong>navigation menu here</strong></a>"
+msgstr ""
+
+#: inc/classes/mega-menus.php:674
+msgid "No Menu Set"
+msgstr ""
+
+#: inc/classes/mega-menus.php:760
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:764
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:777
+msgid "sub item"
+msgstr ""
+
+#: inc/classes/mega-menus.php:792
+msgid "Move up"
+msgstr ""
+
+#: inc/classes/mega-menus.php:805
+msgid "Move down"
+msgstr ""
+
+#: inc/classes/mega-menus.php:807 inc/classes/mega-menus.php:809
+msgid "Edit Menu Item"
+msgstr ""
+
+#: inc/classes/mega-menus.php:818
+msgid "URL"
+msgstr ""
+
+#: inc/classes/mega-menus.php:825
+msgid "Navigation Label"
+msgstr ""
+
+#: inc/classes/mega-menus.php:831
+msgid "Title Attribute"
+msgstr ""
+
+#: inc/classes/mega-menus.php:838
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: inc/classes/mega-menus.php:843
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:849
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: inc/classes/mega-menus.php:855
+msgid "Description"
+msgstr ""
+
+#: inc/classes/mega-menus.php:857
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: inc/classes/mega-menus.php:865
+msgid "Move"
+msgstr ""
+
+#: inc/classes/mega-menus.php:866
+msgid "Up one"
+msgstr ""
+
+#: inc/classes/mega-menus.php:867
+msgid "Down one"
+msgstr ""
+
+#: inc/classes/mega-menus.php:870
+msgid "To the top"
+msgstr ""
+
+#: inc/classes/mega-menus.php:877
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: inc/classes/mega-menus.php:890
+msgid "Remove"
+msgstr ""
+
+#: inc/classes/mega-menus.php:891
+msgid "Cancel"
+msgstr ""
+
+#: inc/classes/sidebar-generator-class.php:11
+msgid "Add Custom Widget Area"
+msgstr ""
+
+#: inc/classes/sidebar-generator-class.php:53
+msgid "Enter Name for new Widget Area"
+msgstr ""
+
+#: inc/classes/sidebar-generator-class.php:54
+msgid "Add Widget Area"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Base Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Header and Sidebar Text Color"
+msgstr ""
+
+#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr ""
+
+#: inc/customizer.php:62
+msgid "Header and Sidebar Background Color"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Yellow"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Pink"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Purple"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Blue"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:33
+msgid "Add widgets here to appear in your dokan page sidebar."
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:64
+msgid "Store Category"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:67
+msgid "Store Location"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:71
+msgid "Contact Seller"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:106
+#, php-format
+msgid "Cart %s"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:124
+msgid "Seller Dashboard"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:127
+msgid "Visit your store"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:143 inc/theme-function.php:422
+#: inc/theme-function.php:456
+msgid "My Account"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:144
+msgid "Edit Account"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:146
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+msgid "Billing Address"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:147
+#: woocommerce/myaccount/my-address.php:28
+msgid "Shipping Address"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:154
+#: woocommerce/myaccount/form-login.php:56
+msgid "Log in"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:155
+msgid "Sign Up"
+msgstr ""
+
+#: inc/integrations/dokan/dokan-functions.php:184
+msgid "Sold by: "
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:52
+msgid "All Categories"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:125
+msgid "No products found."
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:237
+#: inc/theme-function.php:677 inc/theme-function.php:693
+#, php-format
+msgid "%d item"
+msgid_plural "%d item(s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/integrations/woocommerce/woo-functions.php:258
+#: inc/theme-function.php:476 inc/theme-function.php:692
+msgid "Shopping Cart"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:429
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:448
+msgid "category banner"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:491
+#: inc/theme-function.php:823
+msgid "Categories"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:562
+#: inc/integrations/woocommerce/woo-functions.php:1336
+msgid "Items"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:615
+msgid "Brands"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:661
+msgid "View as Grid"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:664
+msgid "View as Expand Grid"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:667
+msgid "View as List"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:670
+msgid "View as Thin List "
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:711
+msgid "View"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:818
+#: inc/integrations/woocommerce/woo-functions.php:848
+msgid "Quick View"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:950
+msgid "out of 5"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1030
+#: woocommerce/single-product/clever-swatches-image.php:139
+#: woocommerce/single-product/product-image.php:57
+msgid "Awaiting product image"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1268
+#, php-format
+msgid "You can only have 1 %s in your cart."
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1299
+msgid "Product is added in cart"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1318
+msgid "View Cart"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1374
+#: inc/theme-function.php:261 inc/theme-function.php:1311
+#: inc/theme-function.php:1362
+msgid "Loading..."
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1376
+msgid "No more product"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1472
+msgid "In  Stock"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1526
+msgid "Size Guide"
+msgstr ""
+
+#: inc/integrations/woocommerce/woo-functions.php:1545
+msgid "Brand:"
+msgid_plural "Brands:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/meta-boxes.php:31
+msgid "Post Format: Image"
+msgstr ""
+
+#: inc/meta-boxes.php:37
+msgid "Image"
+msgstr ""
+
+#: inc/meta-boxes.php:41
+msgid "Select a image for post"
+msgstr ""
+
+#: inc/meta-boxes.php:49
+msgid "Post Format: Gallery"
+msgstr ""
+
+#: inc/meta-boxes.php:55
+msgid "Images"
+msgstr ""
+
+#: inc/meta-boxes.php:58
+msgid "Select images gallery for post"
+msgstr ""
+
+#: inc/meta-boxes.php:66
+msgid "Post Format: Video"
+msgstr ""
+
+#: inc/meta-boxes.php:72
+msgid "Video URL or Embeded Code"
+msgstr ""
+
+#: inc/meta-boxes.php:75
+msgid ""
+"Enter the URL or embed code of Vimeo.com or YouTube.com streaming services."
+"<br>To get the code, go to the external video page, click \"share\" button "
+"and copy the Embed code."
+msgstr ""
+
+#: inc/meta-boxes.php:83
+msgid "Post Format: Audio"
+msgstr ""
+
+#: inc/meta-boxes.php:89
+msgid "Audio URL or Embeded Code"
+msgstr ""
+
+#: inc/meta-boxes.php:92
+msgid "Please enter the URL or Embeded code of the audio."
+msgstr ""
+
+#: inc/meta-boxes.php:100
+msgid "Post Format: Quote"
+msgstr ""
+
+#: inc/meta-boxes.php:106
+msgid "Quote"
+msgstr ""
+
+#: inc/meta-boxes.php:109
+msgid "Add a quote."
+msgstr ""
+
+#: inc/meta-boxes.php:112
+msgid "Author"
+msgstr ""
+
+#: inc/meta-boxes.php:115
+msgid "Add the quote author."
+msgstr ""
+
+#: inc/meta-boxes.php:118
+msgid "Author Url"
+msgstr ""
+
+#: inc/meta-boxes.php:121
+msgid "Add the quote author URL."
+msgstr ""
+
+#: inc/meta-boxes.php:129
+msgid "Post Format: Link"
+msgstr ""
+
+#: inc/meta-boxes.php:135
+msgid "Url"
+msgstr ""
+
+#: inc/meta-boxes.php:138
+msgid "Add an URL link."
+msgstr ""
+
+#: inc/meta-boxes.php:144
+msgid "Add text for the URL link."
+msgstr ""
+
+#: inc/meta-boxes.php:152
+msgid "Portfolio Informations"
+msgstr ""
+
+#: inc/meta-boxes.php:159
+msgid "Enter Client Name"
+msgstr ""
+
+#: inc/meta-boxes.php:162
+msgid "Enter your project client name."
+msgstr ""
+
+#: inc/meta-boxes.php:165
+msgid "Enter Live Project URL"
+msgstr ""
+
+#: inc/meta-boxes.php:168
+msgid "Enter your live project url."
+msgstr ""
+
+#: inc/meta-boxes.php:176
+msgid "Testimonial Informations"
+msgstr ""
+
+#: inc/meta-boxes.php:183
+msgid "Enter Designation"
+msgstr ""
+
+#: inc/meta-boxes.php:186
+msgid "Enter client designation."
+msgstr ""
+
+#: inc/meta-boxes.php:189
+msgid "Enter Company Name"
+msgstr ""
+
+#: inc/meta-boxes.php:192
+msgid "Enter client company name."
+msgstr ""
+
+#: inc/meta-boxes.php:200
+msgid "Page Layout Options"
+msgstr ""
+
+#: inc/meta-boxes.php:206
+msgid "Show Title"
+msgstr ""
+
+#: inc/meta-boxes.php:209
+msgid "Show title of the page."
+msgstr ""
+
+#: inc/meta-boxes.php:218
+msgid "Show Breadcrumb"
+msgstr ""
+
+#: inc/meta-boxes.php:221
+msgid "Show breadcrumb of the page."
+msgstr ""
+
+#: inc/meta-boxes.php:230
+msgid "Page Sidebar"
+msgstr ""
+
+#: inc/meta-boxes.php:251 inc/meta-boxes.php:293
+msgid "Select Sidebar"
+msgstr ""
+
+#: inc/meta-boxes.php:264
+msgid "Product Page Layout Options"
+msgstr ""
+
+#: inc/meta-boxes.php:272
+msgid "Product Page Layout"
+msgstr ""
+
+#: inc/meta-boxes.php:286
+#, php-format
+msgid ""
+"Choose product page layout for only this product. You can choose  global for "
+"all product page layout at <a target=\"_blank\" href=\"%1$s\">here</a> "
+"(WooCommerce > Single Product section)."
+msgstr ""
+
+#: inc/meta-boxes.php:299
+msgid "Product Size Guide Image"
+msgstr ""
+
+#: inc/meta-boxes.php:303
+#, php-format
+msgid ""
+"Upload product size guide image for only this product. You can use image "
+"size guide for all product at <a target=\"_blank\" href=\"%1$s\">here</a> "
+"(WooCommerce > Single Product section)."
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Comment Navigation"
+msgstr ""
+
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr ""
+
+#: inc/template-tags.php:57
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: inc/template-tags.php:78
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr ""
+
+#: inc/template-tags.php:87
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr ""
+
+#: inc/template-tags.php:93 inc/template-tags.php:101
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:96
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr ""
+
+#: inc/template-tags.php:104
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr ""
+
+#: inc/template-tags.php:115
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#: inc/template-tags.php:125
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/theme-function.php:191
+msgid "Days"
+msgstr ""
+
+#: inc/theme-function.php:192
+msgid "Hours"
+msgstr ""
+
+#: inc/theme-function.php:193
+msgid "Mins"
+msgstr ""
+
+#: inc/theme-function.php:194
+msgid "Secs"
+msgstr ""
+
+#: inc/theme-function.php:195
+msgid "+ Show more"
+msgstr ""
+
+#: inc/theme-function.php:196
+msgid "- Show less"
+msgstr ""
+
+#: inc/theme-function.php:257
+msgid ""
+"WARNING: Clicking this button will replace your current theme options, "
+"sliders.  It can also take a minute to complete. Importing data is "
+"recommended on fresh installs only once. Importing on sites with content or "
+"importing twice will duplicate menus, pages and all posts."
+msgstr ""
+
+#: inc/theme-function.php:262
+msgid "Are you sure you want to leave?"
+msgstr ""
+
+#: inc/theme-function.php:263
+msgid "Demo imported successfully."
+msgstr ""
+
+#: inc/theme-function.php:264
+msgid "Please Enter Purchase Code"
+msgstr ""
+
+#: inc/theme-function.php:265
+msgid "Purchase code is empty"
+msgstr ""
+
+#: inc/theme-function.php:313
+msgid "News"
+msgstr ""
+
+#: inc/theme-function.php:385
+msgid "Login/Register"
+msgstr ""
+
+#: inc/theme-function.php:387
+msgid "Logout"
+msgstr ""
+
+#: inc/theme-function.php:401 woocommerce/myaccount/form-login.php:72
+#: woocommerce/myaccount/form-login.php:109
+msgid "Register"
+msgstr ""
+
+#: inc/theme-function.php:430
+msgid "My Wishlist"
+msgstr ""
+
+#: inc/theme-function.php:439
+msgid "sign Out"
+msgstr ""
+
+#: inc/theme-function.php:509
+msgid "Track Order"
+msgstr ""
+
+#: inc/theme-function.php:600
+msgid "Help"
+msgstr ""
+
+#: inc/theme-function.php:613 inc/theme-function.php:615
+#: inc/theme-function.php:1644
+msgid "logo"
+msgstr ""
+
+#: inc/theme-function.php:715 inc/theme-function.php:1826
+msgid "Search"
+msgstr ""
+
+#: inc/theme-function.php:759 inc/theme-function.php:838
+#, php-format
+msgid "Add your <a href=\"%s\">navigation menu here</a>"
+msgstr ""
+
+#: inc/theme-function.php:776
+msgid "Shopping Categories"
+msgstr ""
+
+#: inc/theme-function.php:1313 inc/theme-function.php:1364
+msgid "No more blog"
+msgstr ""
+
+#: inc/theme-function.php:1399
+msgid "Post Navigation"
+msgstr ""
+
+#: inc/theme-function.php:1488
+msgid "Related Post"
+msgstr ""
+
+#: inc/theme-function.php:1592
+#, php-format
+msgid ""
+" %1$s Theme is not activated! Please activate your theme and enjoy all "
+"features of the %2$s theme"
+msgstr ""
+
+#: inc/theme-function.php:1596
+msgid "Please activate the theme!"
+msgstr ""
+
+#: inc/theme-function.php:1598
+msgid "Activate Now"
+msgstr ""
+
+#: inc/theme-function.php:1722
+msgid "shop"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:393
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:912
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2618
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3667
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1019
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:1206
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3595
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3596
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3598
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3601
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3604
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3605
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/class-tgm-plugin-activation.php:3607
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:50
+msgid "PL EmallShop Extensions"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:57
+msgid "WPBakery Visual Composer"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:64
+msgid "Revolution Slider"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:71
+msgid "Ultimate Addons for Visual Composer"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:78
+msgid "CleverSwatches"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:85
+msgid "Woocommerce"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:90
+msgid "YITH WooCommerce Compare"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:95
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:100
+msgid "YITH WooCommerce Ajax Product Filter"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:105
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: inc/thirdparty/tgm-plugin-activation/tgm-plugin-activation.php:110
+msgid "Contact Form 7"
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar-shop.php:42 sidebar-store.php:24 sidebar.php:51 sidebar.php:70
+msgid "Add widget here"
+msgstr ""
+
+#: single-portfolio.php:55
+msgid "Project Description"
+msgstr ""
+
+#: single-portfolio.php:65
+msgid "Live Preview"
+msgstr ""
+
+#: single-portfolio.php:72
+msgid "Project Informations"
+msgstr ""
+
+#: single-portfolio.php:77
+msgid "Client"
+msgstr ""
+
+#: single-portfolio.php:82
+msgid "Date"
+msgstr ""
+
+#: single-portfolio.php:99
+msgid "Skills"
+msgstr ""
+
+#: single-portfolio.php:111
+msgid "Share"
+msgstr ""
+
+#: single-portfolio.php:141
+msgid "Related projects"
+msgstr ""
+
+#: single.php:36
+msgid "Share This Post"
+msgstr ""
+
+#: templates/footer/footer-1.php:44 templates/footer/footer-2.php:60
+#: templates/footer/footer-3.php:66
+msgid "Payments"
+msgstr ""
+
+#: templates/footer/footer-2.php:22
+msgid "Stay Connected"
+msgstr ""
+
+#: templates/portfolio/portfolio_grid.php:32
+msgid "Skill"
+msgstr ""
+
+#: woocommerce/cart/cart.php:30
+msgid "Item Details"
+msgstr ""
+
+#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:128
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:33 woocommerce/cart/cart.php:134
+#: woocommerce/global/quantity-input.php:38
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:34 woocommerce/cart/cart.php:160
+#: woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:95
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart.php:71 woocommerce/checkout/review-order.php:23
+#: woocommerce/order/order-details.php:54
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:89
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:173 woocommerce/cart/mini-cart.php:57
+#, php-format
+msgid "Remove %s from cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:194
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:194
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:194
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:199
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:26
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:31
+msgid "Recent add item"
+msgid_plural "Recent add item(s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/cart/mini-cart.php:128
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:56
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:142
+#: woocommerce/order/order-details.php:55
+msgid "Total"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:31
+#: woocommerce/global/quantity-input.php:59
+msgid "Product quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:38
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:58
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:25
+msgid "Sort By:"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:26
+msgid "Shop order"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:34
+msgid "Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:41
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:45
+#: woocommerce/myaccount/form-login.php:95
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:53
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:59
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:81
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:88
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:101
+msgid "A link to set a new password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:41
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:71
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/order/order-details.php:48
+msgid "Order details"
+msgstr ""
+
+#: woocommerce/order/order-details.php:96
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:33
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:33
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:45
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:27
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:27
+msgid "You may also like&hellip;"
+msgstr ""

@@ -1,0 +1,176 @@
+/**
+ * Boostrap
+ */
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
+		float:right;
+}
+.vc_col-xs-1, .vc_col-xs-10, .vc_col-xs-11, .vc_col-xs-12, .vc_col-xs-2, .vc_col-xs-3, .vc_col-xs-4, .vc_col-xs-5, .vc_col-xs-6, .vc_col-xs-7, .vc_col-xs-8, .vc_col-xs-9{
+	float:right;
+}
+@media (min-width:768px){
+	.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{
+		float:right;
+	}
+}
+@media (min-width:992px){
+	.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{
+		float:right;
+	}
+}
+@media (min-width:1200px){
+	.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{
+		float:right;
+	}
+}
+.text-left{
+	text-align:right;
+}
+.text-right{
+	text-align:left;
+}
+.nav-tabs > li{
+	float:right;
+}
+.nav-tabs > li > a{
+	margin-left:2px;
+	margin-right:0;
+}
+
+/* EmallShop CSS */
+ul.main-navigation > li > a .caret-arrow:before {
+    float: left;
+    padding-right: 0.8em;
+    margin-top: 3px;
+}
+.product-quickview .mfp-close{
+	left:0;
+	right:inherit;
+}
+.product-quickview .single-product-entry .entry-summary{
+	text-align:right;
+}
+.woocommerce .single-product-entry .entry-summary .variations .label {
+    display: inline-flex;
+}
+.single-product-entry .entry-summary .star-rating{
+	float: right;
+	margin: 0.5em 0 0 4px;
+}
+.woocommerce div.product form.cart div.quantity {
+    float: right !important;
+    margin: 0 0 0 15px !important;
+}
+.woocommerce div.product form.cart .button {
+    float: right !important;
+}
+.woocommerce .single-product-entry .entry-summary .single_add_to_cart_button:after,
+.woocommerce .single-product-entry .entry-summary .yith-wcwl-add-to-wishlist a:after,
+.woocommerce .single-product-entry .entry-summary .compare:after {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 0.5em;
+}
+.woocommerce .single-product-entry .entry-summary .single_add_to_cart_button:after {
+    content: "\f07a";
+    color: #fff;
+}
+.woocommerce .single-product-entry .entry-summary .single_add_to_cart_button:before,
+.woocommerce .single-product-entry .entry-summary .yith-wcwl-add-to-wishlist a:before,
+.woocommerce .single-product-entry .entry-summary .compare:before {
+    content: " ";
+    padding-right: 0;
+}
+.woocommerce .single-product-entry .entry-summary .yith-wcwl-add-to-wishlist a:after{
+	content: "\f08a";	
+}
+.woocommerce .single-product-entry .entry-summary .compare:after{
+	content: "\f079";
+}
+.woocommerce .single-product-entry .entry-summary .product_meta .sku_wrapper span,
+.woocommerce .single-product-entry .entry-summary .product_meta .brand_in a,
+.woocommerce .single-product-entry .entry-summary .product_meta .posted_in a,
+.woocommerce .single-product-entry .entry-summary .product_meta .tagged_as a{
+	display:inline-block;
+}
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.entry-format:before,
+.edit-link:before,
+.full-size-link:before {
+	content:"";
+}
+.posted-on:after,
+.byline:after,
+.cat-links:after,
+.tags-links:after,
+.comments-link:after,
+.entry-format:after,
+.edit-link:after,
+.full-size-link:after {
+	font-family: "FontAwesome";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	speak: none;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.format-aside .entry-format:after {
+	content: "\f10c";
+}
+.format-image .entry-format:after {
+	content: "\f03e";
+}
+.format-gallery .entry-format:after {
+	content: "\f029";
+}
+.format-video .entry-format:after {
+	content: "\f03d";
+}
+.format-status .entry-format:after {
+	content: "\f041";
+}
+.format-quote .entry-format:after {
+	content: "\f10d";
+}
+.format-link .entry-format:after {
+	content: "\f107";
+}
+.format-chat .entry-format:after {
+	content: "\f108";
+}
+.format-audio .entry-format:after {
+	content: "\f028";
+}
+.posted-on:after {
+	content: "\f073";
+}
+.byline:after {
+	content: "\f007";
+}
+.cat-links:after {
+	content: "\f115";
+}
+.tags-links:after {
+	content: "\f02c";
+}
+.comments-link:after {
+	content: "\f0e5";
+}
+.full-size-link:after {
+	content: "\f402";
+}
+.edit-link:after {
+	content: "\f040";
+}

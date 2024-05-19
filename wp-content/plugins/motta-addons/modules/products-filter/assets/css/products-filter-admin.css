@@ -1,0 +1,159 @@
+.motta-products-filters {
+	position: relative;
+}
+
+.motta-products-filters .no-filter {
+	text-align: center;
+}
+
+.motta-products-filter-add-new {
+	font-weight: 700;
+}
+
+.motta-products-filter-fields * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.motta-products-filter-fields {
+	overflow: hidden;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 20px;
+}
+
+.motta-products-filter-fields .name,
+.motta-products-filter-fields .source,
+.motta-products-filter-fields .display,
+.motta-products-filter-fields .actions {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.motta-products-filter-fields .name,
+.motta-products-filter-fields .source,
+.motta-products-filter-fields .display {
+	width: 32%;
+}
+
+.motta-products-filter-fields .actions {
+	width: 4%;
+	padding-top: 26px;
+	text-align: right;
+}
+
+.motta-products-filter-fields .remove-filter {
+	color: #b4b9be;
+}
+
+.motta-products-filter-fields .remove-filter:hover {
+	color: #c00;
+}
+
+.motta-products-filter-fields input,
+.motta-products-filter-fields select {
+	margin: 5px 0;
+}
+
+.motta-products-filter-form__sub-nav {
+	font-size: 14px;
+}
+
+.motta-products-filter-form__sub-nav .button-link.active {
+	color: #444;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.motta-products-filter-form__section {
+	display: none;
+}
+
+.motta-products-filter-form__section.active {
+	display: block;
+}
+
+.motta-products-filter-form__filter {
+	margin-bottom: 10px;
+}
+
+.motta-products-filter-form__filter-top {
+	overflow: hidden;
+	border: 1px solid #ccd0d4;
+}
+
+.motta-products-filter-form__filter-top:hover {
+	border-color: #999;
+}
+
+.motta-products-filter-form__filter-actions {
+	float: right;
+	padding: 10px;
+}
+
+.motta-products-filter-form__filter-actions .button-link-delete {
+	text-decoration: none;
+}
+
+.motta-products-filter-form__filter-toggle {
+	float: left;
+	padding: 10px;
+	margin: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+.motta-products-filter-form__filter-toggle-indicator {
+	color: #999;
+	float: left;
+}
+
+.motta-products-filter-form__filter-toggle-indicator:before {
+	content: "\f140";
+	font: normal 20px/1 dashicons;
+	speak: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+}
+
+.motta-products-filter-form__filter-title {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 12px 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.motta-products-filter-form__filter-options {
+	display: none;
+	padding: 5px 15px;
+	border: 1px solid #ccd0d4;
+	border-top: 0;
+}
+
+.motta-products-filter-form__section-actions {
+	text-align: center;
+}
+
+.motta-products-filter-form__section-actions button {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.motta-products-filter-form__filter.open .motta-products-filter-form__filter-top {
+	background: #fafafa;
+	border-color: #ccd0d4;
+}
+
+.motta-products-filter-form__filter.open .motta-products-filter-form__filter-toggle-indicator:before {
+	content: "\f142";
+}
+
+.motta-products-filter-form__message {
+	text-align: center;
+}

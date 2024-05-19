@@ -1,0 +1,803 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Estatik Realtor Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-01 09:40+0000\n"
+"PO-Revision-Date: 2019-11-30 09:23+0000\n"
+"Last-Translator: lliucqdj <shmorgunlana@gmail.com>\n"
+"Language-Team: Romanian\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
+"=0)))? 2 : 1));\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#: comments.php:27
+#, php-format
+msgid "%d Review"
+msgid_plural "%d Reviews"
+msgstr[0] ""
+"%d Revizuirea\n"
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:973 functions.php:975 functions.php:977
+#, php-format
+msgid "%s"
+msgstr ""
+"%s\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:65
+msgid "About"
+msgstr ""
+"Despre\n"
+
+#: inc/widgets/class-about-widget.php:58
+msgid "About Company"
+msgstr ""
+"Despre companie\n"
+
+#: functions.php:1242 inc/property-hooks.php:328
+msgid "Add to favorites"
+msgstr ""
+"Adauga la favorite\n"
+
+#: functions.php:208
+msgid "After Blog Archive"
+msgstr ""
+"După Blog Archive\n"
+
+#: functions.php:215
+msgid "After Property Single"
+msgstr ""
+"După Single Single\n"
+
+#: template-parts/partials/agent-partial.php:11
+msgid "Agent Photo"
+msgstr ""
+"Fotografie de agent\n"
+
+#: estatik/property/filter.php:12
+msgid "All"
+msgstr ""
+"Toate\n"
+
+#: inc/framework_config.php:33
+msgid "Allowed sizes are 16x16 or 32x32"
+msgstr ""
+"Dimensiunile permise sunt 16x16 sau 32x32\n"
+"\n"
+
+#: inc/framework_config.php:25 inc/framework_config.php:60
+#, php-format
+msgid "Allowed values examples: 50px, 50% or auto."
+msgstr ""
+"Exemple de valori permise: 50px, 50% sau auto.\n"
+
+#: functions.php:672 inc/widgets/class-taxonomy-widget.php:35
+msgid "Amenities"
+msgstr ""
+"dotări\n"
+
+#: inc/framework_config.php:72
+msgid "Archive page name"
+msgstr ""
+"Numele paginii de arhivare\n"
+"\n"
+
+#: 404.php:14
+msgid "Back to home"
+msgstr ""
+"Înapoi acasă\n"
+
+#: functions.php:209
+msgid "Before Blog Archive"
+msgstr ""
+"Înainte de Blog Archive\n"
+
+#: functions.php:214
+msgid "Before Property Single"
+msgstr ""
+"Înainte de Single Single\n"
+
+#: functions.php:157
+msgid "Blog"
+msgstr ""
+"Blog\n"
+
+#: functions.php:979
+msgid "Blog Archives"
+msgstr ""
+"Arhivele blogului\n"
+
+#: functions.php:206
+msgid "Blog Sidebar"
+msgstr ""
+"Bara laterală a blogului\n"
+
+#: inc/widgets/class-property-slider-widget.php:53
+msgid "Carousel layout"
+msgstr ""
+"Dispunerea caruselului\n"
+
+#: inc/widgets/class-taxonomy-widget.php:40
+msgid "Categories"
+msgstr "Categorii"
+
+#: inc/framework_config.php:162
+msgid "Categories To Show"
+msgstr ""
+"Categorii de afișat\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:46
+msgid "Company"
+msgstr ""
+"Companie\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:49
+msgid "Company Website"
+msgstr ""
+"Site-ul companiei\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:59
+msgid "Confirm Password"
+msgstr ""
+"Confirma parola\n"
+
+#: functions.php:804
+msgid "Contact Form 7"
+msgstr ""
+"Formular de contact 7\n"
+
+#: inc/widgets/class-about-widget.php:49
+msgid "Content Sub Title"
+msgstr ""
+"Sub titlu de conținut\n"
+
+#: inc/widgets/class-about-widget.php:45
+msgid "Content Title"
+msgstr ""
+"Titlul conținutului\n"
+
+#: inc/framework_config.php:65
+msgid "Copyright"
+msgstr ""
+"Drepturi de autor\n"
+
+#: inc/framework_config.php:130 inc/framework_config.php:148
+msgid "Disable Sidebar"
+msgstr ""
+"Dezactivați Bara laterală\n"
+
+#: inc/framework_config.php:85
+msgid "Disabled"
+msgstr "Stricat"
+
+#: inc/widgets/class-taxonomy-widget.php:17
+msgid "Display estatik taxonomy terms."
+msgstr ""
+"Afișați termenii de taxonomie estatik.\n"
+
+#: inc/widgets/class-property-slider-widget.php:16
+msgid "Display Properties Carousel."
+msgstr ""
+"Afișează Caruselul cu proprietăți.\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:16
+msgid "Display Properties List. The widget uses in sidebar."
+msgstr ""
+"Afișează lista de proprietăți Widget-ul se folosește în bara laterală.\n"
+
+#: inc/widgets/class-property-types-widget.php:16
+msgid "Display Properties Types Block with Images."
+msgstr "Proprietăți de afișare Tipuri de bloc cu imagini."
+
+#: inc/widgets/class-property-item-widget.php:16
+msgid "Display Property Item."
+msgstr ""
+"Afișează elementul de proprietate.\n"
+
+#: inc/widgets/class-social-widget.php:16
+msgid "Display social icons."
+msgstr ""
+"Afișați pictogramele sociale.\n"
+
+#: inc/widgets/class-performance-widget.php:16
+msgid "Display Statistics."
+msgstr ""
+"Statistici afișate\n"
+
+#: inc/widgets/class-title-widget.php:16
+msgid "Display Styled Title."
+msgstr ""
+"Afișați titlul în stil.\n"
+
+#: inc/widgets/class-testimonials-widget.php:16
+msgid "Displays testimonials in a slider widget."
+msgstr ""
+"Afișează mărturii într-un widget slider.\n"
+
+#: inc/framework_config.php:6
+msgid "Documentation"
+msgstr ""
+"Documentație\n"
+
+#: functions.php:788
+msgid "Easy Forms for MailChimp"
+msgstr ""
+"Formulare ușoare pentru MailChimp\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:18
+msgid "Edit Your Profile"
+msgstr ""
+"Editeaza-ti profilul\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:36
+msgid "Email"
+msgstr ""
+"E-mail\n"
+
+#: inc/framework_config.php:92
+msgid "Enable Breadcrumbs"
+msgstr "Activați pâinea"
+
+#: 404.php:9
+msgid "Error 404"
+msgstr ""
+"Eroare 404\n"
+
+#. Author of the theme
+msgid "Estatik"
+msgstr ""
+"Estatik\n"
+
+#: inc/widgets/class-about-widget.php:14
+msgid "Estatik About Block"
+msgstr ""
+"Estatik Despre bloc\n"
+
+#: inc/widgets/class-performance-widget.php:14
+msgid "Estatik Performance Blocks"
+msgstr ""
+"Blocuri de performanță Estatik\n"
+
+#: inc/widgets/class-properties-sidebar-list-widget.php:14
+msgid "Estatik Properties Sidebar List"
+msgstr ""
+"Listă bara laterală Estatik Properties\n"
+
+#: inc/widgets/class-property-slider-widget.php:14
+msgid "Estatik Property Carousel"
+msgstr ""
+"Caruselul proprietății Estatik\n"
+
+#: inc/widgets/class-property-item-widget.php:14
+msgid "Estatik Property Item"
+msgstr ""
+"Articol proprietate Estatik\n"
+
+#: inc/widgets/class-property-types-widget.php:14
+msgid "Estatik Property Types Blocks"
+msgstr "Estatik Tipuri de proprietate blocuri"
+
+#: functions.php:793
+msgid "Estatik Real Estate"
+msgstr ""
+"Imobiliare Estatik\n"
+
+#. Name of the theme
+#: functions.php:79 inc/framework_config.php:4
+msgid "Estatik Realtor Theme"
+msgstr ""
+"Tema de imobiliare Estatik\n"
+
+#: inc/widgets/class-social-widget.php:14
+msgid "Estatik Social"
+msgstr ""
+"Estatik Social\n"
+
+#: inc/widgets/class-taxonomy-widget.php:14
+msgid "Estatik Taxonomies"
+msgstr ""
+"Taxele de stat\n"
+
+#: inc/widgets/class-testimonials-widget.php:14
+msgid "Estatik Testimonials"
+msgstr "Mărturii Estatik"
+
+#: inc/widgets/class-social-widget.php:53
+msgid "Facebook"
+msgstr ""
+"Facebook\n"
+
+#: inc/framework_config.php:30
+msgid "Favicon Image"
+msgstr ""
+"Favicon Image\n"
+
+#: functions.php:689 inc/widgets/class-taxonomy-widget.php:34
+msgid "Features"
+msgstr ""
+"Caracteristici\n"
+
+#: template-parts/shortcodes/management/filter.php:1
+msgid "Filter by"
+msgstr ""
+"Filtreaza dupa\n"
+
+#: functions.php:171
+msgid "Footer"
+msgstr ""
+"Subsol\n"
+
+#: functions.php:202
+msgid "Footer Center Area"
+msgstr ""
+"Zona de subsol\n"
+"\n"
+
+#: functions.php:200
+msgid "Footer Left Area"
+msgstr ""
+"Zona de subsol stânga\n"
+
+#: functions.php:203
+msgid "Footer Right Area"
+msgstr "Zona de subsol dreapta"
+
+#: functions.php:174
+msgid "Footer Settings"
+msgstr ""
+"Setări subsol\n"
+
+#: functions.php:125
+msgid "General"
+msgstr ""
+"General\n"
+
+#: functions.php:128 functions.php:146
+msgid "General Settings"
+msgstr ""
+"Setari generale\n"
+
+#: inc/widgets/class-social-widget.php:56
+msgid "Google+"
+msgstr ""
+"Google+\n"
+
+#: inc/framework_config.php:124
+msgid "Grid"
+msgstr ""
+"Grilă\n"
+
+#. Name of the template
+msgid "Half Map Listings"
+msgstr ""
+"Listări pe jumătate de hartă\n"
+
+#: estatik/shortcodes/register.php:105
+msgid "Have an account ?"
+msgstr "Are un cont ?"
+
+#: functions.php:232
+msgid "Header Menu"
+msgstr ""
+"Meniu antet\n"
+
+#: functions.php:234
+msgid "Header Menu Authorized"
+msgstr ""
+"Meniul antet autorizat\n"
+
+#: inc/framework_config.php:48
+msgid "Header Menu Hover"
+msgstr ""
+"Meniul antet Hover\n"
+
+#: functions.php:233
+msgid "Header Menu Unauthorized"
+msgstr ""
+"Meniu antet Neautorizat\n"
+
+#. Author URI of the theme
+msgid "https://Estatik.net"
+msgstr ""
+"https://Estatik.net\n"
+
+#: inc/widgets/class-social-widget.php:55
+msgid "Instagram"
+msgstr ""
+"Instagram\n"
+
+#: inc/framework_config.php:137
+msgid "Items per row"
+msgstr ""
+"Elemente pe rând\n"
+
+#: inc/widgets/class-taxonomy-widget.php:36
+msgid "Labels"
+msgstr ""
+"Etichete\n"
+
+#: inc/framework_config.php:86
+msgid "Left"
+msgstr ""
+"Stânga\n"
+
+#: inc/widgets/class-about-widget.php:57
+msgid "Link Name"
+msgstr "Numele legăturii"
+
+#: inc/framework_config.php:125
+msgid "List"
+msgstr ""
+"Listă\n"
+
+#: inc/framework_config.php:119
+msgid "Listing Layout"
+msgstr ""
+"Aspectul listării\n"
+
+#: inc/framework_config.php:54
+msgid "Logo Height"
+msgstr ""
+"Logo Height\n"
+
+#: inc/framework_config.php:12
+msgid "Logo Image"
+msgstr ""
+"Logo Image\n"
+
+#: inc/framework_config.php:19
+msgid "Logo Width"
+msgstr ""
+"Lățimea logo-ului\n"
+
+#: functions.php:975
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/widgets/class-about-widget.php:62
+msgid "More Link"
+msgstr ""
+"Mai mult link\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:27
+msgid "Name"
+msgstr ""
+"Nume\n"
+
+#: inc/blog-hooks.php:155 estatik/shortcodes/my-listing.php:32
+#: template-parts/shortcodes/property-slider.php:21
+#: estatik/shortcodes/partials/saved-homes-tab.php:26
+msgid "Next"
+msgstr ""
+"Următor \n"
+
+#: inc/post-hooks.php:194
+msgid "Next Post"
+msgstr "Următorul mesaj"
+
+#: functions.php:799
+msgid "One Click Demo Import"
+msgstr "One Click Demo Import"
+
+#: 404.php:11
+msgid "Opps! Page Not Found."
+msgstr ""
+"Hopa! Pagina nu a fost gasita.\n"
+
+#. Name of the template
+msgid "Page Builder Template"
+msgstr ""
+"Șablon de constructor de pagini\n"
+
+#: functions.php:204
+msgid "Page Sidebar"
+msgstr ""
+"Bara laterală a paginii\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:56
+msgid "Password"
+msgstr ""
+"Parola\n"
+
+#: inc/property-hooks.php:174
+msgid "PDF"
+msgstr ""
+"PDF\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:39
+msgid "Phone number"
+msgstr "Numar de telefon"
+
+#: estatik/shortcodes/register.php:76
+#: estatik/shortcodes/partials/my-profile-tab.php:70
+msgid "Photo/Logo"
+msgstr ""
+"Foto / Logo\n"
+
+#: functions.php:160
+msgid "Post Displays Settings"
+msgstr ""
+"Setări afișează setări\n"
+
+#: functions.php:205
+msgid "Post Sidebar"
+msgstr ""
+"Postați Bara laterală\n"
+
+#: inc/blog-hooks.php:154 estatik/shortcodes/my-listing.php:31
+#: template-parts/shortcodes/property-slider.php:19
+#: estatik/shortcodes/partials/saved-homes-tab.php:25
+msgid "Prev"
+msgstr ""
+"Anterior\n"
+
+#: inc/post-hooks.php:183
+msgid "Previous Post"
+msgstr ""
+"Postare anterioară\n"
+
+#: functions.php:143
+msgid "Properties"
+msgstr ""
+"Proprietăți\n"
+
+#: functions.php:216
+msgid "Properties Archive Sidebar"
+msgstr ""
+"Arhiva Proprietăți Bara laterală\n"
+
+#: template-parts/shortcodes/management/filter.php:40
+msgid "Property ID"
+msgstr ""
+"ID proprietate\n"
+
+#: inc/framework_config.php:80
+msgid "Property Sidebar"
+msgstr ""
+"Bara laterală a proprietății\n"
+
+#: estatik/property/fields.php:3
+msgid "Quick Info"
+msgstr ""
+"Informații rapide\n"
+
+#: functions.php:762
+msgid "Rating"
+msgstr ""
+"Evaluare\n"
+
+#: template-parts/content/content-archive.php:21
+msgid "Read more"
+msgstr ""
+"Citeste mai mult\n"
+
+#: estatik/shortcodes/register.php:23
+msgid "Register As"
+msgstr ""
+"Înregistrați As\n"
+
+#: functions.php:1240 inc/property-hooks.php:324
+msgid "Remove from favourites"
+msgstr ""
+"Eliminați din favorite\n"
+
+#: inc/widgets/class-taxonomy-widget.php:39
+msgid "Rent Periods"
+msgstr ""
+"Perioade de închiriere\n"
+
+#: comments.php:29
+msgid "Reviews"
+msgstr ""
+"Opinii\n"
+
+#: inc/framework_config.php:87
+msgid "Right"
+msgstr "Dreapta"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:83
+msgid "Save edits"
+msgstr ""
+"Salvați modificările\n"
+
+#: searchform.php:3
+msgid "Search"
+msgstr ""
+"Căutare\n"
+
+#: searchform.php:2
+msgid "Search here"
+msgstr ""
+"Caută aici\n"
+
+#: comments.php:65
+msgid "Send Message"
+msgstr ""
+"Trimite mesaj\n"
+
+#: inc/framework_config.php:59
+msgid "Set your logo custom height"
+msgstr ""
+"Setați-vă înălțimea personalizată a logo-ului\n"
+
+#: inc/framework_config.php:24
+msgid "Set your logo custom width"
+msgstr ""
+"Setați-vă lățimea personalizată a logo-ului\n"
+
+#: inc/post-hooks.php:95 inc/property-hooks.php:179
+msgid "Share"
+msgstr "Acțiune"
+
+#: inc/property-hooks.php:188
+msgid "Share this property"
+msgstr ""
+"Partajează această proprietate\n"
+
+#: inc/framework_config.php:101
+msgid "Show Author"
+msgstr ""
+"Show Author\n"
+
+#: inc/widgets/class-property-slider-widget.php:41
+msgid "Show Dots?"
+msgstr ""
+"Afișați puncte?\n"
+
+#: inc/framework_config.php:110
+msgid "Show Featured Image"
+msgstr ""
+"Afișează imagine prezentată\n"
+
+#: inc/framework_config.php:155
+msgid "Show Sort By"
+msgstr ""
+"Afișare Sortare după\n"
+
+#: estatik/shortcodes/login.php:6
+msgid "Sign In to your Account"
+msgstr ""
+"Conectați-vă la contul dvs\n"
+
+#: functions.php:207
+msgid "Single Property Sidebar"
+msgstr "Bara laterală unică de proprietate"
+
+#: functions.php:778
+msgid "SiteOrigin Page Builder"
+msgstr ""
+"SiteOrigin Page Builder\n"
+
+#: functions.php:783
+msgid "SiteOrigin Widgets Bundle"
+msgstr ""
+"Pachet de widget-uri SiteOrigin\n"
+
+#: inc/widgets/class-property-slider-widget.php:45
+msgid "Slides To Show"
+msgstr ""
+"Diapozitive de afișat\n"
+
+#: inc/widgets/class-taxonomy-widget.php:37
+msgid "Statuses"
+msgstr ""
+"Stările\n"
+
+#: inc/widgets/class-taxonomy-widget.php:51
+msgid "Taxonomy to show"
+msgstr ""
+"Taxonomie de arătat\n"
+
+#: inc/widgets/class-about-widget.php:53
+msgid "Text"
+msgstr ""
+"Text\n"
+
+#: inc/framework_config.php:40
+msgid "Theme Color"
+msgstr ""
+"Culoarea temei\n"
+
+#: functions.php:78
+msgid "Theme Options"
+msgstr ""
+"Opțiuni temă\n"
+
+#: inc/blog-hooks.php:76
+msgid "There are no posts to show"
+msgstr ""
+"Nu există mesaje de afișat\n"
+
+#: inc/widgets/class-title-widget.php:14
+msgid "Title"
+msgstr ""
+"Titlu\n"
+
+#: header.php:35
+msgid "Toggle navigation"
+msgstr "Comutare navigare"
+
+#: inc/widgets/class-social-widget.php:54
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/widgets/class-taxonomy-widget.php:38
+msgid "Types"
+msgstr ""
+"Tipuri\n"
+
+#: inc/post-hooks.php:149
+msgid "User Image"
+msgstr ""
+"Imagine utilizator\n"
+
+#: estatik/shortcodes/partials/my-profile-tab.php:30
+msgid "Username"
+msgstr ""
+"Nume de utilizator\n"
+
+#: inc/widgets/class-about-widget.php:16
+msgid "Uses for Agent Info."
+msgstr ""
+"Utilizări pentru informații despre agenți.\n"
+
+#: inc/widgets/class-property-slider-widget.php:56
+msgid "v1"
+msgstr ""
+"v1\n"
+
+#: inc/widgets/class-property-slider-widget.php:57
+msgid "v2"
+msgstr ""
+"v2\n"
+
+#: estatik/content-archive-inner.php:29
+#: template-parts/shortcodes/property-hero-gallery.php:39
+msgid "View Details"
+msgstr "Vezi detalii"
+
+#: estatik/property/agent.php:69
+msgid "View properties"
+msgstr ""
+"Vizualizați proprietățile\n"
+
+#: 404.php:12
+msgid "We couldn't find the page you were looking for."
+msgstr ""
+"Nu am găsit pagina pe care o căutați.\n"
+
+#: inc/post-hooks.php:100
+msgid "Write a comment"
+msgstr ""
+"Scrie un comentariu\n"
+
+#: functions.php:977
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: comments.php:59
+msgid "Your Email"
+msgstr ""
+"Email-ul tau\n"
+
+#: comments.php:62
+msgid "Your message"
+msgstr ""
+"Mesajul tau\n"
+
+#: estatik/widgets/es-request-widget.php:43
+msgid "Your Name"
+msgstr "Numele Dumneavoastră"
+
+#: comments.php:55
+msgid "Your name"
+msgstr ""
+"Numele dumneavoastră\n"

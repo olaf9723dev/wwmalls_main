@@ -1,0 +1,41 @@
+01-29-2024 @ 11:00:36 - ---[ New import started at 2024-01-29 18:00:36 ] PHP Memory: 2 GB, WP Memory: 40 MB
+01-29-2024 @ 11:00:36 - Preparing for import.
+01-29-2024 @ 11:00:36 - Row :1 - Parsing item.
+01-29-2024 @ 11:00:37 - Importing as new product ID:22457
+01-29-2024 @ 11:00:37 - Row :1 - Processing item.
+01-29-2024 @ 11:00:37 - Found simple product object. ID:22457
+01-29-2024 @ 11:00:37 - Setting Featured Image. URL:https://media.wtdev.xyz/wp-content/uploads/2022/06/samsung-galaxy-ace-duos.png
+01-29-2024 @ 11:00:41 - Attachment ID:22458
+01-29-2024 @ 11:00:41 - Setting Gallery Images.
+01-29-2024 @ 11:00:41 - Image URL:https://media.wtdev.xyz/wp-content/uploads/2022/06/samsung-galaxy-ace-duos-black.png
+01-29-2024 @ 11:00:41 - Attachment ID:22459
+01-29-2024 @ 11:00:42 - Row :1 - Product imported successfully.
+01-29-2024 @ 11:00:42 - Row :2 - Parsing item.
+01-29-2024 @ 11:00:43 - Importing as new product ID:22461
+01-29-2024 @ 11:00:43 - Row :2 - Processing item.
+01-29-2024 @ 11:00:43 - Found simple product object. ID:22461
+01-29-2024 @ 11:00:43 - Setting Featured Image. URL:https://media.wtdev.xyz/wp-content/uploads/2022/06/men-leather-formal-shoe.jpeg
+01-29-2024 @ 11:00:43 - Attachment ID:22462
+01-29-2024 @ 11:00:44 - Row :2 - Product imported successfully.
+01-29-2024 @ 11:00:44 - Row :3 - Parsing item.
+01-29-2024 @ 11:00:44 - Importing as new product ID:22464
+01-29-2024 @ 11:00:44 - Row :3 - Processing item.
+01-29-2024 @ 11:00:44 - Found simple product object. ID:22464
+01-29-2024 @ 11:00:44 - Setting Featured Image. URL:https://media.wtdev.xyz/wp-content/uploads/2020/04/led-tv.png
+01-29-2024 @ 11:00:45 - Attachment ID:22465
+01-29-2024 @ 11:00:45 - Row :3 - Product imported successfully.
+01-29-2024 @ 11:00:45 - Row :4 - Parsing item.
+01-29-2024 @ 11:00:46 - Importing as new product ID:22467
+01-29-2024 @ 11:00:46 - Row :4 - Processing item.
+01-29-2024 @ 11:00:46 - Found simple product object. ID:22467
+01-29-2024 @ 11:00:46 - Setting Featured Image. URL:https://media.wtdev.xyz/wp-content/uploads/2020/04/refrigerator.png
+01-29-2024 @ 11:00:46 - Attachment ID:22468
+01-29-2024 @ 11:00:47 - Row :4 - Product imported successfully.
+01-29-2024 @ 11:00:47 - Row :5 - Parsing item.
+01-29-2024 @ 11:00:47 - Importing as new product ID:22470
+01-29-2024 @ 11:00:47 - Row :5 - Processing item.
+01-29-2024 @ 11:00:47 - Found simple product object. ID:22470
+01-29-2024 @ 11:00:47 - Setting Featured Image. URL:https://media.wtdev.xyz/wp-content/uploads/2020/04/washing-machine.png
+01-29-2024 @ 11:00:47 - Attachment ID:22471
+01-29-2024 @ 11:00:48 - Row :5 - Product imported successfully.
+01-29-2024 @ 11:00:48 - ---[ Import ended at 2024-01-29 18:00:48]---

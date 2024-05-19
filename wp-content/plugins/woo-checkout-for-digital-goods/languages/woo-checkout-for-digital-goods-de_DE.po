@@ -1,0 +1,650 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Digital Goods for WooCommerce Checkout\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-13 12:56+0530\n"
+"PO-Revision-Date: 2023-11-02 12:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8.1\n"
+"X-Domain: woo-shipping-display-mode\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_html;esc_attr_e;esc_attr;__;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/partials/wcdg-information-page.php:38
+msgid " to view license and terms of use."
+msgstr "um Lizenz und Nutzungsbedingungen anzuzeigen."
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:287
+#: admin/partials/wcdg-quick-checkout__premium_only.php:247
+msgid "%1$s (#%2$s)"
+msgstr "%1$s (#%2$s)"
+
+#: woo-checkout-for-digital-goods.php:349
+msgid "%1$s requires %2$s to be installed & activated!"
+msgstr "Für %1$s muss %2$s installiert und aktiviert sein!"
+
+#: admin/partials/header/plugin-header.php:131
+msgid "About"
+msgstr "Um"
+
+#: admin/partials/header/plugin-header.php:139
+msgid "Account"
+msgstr "Konto"
+
+#: woo-checkout-for-digital-goods.php:249
+msgid "Activate Plugin"
+msgstr "Plugin aktivieren"
+
+#: admin/partials/dots-plugin-setup-wizard.php:92
+msgid "Astra"
+msgstr "Astra"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:61
+#: admin/partials/wcdg-quick-checkout__premium_only.php:127
+#: admin/partials/wcdg-quick-checkout__premium_only.php:186
+msgid "Back"
+msgstr "Zurück"
+
+#: admin/partials/dots-plugin-setup-wizard.php:102
+msgid "Be our friend on"
+msgstr "Sei unser Freund"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:436
+msgid "Blank .json file uploaded."
+msgstr "Leere .json-Datei hochgeladen."
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:200
+msgid "Categories"
+msgstr "Kategorien"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:92
+msgid "Category inserted Successfully!!"
+msgstr "Kategorie erfolgreich eingefügt!!"
+
+#: admin/partials/wcdg-general-setting.php:73
+msgid "Checkout Billing Fields"
+msgstr "Rechnungsfelder zur Kasse"
+
+#: admin/partials/wcdg-general-setting.php:196
+msgid "Click Here"
+msgstr "Klicken Sie hier"
+
+#: admin/partials/wcdg-information-page.php:38
+msgid "Click here"
+msgstr "Klicke hier"
+
+#: admin/partials/wcdg-general-setting.php:125
+msgid "Configuration"
+msgstr "Aufbau"
+
+#: admin/partials/dots-plugin-setup-wizard.php:29
+#: admin/partials/dots-plugin-setup-wizard.php:57
+#: admin/partials/dots-plugin-setup-wizard.php:70
+#: admin/partials/dots-plugin-setup-wizard.php:115
+msgid "Continue"
+msgstr "Weitermachen"
+
+#: admin/partials/wcdg-get-started-page.php:25
+msgid ""
+"Customize checkout fields and choose what information you need from your "
+"customers."
+msgstr ""
+"Passen Sie die Checkout-Felder an und wählen Sie aus, welche Informationen "
+"Sie von Ihren Kunden benötigen."
+
+#: admin/partials/wcdg-get-started-page.php:43
+msgid "Customize your checkout page by excluding selected fields."
+msgstr ""
+"Passen Sie Ihre Checkout-Seite an, indem Sie ausgewählte Felder ausschließen."
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:394
+msgid "Data has been Exported!"
+msgstr "Daten wurden exportiert!"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:439
+msgid "Data has been Imported!"
+msgstr "Daten wurden importiert!"
+
+#: admin/partials/header/plugin-header.php:53
+msgid "Digital Goods"
+msgstr "Digital Goods"
+
+#: woo-checkout-for-digital-goods.php:343
+msgid "Digital Goods for WooCommerce Checkout"
+msgstr "Digital Goods for WooCommerce Checkout"
+
+#: admin/partials/wcdg-general-setting.php:173
+msgid ""
+"Display Quick Checkout Button on Product Details Page for Digital Product"
+msgstr ""
+"Schnellkasse-Schaltfläche auf der Produktdetailseite für digitales Produkt "
+"anzeigen"
+
+#: admin/partials/wcdg-general-setting.php:160
+msgid "Display Quick Checkout Button on Shop Page for Digital Product"
+msgstr ""
+"Quick Checkout-Button auf der Shop-Seite für digitale Produkte anzeigen"
+
+#: admin/partials/wcdg-get-started-page.php:34
+msgid ""
+"Display quick checkout buttons on shop or product pages for digital goods."
+msgstr ""
+"Zeigen Sie Quick-Checkout-Buttons auf Shop- oder Produktseiten für digitale "
+"Waren an."
+
+#: admin/partials/dots-plugin-setup-wizard.php:90
+msgid "Do the Woo"
+msgstr "Do the Woo"
+
+#: includes/class-woo-checkout-for-digital-goods.php:232
+msgid "Docs"
+msgstr "Dokumente"
+
+#: admin/partials/dots-plugin-setup-wizard.php:119
+msgid "Done"
+msgstr "Erledigt"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:110
+msgid "DotStore Plugins"
+msgstr "DotStore-Plugins"
+
+#: admin/partials/wcdg-get-started-page.php:19
+msgid "Easily enable or disable quick checkout with just a click!"
+msgstr ""
+"Aktivieren oder deaktivieren Sie den Schnell-Checkout ganz einfach mit nur "
+"einem Klick!"
+
+#: admin/partials/wcdg-general-setting.php:132
+msgid "Enable / Disable"
+msgstr "Aktivieren / deaktivieren"
+
+#: admin/partials/wcdg-general-setting.php:133
+msgid "Enable or Disable functionality of plugin"
+msgstr "Aktivieren oder deaktivieren Sie die Funktionalität des Plugins"
+
+#: admin/partials/wcdg-general-setting.php:146
+#| msgid "Exclude Order Note"
+msgid "Exclude order note"
+msgstr "Bestellnotiz ausschließen"
+
+#: admin/partials/wcdg-get-started-page.php:31
+msgid "Exclude order notes and keep your checkout clean."
+msgstr "Schließen Sie Bestellnotizen aus und halten Sie Ihre Kasse sauber."
+
+#: admin/partials/wcdg-general-setting.php:81
+#: admin/partials/wcdg-general-setting.php:90
+msgid "Excluded"
+msgstr "Ausgeschlossen"
+
+#: admin/partials/wcdg-import-export__premium_only.php:19
+msgid "Export"
+msgstr "Export"
+
+#: admin/partials/wcdg-import-export__premium_only.php:14
+msgid "Export Digital Goods Settings"
+msgstr "Export Digital Goods Settings"
+
+#: admin/partials/wcdg-import-export__premium_only.php:24
+msgid ""
+"Export the digital goods general settings for this site as a .json file. "
+"This allows you to easily import the configuration into another site."
+msgstr ""
+"Exportieren Sie die allgemeinen Einstellungen für digitale Waren für diese "
+"Site als .json-Datei. Dadurch können Sie die Konfiguration problemlos in "
+"eine andere Site importieren."
+
+#: admin/partials/header/plugin-header.php:80
+msgid "General Setting"
+msgstr "Allgemeine Einstellung"
+
+#: admin/partials/wcdg-information-page.php:52
+msgid "German, Spain, Polish, French"
+msgstr "Deutsch, Spanien, Polnisch, Französisch"
+
+#: admin/partials/dots-plugin-setup-wizard.php:40
+msgid ""
+"Get improved features and faster fixes by sharing non-sensitive data via "
+"usage-tracking. This will help us make the plugin more compatible with your "
+"site. No personal data is tracked or stored."
+msgstr ""
+"Erhalten Sie verbesserte Funktionen und schnellere Lösungen, indem Sie nicht "
+"vertrauliche Daten über die Nutzungsverfolgung weitergeben. Dies wird uns "
+"helfen, das Plugin besser mit Ihrer Website kompatibel zu machen. Es werden "
+"keine personenbezogenen Daten erfasst oder gespeichert."
+
+#: admin/partials/wcdg-get-started-page.php:12
+msgid "Getting Started"
+msgstr "Einstieg"
+
+#: admin/partials/wcdg-general-setting.php:212
+msgid "Guest / Not logged In"
+msgstr "Gast / Nicht angemeldet"
+
+#: admin/partials/wcdg-information-page.php:45
+msgid "Guide Documentation"
+msgstr "Anleitung Dokumentation"
+
+#: admin/partials/header/plugin-header.php:71
+msgid "Help"
+msgstr "Helfen"
+
+#: admin/partials/wcdg-information-page.php:41
+msgid "Help & Support"
+msgstr "Hilfe Unterstützung"
+
+#: admin/partials/dots-plugin-setup-wizard.php:39
+msgid "Help us build a better \"Digital Goods\" Plugin!"
+msgstr "Helfen Sie uns, ein besseres \"Digital Goods\"-Plugin zu entwickeln!"
+
+#: admin/partials/wcdg-import-export__premium_only.php:39
+msgid "Import"
+msgstr "Importieren"
+
+#: admin/partials/wcdg-import-export__premium_only.php:9
+msgid "Import & Export Digital Goods Settings"
+msgstr "Einstellungen für digitale Waren importieren und exportieren"
+
+#: admin/partials/header/plugin-header.php:126
+msgid "Import / Export"
+msgstr "Import Export"
+
+#: admin/partials/wcdg-import-export__premium_only.php:31
+msgid "Import Digital Goods Settings"
+msgstr "Einstellungen für digitale Waren importieren"
+
+#: admin/partials/wcdg-import-export__premium_only.php:44
+msgid ""
+"Import the digital goods general settings from a .json file. This file can "
+"be obtained by exporting the settings on another site using the form above."
+msgstr ""
+"Importieren Sie die allgemeinen Einstellungen für digitale Waren aus einer ."
+"json-Datei. Diese Datei kann durch Exportieren der Einstellungen auf eine "
+"andere Site mithilfe des obigen Formulars erhalten werden."
+
+#: admin/partials/wcdg-general-setting.php:228
+#: admin/partials/wcdg-general-setting.php:239
+#: admin/partials/wcdg-general-setting.php:265
+#: admin/partials/wcdg-general-setting.php:280
+msgid "In Pro Version"
+msgstr "In der Pro-Version"
+
+#: admin/partials/wcdg-information-page.php:33
+msgid "Installed Version"
+msgstr "Installierte Version"
+
+#: admin/partials/wcdg-general-setting.php:266
+#: admin/partials/wcdg-general-setting.php:281
+msgid "It will show button for the update user information on thank you page"
+msgstr ""
+"Auf der Dankesseite wird die Schaltfläche zum Aktualisieren der "
+"Benutzerinformationen angezeigt"
+
+#: admin/partials/wcdg-general-setting.php:79
+#: admin/partials/wcdg-general-setting.php:88
+msgid "Label"
+msgstr "Etikett"
+
+#: admin/partials/dots-plugin-setup-wizard.php:87
+msgid "LearnWoo"
+msgstr "LearnWoo"
+
+#: admin/partials/header/plugin-header.php:109
+msgid "License"
+msgstr "Lizenz"
+
+#: admin/partials/wcdg-information-page.php:37
+msgid "License & Terms of use"
+msgstr "Lizenz & Nutzungsbedingungen"
+
+#: admin/partials/wcdg-information-page.php:51
+msgid "Localization"
+msgstr "Lokalisierung"
+
+#: admin/partials/wcdg-general-setting.php:196
+#: admin/partials/wcdg-general-setting.php:228
+#: admin/partials/wcdg-general-setting.php:239
+msgid "Manually Quick Checkout List for Product/Category/Tag "
+msgstr "Manuell Quick Checkout-Liste für Produkt/Kategorie/Tag"
+
+#: admin/partials/dots-plugin-setup-wizard.php:94
+msgid "Medium"
+msgstr "Medium"
+
+#: public/class-woo-checkout-for-digital-goods-public.php:539
+msgid "My Account"
+msgstr "Mein Konto"
+
+#: admin/partials/wcdg-general-setting.php:78
+#: admin/partials/wcdg-general-setting.php:87
+msgid "Name"
+msgstr "Name"
+
+#: admin/partials/dots-plugin-setup-wizard.php:47
+msgid "Never miss an important update"
+msgstr "Verpassen Sie nie wieder ein wichtiges Update"
+
+#: admin/partials/dots-plugin-setup-wizard.php:48
+msgid ""
+"Opt-in to get email notifications for security & feature updates and to "
+"share some important WooCommerce updates. This will help us make the plugin "
+"more compatible with your version and better at doing what you need it to. "
+"No personal data is tracked or stored."
+msgstr ""
+"Melden Sie sich an, um E-Mail-Benachrichtigungen zu Sicherheits- und "
+"Funktionsupdates zu erhalten und einige wichtige WooCommerce-Updates zu "
+"teilen. Dies wird uns dabei helfen, das Plugin besser mit Ihrer Version "
+"kompatibel zu machen und es besser in der Lage zu machen, das zu tun, was "
+"Sie brauchen. Es werden keine personenbezogenen Daten erfasst oder "
+"gespeichert."
+
+#: admin/partials/dots-plugin-setup-wizard.php:95
+msgid "Others"
+msgstr "Others"
+
+#: admin/partials/wcdg-general-setting.php:80
+#: admin/partials/wcdg-general-setting.php:89
+msgid "Placeholder"
+msgstr "Platzhalter"
+
+#: public/class-woo-checkout-for-digital-goods-public.php:534
+msgid ""
+"Please check your email for login details and update your remaining billing "
+"details."
+msgstr ""
+"Bitte überprüfen Sie Ihre E-Mails auf Anmeldedaten und aktualisieren Sie "
+"Ihre verbleibenden Rechnungsdaten."
+
+#: admin/partials/wcdg-get-started-page.php:48
+msgid "Please note: "
+msgstr "Bitte beachten Sie: "
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:94
+msgid "Please select at least one category..!!"
+msgstr "Bitte wählen Sie mindestens eine Kategorie aus..!!"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:48
+msgid "Please select at least one product..!!"
+msgstr "Bitte wählen Sie mindestens ein Produkt aus..!!"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:159
+msgid "Please select at least one tag..!!"
+msgstr "Bitte wählen Sie mindestens ein Tag aus..!!"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:419
+msgid "Please upload a file to import"
+msgstr "Bitte laden Sie eine Datei zum Importieren hoch"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:426
+msgid "Please upload a valid .json file"
+msgstr "Bitte laden Sie eine gültige .json-Datei hoch"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:46
+msgid "Product inserted Successfully!!"
+msgstr "Produkt erfolgreich eingefügt!!"
+
+#: admin/partials/wcdg-information-page.php:29
+msgid "Product Name"
+msgstr "Produktname"
+
+#: admin/partials/wcdg-information-page.php:25
+msgid "Product Type"
+msgstr "Produktart"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:199
+msgid "Products"
+msgstr "Produkte"
+
+#: admin/partials/header/plugin-header.php:86
+#: public/class-woo-checkout-for-digital-goods-public.php:273
+#: public/class-woo-checkout-for-digital-goods-public.php:420
+#: public/class-woo-checkout-for-digital-goods-public.php:449
+#: public/class-woo-checkout-for-digital-goods-public.php:495
+msgid "Quick Checkout"
+msgstr "Schnelle Kasse"
+
+#: admin/partials/wcdg-general-setting.php:192
+#: admin/partials/wcdg-general-setting.php:227
+#: admin/partials/wcdg-general-setting.php:238
+msgid "Quick Checkout for all downloadable and/or virtual products"
+msgstr "Quick Checkout für alle herunterladbaren und/oder virtuellen Produkte"
+
+#: admin/partials/wcdg-get-started-page.php:40
+#| msgid "Quick Checkout for all downloadable and/or virtual products."
+msgid "Quick checkout for all downloadable and/or virtual products."
+msgstr ""
+"Schneller Checkout für alle herunterladbaren und/oder virtuellen Produkte."
+
+#: admin/partials/wcdg-general-setting.php:172
+msgid "Quick checkout for detail page"
+msgstr "Schneller Checkout für die Detailseite"
+
+#: admin/partials/wcdg-general-setting.php:159
+msgid "Quick checkout for shop page"
+msgstr "Schneller Checkout für die Shop-Seite"
+
+#: admin/partials/wcdg-general-setting.php:187
+#: admin/partials/wcdg-general-setting.php:224
+#: admin/partials/wcdg-general-setting.php:235
+#| msgid "Quick Checkout On"
+msgid "Quick checkout on"
+msgstr "Schnelle Kaufabwicklung"
+
+#: admin/partials/header/plugin-header.php:132
+msgid "Quick Info"
+msgstr "Schnelle Information"
+
+#: admin/partials/wcdg-information-page.php:21
+msgid "Quick info"
+msgstr "Schnelle Information"
+
+#: admin/partials/wcdg-information-page.php:44
+msgid "Quick Start"
+msgstr "Schnellstart"
+
+#: admin/partials/dots-plugin-setup-wizard.php:64
+#: admin/partials/dots-plugin-setup-wizard.php:66
+msgid "Quick Tour"
+msgstr "Schnelle Tour"
+
+#: admin/partials/wcdg-general-setting.php:147
+msgid "Remove order note from checkout page."
+msgstr "Bestellnotiz von der Checkout-Seite entfernen."
+
+#: admin/partials/dots-plugin-setup-wizard.php:86
+msgid "Search Engine"
+msgstr "Search Engine"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:83
+msgid "Select a category"
+msgstr "Wählen Sie eine Kategorie"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:57
+#: admin/partials/wcdg-quick-checkout__premium_only.php:242
+msgid "Select a product"
+msgstr "Wähle ein Produkt"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:82
+msgid "Select a tag"
+msgstr "Wählen Sie ein Tag aus"
+
+#: admin/class-woo-checkout-for-digital-goods-admin.php:84
+msgid "Select a user role"
+msgstr "Wählen Sie eine Benutzerrolle aus"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:101
+msgid "Select Category"
+msgstr "Kategorie wählen"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:55
+msgid "Select Digital Product"
+msgstr "Digitales Produkt auswählen"
+
+#: admin/partials/dots-plugin-setup-wizard.php:84
+msgid "Select One"
+msgstr "Select One"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:166
+msgid "Select Tag"
+msgstr "Tag auswählen"
+
+#: admin/partials/wcdg-general-setting.php:203
+#| msgid "Select User Role"
+msgid "Select user role"
+msgstr "Wählen Sie die Benutzerrolle aus"
+
+#: admin/partials/wcdg-general-setting.php:204
+msgid "Select user role which you want to enable this plugin."
+msgstr ""
+"Wählen Sie die Benutzerrolle aus, für die Sie dieses Plugin aktivieren "
+"möchten."
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:16
+msgid "Setting"
+msgstr "Einstellung"
+
+#: admin/partials/header/plugin-header.php:103
+#: includes/class-woo-checkout-for-digital-goods.php:231
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/partials/header/plugin-header.php:145
+msgid "Shop Plugins"
+msgstr "Shop-Plugins"
+
+#: admin/partials/wcdg-general-setting.php:250
+msgid "Show button for the update user information on thank you page"
+msgstr ""
+"Schaltfläche zum Aktualisieren der Benutzerinformationen auf der Dankesseite "
+"anzeigen"
+
+#: admin/partials/dots-plugin-setup-wizard.php:85
+msgid "Social Media"
+msgstr "Social Media"
+
+#: admin/partials/wcdg-get-started-page.php:19
+msgid "Step 1:"
+msgstr "Schritt 1:"
+
+#: admin/partials/wcdg-get-started-page.php:25
+msgid "Step 2:"
+msgstr "Schritt 2:"
+
+#: admin/partials/wcdg-get-started-page.php:31
+msgid "Step 3:"
+msgstr "Schritt 3:"
+
+#: admin/partials/wcdg-get-started-page.php:34
+msgid "Step 4:"
+msgstr "Schritt 4:"
+
+#: admin/partials/wcdg-get-started-page.php:40
+msgid "Step 5:"
+msgstr "Schritt 5:"
+
+#: admin/partials/wcdg-get-started-page.php:43
+msgid "Step 6:"
+msgstr "Schritt 6:"
+
+#: admin/partials/dots-plugin-setup-wizard.php:26
+msgid ""
+"Streamline WooCommerce Checkout for Digital Goods - Boost Sales, Simplify, "
+"and Speed Up the Process!"
+msgstr ""
+"Optimieren Sie den WooCommerce-Checkout für digitale Waren – steigern Sie "
+"den Umsatz, vereinfachen Sie und beschleunigen Sie den Prozess!"
+
+#: admin/partials/header/plugin-header.php:66
+msgid "Suggest"
+msgstr "Vorschlagen"
+
+#: admin/partials/header/plugin-header.php:61
+#: includes/class-woo-checkout-for-digital-goods.php:233
+msgid "Support"
+msgstr "Unterstützung"
+
+#: admin/partials/wcdg-information-page.php:46
+msgid "Support Forum"
+msgstr "Hilfeforum"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:157
+msgid "Tag inserted Successfully!!"
+msgstr "Tag erfolgreich eingefügt!!"
+
+#: admin/partials/wcdg-quick-checkout__premium_only.php:201
+msgid "Tags"
+msgstr "Tags"
+
+#: admin/partials/wcdg-get-started-page.php:48
+#| msgid ""
+#| "This plugin is only compatible with WooCommerce version 2.4.0 and more"
+msgid "This plugin is compatible with WooCommerce version 2.4.0 and above."
+msgstr "Dieses Plugin ist mit WooCommerce Version 2.4.0 und höher kompatibel."
+
+#: admin/partials/wcdg-get-started-page.php:17
+msgid ""
+"Try this WooCommerce quick checkout plugin to eliminate overly-complicated "
+"billing/shipping details for virtual and downloadable products."
+msgstr ""
+"Probieren Sie dieses WooCommerce-Schnell-Checkout-Plugin aus, um übermäßig "
+"komplizierte Rechnungs-/Versanddetails für virtuelle und herunterladbare "
+"Produkte zu vermeiden."
+
+#: admin/partials/wcdg-general-setting.php:249
+#: admin/partials/wcdg-general-setting.php:264
+#: admin/partials/wcdg-general-setting.php:280
+msgid "Update on thank you page"
+msgstr "Update zur Dankesseite"
+
+#: woo-checkout-for-digital-goods.php:312
+msgid "Want to update the billing information?"
+msgstr "Möchten Sie die Zahlungsinformationen aktualisieren?"
+
+#: admin/partials/dots-plugin-setup-wizard.php:24
+msgid "Welcome! 🤗"
+msgstr "Willkommen! 🤗"
+
+#: woo-checkout-for-digital-goods.php:344
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: admin/partials/wcdg-information-page.php:26
+msgid "WooCommerce Plugin"
+msgstr "WooCommerce-Plugin"
+
+#: admin/partials/dots-plugin-setup-wizard.php:82
+msgid "Would you mind telling how did you hear about us?"
+msgstr ""
+"Würde es Ihnen etwas ausmachen, zu erzählen, wie Sie von uns erfahren haben?"
+
+#: admin/partials/dots-plugin-setup-wizard.php:91
+msgid "WP Mayor"
+msgstr "WP Mayor"
+
+#: admin/partials/dots-plugin-setup-wizard.php:89
+msgid "WPBeginner"
+msgstr "WPBeginner"
+
+#: admin/partials/dots-plugin-setup-wizard.php:93
+msgid "WPExplorer"
+msgstr "WPExplorer"
+
+#: admin/partials/dots-plugin-setup-wizard.php:88
+msgid "WPLift"
+msgstr "WPLift"
+
+#: admin/partials/dots-plugin-setup-wizard.php:42
+#: admin/partials/dots-plugin-setup-wizard.php:50
+msgid "Yes, count me in!"
+msgstr "Ja, zähl mich mit!"
+
+#: admin/partials/dots-plugin-setup-wizard.php:77
+msgid "You are all set, almost!"
+msgstr "Sie sind fast fertig!"

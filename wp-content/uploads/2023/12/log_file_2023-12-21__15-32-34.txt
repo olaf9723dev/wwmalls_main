@@ -1,0 +1,97 @@
+
+---Downloaded files---
+The import files for: Estatik 4 Demo Import were successfully downloaded!
+Initial max execution time = 6000
+Files info:
+Site URL = https://wwmalls.com
+Data file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/demo-content-major.xml
+Widget file = /home/wwmalls/public_html/wp-content/themes/Estatik-estatik-realtor-theme-c7679fbb0a83/demo/widgets-major.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "profile-pic" (Media)
+[ERROR] Failed to import "agent-profile-pic" (Media)
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Footer Left Area : 
+
+SiteOrigin Editor - Keep In Touch - Imported
+
+Footer Center Area : 
+
+Navigation Menu - Information - Imported
+
+Footer Right Area : 
+
+yikes_easy_mc_widget - Newsletter - Site does not support widget
+Estatik Social - No Title - Imported
+
+Page Sidebar : 
+
+Estatik Property Carousel - No Title - Imported
+Estatik Taxonomies - No Title - Imported
+
+Post Sidebar : 
+
+Categories - No Title - Imported
+Recent Posts - No Title - Imported
+Calendar - No Title - Imported
+Tag Cloud - No Title - Imported
+
+Blog Sidebar : 
+
+Calendar - No Title - Imported
+Recent Comments - Recent Comments - Imported
+Tag Cloud - Tags - Imported
+
+Single Property Sidebar : 
+
+Estatik Taxonomies - No Title - Imported
+Estatik Properties Sidebar List - No Title - Imported
+Estatik Property Carousel - Estatik Property Carousel - Imported
+Estatik Property Item - Estatik Property Item - Imported
+
+Before Blog Archive : 
+
+Layout Builder - No Title - Imported
+
+Properties Archive Sidebar : 
+
+Estatik Property Carousel - Featured Properties - Imported
+
+
+
+---ocdi/after_import---
+

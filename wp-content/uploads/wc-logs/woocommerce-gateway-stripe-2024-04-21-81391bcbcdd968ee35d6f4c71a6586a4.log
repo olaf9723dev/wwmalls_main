@@ -1,0 +1,874 @@
+2024-04-21T01:40:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T03:40:30+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T05:40:50+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T06:24:14+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T06:35:48+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods request: Array
+(
+    [customer] => cus_PxZwCqaqpAtuqp
+    [type] => card
+    [limit] => 100
+)
+
+====End Log====
+
+2024-04-21T06:35:48+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_methods response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_PxZwCqaqpAtuqp request: Array
+(
+    [email] => admin@wwmalls.com
+    [description] => Name: Ken Crause, Username: admin
+    [name] => Ken Crause
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => en-US
+        )
+
+    [address] => Array
+        (
+            [line1] => Island
+            [line2] => 
+            [postal_code] => A2H 5G4
+            [city] => Nanaimo
+            [state] => BC
+            [country] => CA
+        )
+
+)
+
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+customers/cus_PxZwCqaqpAtuqp response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Info: Begin processing payment for order 22976 for the amount of 550.00
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents request: Array
+(
+    [amount] => 55000
+    [currency] => cad
+    [description] => WWMalls.Com - Order 22976
+    [metadata] => Array
+        (
+            [customer_name] => Ken Crause
+            [customer_email] => admin@wwmalls.com
+            [order_id] => 22976
+            [site_url] => https://wwmalls.com
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [payment_method] => pm_1P7emkJB8lUwOLytz4SrlqVz
+    [customer] => cus_PxZwCqaqpAtuqp
+    [shipping] => Array
+        (
+            [name] => Ken Crause
+            [address] => Array
+                (
+                    [line1] => Island
+                    [line2] => 
+                    [city] => Nanaimo
+                    [country] => CA
+                    [postal_code] => A2H 5G4
+                    [state] => BC
+                )
+
+        )
+
+)
+
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Stripe PaymentIntent pi_3P7u0kJB8lUwOLyt1MJJPI2t initiated for order 22976
+====End Log====
+
+2024-04-21T06:36:26+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents/pi_3P7u0kJB8lUwOLyt1MJJPI2t/confirm request: Array
+(
+    [payment_method] => pm_1P7emkJB8lUwOLytz4SrlqVz
+)
+
+====End Log====
+
+2024-04-21T06:36:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+payment_intents/pi_3P7u0kJB8lUwOLyt1MJJPI2t/confirm response with stripe-version: 2019-09-09
+====End Log====
+
+2024-04-21T06:36:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Stripe PaymentIntent pi_3P7u0kJB8lUwOLyt1MJJPI2t succeeded for order 22976
+====End Log====
+
+2024-04-21T06:36:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_3P7u0kJB8lUwOLyt1FytywCq
+    [object] => charge
+    [amount] => 55000
+    [amount_captured] => 55000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_3P7u0kJB8lUwOLyt13hOBhAi
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => admin@wwmalls.com
+            [name] => Ken Crause
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => WWMALLS.COM
+    [captured] => 1
+    [created] => 1713681387
+    [currency] => cad
+    [customer] => cus_PxZwCqaqpAtuqp
+    [description] => WWMalls.Com - Order 22976
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_balance_transaction] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_email] => admin@wwmalls.com
+            [customer_name] => Ken Crause
+            [order_id] => 22976
+            [site_url] => https://wwmalls.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 60
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_3P7u0kJB8lUwOLyt1MJJPI2t
+    [payment_method] => pm_1P7emkJB8lUwOLytz4SrlqVz
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [amount_authorized] => 55000
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => 
+                        )
+
+                    [country] => CA
+                    [exp_month] => 12
+                    [exp_year] => 2024
+                    [extended_authorization] => stdClass Object
+                        (
+                            [status] => disabled
+                        )
+
+                    [fingerprint] => CbJvVumJNpsMNffI
+                    [funding] => credit
+                    [incremental_authorization] => stdClass Object
+                        (
+                            [status] => unavailable
+                        )
+
+                    [installments] => 
+                    [last4] => 0000
+                    [mandate] => 
+                    [multicapture] => stdClass Object
+                        (
+                            [status] => unavailable
+                        )
+
+                    [network] => visa
+                    [network_token] => stdClass Object
+                        (
+                            [used] => 
+                        )
+
+                    [overcapture] => stdClass Object
+                        (
+                            [maximum_amount_capturable] => 55000
+                            [status] => unavailable
+                        )
+
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [radar_options] => stdClass Object
+        (
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUNWSGxKQjhsVXdPTHl0KOznkrEGMgZHqiX7FbY6LBb5Qsk1_R7S37Sa5EDSMdpNO4wl8ovDvXRS1rNE8H1K2Roqltm0e9Cop89c
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_3P7u0kJB8lUwOLyt1FytywCq/refunds
+        )
+
+    [review] => 
+    [shipping] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => Nanaimo
+                    [country] => CA
+                    [line1] => Island
+                    [line2] => 
+                    [postal_code] => A2H 5G4
+                    [state] => BC
+                )
+
+            [carrier] => 
+            [name] => Ken Crause
+            [phone] => 
+            [tracking_number] => 
+        )
+
+    [source] => 
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+2024-04-21T06:36:28+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+balance/history/txn_3P7u0kJB8lUwOLyt13hOBhAi
+====End Log====
+
+2024-04-21T08:24:17+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T10:24:19+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T12:24:29+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T14:24:40+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T16:24:53+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T17:39:00+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1P84LtJB8lUwOLytZTkOzeIs",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1713721137,
+  "data": {
+    "object": {
+      "id": "cs_live_a1A75Wkp9uCY8I5A4AtWdQfPRmZ8RcVuBPQ3UDflFd11LR5J8SOebxSY9X",
+      "object": "checkout.session",
+      "after_expiration": null,
+      "allow_promotion_codes": false,
+      "amount_subtotal": 12500,
+      "amount_total": 12500,
+      "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+      },
+      "billing_address_collection": "required",
+      "cancel_url": "https://stripe.com",
+      "client_reference_id": null,
+      "client_secret": null,
+      "consent": null,
+      "consent_collection": {
+        "payment_method_reuse_agreement": null,
+        "promotions": "none",
+        "terms_of_service": "none"
+      },
+      "created": 1713634737,
+      "currency": "cad",
+      "currency_conversion": null,
+      "custom_fields": [
+
+      ],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_creation": "if_required",
+      "customer_details": null,
+      "customer_email": null,
+      "expires_at": 1713721137,
+      "invoice": null,
+      "invoice_creation": null,
+      "livemode": true,
+      "locale": "auto",
+      "metadata": {
+      },
+      "mode": "subscription",
+      "payment_intent": null,
+      "payment_link": "plink_1O5rcjJB8lUwOLytpyiwPORY",
+      "payment_method_collection": "always",
+      "payment_method_configuration_details": {
+        "id": "pmc_1O5rZVJB8lUwOLytXqvawOpZ",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "link"
+      ],
+      "payment_status": "unpaid",
+      "phone_number_collection": {
+        "enabled": true
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping": null,
+      "shipping_address_collection": null,
+      "shipping_options": [
+
+      ],
+      "shipping_rate": null,
+      "status": "expired",
+      "submit_type": "auto",
+      "subscription": null,
+      "success_url": "https://stripe.com",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted",
+      "url": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 3,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.expired"
+}
+====End Log====
+
+2024-04-21T17:39:00+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1P84LtJB8lUwOLytZTkOzeIs",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1713721137,
+  "data": {
+    "object": {
+      "id": "cs_live_a1A75Wkp9uCY8I5A4AtWdQfPRmZ8RcVuBPQ3UDflFd11LR5J8SOebxSY9X",
+      "object": "checkout.session",
+      "after_expiration": null,
+      "allow_promotion_codes": false,
+      "amount_subtotal": 12500,
+      "amount_total": 12500,
+      "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+      },
+      "billing_address_collection": "required",
+      "cancel_url": "https://stripe.com",
+      "client_reference_id": null,
+      "client_secret": null,
+      "consent": null,
+      "consent_collection": {
+        "payment_method_reuse_agreement": null,
+        "promotions": "none",
+        "terms_of_service": "none"
+      },
+      "created": 1713634737,
+      "currency": "cad",
+      "currency_conversion": null,
+      "custom_fields": [
+
+      ],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_creation": "if_required",
+      "customer_details": null,
+      "customer_email": null,
+      "expires_at": 1713721137,
+      "invoice": null,
+      "invoice_creation": null,
+      "livemode": true,
+      "locale": "auto",
+      "metadata": {
+      },
+      "mode": "subscription",
+      "payment_intent": null,
+      "payment_link": "plink_1O5rcjJB8lUwOLytpyiwPORY",
+      "payment_method_collection": "always",
+      "payment_method_configuration_details": {
+        "id": "pmc_1O5rZVJB8lUwOLytXqvawOpZ",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "link"
+      ],
+      "payment_status": "unpaid",
+      "phone_number_collection": {
+        "enabled": true
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping": null,
+      "shipping_address_collection": null,
+      "shipping_options": [
+
+      ],
+      "shipping_rate": null,
+      "status": "expired",
+      "submit_type": "auto",
+      "subscription": null,
+      "success_url": "https://stripe.com",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted",
+      "url": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 3,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.expired"
+}
+====End Log====
+
+2024-04-21T17:39:42+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1P84MZJB8lUwOLytdJPMDIhh",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1713721179,
+  "data": {
+    "object": {
+      "id": "cs_live_a1USRl69paM4JrZEFhuuUI7oBGkp9JD5dxhcz3rE16CropnemdnbTNCyaJ",
+      "object": "checkout.session",
+      "after_expiration": null,
+      "allow_promotion_codes": false,
+      "amount_subtotal": 95000,
+      "amount_total": 95000,
+      "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+      },
+      "billing_address_collection": "required",
+      "cancel_url": "https://stripe.com",
+      "client_reference_id": null,
+      "client_secret": null,
+      "consent": null,
+      "consent_collection": {
+        "payment_method_reuse_agreement": null,
+        "promotions": "none",
+        "terms_of_service": "none"
+      },
+      "created": 1713634778,
+      "currency": "cad",
+      "currency_conversion": null,
+      "custom_fields": [
+
+      ],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_creation": "if_required",
+      "customer_details": null,
+      "customer_email": null,
+      "expires_at": 1713721178,
+      "invoice": null,
+      "invoice_creation": {
+        "enabled": false,
+        "invoice_data": {
+          "account_tax_ids": null,
+          "custom_fields": null,
+          "description": null,
+          "footer": null,
+          "issuer": null,
+          "metadata": {
+          },
+          "rendering_options": null
+        }
+      },
+      "livemode": true,
+      "locale": "auto",
+      "metadata": {
+      },
+      "mode": "payment",
+      "payment_intent": null,
+      "payment_link": "plink_1O5rgmJB8lUwOLyt3Lu7zKGu",
+      "payment_method_collection": "always",
+      "payment_method_configuration_details": {
+        "id": "pmc_1O5rZVJB8lUwOLytXqvawOpZ",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "link"
+      ],
+      "payment_status": "unpaid",
+      "phone_number_collection": {
+        "enabled": true
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping": null,
+      "shipping_address_collection": null,
+      "shipping_options": [
+
+      ],
+      "shipping_rate": null,
+      "status": "expired",
+      "submit_type": "auto",
+      "subscription": null,
+      "success_url": "https://stripe.com",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted",
+      "url": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 3,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.expired"
+}
+====End Log====
+
+2024-04-21T17:39:42+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1P84MZJB8lUwOLytdJPMDIhh",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1713721179,
+  "data": {
+    "object": {
+      "id": "cs_live_a1USRl69paM4JrZEFhuuUI7oBGkp9JD5dxhcz3rE16CropnemdnbTNCyaJ",
+      "object": "checkout.session",
+      "after_expiration": null,
+      "allow_promotion_codes": false,
+      "amount_subtotal": 95000,
+      "amount_total": 95000,
+      "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+      },
+      "billing_address_collection": "required",
+      "cancel_url": "https://stripe.com",
+      "client_reference_id": null,
+      "client_secret": null,
+      "consent": null,
+      "consent_collection": {
+        "payment_method_reuse_agreement": null,
+        "promotions": "none",
+        "terms_of_service": "none"
+      },
+      "created": 1713634778,
+      "currency": "cad",
+      "currency_conversion": null,
+      "custom_fields": [
+
+      ],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_creation": "if_required",
+      "customer_details": null,
+      "customer_email": null,
+      "expires_at": 1713721178,
+      "invoice": null,
+      "invoice_creation": {
+        "enabled": false,
+        "invoice_data": {
+          "account_tax_ids": null,
+          "custom_fields": null,
+          "description": null,
+          "footer": null,
+          "issuer": null,
+          "metadata": {
+          },
+          "rendering_options": null
+        }
+      },
+      "livemode": true,
+      "locale": "auto",
+      "metadata": {
+      },
+      "mode": "payment",
+      "payment_intent": null,
+      "payment_link": "plink_1O5rgmJB8lUwOLyt3Lu7zKGu",
+      "payment_method_collection": "always",
+      "payment_method_configuration_details": {
+        "id": "pmc_1O5rZVJB8lUwOLytXqvawOpZ",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "link"
+      ],
+      "payment_status": "unpaid",
+      "phone_number_collection": {
+        "enabled": true
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping": null,
+      "shipping_address_collection": null,
+      "shipping_options": [
+
+      ],
+      "shipping_rate": null,
+      "status": "expired",
+      "submit_type": "auto",
+      "subscription": null,
+      "success_url": "https://stripe.com",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted",
+      "url": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 3,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.expired"
+}
+====End Log====
+
+2024-04-21T18:25:03+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T20:25:09+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
+2024-04-21T22:25:14+00:00 DEBUG 
+====Stripe Version: 8.2.0====
+====Stripe Plugin API Version: 2019-09-09====
+====Start Log====
+account
+====End Log====
+
