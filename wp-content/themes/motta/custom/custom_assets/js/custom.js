@@ -630,41 +630,6 @@ jQuery(document).ready(function($){
 // Page Loader JavaScript
 jQuery(document).ready(function($){
     $('body').append('<div class="loader"><div class="loader-inner"><div class="loader-line-wrap"><div class="loader-line"></div></div><div class="loader-line-wrap"><div class="loader-line"></div></div><div class="loader-line-wrap"><div class="loader-line"></div></div><div class="loader-line-wrap"><div class="loader-line"></div></div><div class="loader-line-wrap"><div class="loader-line"></div></div></div></div>');
-    // $('body').append(
-    //     `<div class='contain'>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //       <svg height='80' viewBox='-30 0 255 80' width='255'>
-    //         <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>
-    //       </svg>
-    //     </div>`
-    // );
-    
     function showModal() {
         $(".loader").show();
     }
@@ -690,4 +655,8 @@ jQuery(document).ready(function($){
     jQuery(document).ajaxStop(function($) {
         hideModal();
     });
+});
+
+jQuery(document).ready(function($){
+    
 });

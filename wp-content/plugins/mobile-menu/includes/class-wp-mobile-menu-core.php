@@ -190,7 +190,7 @@ class WP_Mobile_Menu_Core
     
     }
     
-    /**
+    /**mobmenu_right_top_content
      * Build the WP Mobile Menu Html Markup.
      */
     public function load_mobile_menu_html(
@@ -280,9 +280,9 @@ class WP_Mobile_Menu_Core
         $submenu_close_icon_font = $plugin_settings->getOption( 'submenu_close_icon_font' );
         $mm_open_cart_menu = '';
         $this->logo_content = '';
-        $this->search_form = '<div class="mm-panel-search-form"><form action="' . esc_url( home_url( '/' ) ) . '" method="get" class="search-form">
+        $this->search_form = '<div class="mm-panel-search-form" style="margin-bottom:30px;padding:0px 10px 0px 10px"><form action="' . esc_url( home_url( '/' ) ) . '" method="get" class="search-form" style = "display:flex;flex-direction:column;">
         <input type="text" name="s" id="s" class="search" placeholder="Search for.." value="' . esc_attr( get_search_query() ) . '" required>
-        <button type="submit" id="search-submit" class="search-submit"><i class="mob-icon-search-6"></i></button>
+        <button type="submit" id="search-submit" class="search-submit" style="line-height:40px!important">Go</button>
         </form></div>';
         $menu_display_type = $this->get_menu_display_type( $plugin_settings->getOption( 'menu_display_type' ) );
         $output = '';
@@ -513,17 +513,17 @@ class WP_Mobile_Menu_Core
 		<?php 
         do_action( 'mobmenu_left_top_content' );
         
-        if ( is_active_sidebar( 'mobmlefttop' ) ) {
+        // if ( is_active_sidebar( 'mobmlefttop' ) ) {
             ?>
-			<ul class="leftmtop">
+			<!--<ul class="leftmtop">-->
 				<?php 
-            dynamic_sidebar( 'mobmlefttop' );
+            // dynamic_sidebar( 'mobmlefttop' );
             ?>
-			</ul>
+			<!--</ul>-->
 		<?php 
-        }
+        // }
         
-        $left_panel_elements_order = array( 'left-menu' );
+        $left_panel_elements_order = array( 'logo', 'search', 'left-menu' );
         $left_menu_panel_content = '';
         if ( !empty($left_panel_elements_order) ) {
             foreach ( $left_panel_elements_order as $element ) {
@@ -553,15 +553,15 @@ class WP_Mobile_Menu_Core
         echo  $left_menu_panel_content ;
         // Check if the Left Menu Bottom Widget has any content.
         
-        if ( is_active_sidebar( 'mobmleftbottom' ) ) {
+        // if ( is_active_sidebar( 'mobmleftbottom' ) ) {
             ?>
-				<ul class="leftmbottom">
+				<!--<ul class="leftmbottom">-->
 					<?php 
-            dynamic_sidebar( 'mobmleftbottom' );
+            // dynamic_sidebar( 'mobmleftbottom' );
             ?>
-				</ul>
+				<!--</ul>-->
 		<?php 
-        }
+        // }
         
         ?>
 
