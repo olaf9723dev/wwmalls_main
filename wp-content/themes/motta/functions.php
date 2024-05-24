@@ -18,6 +18,7 @@ require_once 'custom/custom-member/edit-membership.php';
 require_once 'custom/custom-register/c-register.php';
 require_once 'custom/custom-store/custom-store.php';
 require_once 'custom/custom-admin-sort/custom-sort.php';
+require_once 'custom/custom-account/custom-account-page.php';
 
 // require_once 'custom/custom_api/post_hook.php';
 // require_once 'custom/custom_api/user_hook.php';

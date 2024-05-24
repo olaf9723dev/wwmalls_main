@@ -79,9 +79,9 @@ $plugins=array(
         'description'   => __('Create and manage advanced gift cards for WooCommerce stores. Enable your customers to buy, redeem, and share gift cards from your store.', 'product-import-export-for-woo'),
         'image_url'     => 'giftcards_plugin.png',
         'premium_url'   => 'https://www.webtoffee.com/product/woocommerce-gift-cards/?utm_source=other_solution_page&utm_medium=free_plugin&utm_campaign=WooCommerce_Gift_Cards',
-        'basic_url'     => '',
+        'basic_url'     => 'https://wordpress.org/plugins/wt-gift-cards-woocommerce/',
         'pro_plugin'    => 'wt-woocommerce-gift-cards/wt-woocommerce-gift-cards.php',
-        'basic_plugin'  => '', 
+        'basic_plugin'  => 'wt-gift-cards-woocommerce/wt-gift-cards-woocommerce.php', 
     ),
     'fbt_plugins' => array(
         'title'         => __('Frequently Bought Together for WooCommerce', 'product-import-export-for-woo'),
@@ -249,6 +249,15 @@ $plugins=array(
         'pro_plugin' => 'wp-migration-duplicator-pro/wp-migration-duplicator-pro.php',
         'basic_plugin' => 'wp-migration-duplicator/wp-migration-duplicator.php',
     ),
+    'product_recommendations' => array(
+        'title'         => __('WooCommerce Product Recommendations', 'product-import-export-for-woo'),
+        'description'   => __('Generate Intelligent Product Recommendations For Your WooCommerce Store. Offer WooCommerce smart product recommendations to your customers & maximize the average cart value.', 'product-import-export-for-woo'),
+        'image_url'     => 'product-recommendation.png',
+        'premium_url'   => 'https://www.webtoffee.com/product/woocommerce-product-recommendations/?utm_source=other_solution_page&utm_medium=free_plugin&utm_campaign=Product_Recommendations',
+        'basic_url'     => '',
+        'pro_plugin'    => 'wt-woocommerce-product-recommendations/wt-woocommerce-product-recommendations.php',
+        'basic_plugin'  => '', 
+    ),    
 );
 
     foreach ($plugins as $key => $value)

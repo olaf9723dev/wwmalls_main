@@ -1,11 +1,10 @@
 === Product Import Export for WooCommerce===
 Contributors: webtoffee
-Donate link: https://www.webtoffee.com/plugins/
-Tags: product export, product import, CSV import export, woocommerce, CSV, product, export, import, woocommerce product import, woocommerce import products, export woocommerce products, importer
+Tags: product export, product importer, CSV import export, woocommerce product import, export woocommerce products
 Requires at least: 3.0.1
-Tested up to: 6.5
+Tested up to: 6.5.3
 Requires PHP: 5.6
-Stable tag: 2.4.3
+Stable tag: 2.4.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,7 +61,7 @@ With this plugin, you can export and import WooCommerce products to and from a C
 * <strong>Save frequently used import/export configurations</strong> as templates and use the template for future imports and exports.
 * The plugin <strong>stores all the past imports and exports</strong> and <strong>lets you re-run</strong> them when needed.
 * <strong>Easy debugging:</strong> View and download import log for debugging purpose.
-* Tested OK with WooCommerce 8.7.0
+* Tested OK with WooCommerce 8.8.3
 
 ###COMPATIBLE PLUGINS###
 
@@ -232,6 +231,10 @@ Yes, you can import grouped, affiliate/external products in addition to simple p
 
 
 == CHANGELOG ==
+
+= 2.4.4 2024-05-09 =
+* [Compatibility]-Tested Ok with WooCommerce 8.8.3
+* [Compatibility] - Tested OK with WordPress 6.5.3
 
 = 2.4.3 2024-03-26 =
 * [Improvement] - Implemented a user interface update for the import/export screen, transitioning to a card-based layout for post type selection.
@@ -677,7 +680,7 @@ Yes, you can import grouped, affiliate/external products in addition to simple p
 
 == Upgrade Notice ==
 
-= 2.4.3 =
-* [Improvement] - Implemented a user interface update for the import/export screen, transitioning to a card-based layout for post type selection.
-* [Compatibility]-Tested Ok with WooCommerce 8.7.0
-* [Compatibility] - Tested OK with WordPress 6.5
+= 2.4.4 =
+* [Compatibility]-Tested Ok with WooCommerce 8.8.3
+* [Compatibility] - Tested OK with WordPress 6.5.3
+

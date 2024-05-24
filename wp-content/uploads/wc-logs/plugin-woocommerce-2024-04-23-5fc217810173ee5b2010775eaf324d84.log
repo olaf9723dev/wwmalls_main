@@ -1,2 +1,0 @@
-2024-04-23T02:51:38+00:00 ERROR FeaturesUtil::declare_compatibility: woocommerce-payments/woocommerce-payments.php is not a known WordPress plugin.
-2024-04-23T13:15:22+00:00 INFO Payment gateway enabled: "Dokan Stripe Connect"
