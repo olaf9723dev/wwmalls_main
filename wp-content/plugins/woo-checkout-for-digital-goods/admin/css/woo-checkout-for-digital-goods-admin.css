@@ -6,6 +6,7 @@
 body a,body a:hover{color:var(--dots-primary);outline:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;text-decoration:none;}
 .fs-modal input[type=text]:focus,#fs_account .fs-key-value-table input[type=text]:focus,.dots-section-left input:focus,.dots-section-left .wp-picker-container .button:focus,.dots-section-left textarea:focus,.dots-section-left select:focus,.ds-plugin-setup-wizard-main select:focus,#dsrqw_rule_per_page:focus,#dsrqw_quote_requests_per_page:focus{border-color:var(--dots-primary);-webkit-box-shadow:none;box-shadow:none;outline:none;}
 .dots-settings-inner-main .notice{margin:5px 0 25px;}
+.wcdg-getting-started p{font-size:15px;}
 
 /* Plugin tables design */
 .dots-settings-inner-main .form-table{margin:0}
@@ -168,7 +169,8 @@ a#fee-delete-field{font-size:25px;vertical-align:middle;}
 .thpladmin_fields_table th.status{white-space:nowrap;}
 .dashicons-yes-alt{color:#00b900;}
 .dashicons-dismiss{color:#e90000;}
-.td_label input,.td_placeholder input{width:100%;}
+.td_label input,.td_placeholder input{width:100%;outline:none;}
+.td_label input:focus,.td_placeholder input:focus{border-color:var(--dots-primary);box-shadow:none;}
 /* End SJ */
 
 /* Freemius My Account page style */
@@ -216,8 +218,9 @@ a#fee-delete-field{font-size:25px;vertical-align:middle;}
 .dots-settings-inner-main .select2-container:has(.select2-selection__choice) .select2-search__field{margin-top:4px;}
 .dots-settings-inner-main .select2-selection--multiple .select2-selection__rendered li:first-child:nth-last-child(1) .select2-search__field{min-width:250px!important;}
 .dots-settings-inner-main .select2-container--default .select2-selection--multiple{padding:0;}
-.dots-settings-inner-main .select2-container--default.select2-container--focus .select2-selection--multiple{border:1px solid #aaa;}
-.select2-container--default .select2-results__option--highlighted[aria-selected],.select2-container--default .select2-results__option--highlighted[data-selected]{background-color:#0073aa!important;}
+.dots-settings-inner-main .select2-container--default.select2-container--focus .select2-selection--multiple{border:1px solid var(--dots-primary)!important;box-shadow:none!important;}
+.select2-container--default .select2-results__option--highlighted[aria-selected],.select2-container--default .select2-results__option--highlighted[data-selected]{box-shadow:none!important;background-color:var(--dots-primary)!important;}
+.select2-container--default .select2-dropdown{box-shadow:none!important;border:1px solid var(--dots-primary)!important;}
 
 /**********************
 ****** Media CSS ******

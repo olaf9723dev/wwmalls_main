@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Digital Goods for WooCommerce Checkout\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 12:56+0530\n"
-"PO-Revision-Date: 2023-11-02 12:04+0000\n"
+"PO-Revision-Date: 2024-05-08 07:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -27,9 +27,17 @@ msgstr "um Lizenz und Nutzungsbedingungen anzuzeigen."
 msgid "%1$s (#%2$s)"
 msgstr "%1$s (#%2$s)"
 
-#: woo-checkout-for-digital-goods.php:349
+#: woo-checkout-for-digital-goods.php:352
 msgid "%1$s requires %2$s to be installed & activated!"
 msgstr "Für %1$s muss %2$s installiert und aktiviert sein!"
+
+#: admin/partials/wcdg-general-setting.php:228
+#: admin/partials/wcdg-general-setting.php:239
+#: admin/partials/wcdg-general-setting.php:265
+#: admin/partials/wcdg-general-setting.php:280
+#| msgid "In Pro Version"
+msgid "- In Pro Version"
+msgstr "- In der Pro-Version"
 
 #: admin/partials/header/plugin-header.php:131
 msgid "About"
@@ -39,7 +47,7 @@ msgstr "Um"
 msgid "Account"
 msgstr "Konto"
 
-#: woo-checkout-for-digital-goods.php:249
+#: woo-checkout-for-digital-goods.php:252
 msgid "Activate Plugin"
 msgstr "Plugin aktivieren"
 
@@ -114,10 +122,10 @@ msgid "Data has been Imported!"
 msgstr "Daten wurden importiert!"
 
 #: admin/partials/header/plugin-header.php:53
-msgid "Digital Goods"
-msgstr "Digital Goods"
+msgid "Digital Goods For Checkout"
+msgstr "Digital Goods For Checkout"
 
-#: woo-checkout-for-digital-goods.php:343
+#: woo-checkout-for-digital-goods.php:346
 msgid "Digital Goods for WooCommerce Checkout"
 msgstr "Digital Goods for WooCommerce Checkout"
 
@@ -269,13 +277,6 @@ msgstr ""
 "json-Datei. Diese Datei kann durch Exportieren der Einstellungen auf eine "
 "andere Site mithilfe des obigen Formulars erhalten werden."
 
-#: admin/partials/wcdg-general-setting.php:228
-#: admin/partials/wcdg-general-setting.php:239
-#: admin/partials/wcdg-general-setting.php:265
-#: admin/partials/wcdg-general-setting.php:280
-msgid "In Pro Version"
-msgstr "In der Pro-Version"
-
 #: admin/partials/wcdg-information-page.php:33
 msgid "Installed Version"
 msgstr "Installierte Version"
@@ -318,7 +319,7 @@ msgstr "Manuell Quick Checkout-Liste für Produkt/Kategorie/Tag"
 msgid "Medium"
 msgstr "Medium"
 
-#: public/class-woo-checkout-for-digital-goods-public.php:539
+#: public/class-woo-checkout-for-digital-goods-public.php:544
 msgid "My Account"
 msgstr "Mein Konto"
 
@@ -354,7 +355,7 @@ msgstr "Others"
 msgid "Placeholder"
 msgstr "Platzhalter"
 
-#: public/class-woo-checkout-for-digital-goods-public.php:534
+#: public/class-woo-checkout-for-digital-goods-public.php:539
 msgid ""
 "Please check your email for login details and update your remaining billing "
 "details."
@@ -403,10 +404,10 @@ msgid "Products"
 msgstr "Produkte"
 
 #: admin/partials/header/plugin-header.php:86
-#: public/class-woo-checkout-for-digital-goods-public.php:273
-#: public/class-woo-checkout-for-digital-goods-public.php:420
-#: public/class-woo-checkout-for-digital-goods-public.php:449
-#: public/class-woo-checkout-for-digital-goods-public.php:495
+#: public/class-woo-checkout-for-digital-goods-public.php:278
+#: public/class-woo-checkout-for-digital-goods-public.php:425
+#: public/class-woo-checkout-for-digital-goods-public.php:454
+#: public/class-woo-checkout-for-digital-goods-public.php:500
 msgid "Quick Checkout"
 msgstr "Schnelle Kasse"
 
@@ -603,7 +604,7 @@ msgstr ""
 msgid "Update on thank you page"
 msgstr "Update zur Dankesseite"
 
-#: woo-checkout-for-digital-goods.php:312
+#: woo-checkout-for-digital-goods.php:315
 msgid "Want to update the billing information?"
 msgstr "Möchten Sie die Zahlungsinformationen aktualisieren?"
 
@@ -611,7 +612,7 @@ msgstr "Möchten Sie die Zahlungsinformationen aktualisieren?"
 msgid "Welcome! 🤗"
 msgstr "Willkommen! 🤗"
 
-#: woo-checkout-for-digital-goods.php:344
+#: woo-checkout-for-digital-goods.php:347
 msgid "WooCommerce"
 msgstr "WooCommerce"
 

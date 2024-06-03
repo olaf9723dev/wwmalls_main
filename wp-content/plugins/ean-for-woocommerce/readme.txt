@@ -1,38 +1,73 @@
-=== EAN for WooCommerce ===
+=== EAN, UPC, ISBN Generator: Product Barcode Inventory for WooCommerce ===
 Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas, kousikmukherjeeli
 Tags: woocommerce, ean, gtin, barcode, upc
 Requires at least: 4.4
 Tested up to: 6.5
-Stable tag: 4.9.4
+Stable tag: 4.9.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Manage product GTIN (EAN, UPC, ISBN, etc.) in WooCommerce. Beautifully.
+Manage GTINs (EAN, UPC, ISBN, etc.) effortlessly in WooCommerce! Create, save, search, and display EANs easily, with tools for bulk actions and compatibility with major plugins
 
 == Description ==
 
-**EAN for WooCommerce** plugin lets you manage product GTIN (EAN, UPC, ISBN, etc.) in WooCommerce.
+> “Great simple plugin, fast support: Very simple and straightforward, had some trouble with wpml compatibility and support team resolved it fast.” – ⭐⭐⭐⭐⭐  [gorfeas](https://wordpress.org/support/topic/great-simple-plugin-fast-support/)
+
+[Main Page](https://wpfactory.com/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Main Page") | [Demo](https://eanbarcode.instawp.xyz/ "Demo") | [Support Forum](https://wpfactory.com/support/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Support Forum") | [Documentation & How to](https://wpfactory.com/docs/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Documentation & How to")
+
+Manage GTINs (EAN, UPC, ISBN, etc.) effortlessly in WooCommerce! Save, search, and display EANs easily. Tools for bulk actions and compatibility with major plugins.
+
+Using this plugin,, you can seamlessly assign unique identifiers to each product, ensuring global recognition for your shop products. 
+
+And with our advanced barcode management, you can customize & update everything either using our toosl, or directly on your product editing page. 
 
 Currently supported standards: EAN-13, UPC-A, EAN-8, ISBN-13, JAN, EAN-14, Custom.
 
-### &#9989; Main Features ###
+The EAN for WooCommerce plugin empowers you to efficiently handle product GTINs, from backend management to frontend display and beyond.
 
-* **Save product's EAN** in backend.
-* For **variable products** set EAN for each variation individually or set single EAN for all variations at once.
-* **Search by EAN** in backend (including AJAX search) and in frontend.
-* Add sortable EAN column to **admin products list**.
-* Optionally **show EAN** on the **single product page**, **shop pages**, **cart page** or **checkout page** on the frontend.
-* Add EAN to **product structured data**, e.g., for Google Search Console.
-* Add EAN to **WooCommerce REST API** order and product responses; search orders and products by EAN.
-* Show EAN in **order items table**, including emails, "thank you" page, etc.
-* **Export** and **import** EAN.
-* Use product **quick** and **bulk edit** to manage EAN.
-* Output EAN with a **shortcode**.
-* And more...
+## 🤝 Recommended By##
+* [WPWarFare: EAN for WooCommerce Pro Review](https://wpwarfare.com/ean-for-woocommerce-pro-review/ "EAN for WooCommerce Pro Review")
+* [PluginOracle: EAN for WooCommerce Review](https://pluginoracle.com/wp/ean-for-woocommerce "PluginOracle: EAN for WooCommerce Review")
+* [FiboSearch: GTINs & EAN for WooCommerce Plugin](https://fibosearch.com/documentation/plugins-integrations/gtins/ "FiboSearch: GTINs & EAN for WooCommerce Plugin")
+* [WPHelp: How to Add EAN, UPC, GTIN to WooCommerce](https://wphelp.blog/sku-ean-upc-gtin-isbn-issn-what-these-codes-are-and-how-to-add-them-in-woocommerce/ "WPHelp: How to Add EAN, UPC, GTIN to WooCommerce")
+* [WPMozo: WooCommerce QR & Barcode Plugins: The 8 Best to Try](https://wpmozo.com/woocommerce-qr-barcode-plugins/ "WPMozo: WooCommerce QR & Barcode Plugins: The 8 Best to Try")
+* [QuadLayers: Best WooCommerce Barcode and QR Code Plugins](https://quadlayers.com/woocommerce-barcode-and-qr-code-plugins/ "QuadLayers: Best WooCommerce Barcode and QR Code Plugins")
+* WPGlob: Best EAN Plugin for WooCommerce - 100% Honest Review
+[youtube https://www.youtube.com/watch?v=kbpJPlXETTM]
 
-### &#129520; Tools ###
+## 🚀 Main Features: FREE Version##
 
-Plugin has tools that will help you generate, copy, assign and delete EANs in bulk, automatically or periodically.
+### 🚀 Save product GTINs/EANs in backend ###
+
+Easily input and store product EANs within the WooCommerce backend, with the flexibility to assign unique identifiers to all product types (simple, variable, variation) for comprehensive inventory management.
+
+### 🚀 Search by GTINs/EAN in backend & frontend ###
+
+Effortlessly locate products by their EANs, whether you're navigating the backend inventory or assisting customers on the frontend.
+
+### 🚀 Add GTINs/EAN to product structured data ###
+
+Improve search engine visibility and product categorization by including EANs in structured data, optimizing your store's SEO and facilitating smoother integration with search engines.
+
+### 🚀 Display EAN in order items & admin list ###
+
+Enhance order processing and administrative tasks by displaying EANs alongside product details in order items and admin lists.
+
+### 🚀 Efficient export/import & quick edit ###
+
+Streamline inventory management with efficient export/import functionalities, enabling seamless transfer of EAN data, while quick edit options empower swift modifications for increased productivity.
+
+### 🚀 Display EAN ANYWHERE ###
+
+Customize EAN visibility across your WooCommerce store effortlessly. Showcase EANs on product pages, categories, carts, checkouts, and emails for seamless tracking and enhanced customer experience.
+
+### 🚀 Include EAN in Invoices ###
+
+Integrate EANs into your invoices with advanced compatibility across the popular invoicing plugins.
+
+## 🧰 Tools ##
+
+The plugin has tools that will help you generate, copy, assign and delete EANs in bulk, automatically or periodically, like:
 
 * **Generate** EANs automatically with customizable EAN type, country prefix(es) and seed.
 * **Copy** EANs **from** product **SKU**, product **ID** or product **meta**.
@@ -41,9 +76,8 @@ Plugin has tools that will help you generate, copy, assign and delete EANs in bu
 * **Copy** EANs **to** product **SKU** or product **attribute**.
 * **Add** or **delete** EANs for all **orders** at once.
 * **Search orders** by EAN.
-* And more...
 
-### &#129309; Compatibility ###
+### 🤝 Compatibility ###
 
 * [Google Listings & Ads](https://wordpress.org/plugins/google-listings-and-ads/) plugin.
 * [Point of Sale for WooCommerce](https://woocommerce.com/products/point-of-sale-for-woocommerce/) plugin.
@@ -57,31 +91,96 @@ Plugin has tools that will help you generate, copy, assign and delete EANs in bu
 * [WooCommerce Google Product Feed](https://woocommerce.com/products/google-product-feed/) plugin.
 * [Rank Math SEO](https://wordpress.org/plugins/seo-by-rank-math/) plugin.
 * [WooCommerce Customer / Order / Coupon Export](https://woocommerce.com/products/ordercustomer-csv-export/) plugin.
+* The plugin is **"High-Performance Order Storage (HPOS)"** compatible
+
 * And more...
 
-### &#127942; Premium Version ###
+> “Amazing Plugin Compatible with Dokan and with Awesome Support: EAN for WooCommerce is super easy to set up, compatible with Dokan plugin and their customer support is awesome. If something needs to be fixed or improved, they will take action. Definitely recommend this plugin.” – ⭐⭐⭐⭐⭐ [sophie2e](https://wordpress.org/support/topic/amazing-plugin-compatible-with-dokan-and-with-awesome-support/)
 
-With [premium plugin version](https://wpfactory.com/item/ean-for-woocommerce/) you can:
+> “The best EAN plugin for Woocommerce: Simply the best plugin, the customer care are very impressive and reply fast and satisfy the request of the customers, thank you!” – ⭐⭐⭐⭐⭐ [sbazaars](https://wordpress.org/support/topic/the-best-ean-plugin-for-woocommerce/)
 
-* Generate and display **barcode image** for your product EAN (frontend, backend, order items table (including emails), REST API, etc.).
-* Barcodes can be **one-dimensional** (1D barcodes) or **two-dimensional** (2D barcodes, QR codes).
-* Additionally you can **print** multiple EANs and barcodes to **PDF** file.
-* Add multiple **extra fields**, e.g., single product can have **EAN** and **MPN** fields **simultaneously**.
+## 🏆 Do More: PRO Version##
 
-### &#128472; Feedback ###
+All what's listed above (and more) is available in the free version, but for those who would like to go further and beyond, we have a premium version of [EAN, UPC, ISBN Generator: Product Barcode Inventory for WooCommerce Pro](https://wpfactory.com/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme) plugin.
 
-* We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* [Visit plugin site](https://wpfactory.com/item/ean-for-woocommerce/).
+### 🏆 Generate & display barcode images for products ###
 
-### &#8505; More ###
+Automatically create and showcase barcode images for products, enhancing visual identification and enabling efficient inventory tracking across various platforms.
 
-* The plugin is **"High-Performance Order Storage (HPOS)"** compatible.
+### 🏆 Print multiple EANs & barcodes to PDF ###
+
+Simplify offline operations by printing multiple EANs and corresponding barcodes to PDF files, facilitating convenient access to product information and barcode scanning.
+
+### 🏆 Add multiple extra fields to each Product ###
+
+Expand product details by incorporating multiple fields, so a product can have EAN and MPN fields simultaneously for example. 
+
+### 🏆 Full support for 1D (barcodes) or 2D (barcodes, QR codes) ###
+
+Whether you need traditional barcode formats or modern QR codes, our plugin has you covered for comprehensive product identification.
+
+___
+## 💯 Why WPFactory?##
+
+* **Experience You Can Trust:** Over a decade in the business
+* **Wide Plugin Selection:** Offering 65+ unique and powerful plugins
+* **Highly-Rated Support:** Backed by hundreds of 5-star reviews
+* **Expert Team:** Dedicated developers and technical support at your service
+
+## What's Next? Discover More Plugins by WPFactory ##
+
+WPFactory has a diverse range of plugins tailored to enhance your experience:
+
+* [**Email Verification for WooCommerce**](https://wpfactory.com/item/email-verification-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Email Verification for WooCommerce**"): Boost security and credibility by verifying customer emails, reducing spam, and improving email marketing (**[Free version](https://wordpress.org/plugins/maximum-products-per-user-for-woocommerce/ "Free version")**)
+
+* [**Wishlist for WooCommerce: Multi Wishlists per Customer**](https://wpfactory.com/item/wish-list-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Wishlist for WooCommerce: Multi Wishlists per Customer**"): Increase loyality & sales by allowing customers to add products to wishlist, create multiple wishlists, save them, share them with friends & family on your WooCommerce store (**[Free version](https://wordpress.org/plugins/wish-list-for-woocommerce/ "Free version")**)
+
+* [**Name Your Price: Make a Price Offer for WooCommerce**](https://wpfactory.com/item/price-offers-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "*Name Your Price: Make a Price Offer for WooCommerce**"): Allow customers to propose their own prices for your products, open a negotiation-driven shopping experience with options to accept, reject, or counter-offer. (**[Free version](https://wordpress.org/plugins/price-offerings-for-woocommerce/ "Free version")**)
+
+* [**Additional Custom Emails for WooCommerce**](https://wpfactory.com/item/custom-emails-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Additional Custom Emails for WooCommerce**"): Define & customize more emails based on triggers, choose from multiple recipient options, personalize content, and send emails manually.(**[Free version](https://wordpress.org/plugins/custom-emails-for-woocommerce/ "Free version")**)
+
+* [**Automated Order Status Controller for WooCommerce**](https://wpfactory.com/item/order-status-rules-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Automated Order Status Controller for WooCommerce**"): Change order statuses programmatically based on a wide range of conditions, like time intervals, user roles and more! (**[Free version](https://wordpress.org/plugins/order-status-rules-for-woocommerce/ "Free version")**)
+
+* [**Custom Order Status for WooCommerce**](https://wpfactory.com/item/order-status-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Custom Order Status for WooCommerce**"): Create & manage unlimited number of custom statuses, to reflect your business desires & needs. (**[Free version](https://wordpress.org/plugins/order-status-for-woocommerce/ "Free version")**)
+
+* [**Free Shipping Over Amount for WooCommerce**](https://wpfactory.com/item/amount-left-free-shipping-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Free Shipping Over Amount for WooCommerce**"): Encourage higher spending by offering free shipping based on amount, with a progress bar for customers (**[Free version](https://wordpress.org/plugins/amount-left-free-shipping-woocommerce/ "Free version")**)
+
+* [**Dynamic Pricing & Bulk Quantity Discounts**](https://wpfactory.com/item/product-price-by-quantity-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Dynamic Pricing & Bulk Quantity Discounts**"): Advanced dynamic pricing and discount rules for WooCommerce, encouraging bulk purchases and driving more sales (**[Free version](https://wordpress.org/plugins/wholesale-pricing-woocommerce/ "Free version")**)
+
+___
+## ❤️ User Testimonials: See What Others Are Saying!##
+
+> “Perfect support, stable plugin. If you don't trust online-ratings, just look at the comments. There actually is an outstanding support team.” – ⭐⭐⭐⭐⭐ [Max Meyer](https://wpfactory.com/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “I needed multiple EAN codes for my products so I found this plugin works well. There was a layout problem with displaying the code on my product pages but Tom helped me to fix it shortly. Thanks!” – ⭐⭐⭐⭐⭐ [Frank C.](https://wpfactory.com/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “Perfect. Great Plugin. Tom has been super helpful in supporting us and configuring our POS requests. Very much recommend and money well spent so far!” – ⭐⭐⭐⭐⭐ [D.K](https://wpfactory.com/item/ean-barcodes-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “Excellent Plugin and Support: I can’t say enough how fantastic support is for this product! The plugin is amazing too! provides everything you need to ensure your product feeds have GTIN/EAN numbers.” – ⭐⭐⭐⭐⭐ [fit2death](https://wordpress.org/support/topic/excellent-plugin-and-support-484/)
 
 == Installation ==
 
-1. Upload the entire plugin folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the "Plugins" menu in WordPress.
-3. Start by visiting plugin settings at "WooCommerce > Settings > EAN".
+**Follow these simplified steps to get your plugin up and running:**
+
+**From the WordPress Admin Panel:**
+1. Navigate to “Plugins” > “Add New”.
+2. Use the search bar and find the plugin using the exact name.
+3. Click “Install Now” for the desired plugin.
+4. Once the installation is finished, and click “Activate”.
+
+**Manual Installation Using FTP:**
+1. Download the desired plugin from WordPress.org.
+2. Using your preferred FTP client, upload the entire plugin folder to the /wp-content/plugins/ directory of your WordPress installation.
+3. Go to “Plugins” > “Installed Plugins” in your dashboard and click “Activate”.
+
+**Manual download & upload from the WordPress Admin Panel:**
+1. Download the desired plugin in a ZIP format.
+2. On your site, navigate to “Plugins” > “Add New” and click the “Upload Plugin” button.
+3. Choose the downloaded plugin file and click “Install Now.”
+4. After the installation is complete, click “Activate”.
+
+**Post-Activation:**
+Once activated, access the plugin's settings by navigating to “WooCommerce > Settings” and look for the relevant tab.
 
 == Screenshots ==
 
@@ -92,6 +191,9 @@ With [premium plugin version](https://wpfactory.com/item/ean-for-woocommerce/) y
 5. EAN for WooCommerce - Tools
 
 == Changelog ==
+
+= 4.9.5 - 16/04/2024 =
+* readme.txt content update.
 
 = 4.9.4 - 26/04/2024 =
 * Dev - Compatibility - "Google Product Feed" option added (defaults to `yes`).
@@ -125,7 +227,7 @@ With [premium plugin version](https://wpfactory.com/item/ean-for-woocommerce/) y
 * WC tested up to: 8.4.
 
 = 4.8.7 - 12/12/2023 =
-* Dev – PHP 8.2 compatibility – "Creation of dynamic property is deprecated" notice fixed.
+* Dev - PHP 8.2 compatibility - "Creation of dynamic property is deprecated" notice fixed.
 
 = 4.8.6 - 29/11/2023 =
 * Dev - General - "Checkout" option added (defaults to `no`).
@@ -208,7 +310,7 @@ With [premium plugin version](https://wpfactory.com/item/ean-for-woocommerce/) y
 * WC tested up to: 7.8.
 
 = 4.5.0 - 07/06/2023 =
-* Dev – "High-Performance Order Storage (HPOS)" compatibility.
+* Dev - "High-Performance Order Storage (HPOS)" compatibility.
 * Dev - Admin Settings - Option descriptions updated.
 * Dev - Code refactoring.
 * WC tested up to: 7.7.

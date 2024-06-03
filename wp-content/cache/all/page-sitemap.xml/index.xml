@@ -2,18 +2,18 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://wwmalls.com/</loc>
-		<lastmod>2024-05-17T21:02:39+00:00</lastmod>
+		<lastmod>2024-05-27T18:11:28+00:00</lastmod>
 		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/elementor/thumbs/ads1-qob4cnhbtqmzae2m3c9lg011uj60z9421jp8d3tjpc.jpg</image:loc>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/imgpsh_fullsize_anim-2.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/elementor/thumbs/ads3-qob5jhyhcvaiihu2wd0dlosgntzcuk7kxm90w6ai2o.jpg</image:loc>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/imgpsh_fullsize_anim-3.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/elementor/thumbs/ads2-qob5vn1fmtwuh67703xwb4hsw0519terlplt1uafpc.jpg</image:loc>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/imgpsh_fullsize_anim-4.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/elementor/thumbs/ads4-qob66h4gf2qubcgkqak2jw23ewqd07fdfccb7o81z4.jpg</image:loc>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/imgpsh_fullsize_anim-5.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -125,11 +125,11 @@
 		<lastmod>2021-04-28T08:31:14+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/sample-page-3/</loc>
+		<loc>https://wwmalls.com/privacy-policy-4/</loc>
 		<lastmod>2022-02-16T08:58:28+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/privacy-policy-4/</loc>
+		<loc>https://wwmalls.com/sample-page-3/</loc>
 		<lastmod>2022-02-16T08:58:28+00:00</lastmod>
 	</url>
 	<url>
@@ -138,10 +138,6 @@
 	</url>
 	<url>
 		<loc>https://wwmalls.com/cart-3/</loc>
-		<lastmod>2022-02-16T09:29:14+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/shop-2/</loc>
 		<lastmod>2022-02-16T09:29:14+00:00</lastmod>
 	</url>
 	<url>
@@ -219,10 +215,6 @@
 	<url>
 		<loc>https://wwmalls.com/coming-soon-v2/</loc>
 		<lastmod>2022-04-13T08:37:36+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/faq-v2/</loc>
-		<lastmod>2022-04-13T08:41:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/tracking-order/</loc>
@@ -309,19 +301,15 @@
 		<lastmod>2023-07-26T03:10:18+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/shop-3/</loc>
-		<lastmod>2023-07-26T03:10:18+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/cart-2/</loc>
 		<lastmod>2023-07-26T03:10:18+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/wishlist-2/</loc>
+		<loc>https://wwmalls.com/compare-2/</loc>
 		<lastmod>2023-07-26T03:10:19+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/compare-2/</loc>
+		<loc>https://wwmalls.com/wishlist-2/</loc>
 		<lastmod>2023-07-26T03:10:19+00:00</lastmod>
 	</url>
 	<url>
@@ -351,11 +339,11 @@
 		<lastmod>2023-11-14T23:13:05+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/single-location/</loc>
+		<loc>https://wwmalls.com/single-category/</loc>
 		<lastmod>2023-11-14T23:13:06+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/single-category/</loc>
+		<loc>https://wwmalls.com/single-location/</loc>
 		<lastmod>2023-11-14T23:13:06+00:00</lastmod>
 	</url>
 	<url>
@@ -431,18 +419,6 @@
 		<lastmod>2023-11-23T22:13:24+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/search-ads/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/place-ad/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/edit-ad/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/reply-to-ad/</loc>
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
@@ -451,7 +427,7 @@
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/browse-ads/</loc>
+		<loc>https://wwmalls.com/place-ad/</loc>
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
@@ -459,15 +435,27 @@
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/terms-and-conditions/</loc>
-		<lastmod>2023-11-27T17:08:45+00:00</lastmod>
+		<loc>https://wwmalls.com/edit-ad/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/browse-ads/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/search-ads/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/search/</loc>
 		<lastmod>2023-11-27T17:08:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/gd-details/</loc>
+		<loc>https://wwmalls.com/terms-and-conditions/</loc>
+		<lastmod>2023-11-27T17:08:45+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/gd-archive/</loc>
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
@@ -475,11 +463,11 @@
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/gd-archive/</loc>
+		<loc>https://wwmalls.com/location/</loc>
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/location/</loc>
+		<loc>https://wwmalls.com/gd-details/</loc>
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
@@ -562,11 +550,11 @@
 		<lastmod>2024-01-04T14:29:50+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/vendor-membership/</loc>
+		<loc>https://wwmalls.com/vendor-register/</loc>
 		<lastmod>2024-01-05T20:14:10+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/vendor-register/</loc>
+		<loc>https://wwmalls.com/vendor-membership/</loc>
 		<lastmod>2024-01-05T20:14:10+00:00</lastmod>
 	</url>
 	<url>
@@ -627,19 +615,6 @@
 	<url>
 		<loc>https://wwmalls.com/portfolios/normal-grid/normal-grid-1-columns/</loc>
 		<lastmod>2024-02-02T16:14:08+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/careers/</loc>
-		<lastmod>2024-02-02T16:18:32+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2022/04/head-careers-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2022/04/careers-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg</image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/checkout-5/</loc>
@@ -743,7 +718,7 @@
 		<lastmod>2024-04-23T10:13:48+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/affiliate-registration/</loc>
+		<loc>https://wwmalls.com/affiliate-account/</loc>
 		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
 	</url>
 	<url>
@@ -751,7 +726,7 @@
 		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/affiliate-account/</loc>
+		<loc>https://wwmalls.com/affiliate-registration/</loc>
 		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
 	</url>
 	<url>
@@ -763,11 +738,11 @@
 		<lastmod>2024-05-04T09:51:58+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-checkout/</loc>
+		<loc>https://wwmalls.com/membership-account/membership-confirmation/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-confirmation/</loc>
+		<loc>https://wwmalls.com/membership-account/membership-checkout/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
@@ -779,19 +754,19 @@
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-levels/</loc>
-		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/membership-account/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/login-2/</loc>
+		<loc>https://wwmalls.com/membership-account/membership-invoice/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-invoice/</loc>
+		<loc>https://wwmalls.com/membership-account/membership-levels/</loc>
+		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/login-2/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
@@ -810,8 +785,16 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/e-shop/</loc>
+		<lastmod>2024-05-18T12:38:32+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/e-shopping/</loc>
+		<lastmod>2024-05-18T12:40:09+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/store-listing/</loc>
-		<lastmod>2024-05-14T04:27:31+00:00</lastmod>
+		<lastmod>2024-05-26T15:08:12+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/e-commerce.png</image:loc>
 		</image:image>
@@ -820,6 +803,27 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/federal-skilled-trades-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/faq-v2/</loc>
+		<lastmod>2024-05-27T13:32:17+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/jobs/</loc>
+		<lastmod>2024-05-27T18:05:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/Employment-Opportunity-1024x718.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/careers/</loc>
+		<lastmod>2024-05-27T18:27:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2022/04/head-careers-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2022/04/careers-1.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>

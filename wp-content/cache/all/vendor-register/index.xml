@@ -1,0 +1,8 @@
+<error>
+    <code>internal_server_error</code>
+    <title><![CDATA[WordPress &amp;rsaquo; Error]]></title>
+    <message><![CDATA[&lt;p&gt;There has been a critical error on this website.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://wordpress.org/support/article/faq-troubleshooting/&quot;&gt;Learn more about troubleshooting WordPress.&lt;/a&gt;&lt;/p&gt;]]></message>
+    <data>
+        <status>500</status>
+    </data>
+</error>

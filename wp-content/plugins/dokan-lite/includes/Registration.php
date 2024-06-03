@@ -57,7 +57,6 @@ class Registration {
 
         $role            = sanitize_text_field( wp_unslash( $_POST['role'] ) );
         $shop_url        = isset( $_POST['shopurl'] ) ? sanitize_text_field( wp_unslash( $_POST['shopurl'] ) ) : '';
-        $store_category  = isset( $_POST['store-category'] ) ? sanitize_text_field( wp_unslash( $_POST['store-category'] ) ) : '';  //Custom Code for store_category of vendor
         $required_fields = apply_filters(
             'dokan_seller_registration_required_fields', [
                 'fname'    => __( 'Please enter your first name.', 'dokan-lite' ),
@@ -124,18 +123,6 @@ class Registration {
      *
      * @return void
      */
-    //  // Start Custom Code for vendor category field
-    // private function cget_term_id(){
-    //     global $wpdb;
-    //     $datas = $GLOBALS['wpdb']->get_results("SELECT u.*, um.taxonomy, um.term_taxonomy_id 
-    //     FROM {$wpdb->prefix}terms AS u 
-    //     LEFT JOIN {$wpdb->prefix}term_taxonomy AS um ON u.term_id = um.term_id 
-    //     WHERE name = 'Uncategorized' AND taxonomy = 'store_category'");
-        
-    //     return $datas[0]->term_taxonomy_id;
-    // }
-    //  // End Custom Code for vendor category field
-     
     public function save_vendor_info( $user_id, $data ) {
         $nonce_value = isset( $_POST['_wpnonce'] ) ? sanitize_key( wp_unslash( $_POST['_wpnonce'] ) ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
         $nonce_value = isset( $_POST['woocommerce-register-nonce'] ) ? sanitize_key( wp_unslash( $_POST['woocommerce-register-nonce'] ) ) : $nonce_value; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
@@ -189,43 +176,7 @@ class Registration {
         ];
 
         $dokan_settings = $this->check_and_set_address_profile_completion( $user_id, $dokan_settings, $dokan_settings );
-        
-        // // Start Custom Code for vendor category field
-        // global $wpdb, $new_term, $new_term_taxonomy, $new_term_relationships;
-        // $store_category  = isset( $_POST['store-category'] ) ? sanitize_text_field( wp_unslash( $_POST['store-category'] ) ) : '';
-        // $category = get_term_by('name', $store_category, 'store_category');
-        // $term_id = $category->term_id;
-        // $term_taxonomy_id = (get_term($term_id, 'store_category'))->term_taxonomy_id;
 
-        // $temp_categories_un = array(
-        //     (object)array(
-        //         'term_id'=>'',
-        //         'term_taxonomy_id' => '',
-        //         'name' => '',
-        //         'slug'=>'',
-        //         'taxonomy'=> '',
-        //     ),
-        // );
-
-        // $where = array(
-        //     'object_id' => $user_id,
-        //     'term_taxonomy_id' => $this->cget_term_id(),
-        // );
-        // $new_term_relationships= array(
-        //     'object_id' => $user_id,
-        //     'term_taxonomy_id' => $term_taxonomy_id,
-        //     'term_order' => 0,
-        // );
-        // $wpdb->update($wpdb->prefix . 'term_relationships', $new_term_relationships, $where);   
-
-        // $temp_categories_un[0]->term_id = $term_id;
-        // $temp_categories_un[0]->term_taxonomy_id = $term_taxonomy_id;
-        // $temp_categories_un[0]->name = $store_category;
-        // $temp_categories_un[0]->slug = implode('-', explode(' ',strtolower($store_category)));
-        // $temp_categories_un[0]->taxonomy = "store_category";
-        // // End Custom Code for vendor category field
-        // $dokan_settings['categories'] = $temp_categories_un; // Custom Code for vendor category field
-        
         update_user_meta( $user_id, 'dokan_profile_settings', $dokan_settings );
         update_user_meta( $user_id, 'dokan_store_name', $dokan_settings['store_name'] );
 

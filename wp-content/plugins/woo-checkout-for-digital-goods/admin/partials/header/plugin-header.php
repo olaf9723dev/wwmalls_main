@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 global $wcfdg_fs;
-$plugin_version = WCDG_PLUGIN_VERSION;
+$plugin_version = esc_html( 'v' . WCDG_PLUGIN_VERSION );
 $version_label = 'Free';
 $plugin_slug = 'basic_digital_goods';
 $current_page = filter_input( INPUT_GET, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS );

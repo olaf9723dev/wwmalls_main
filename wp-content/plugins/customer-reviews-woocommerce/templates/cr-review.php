@@ -40,7 +40,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		}
 
 		if( ! $cr_hide_avatars ) {
-			do_action( 'woocommerce_review_before', $comment );
+			$get_avtr = get_avatar( $comment, apply_filters( 'cr_review_gravatar_size', '60' ), '' );
+			if ( $get_avtr ) {
+				echo $get_avtr;
+			} else {
+				$hide_avatars_class = ' comment-text-no-avatar';
+			}
 		}
 
 		?>
@@ -50,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php
 
 			$shop_manager = false;
-			if( isset( $comment->user_id ) ) {
+			if( isset( $comment->user_id ) && 0 < $comment->user_id ) {
 				if( user_can( $comment->user_id, 'manage_woocommerce' ) ) {
 					$shop_manager = true;
 				}

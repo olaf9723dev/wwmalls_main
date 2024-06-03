@@ -259,15 +259,7 @@ class Ivole_Email {
 			if( method_exists( $order, 'get_billing_email' ) ) {
 				// Woocommerce version 3.0 or later
 				$user = $order->get_user();
-				if( $registered_customers ) {
-					if( $user ) {
-						$this->to = $user->user_email;
-					} else {
-						$this->to = $order->get_billing_email();
-					}
-				} else {
-					$this->to = $order->get_billing_email();
-				}
+				$this->to = self::get_customer_email( $order );
 				$customer_first_name = $order->get_billing_first_name();
 				$customer_last_name = $order->get_billing_last_name();
 				$this->replace['customer-first-name'] = $customer_first_name;
@@ -664,6 +656,27 @@ class Ivole_Email {
 		} else {
 			return $desc;
 		}
+	}
+
+	public static function get_customer_email( $order ) {
+		$email = '';
+		//check if registered customers option is used
+		$registered_customers = false;
+		if( 'yes' === get_option( 'ivole_registered_customers', 'no' ) ) {
+			$registered_customers = true;
+		}
+		//
+		if( $registered_customers ) {
+			$user = $order->get_user();
+			if( $user ) {
+				$email = $user->user_email;
+			} else {
+				$email = $order->get_billing_email();
+			}
+		} else {
+			$email = $order->get_billing_email();
+		}
+		return $email;
 	}
 
 }

@@ -4,7 +4,7 @@
  * Plugin Name: Digital Goods for WooCommerce Checkout
  * Plugin URI:        https://www.thedotstore.com/
  * Description:       This plugin will remove billing address fields for downloadable and virtual products.
- * Version:           3.7.3
+ * Version:           3.7.4
  * Author:            theDotstore
  * Author URI:        https://www.thedotstore.com/
  * License:           GPL-2.0+
@@ -13,8 +13,8 @@
  * Domain Path:       /languages
  * 
  * WC requires at least:4.5
- * WP tested up to:     6.5.2
- * WC tested up to:     8.8.2
+ * WP tested up to:     6.5.3
+ * WC tested up to:     8.8.3
  * Requires PHP:        7.2
  * Requires at least:   5.0
  * Requires plugins: woocommerce
@@ -78,7 +78,7 @@ if ( true === $wc_active ) {
         define( 'WCDG_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
     }
     if ( !defined( 'WCDG_PLUGIN_VERSION' ) ) {
-        define( 'WCDG_PLUGIN_VERSION', '3.7.3' );
+        define( 'WCDG_PLUGIN_VERSION', '3.7.4' );
     }
     if ( !defined( 'WCDG_SLUG' ) ) {
         define( 'WCDG_SLUG', 'woo-checkout-for-digital-goods' );

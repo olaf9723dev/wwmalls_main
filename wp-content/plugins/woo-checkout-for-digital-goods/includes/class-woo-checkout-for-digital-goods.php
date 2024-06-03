@@ -57,7 +57,7 @@ class Woo_Checkout_For_Digital_Goods {
      */
     public function __construct() {
         $this->plugin_name = 'woo-checkout-for-digital-goods';
-        $this->version = '3.7.3';
+        $this->version = '3.7.4';
         $this->load_dependencies();
         $this->set_locale();
         $this->define_public_hooks();

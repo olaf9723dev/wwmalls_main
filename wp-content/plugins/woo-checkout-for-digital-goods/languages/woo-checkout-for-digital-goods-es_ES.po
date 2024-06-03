@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Digital Goods for WooCommerce Checkout\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 12:55+0530\n"
-"PO-Revision-Date: 2023-11-02 12:04+0000\n"
+"PO-Revision-Date: 2024-05-08 07:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Spain)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -27,8 +27,15 @@ msgstr ""
 msgid "%1$s (#%2$s)"
 msgstr ""
 
-#: woo-checkout-for-digital-goods.php:349
+#: woo-checkout-for-digital-goods.php:352
 msgid "%1$s requires %2$s to be installed & activated!"
+msgstr ""
+
+#: admin/partials/wcdg-general-setting.php:228
+#: admin/partials/wcdg-general-setting.php:239
+#: admin/partials/wcdg-general-setting.php:265
+#: admin/partials/wcdg-general-setting.php:280
+msgid "- In Pro Version"
 msgstr ""
 
 #: admin/partials/header/plugin-header.php:131
@@ -39,7 +46,7 @@ msgstr ""
 msgid "Account"
 msgstr ""
 
-#: woo-checkout-for-digital-goods.php:249
+#: woo-checkout-for-digital-goods.php:252
 msgid "Activate Plugin"
 msgstr ""
 
@@ -111,10 +118,10 @@ msgid "Data has been Imported!"
 msgstr ""
 
 #: admin/partials/header/plugin-header.php:53
-msgid "Digital Goods"
+msgid "Digital Goods For Checkout"
 msgstr ""
 
-#: woo-checkout-for-digital-goods.php:343
+#: woo-checkout-for-digital-goods.php:346
 msgid "Digital Goods for WooCommerce Checkout"
 msgstr ""
 
@@ -248,13 +255,6 @@ msgid ""
 "be obtained by exporting the settings on another site using the form above."
 msgstr ""
 
-#: admin/partials/wcdg-general-setting.php:228
-#: admin/partials/wcdg-general-setting.php:239
-#: admin/partials/wcdg-general-setting.php:265
-#: admin/partials/wcdg-general-setting.php:280
-msgid "In Pro Version"
-msgstr ""
-
 #: admin/partials/wcdg-information-page.php:33
 msgid "Installed Version"
 msgstr ""
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Medium"
 msgstr ""
 
-#: public/class-woo-checkout-for-digital-goods-public.php:539
+#: public/class-woo-checkout-for-digital-goods-public.php:544
 msgid "My Account"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgstr ""
 msgid "Placeholder"
 msgstr ""
 
-#: public/class-woo-checkout-for-digital-goods-public.php:534
+#: public/class-woo-checkout-for-digital-goods-public.php:539
 msgid ""
 "Please check your email for login details and update your remaining billing "
 "details."
@@ -372,10 +372,10 @@ msgid "Products"
 msgstr ""
 
 #: admin/partials/header/plugin-header.php:86
-#: public/class-woo-checkout-for-digital-goods-public.php:273
-#: public/class-woo-checkout-for-digital-goods-public.php:420
-#: public/class-woo-checkout-for-digital-goods-public.php:449
-#: public/class-woo-checkout-for-digital-goods-public.php:495
+#: public/class-woo-checkout-for-digital-goods-public.php:278
+#: public/class-woo-checkout-for-digital-goods-public.php:425
+#: public/class-woo-checkout-for-digital-goods-public.php:454
+#: public/class-woo-checkout-for-digital-goods-public.php:500
 msgid "Quick Checkout"
 msgstr ""
 
@@ -557,7 +557,7 @@ msgstr ""
 msgid "Update on thank you page"
 msgstr ""
 
-#: woo-checkout-for-digital-goods.php:312
+#: woo-checkout-for-digital-goods.php:315
 msgid "Want to update the billing information?"
 msgstr ""
 
@@ -565,7 +565,7 @@ msgstr ""
 msgid "Welcome! 🤗"
 msgstr ""
 
-#: woo-checkout-for-digital-goods.php:344
+#: woo-checkout-for-digital-goods.php:347
 msgid "WooCommerce"
 msgstr ""
 

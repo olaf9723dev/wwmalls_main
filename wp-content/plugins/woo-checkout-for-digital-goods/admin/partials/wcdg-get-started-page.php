@@ -8,7 +8,7 @@ if ( !defined( 'ABSPATH' ) ) {
 require_once(plugin_dir_path( __FILE__ ).'header/plugin-header.php');
 ?>
 <div class="wcdg-main-left-section res-cl">
-    <div class="wcdg-main-table res-cl">
+    <div class="wcdg-main-table wcdg-getting-started res-cl">
         <h2><?php esc_html_e('Getting Started', 'woo-checkout-for-digital-goods'); ?></h2>
         <table class="table-outer">
             <tbody>
