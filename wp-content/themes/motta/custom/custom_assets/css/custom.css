@@ -649,4 +649,39 @@ fieldset {
 .offscreen-panel{
     z-index:10000!important;
 }
+/*Shopping Page*/
+ul.products li.product .product-thumbnail img {
+    /*height: 256px;*/
+    width: auto;
+    object-fit: cover;
+}
+/* Responsive styles for desktops */
+@media (max-width: 1024px) {
+    ul.products li.product .product-thumbnail img {
+        height: 256px;
+    }
+}
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    ul.products li.product .product-thumbnail img {
+        height: 164px;
+    }
+}
+@media (max-width: 480px) {
+    ul.products li.product .product-thumbnail img {
+        height: 188px;
+    }
+}
+@media (max-width: 320px) {
+    ul.products li.product .product-thumbnail img {
+        height: 136px;
+    }
+}
+
+/* Responsive styles for large desktops */
+@media (min-width: 1024px) {
+    ul.products li.product .product-thumbnail img {
+        height: 256px;
+    }
+}
  

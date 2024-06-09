@@ -60,6 +60,7 @@
 .slider.round:before {
   border-radius: 50%;
 }
+
 .set-fee-form{
     display:flex;
     flex-direction:row;
@@ -67,12 +68,80 @@
     line-height:13px;
     
 }
+
 .present-fee-form{
     display:flex;
     flex-direction:row;
     align-items:center;
     line-height:13px;
 }
+
 .fee-item{
     margin:10px 5px;
+}
+
+
+
+
+/*Non- Compliant Admin Page CSS*/
+.manage_products_wrapper{
+    border: 1px solid #c8d7e1;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    padding-bottom: 100px;
+    scroll-margin-top: 65px;
+}
+
+#treeview {
+    min-height: 800px;
+}
+
+/*.options {*/
+/*  padding: 20px;*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  width: 260px;*/
+/*  top: 0;*/
+/*  background-color: #dddddd;*/
+/*}*/
+
+/*.caption {*/
+/*  font-size: 18px;*/
+/*  font-weight: 500;*/
+/*}*/
+
+/*.option {*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/*.option > .dx-selectbox {*/
+/*  display: inline-block;*/
+/*  vertical-align: middle;*/
+/*  max-width: 350px;*/
+/*  width: 100%;*/
+/*  margin-top: 5px;*/
+/*}*/
+.data-viewport{
+    display:flex;
+    flex-direction:column;
+    overflow-x: auto;
+}
+.table-content{
+    width:85%;
+}
+
+.rag-red {
+    background-color: #CC222244;
+}
+.rag-green {
+    background-color: #33CC3344;
+}
+#c_side_panel{
+    display:flex;
+    flex-direction:column;
+    width:15%;
+    padding:0px 20px 0px 0px;
 }

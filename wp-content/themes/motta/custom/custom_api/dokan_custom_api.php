@@ -21,6 +21,7 @@
             }
         return $product_data_html;
     }
+    
     add_action('wp_ajax_handle_product_info', 'handle_product_info_callback');
     function handle_product_info_callback(){
         $product_id = $_POST['product_id'];
@@ -37,6 +38,7 @@
         
         return $product_info;
     }
+    
     add_action('wp_ajax_handle_vendor_delete_ads', 'handle_vendor_delete_ads_callback');
     function handle_vendor_delete_ads_callback(){
         $delete_values = $_POST['deletes'];
@@ -114,6 +116,7 @@
         }
         return $new_post_metadata['status'];
     }
+    
     add_action('wp_ajax_handle_update_ads_fee', 'handle_update_ads_fee_callback');
     function handle_update_ads_fee_callback(){
         $new_def_fee = $_POST['new_def_fee'];
@@ -160,6 +163,7 @@
         echo $sent;
         wp_die();
     }
+    
     add_action('wp_ajax_handle_send_ads_subscribe', 'handle_send_ads_subscribe_callback');
     function handle_send_ads_subscribe_callback(){
         $user_id = $_POST['user_id'];
@@ -259,6 +263,126 @@
             $product->set_sale_price($net_price);
             $product->set_price($net_price);
             $product->save();
+        }
+    }
+    
+    // On Admin Page -> NON- Compliant->get categories with site id
+    add_action('wp_ajax_handle_get_category_from_site', 'handle_get_category_from_site_callback');
+    function handle_get_category_from_site_callback(){
+        $site_id = $_POST['siteID'];
+        global $wpdb;
+        $datas = $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_categories WHERE site_id=%d", $site_id));
+        
+        wp_send_json_success($datas);
+    }
+    
+    // add_action('rest_api_init', function(){
+    //     register_rest_route('non_compliant/manage', '/product/', array(
+    //         'methods' => 'POST',
+    //         'callback' => 'get_non_compliant_products_handler',
+    //     ));
+    // }, 113);
+    // function get_non_compliant_products_handler($request){
+    //     global $wpdb;
+    //     $params = $request->get_json_params();
+    //     $query = build_sql($params);
+    //     $results = $wpdb->get_results($query, ARRAY_A);
+        
+    //     return array(
+    //         'success' => true,
+    //         'rows' => $results,
+    //         'lastRow' => get_last_row_index($params)
+    //     );
+    // }
+    // function build_sql($request) {
+    //     return 'SELECT * FROM wp_products' . where_sql($request) . order_by_sql($request) . limit_sql($request);
+    // }
+    
+    // function where_sql($request) {
+    //     $whereParts = array();
+    //     $filterModel = $request['filterModel'];
+    
+    //     if ($filterModel) {
+    //         foreach ($filterModel as $columnKey => $filter) {
+    //             if ($filter['filterType'] === 'set') {
+    //                 $values = implode("', '", $filter['values']);
+    //                 $whereParts[] = "$columnKey IN ('$values')";
+    //                 continue;
+    //             }
+    
+    //             error_log('unsupported filter type: ' . $filter['filterType']);
+    //         }
+    //     }
+    
+    //     if (count($whereParts) > 0) {
+    //         return ' WHERE ' . implode(' AND ', $whereParts);
+    //     }
+    
+    //     return '';
+    // }
+    
+    // function order_by_sql($request) {
+    //     $sortModel = $request['sortModel'];
+    
+    //     if (count($sortModel) === 0) return '';
+    
+    //     $sorts = array_map(function($s) {
+    //         return $s['colId'] . ' ' . strtoupper($s['sort']);
+    //     }, $sortModel);
+    
+    //     return ' ORDER BY ' . implode(', ', $sorts);
+    // }
+    
+    // function limit_sql($request) {
+    //     if (!isset($request['endRow']) || !isset($request['startRow'])) { return ''; }
+    //     $blockSize = $request['endRow'] - $request['startRow'];
+    
+    //     return ' LIMIT ' . intval($blockSize) . ' OFFSET ' . intval($request['startRow']);
+    // }
+    
+    // function get_last_row_index($request) {
+    //     global $wpdb;
+    //     $query = 'SELECT COUNT(*) FROM wp_products' . where_sql($request);
+    //     return $wpdb->get_var($query);
+    // }
+    
+    add_action('wp_ajax_handle_get_products_by_cat', 'handle_get_products_by_cat_callback');
+    function handle_get_products_by_cat_callback(){
+        global $wpdb;
+        $cat_id = $_POST['catID'];
+        $sub_cats = [];
+        $sub_cats = sub_leaf_cat_ids($cat_id, $sub_cats);
+        $search_values = implode(',', array_fill(0, count($sub_cats), '%s'));
+        
+        $items_per_page = 20;
+        $current_page = isset($_GET['paged']) ? (int)$_GET['paged'] : 1;
+        $offset = ($current_page - 1) * $items_per_page;
+        
+        $query = $wpdb->prepare("SELECT id, name, sku, sale_price, regular_price, status, fee_rate FROM wp_products WHERE category_id IN ($search_values)", ...$sub_cats);
+        // $query = $wpdb->prepare("SELECT id, name, sku, sale_price, regular_price, status FROM wp_products WHERE category_id IN ($search_values) LIMIT %d OFFSET %d", array_merge($sub_cats, [$items_per_page, $offset]));
+        $products = $wpdb->get_results($query);
+        
+        wp_send_json_success($products);
+    }
+    function sub_leaf_cat_ids($current_id, $sub_cats){
+        global $wpdb;
+        if (is_leaf($current_id)){
+            array_push($sub_cats, $current_id);
+        }else{
+            $results = $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_categories WHERE parent_id = %d", $current_id));
+            foreach($results as $result){
+                $sub_cats = sub_leaf_cat_ids($result->id, $sub_cats);
+            }
+        }
+        return $sub_cats;
+    }
+    function is_leaf($cat_id){
+        global $wpdb;
+        $results = $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_categories WHERE id = %d", $cat_id));
+        if(!empty($results) && $results[0]->role === "leaf"){
+            return true;
+        }else{
+            return false;
         }
     }
 ?>

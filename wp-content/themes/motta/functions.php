@@ -19,6 +19,7 @@ require_once 'custom/custom-register/c-register.php';
 require_once 'custom/custom-store/custom-store.php';
 require_once 'custom/custom-admin-sort/custom-sort.php';
 require_once 'custom/custom-account/custom-account-page.php';
+require_once 'custom/custom-admin-manage-ext-product/manage-ext-product.php';
 
 // require_once 'custom/custom_api/post_hook.php';
 // require_once 'custom/custom_api/user_hook.php';
@@ -84,6 +85,7 @@ function dokan_vendor_custom_menu() {
 		5
     );
 }
+
 add_action('admin_menu', 'dokan_vendor_custom_menu', 11);
 // Handle to Import Vendors from CSV file
 function dokan_vendor_importer_handle_upload() {
