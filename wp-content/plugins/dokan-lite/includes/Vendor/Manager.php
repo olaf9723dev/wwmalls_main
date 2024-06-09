@@ -95,6 +95,7 @@ class Manager {
         unset( $args['featured'] );
 
         $user_query = new WP_User_Query( $args );
+        
         $results    = $user_query->get_results();
 
         $this->total_users = $user_query->total_users;

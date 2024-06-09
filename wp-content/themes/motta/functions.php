@@ -20,6 +20,8 @@ require_once 'custom/custom-store/custom-store.php';
 require_once 'custom/custom-admin-sort/custom-sort.php';
 require_once 'custom/custom-account/custom-account-page.php';
 require_once 'custom/custom-admin-manage-ext-product/manage-ext-product.php';
+require_once 'custom/custom_dokan/custom_dokan_store_list.php';
+
 
 // require_once 'custom/custom_api/post_hook.php';
 // require_once 'custom/custom_api/user_hook.php';

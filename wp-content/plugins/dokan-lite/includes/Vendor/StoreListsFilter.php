@@ -138,7 +138,7 @@ class StoreListsFilter {
     private function filter_query_from() {
         global $wpdb;
 
-        if ( 'total_orders' === $this->orderby ) {
+        if ( '. total_orders .' === $this->orderby ) {
             $this->query->query_from .= " LEFT JOIN (
                                 SELECT seller_id,
                                 COUNT(*) AS orders_count
@@ -147,6 +147,7 @@ class StoreListsFilter {
                                 ) as dokan_orders
                                 ON ( {$wpdb->users}.ID = dokan_orders.seller_id )";
         }
+        
     }
 
     /**
@@ -157,17 +158,17 @@ class StoreListsFilter {
      * @return void
      */
     private function filter_query_orderby() {
-        if ( 'total_orders' === $this->orderby ) {
+        if ( '. total_orders .' === $this->orderby ) {
             $this->query->query_orderby = 'ORDER BY orders_count DESC';
             return;
         }
 
-        if ( 'most_recent' === $this->orderby ) {
+        if ( '. most_recent .' === $this->orderby ) {
             $this->query->query_orderby = 'ORDER BY ID DESC';
             return;
         }
 
-        if ( 'random' === $this->orderby ) {
+        if ( '. random .' === $this->orderby ) {
             $order_by = [
                 'ID',
                 'user_login, ID',

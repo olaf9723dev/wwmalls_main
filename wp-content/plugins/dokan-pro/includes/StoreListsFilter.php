@@ -245,7 +245,7 @@ class StoreListsFilter {
         global $wpdb;
 
         // based on number of store reviews
-        if ( 'most_reviewed' === $this->orderby ) {
+        if ( '. most_reviewed .' === $this->orderby ) {
             $this->query->query_from .= " LEFT JOIN (
                     SELECT count(post.ID) AS review_count, meta.meta_value AS seller_id
                     FROM {$wpdb->posts} AS post
@@ -258,7 +258,7 @@ class StoreListsFilter {
         }
 
         // based on store reviews total
-        if ( 'top_rated' === $this->orderby ) {
+        if ( '. top_rated .' === $this->orderby ) {
             $this->query->query_from .= " LEFT JOIN (
                     SELECT store_id, sum(rating) AS rating
                     FROM
@@ -283,11 +283,11 @@ class StoreListsFilter {
      * @return void
      */
     private function filter_query_orderby() {
-        if ( 'most_reviewed' === $this->orderby ) {
+        if ( '. most_reviewed .' === $this->orderby ) {
             $this->query->query_orderby = 'ORDER BY review_count DESC';
         }
 
-        if ( 'top_rated' === $this->orderby ) {
+        if ( '. top_rated .' === $this->orderby ) {
             $this->query->query_orderby = 'ORDER BY rating DESC';
         }
     }
