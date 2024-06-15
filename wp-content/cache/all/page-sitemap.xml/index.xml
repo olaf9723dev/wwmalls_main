@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://wwmalls.com/</loc>
-		<lastmod>2024-05-27T18:11:28+00:00</lastmod>
+		<lastmod>2024-06-12T21:51:57+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/imgpsh_fullsize_anim-2.png</image:loc>
 		</image:image>
@@ -221,6 +221,16 @@
 		<lastmod>2022-07-11T09:37:49+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/thank-you/</loc>
+		<lastmod>2022-08-05T16:55:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2020/09/the-local-online-shopping-mall.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2022/08/wwmallslogo.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/terms-and-conditions-page/</loc>
 		<lastmod>2022-08-22T03:00:13+00:00</lastmod>
 	</url>
@@ -339,11 +349,11 @@
 		<lastmod>2023-11-14T23:13:05+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/single-category/</loc>
+		<loc>https://wwmalls.com/single-location/</loc>
 		<lastmod>2023-11-14T23:13:06+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/single-location/</loc>
+		<loc>https://wwmalls.com/single-category/</loc>
 		<lastmod>2023-11-14T23:13:06+00:00</lastmod>
 	</url>
 	<url>
@@ -419,23 +429,11 @@
 		<lastmod>2023-11-23T22:13:24+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/reply-to-ad/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/show-ad/</loc>
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/place-ad/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/renew-ad/</loc>
-		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/edit-ad/</loc>
+		<loc>https://wwmalls.com/search-ads/</loc>
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
@@ -443,7 +441,19 @@
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/search-ads/</loc>
+		<loc>https://wwmalls.com/place-ad/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/edit-ad/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/renew-ad/</loc>
+		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/reply-to-ad/</loc>
 		<lastmod>2023-11-23T22:33:07+00:00</lastmod>
 	</url>
 	<url>
@@ -459,11 +469,11 @@
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/gd-archive-item/</loc>
+		<loc>https://wwmalls.com/location/</loc>
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/location/</loc>
+		<loc>https://wwmalls.com/gd-archive-item/</loc>
 		<lastmod>2023-11-27T17:08:46+00:00</lastmod>
 	</url>
 	<url>
@@ -523,7 +533,7 @@
 		<lastmod>2023-12-10T20:26:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-listing/vendor-registration/</loc>
+		<loc>https://wwmalls.com/find-business__trashed/vendor-registration/</loc>
 		<lastmod>2023-12-11T19:50:57+00:00</lastmod>
 	</url>
 	<url>
@@ -548,14 +558,6 @@
 	<url>
 		<loc>https://wwmalls.com/wine/</loc>
 		<lastmod>2024-01-04T14:29:50+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/vendor-register/</loc>
-		<lastmod>2024-01-05T20:14:10+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/vendor-membership/</loc>
-		<lastmod>2024-01-05T20:14:10+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product-deals-of-the-day/</loc>
@@ -718,15 +720,15 @@
 		<lastmod>2024-04-23T10:13:48+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/affiliate-registration/</loc>
+		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/affiliate-account/</loc>
 		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/affiliate-reset-password/</loc>
-		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/affiliate-registration/</loc>
 		<lastmod>2024-04-25T00:38:20+00:00</lastmod>
 	</url>
 	<url>
@@ -736,6 +738,14 @@
 	<url>
 		<loc>https://wwmalls.com/delivery-drivers-manager/</loc>
 		<lastmod>2024-05-04T09:51:58+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/membership-account/membership-levels/</loc>
+		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/membership-account/membership-invoice/</loc>
+		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/membership-account/membership-confirmation/</loc>
@@ -750,19 +760,11 @@
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-billing/</loc>
-		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/membership-account/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/membership-account/membership-invoice/</loc>
-		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/membership-account/membership-levels/</loc>
+		<loc>https://wwmalls.com/membership-account/membership-billing/</loc>
 		<lastmod>2024-05-06T13:13:03+00:00</lastmod>
 	</url>
 	<url>
@@ -793,19 +795,6 @@
 		<lastmod>2024-05-18T12:40:09+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-listing/</loc>
-		<lastmod>2024-05-26T15:08:12+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/e-commerce.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/food-curt.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/federal-skilled-trades-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/faq-v2/</loc>
 		<lastmod>2024-05-27T13:32:17+00:00</lastmod>
 	</url>
@@ -825,6 +814,18 @@
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2022/04/careers-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/find-business/</loc>
+		<lastmod>2024-06-12T17:15:52+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/vendor-membership/</loc>
+		<lastmod>2024-06-13T14:01:51+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/vendor-register/</loc>
+		<lastmod>2024-06-13T14:01:51+00:00</lastmod>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->

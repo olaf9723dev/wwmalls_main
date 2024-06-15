@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//wwmalls.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://wwmalls.com/store-category/apparel-&amp;-clothing,-jeans/</loc>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/store-category/apparel,-clothing/</loc>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/store-category/arts_crafts/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/automotive_parts/</loc>
 		<lastmod>2020-09-10T14:59:55+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/store-category/automotive-radiators/</loc>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/store-category/automotive-repair/</loc>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/store-category/bakery/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/bank/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/beauty-shops-esthetics/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/book-stores/</loc>
+		<loc>https://wwmalls.com/store-category/beauty-shops/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/burger-restaurants/</loc>
@@ -26,22 +32,7 @@
 		<loc>https://wwmalls.com/store-category/butcher/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/cannabis/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/charities/</loc>
-		<lastmod>2020-09-10T14:59:55+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/store-category/chicken-restaurants/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/chirpractors/</loc>
-		<lastmod>2020-09-10T14:59:54+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/churches/</loc>
-		<lastmod>2020-09-10T14:59:54+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/clothing-store/</loc>
@@ -50,18 +41,13 @@
 		<loc>https://wwmalls.com/store-category/clothing-stores/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/clubs-associations/</loc>
-		<lastmod>2020-09-10T14:59:55+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/store-category/coffee-shops/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/trades-contractors/</loc>
-		<lastmod>2020-09-10T14:59:54+00:00</lastmod>
+		<loc>https://wwmalls.com/store-category/cookware/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/credit_union/</loc>
+		<loc>https://wwmalls.com/store-category/cosmetics/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/custom-embroidery/</loc>
@@ -70,23 +56,10 @@
 		<loc>https://wwmalls.com/store-category/drug-stores-and-proprietary-stores/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/electrical/</loc>
-		<lastmod>2020-09-10T14:59:54+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/store-category/family-restaurant/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/farm_supplies/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/fitness,-health-clubs-&amp;-gyms/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/general-insurance-agents/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/grocery-stores/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/hairdressers/</loc>
@@ -99,7 +72,7 @@
 		<lastmod>2020-09-10T14:59:55+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/hearing_services/</loc>
+		<loc>https://wwmalls.com/store-category/home_decor/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/hydroponics/</loc>
@@ -114,22 +87,22 @@
 		<loc>https://wwmalls.com/store-category/japanese-food/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/liquor-stores/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/loans/</loc>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/store-category/lumber_supplies/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/manufacturers/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/mexican-food/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/offices-and-clinics-of-medical-doctors/</loc>
+		<loc>https://wwmalls.com/store-category/miscellaneous-homefurnishings/</loc>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/store-category/outdoor_gear/</loc>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/store-category/paint/</loc>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/store-category/party_supplies/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/pet-stores/</loc>
@@ -144,14 +117,6 @@
 		<loc>https://wwmalls.com/store-category/pizza/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/plumbing/</loc>
-		<lastmod>2020-09-10T14:59:53+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/professionals/</loc>
-		<lastmod>2020-09-10T14:59:54+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/store-category/promotional-products/</loc>
 	</url>
 	<url>
@@ -164,13 +129,10 @@
 		<loc>https://wwmalls.com/store-category/seafood-restaurants/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/tanning/</loc>
+		<loc>https://wwmalls.com/store-category/sporting_goods/</loc>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/store-category/transport_shipping/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/travel-agencies/</loc>
+		<loc>https://wwmalls.com/store-category/sportswear/</loc>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/uncategorized/</loc>
@@ -180,9 +142,6 @@
 	</url>
 	<url>
 		<loc>https://wwmalls.com/store-category/w/</loc>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/store-category/wholesale-distributors/</loc>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->

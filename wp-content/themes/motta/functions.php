@@ -21,6 +21,7 @@ require_once 'custom/custom-admin-sort/custom-sort.php';
 require_once 'custom/custom-account/custom-account-page.php';
 require_once 'custom/custom-admin-manage-ext-product/manage-ext-product.php';
 require_once 'custom/custom_dokan/custom_dokan_store_list.php';
+require_once 'custom/custom_dokan/custom_product_info.php';
 
 
 // require_once 'custom/custom_api/post_hook.php';
@@ -60,9 +61,22 @@ add_action( 'admin_enqueue_scripts', 'admin_page_enqueue_scripts' );
 function admin_page_enqueue_scripts(){
     wp_enqueue_style( 'custom-styles', get_theme_file_uri('custom/custom_assets/css/admin.css'));
     wp_enqueue_style( 'toaster-styles', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css');
-    wp_enqueue_script( 'custom-scripts', get_theme_file_uri('custom/custom_assets/js/custom.js'), array('jquery'));
+    wp_enqueue_style( 'custom-toaster-styles', get_theme_file_uri('custom/custom_assets/css/Toast.css'));
     wp_localize_script('custom-scripts', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
     wp_enqueue_script( 'toaster-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js');
+    wp_enqueue_script( 'custom-toaster-scripts', get_theme_file_uri('custom/custom_assets/js/Toast.js'), array('jquery'));
+    wp_enqueue_script( 'custom-js-scripts', get_theme_file_uri('custom/custom_assets/js/custom.js'), array('jquery'));
+    wp_enqueue_script( 'custom-admin-scripts', get_theme_file_uri('custom/custom_assets/js/admin.js'), array('jquery'));
+    
+    wp_localize_script( 'custom-admin-scripts', 'ajax_object', array(
+        'remove_duplicated_products_endpoint' => esc_url_raw(rest_url('admin/non-compliant/remove-duplicated-products')),
+        'remove_all_products_endpoint' => esc_url_raw(rest_url('admin/non-compliant/remove-all-products')),
+        'reset_all_nonc_endpoint' => esc_url_raw(rest_url('admin/non-compliant/reset-all-nonc')),
+        'get_nonc_categories_endpoint' => esc_url_raw(rest_url('admin/non-compliant/get-categories')),
+        'get_nonc_products_by_cat_endpoint' => esc_url_raw(rest_url('admin/non-compliant/get-products-by-cat')),
+        'update_nonc_products_endpoint' => esc_url_raw(rest_url('admin/non-compliant/update-nonc-products')),
+        'nonce' => wp_create_nonce('wp_rest')
+    ));
 }
 // Add dokan custom menu on admin dashboard
 function dokan_vendor_custom_menu() {

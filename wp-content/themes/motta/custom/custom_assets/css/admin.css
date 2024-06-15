@@ -84,7 +84,7 @@
 
 
 /*Non- Compliant Admin Page CSS*/
-.manage_products_wrapper{
+.manage-products-wrapper{
     border: 1px solid #c8d7e1;
     display: flex;
     padding: 20px;
@@ -92,6 +92,7 @@
     background: #fff;
     padding-bottom: 100px;
     scroll-margin-top: 65px;
+    width:100%;
 }
 
 #treeview {
@@ -139,9 +140,39 @@
 .rag-green {
     background-color: #33CC3344;
 }
-#c_side_panel{
+#c-side-panel{
     display:flex;
     flex-direction:column;
     width:15%;
-    padding:0px 20px 0px 0px;
+    padding:0 20px 0 0;
+}
+#import-setting-panel{
+    border-radius:5px;
+    border:1px solid #d1d5db ;
+    padding:0 5px 0 5px;
+}
+.panel-title{
+    padding:10px;
+}
+.panel-title p{
+    margin-bottom:0!important;
+    padding-bottom:10px;
+    font-size: 1em;
+    border-bottom:1px solid #d1d5db;
+}
+.panel-notice p{
+    color:#d1d5db;
+}
+.panel-item{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:5px;
+    
+}
+.c-col-4{
+    width:33%;
+}
+.c-col-8{
+    width:66%;
 }

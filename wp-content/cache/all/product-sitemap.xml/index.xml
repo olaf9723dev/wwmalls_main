@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://wwmalls.com/e-shop/</loc>
-		<lastmod>2024-05-23T20:54:14+00:00</lastmod>
+		<lastmod>2024-06-13T01:28:49+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/net-embroidered-anarkali-gown-dress-material/</loc>
@@ -212,160 +212,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/parmesan-shrimp-alfredo/</loc>
-		<lastmod>2024-04-13T22:08:50+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/parmesin.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/big-dipper/</loc>
-		<lastmod>2024-04-13T22:09:13+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/big-dipper.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/jambalaya-fettucinni/</loc>
-		<lastmod>2024-04-13T22:16:30+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/jambalayo-fetticinni.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/two-eggs-any-style/</loc>
-		<lastmod>2024-04-13T22:25:09+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/TwosEggsBacon.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/big-country-breakfast/</loc>
-		<lastmod>2024-04-13T22:27:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/BigCountryBreakfast.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/santa-fe-skillet/</loc>
-		<lastmod>2024-04-13T22:29:42+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/SantaFeSkillet.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/southwest-benedict/</loc>
-		<lastmod>2024-04-13T22:32:15+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/SouthwestBenedict.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/cinnamon-swirl-pancakes/</loc>
-		<lastmod>2024-04-13T22:34:11+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/CinnamonSwirlPancakes.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/2-piece-fish-chips/</loc>
-		<lastmod>2024-04-13T22:36:34+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/FishandChipsx2.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/butter-chicken-rice-bowl/</loc>
-		<lastmod>2024-04-13T22:38:57+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Butter-Chicken-Rice-Bowl.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/new-york-steak/</loc>
-		<lastmod>2024-04-13T22:40:59+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/NewYorkSteak.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/breaded-veal-cutlet/</loc>
-		<lastmod>2024-04-13T22:42:35+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/BreadedVelCutlet.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/cajun-chicken-cheddar-club/</loc>
-		<lastmod>2024-04-13T22:44:20+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/CajunChickenCheddarClub.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/ultimate-mozza-burger/</loc>
-		<lastmod>2024-04-13T22:46:17+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/MozzaBurger.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/roast-beef-dip/</loc>
-		<lastmod>2024-04-13T22:47:55+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/RoastBeefDip.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/cobb-salad/</loc>
-		<lastmod>2024-04-13T22:49:54+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/CobbSalad.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/mediterranean-salad/</loc>
-		<lastmod>2024-04-13T22:52:26+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/MediterraneanSalad.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/poutine/</loc>
-		<lastmod>2024-04-13T22:54:17+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Poutine.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/vegetable-ramen-soup/</loc>
-		<lastmod>2024-04-13T23:24:42+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Vegetable-Ramen-Soup.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/sushilicious-meal/</loc>
-		<lastmod>2024-04-13T23:24:59+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Sushilicious-Meal.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/beef-chop-chop-bowl/</loc>
-		<lastmod>2024-04-13T23:25:16+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Beef-Chop-Chop-Bowl.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/teriyaki-chicken-bento-box/</loc>
-		<lastmod>2024-04-13T23:26:27+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/04/Teriyaki-Chicken-Bento.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/shany-makup-kit/</loc>
 		<lastmod>2024-04-20T15:01:09+00:00</lastmod>
 		<image:image>
@@ -434,15 +280,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/younited-energy-activator-raspberry-lemonade/</loc>
-		<lastmod>2024-05-20T21:40:49+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/zazubean-flirt-raspberry-cherry/</loc>
 		<lastmod>2024-05-20T21:40:49+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27572542-1.png</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/younited-energy-activator-raspberry-lemonade/</loc>
+		<lastmod>2024-05-20T21:40:49+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/younited-all-in-organic-superfood-pineapple-mango/</loc>
@@ -487,13 +333,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/vega-sport-electrolyte-hydrator-singles-box-lemon-lime/</loc>
-		<lastmod>2024-05-20T21:40:56+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27552891-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/rest-repair/</loc>
 		<lastmod>2024-05-20T21:40:56+00:00</lastmod>
 		<image:image>
@@ -501,10 +340,10 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/vega-sport-hydration-electrolyte-drink-mix-berry/</loc>
-		<lastmod>2024-05-20T21:40:59+00:00</lastmod>
+		<loc>https://wwmalls.com/product/vega-sport-electrolyte-hydrator-singles-box-lemon-lime/</loc>
+		<lastmod>2024-05-20T21:40:56+00:00</lastmod>
 		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27552894-1.jpg</image:loc>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27552891-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -512,6 +351,13 @@
 		<lastmod>2024-05-20T21:40:59+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/13320074-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/vega-sport-hydration-electrolyte-drink-mix-berry/</loc>
+		<lastmod>2024-05-20T21:40:59+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27552894-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -676,17 +522,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/sprout-living-epic-protein-organic-plant-protein-superfoods-chocolate-maca-1-lb-456-g/</loc>
-		<lastmod>2024-05-20T21:41:29+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27579046-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/smartsweets-berry-sweet-fish/</loc>
 		<lastmod>2024-05-20T21:41:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/102928822-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/sprout-living-epic-protein-organic-plant-protein-superfoods-chocolate-maca-1-lb-456-g/</loc>
+		<lastmod>2024-05-20T21:41:29+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27579046-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -750,17 +596,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/santevia-mina-pitcher-filter/</loc>
-		<lastmod>2024-05-20T21:41:44+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/124056510-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/santevia-water-systems-systeme-filtration-deau-alcaline-santevia-par-gravite-modele-comptoir-9gs-101-rona/</loc>
 		<lastmod>2024-05-20T21:41:44+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10319117-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/santevia-mina-pitcher-filter/</loc>
+		<lastmod>2024-05-20T21:41:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/124056510-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1002,10 +848,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/pure-le-organic-horny-goat-weed/</loc>
-		<lastmod>2024-05-20T21:43:04+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/recovery/</loc>
 		<lastmod>2024-05-20T21:43:04+00:00</lastmod>
 		<image:image>
@@ -1013,11 +855,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/provita-nadogen-60-veg-capsules/</loc>
-		<lastmod>2024-05-20T21:43:05+00:00</lastmod>
+		<loc>https://wwmalls.com/product/pure-le-organic-horny-goat-weed/</loc>
+		<lastmod>2024-05-20T21:43:04+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/provita-migraine/</loc>
+		<lastmod>2024-05-20T21:43:05+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/provita-nadogen-60-veg-capsules/</loc>
 		<lastmod>2024-05-20T21:43:05+00:00</lastmod>
 	</url>
 	<url>
@@ -1105,17 +951,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/prairie-naturals-multi-force-daily-vegan-multivitamin-mineral/</loc>
-		<lastmod>2024-05-20T21:43:23+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/85683677-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/hemp-protein/</loc>
 		<lastmod>2024-05-20T21:43:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816556540-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/prairie-naturals-multi-force-daily-vegan-multivitamin-mineral/</loc>
+		<lastmod>2024-05-20T21:43:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/85683677-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1168,17 +1014,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/phillip-adam-conditioner-apple-cider-vinegar-12-fl-oz-355-ml/</loc>
-		<lastmod>2024-05-20T21:43:31+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27559907-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/phillip-adam-conditioner-orange-vanilla-12-fl-oz-355-ml/</loc>
 		<lastmod>2024-05-20T21:43:31+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/166535415-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/phillip-adam-conditioner-apple-cider-vinegar-12-fl-oz-355-ml/</loc>
+		<lastmod>2024-05-20T21:43:31+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27559907-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1224,17 +1070,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/perfect-sports-diesel-new-zealand-whey-protein-isolate-strawberry/</loc>
-		<lastmod>2024-05-20T21:43:47+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/296210376-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/perfect-sports-diesel-new-zealand-whey-isolate-chocolate-peanut-butter/</loc>
 		<lastmod>2024-05-20T21:43:47+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816722961-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/perfect-sports-diesel-new-zealand-whey-protein-isolate-strawberry/</loc>
+		<lastmod>2024-05-20T21:43:47+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/296210376-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1434,15 +1280,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/nutrameltz-nicotine-max-4mg/</loc>
-		<lastmod>2024-05-20T21:44:56+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/nutraphase-clean-beans-creamy-ranch/</loc>
 		<lastmod>2024-05-20T21:44:56+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/243046970-1.png</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/nutrameltz-nicotine-max-4mg/</loc>
+		<lastmod>2024-05-20T21:44:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/now-foods-solutions-xyliwhite-toothpaste-gel-platinum-mint-6-4-oz-181-g/</loc>
@@ -1712,15 +1558,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/new-roots-herbal-d-ribose-100-pure/</loc>
-		<lastmod>2024-05-20T21:46:15+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/new-roots-herbal-femina-flora-oral/</loc>
 		<lastmod>2024-05-20T21:46:15+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/306384687-1.png</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/new-roots-herbal-d-ribose-100-pure/</loc>
+		<lastmod>2024-05-20T21:46:15+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/new-roots-herbal-co-enzyme-q10-100mg/</loc>
@@ -1909,10 +1755,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/mutant-bcaa-9-7-with-micronized-amino-acid-and-electrolyte-support-stack-90-servings-roadside-lemonade/</loc>
-		<lastmod>2024-05-20T21:47:09+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/mutant-bcaa-9-7-with-micronized-amino-acid-and-electrolyte-support-stack-90-servings-sweet-iced-tea/</loc>
 		<lastmod>2024-05-20T21:47:09+00:00</lastmod>
 	</url>
@@ -1922,6 +1764,10 @@
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/44436510-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/mutant-bcaa-9-7-with-micronized-amino-acid-and-electrolyte-support-stack-90-servings-roadside-lemonade/</loc>
+		<lastmod>2024-05-20T21:47:09+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/mutant-bcaa-9-7-with-micronized-amino-acid-and-electrolyte-support-stack-90-servings-fuzzy-peach/</loc>
@@ -1959,17 +1805,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/megafood-blood-builder/</loc>
-		<lastmod>2024-05-20T21:47:19+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27576157-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/megafood-men-one-daily-multi-vitamin/</loc>
 		<lastmod>2024-05-20T21:47:19+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27576181-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/megafood-blood-builder/</loc>
+		<lastmod>2024-05-20T21:47:19+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27576157-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1987,15 +1833,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/magnum-nutraceuticals-quattro-protein-drink-mix-chocolate-love/</loc>
+		<lastmod>2024-05-20T21:47:29+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/quattro/</loc>
 		<lastmod>2024-05-20T21:47:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816769997-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/magnum-nutraceuticals-quattro-protein-drink-mix-chocolate-love/</loc>
-		<lastmod>2024-05-20T21:47:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/magnum-nutraceuticals-quattro-protein-drink-mix-peanut-butter-cups/</loc>
@@ -2012,17 +1858,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/living-alchemy-turmeric-alive/</loc>
-		<lastmod>2024-05-20T21:47:35+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27563952-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/living-alchemy-your-flora-regenesis/</loc>
 		<lastmod>2024-05-20T21:47:35+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27563944-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/living-alchemy-turmeric-alive/</loc>
+		<lastmod>2024-05-20T21:47:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27563952-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2033,17 +1879,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/whey-protein-chocolate-peanut-butter/</loc>
-		<lastmod>2024-05-20T21:47:38+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816809328-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/whey-protein/</loc>
 		<lastmod>2024-05-20T21:47:38+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816662609-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/whey-protein-chocolate-peanut-butter/</loc>
+		<lastmod>2024-05-20T21:47:38+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816809328-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2068,15 +1914,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/leafsource-stress-complex/</loc>
-		<lastmod>2024-05-20T21:47:41+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/life-choice-dmso-gel/</loc>
 		<lastmod>2024-05-20T21:47:41+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27587112-1.png</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/leafsource-stress-complex/</loc>
+		<lastmod>2024-05-20T21:47:41+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/leafsource-humic-fulvic-acid-complex/</loc>
@@ -2188,13 +2034,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/inari-organic-sprouted-chick-peas/</loc>
-		<lastmod>2024-05-20T21:48:13+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27557308-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/inari-organic-sprouted-quinoa/</loc>
 		<lastmod>2024-05-20T21:48:13+00:00</lastmod>
 		<image:image>
@@ -2202,17 +2041,17 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/inari-organic-sprouted-chick-peas/</loc>
+		<lastmod>2024-05-20T21:48:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27557308-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/inari-organic-quinoa-large-bag/</loc>
 		<lastmod>2024-05-20T21:48:14+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27556334-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/inari-organic-couscous/</loc>
-		<lastmod>2024-05-20T21:48:15+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27556328-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2225,6 +2064,13 @@
 	<url>
 		<loc>https://wwmalls.com/product/humble-brands-deodorant-stick-patchouli-copal/</loc>
 		<lastmod>2024-05-20T21:48:15+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/inari-organic-couscous/</loc>
+		<lastmod>2024-05-20T21:48:15+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27556328-1.jpg</image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/humble-brands-deodorant-stick-palo-santo-frankincense/</loc>
@@ -2296,15 +2142,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/grenade-protein-bar-oreo-white/</loc>
+		<lastmod>2024-05-20T21:48:32+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/barre-proteinee/</loc>
 		<lastmod>2024-05-20T21:48:32+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816778208-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/grenade-protein-bar-oreo-white/</loc>
-		<lastmod>2024-05-20T21:48:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/garden-of-life-raw-organic-perfect-food-energizer/</loc>
@@ -2420,15 +2266,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/dutchmans-gold-total-hive-trio/</loc>
+		<lastmod>2024-05-20T21:49:07+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/e3live-e3-afa-powder/</loc>
 		<lastmod>2024-05-20T21:49:07+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27583730-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/dutchmans-gold-total-hive-trio/</loc>
-		<lastmod>2024-05-20T21:49:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/dutchmans-gold-honey-propolis-throat-spray-mint/</loc>
@@ -2499,6 +2345,13 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/2023-anderson-flex-alloy-one-piece-slowpitch-softball-bat-limited-edition-rasta/</loc>
+		<lastmod>2024-05-20T21:49:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27561306-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/canprev-silicon-beauty/</loc>
 		<lastmod>2024-05-20T21:49:44+00:00</lastmod>
 		<image:image>
@@ -2506,11 +2359,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/2023-anderson-flex-alloy-one-piece-slowpitch-softball-bat-limited-edition-rasta/</loc>
-		<lastmod>2024-05-20T21:49:44+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27561306-1.png</image:loc>
-		</image:image>
+		<loc>https://wwmalls.com/product/canprev-pcos-pro-for-women/</loc>
+		<lastmod>2024-05-20T21:49:45+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/canprev-pro-biotik-50b-extra-strength/</loc>
@@ -2520,23 +2370,19 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/canprev-pcos-pro-for-women/</loc>
-		<lastmod>2024-05-20T21:49:45+00:00</lastmod>
+		<loc>https://wwmalls.com/product/canprev-nac-liposomal-strawberry/</loc>
+		<lastmod>2024-05-20T21:49:46+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/canprev-omega-twist-peachy-mango/</loc>
 		<lastmod>2024-05-20T21:49:46+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/canprev-nac-liposomal-strawberry/</loc>
-		<lastmod>2024-05-20T21:49:46+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/canprev-immuno-berry/</loc>
+		<loc>https://wwmalls.com/product/canprev-krill-oil/</loc>
 		<lastmod>2024-05-20T21:49:47+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/canprev-krill-oil/</loc>
+		<loc>https://wwmalls.com/product/canprev-immuno-berry/</loc>
 		<lastmod>2024-05-20T21:49:47+00:00</lastmod>
 	</url>
 	<url>
@@ -2554,17 +2400,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/canprev-healthy-hormones/</loc>
-		<lastmod>2024-05-20T21:49:50+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/13128882-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/canprev-pro-biotik-15b/</loc>
 		<lastmod>2024-05-20T21:49:50+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27556923-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/canprev-healthy-hormones/</loc>
+		<lastmod>2024-05-20T21:49:50+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/13128882-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2589,17 +2435,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/canprev-collagen-tendo-recover-powder/</loc>
-		<lastmod>2024-05-20T21:49:54+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/306384732-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/canprev-collagen-muscle-tone/</loc>
 		<lastmod>2024-05-20T21:49:54+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/124139729-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/canprev-collagen-tendo-recover-powder/</loc>
+		<lastmod>2024-05-20T21:49:54+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/306384732-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2741,15 +2587,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/atp-lab-neuro-prime/</loc>
-		<lastmod>2024-05-20T21:50:23+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/back-to-earth-pain-be-gone/</loc>
 		<lastmod>2024-05-20T21:50:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/166535654-1.png</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/atp-lab-neuro-prime/</loc>
+		<lastmod>2024-05-20T21:50:23+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/atp-lab-electrolytes-xl-peach-mango/</loc>
@@ -2782,13 +2628,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/anointment-natural-skin-care-nipple-butter/</loc>
-		<lastmod>2024-05-20T21:50:33+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27574140-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/anointment-natural-skin-care-body-wash-bubbles-lavender/</loc>
 		<lastmod>2024-05-20T21:50:33+00:00</lastmod>
 		<image:image>
@@ -2796,8 +2635,11 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/alt-clear-protein-whey-isolate-tropical-punch/</loc>
-		<lastmod>2024-05-20T21:50:34+00:00</lastmod>
+		<loc>https://wwmalls.com/product/anointment-natural-skin-care-nipple-butter/</loc>
+		<lastmod>2024-05-20T21:50:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27574140-1.jpg</image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/anointment-natural-skin-care-baby-balm/</loc>
@@ -2805,6 +2647,10 @@
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27571368-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/alt-clear-protein-whey-isolate-tropical-punch/</loc>
+		<lastmod>2024-05-20T21:50:34+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/alt-clear-protein-whey-isolate-cherry-vanilla/</loc>
@@ -3105,17 +2951,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/the-soap-works-sea-kelp-soap/</loc>
-		<lastmod>2024-05-20T21:51:35+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/12616004-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/the-soap-works-creamy-clay-cleansing-soap/</loc>
 		<lastmod>2024-05-20T21:51:35+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/13075553-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/the-soap-works-sea-kelp-soap/</loc>
+		<lastmod>2024-05-20T21:51:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/12616004-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -3329,15 +3175,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/provita-protenix/</loc>
+		<lastmod>2024-05-20T21:52:28+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/purica-recovery-x-strength-large/</loc>
 		<lastmod>2024-05-20T21:52:28+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/44133249-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/provita-protenix/</loc>
-		<lastmod>2024-05-20T21:52:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/provita-astaxanthin-forte/</loc>
@@ -3585,15 +3431,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/nutrabolics-feed-protein-bar-peanut-butter-chocolate/</loc>
+		<lastmod>2024-05-20T21:54:51+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/hydropure/</loc>
 		<lastmod>2024-05-20T21:54:51+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816741375-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/nutrabolics-feed-protein-bar-peanut-butter-chocolate/</loc>
-		<lastmod>2024-05-20T21:54:51+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/nu-life-focus-formula/</loc>
@@ -3890,17 +3736,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/mutant-mass-vanilla-ice-cream-2270g/</loc>
-		<lastmod>2024-05-20T21:56:48+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27568973-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/dandelion-root-extract-90-caps-by-natural-factors/</loc>
 		<lastmod>2024-05-20T21:56:48+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10344737-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/mutant-mass-vanilla-ice-cream-2270g/</loc>
+		<lastmod>2024-05-20T21:56:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27568973-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -4010,15 +3856,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/leafsource-real-multi-vitamin/</loc>
-		<lastmod>2024-05-20T21:57:38+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/lenny-larrys-4-ounce-complete-cookie-white-chocolate-macadamia/</loc>
 		<lastmod>2024-05-20T21:57:38+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10326524-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/leafsource-real-multi-vitamin/</loc>
+		<lastmod>2024-05-20T21:57:38+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/jym-supplements-science-pre-jym-20-serving-pink-lemonade-500-gram/</loc>
@@ -4155,15 +4001,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/farm-girl-cinnamon-crisps-cereal/</loc>
+		<lastmod>2024-05-20T21:58:28+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/force-factor-pine-bark-600-mg-30-capsules/</loc>
 		<lastmod>2024-05-20T21:58:28+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/253758709-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/farm-girl-cinnamon-crisps-cereal/</loc>
-		<lastmod>2024-05-20T21:58:28+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/exponent-energy-drink-sector-c/</loc>
@@ -4278,15 +4124,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/canprev-magnesium-bis-glycinate-drink-mix-refreshing-orange-zest/</loc>
+		<lastmod>2024-05-20T21:59:00+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/canprev-magnesium-bis-glycinate-50-chewable-tropical-pineapple/</loc>
 		<lastmod>2024-05-20T21:59:00+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/243046648-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/canprev-magnesium-bis-glycinate-drink-mix-refreshing-orange-zest/</loc>
-		<lastmod>2024-05-20T21:59:00+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/canprev-magnesium-vegan-d3-k2/</loc>
@@ -4373,15 +4219,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/atp-lab-electrolytes-xl-lemonade/</loc>
+		<lastmod>2024-05-20T21:59:24+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/superset/</loc>
 		<lastmod>2024-05-20T21:59:24+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816600644-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/atp-lab-electrolytes-xl-lemonade/</loc>
-		<lastmod>2024-05-20T21:59:24+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/aquaomega-high-epa-omega-3-fish-oil-softgels/</loc>
@@ -4412,15 +4258,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/alora-naturals-joint-recovery-capsules/</loc>
-		<lastmod>2024-05-20T21:59:30+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/alora-naturals-new-body-peach-mango/</loc>
 		<lastmod>2024-05-20T21:59:30+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/117296814-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/alora-naturals-joint-recovery-capsules/</loc>
+		<lastmod>2024-05-20T21:59:30+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/liquid-l-carnitine/</loc>
@@ -4486,17 +4332,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/hexapro/</loc>
-		<lastmod>2024-05-20T21:59:51+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816713788-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/hexapro-protein/</loc>
 		<lastmod>2024-05-20T21:59:51+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816713791-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/hexapro/</loc>
+		<lastmod>2024-05-20T21:59:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816713788-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -4511,17 +4357,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/bcaa/</loc>
-		<lastmod>2024-05-20T21:59:57+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816713796-1.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/carbion-with-electrolytes-unflavored-24-7-oz-700-g-allmax/</loc>
 		<lastmod>2024-05-20T21:59:57+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/105665598-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/bcaa/</loc>
+		<lastmod>2024-05-20T21:59:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816713796-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -5104,15 +4950,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/dr-squatch-mens-deodorant-wood-barrel-bourbon/</loc>
+		<lastmod>2024-05-20T22:04:19+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/efx-sports-kre-alkalyn/</loc>
 		<lastmod>2024-05-20T22:04:19+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/266530562-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/dr-squatch-mens-deodorant-wood-barrel-bourbon/</loc>
-		<lastmod>2024-05-20T22:04:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/dr-bronners-organic-arnica-menthol-magic-balm/</loc>
@@ -5165,15 +5011,15 @@
 		<lastmod>2024-05-20T22:05:29+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/canprev-thyroid-plus-for-women/</loc>
+		<lastmod>2024-05-20T22:05:29+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/c4-original-melange-pour-supplement-de-preentrainement-punch-de-fruits-195-g/</loc>
 		<lastmod>2024-05-20T22:05:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/302859657-1.jpg</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/canprev-thyroid-plus-for-women/</loc>
-		<lastmod>2024-05-20T22:05:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/canprev-meno-chill-for-women/</loc>
@@ -5426,15 +5272,15 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/nutrameltz-nicotine-2mg/</loc>
-		<lastmod>2024-05-20T22:06:43+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/brightside-organics-omega3-nutracleanse-daily-fibre-boost/</loc>
 		<lastmod>2024-05-20T22:06:43+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/117296751-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/nutrameltz-nicotine-2mg/</loc>
+		<lastmod>2024-05-20T22:06:43+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/now-foods-c-1000-with-100-mg-bioflavonoids/</loc>
@@ -5641,10 +5487,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/alora-naturals-joint-recovery-capsules-2/</loc>
-		<lastmod>2024-05-20T22:07:37+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/alora-naturals-joint-recovery-extra-strength-pomegranate-berry/</loc>
 		<lastmod>2024-05-20T22:07:37+00:00</lastmod>
 	</url>
@@ -5654,6 +5496,10 @@
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27560433-1.jpg</image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/alora-naturals-joint-recovery-capsules-2/</loc>
+		<lastmod>2024-05-20T22:07:37+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/allmax-rapidcuts-shredded-90-capsules/</loc>
@@ -5916,15 +5762,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/alora-naturals-true-greens-raspberry-lemonade/</loc>
+		<lastmod>2024-05-20T22:08:58+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/andersons-health-solutions-elete-electrolyte-add-in/</loc>
 		<lastmod>2024-05-20T22:08:58+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/319280596-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/alora-naturals-true-greens-raspberry-lemonade/</loc>
-		<lastmod>2024-05-20T22:08:58+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/allmax-nutrition-impact-igniter-pre-workout-pineapple-mango-40-servings/</loc>
@@ -6117,17 +5963,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://wwmalls.com/product/mre-protien-shake-blueberry-cobbler/</loc>
-		<lastmod>2024-05-20T22:10:43+00:00</lastmod>
-		<image:image>
-			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/311901310-1.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://wwmalls.com/product/pvl-essentials-gold-series-isogold-vanilla-milkshake-2270g/</loc>
 		<lastmod>2024-05-20T22:10:43+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27568986-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/mre-protien-shake-blueberry-cobbler/</loc>
+		<lastmod>2024-05-20T22:10:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/311901310-1.png</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -6142,15 +5988,15 @@
 		</image:image>
 	</url>
 	<url>
+		<loc>https://wwmalls.com/product/exponent-energy-drink-eclipse/</loc>
+		<lastmod>2024-05-20T22:11:00+00:00</lastmod>
+	</url>
+	<url>
 		<loc>https://wwmalls.com/product/living-alchemy-your-flora-professional/</loc>
 		<lastmod>2024-05-20T22:11:00+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/266530515-1.png</image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc>https://wwmalls.com/product/exponent-energy-drink-eclipse/</loc>
-		<lastmod>2024-05-20T22:11:00+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://wwmalls.com/product/canprev-magnesium-bis-glycinate-powder-120-gram/</loc>
@@ -6711,6 +6557,160 @@
 		<lastmod>2024-05-20T22:49:08+00:00</lastmod>
 		<image:image>
 			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/785881171-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/creatine-hcl-120-caps/</loc>
+		<lastmod>2024-05-20T22:49:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/78297945-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/galerie-au-chocolat-sea-salt-dark-chocolate-bar/</loc>
+		<lastmod>2024-05-20T22:49:11+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27580983-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/aquaomega-standard-omega-3-fish-oil-softgels/</loc>
+		<lastmod>2024-05-20T22:49:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/135897419-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/allmax-pure-micronized-creatine-monohydrate-pharmaceutical-grade-400-gram-strength/</loc>
+		<lastmod>2024-05-20T22:49:13+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/38146882-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/electrolyte-hydrator/</loc>
+		<lastmod>2024-05-20T22:49:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/816773927-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/selina-naturally-celtic-sea-salt-light-grey-celtic-5-lbs/</loc>
+		<lastmod>2024-05-20T22:49:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/46308156-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/celtic-sea-salt-fine-ground-vital-mineral-blend/</loc>
+		<lastmod>2024-05-20T22:49:20+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10318277-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/aquaomega-standard-omega-3-fish-oil-softgels-2/</loc>
+		<lastmod>2024-05-20T22:49:40+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/235050631-1-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/celtic-sea-salt-light-grey-celtic-vital-mineral-blend-1-lb-454-g/</loc>
+		<lastmod>2024-05-20T22:49:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10318275-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/celtic-sea-salt-light-grey-sea-salt-medium/</loc>
+		<lastmod>2024-05-20T22:49:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/10318273-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/atp-lab-supreme-beef-protein-chocolate/</loc>
+		<lastmod>2024-05-20T22:49:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/306384318-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/pvl-essentials-100-creatine-powder-300g-by-pvl-essentials/</loc>
+		<lastmod>2024-05-20T22:49:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/27569360-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/amino-energy-raspberry-black-tea/</loc>
+		<lastmod>2024-05-20T22:50:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/05/595370-1-1-scaled.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/formal-shoe/</loc>
+		<lastmod>2024-05-23T20:54:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/01/men-leather-formal-shoe.jpeg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/congrats-star-satin-foil-balloon-multi-coloured-confetti-28-in-helium-inflation-ribbon-inclu/</loc>
+		<lastmod>2024-06-09T15:11:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/773-ss-holo-blln-congrat-strmr-756ddb55-1e66-4ee6-89a0-c60c352f25a3-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/first-responders-happy-birthday-fire-truck-star-satin-foil-balloon-bouquet-red-blue-5-pk-heliu/</loc>
+		<lastmod>2024-06-11T17:51:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/first-responders-5pc-balloon-bouquet-7df48306-a488-4309-812d-0779abb09816-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/happy-birthday-round-latex-balloons-purple-pink-blue-floral-12-in-20-pk-for-birthday-party/</loc>
+		<lastmod>2024-06-11T17:51:25+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/20ct-12in-ltx-bln-hbd-flrl-org-b1ea80b7-3b50-4ee5-beba-f59624af3e11-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/mattel-hot-wheels-star-round-satin-foil-balloon-bouquet-brown-blue-5-pk-helium-inflation-ribbon/</loc>
+		<lastmod>2024-06-11T17:51:32+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/hot-wheels-balloon-bouquet-5pc-6d8efa6a-51f3-47f6-881a-f51e64cdaba0-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/dc-batman-logo-star-round-satin-foil-balloon-bouquet-black-yellow-5-pk-helium-inflation-ribbon/</loc>
+		<lastmod>2024-06-11T17:51:36+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/batman-bouquet-balloons-5-pieces-2b3277c0-a068-449b-a314-81e9e88cb02c-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/1st-birthday-1-star-round-satin-foil-balloon-bouquet-blue-gold-5-pk-helium-inflation-ribbon-i/</loc>
+		<lastmod>2024-06-11T17:51:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/1st-birthday-blue-ballon-bouquet-e570d699-06ff-42f0-98ee-8e7c47e83dc5-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/sweet-sixteen-round-satin-foil-balloon-bouquet-pink-gold-polka-dot-5-pk-helium-inflation-rib/</loc>
+		<lastmod>2024-06-11T17:51:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/5pc-blln-bqt-sixteen-blush-6823d019-7d4b-486d-b4c2-8e1ed40c2ccf-jpgrendition.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://wwmalls.com/product/internet-famous-happy-birthday-star-round-satin-foil-balloon-bouquet-pink-blue-5-pk-helium-infl/</loc>
+		<lastmod>2024-06-11T17:51:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://wwmalls.com/wp-content/uploads/2024/06/internet-famous-5pc-balloon-bouquet-efa7c81b-0f53-4871-be7c-3991cdd29149-jpgrendition.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
