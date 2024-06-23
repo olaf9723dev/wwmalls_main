@@ -4,103 +4,73 @@ if ( ! defined( 'DGWT_WCAS_FILE' ) ) {
 	exit;
 }
 
+global $dgwt_wcas_xstore_search_types;
+
+$dgwt_wcas_xstore_search_types = [];
+
 add_action( 'wp_head', function () {
 	?>
 	<style>
 		.et_b_header-search > form {
 			display: none;
 		}
+		.et_b_header-search .dgwt-wcas-search-wrapp {
+			color: currentColor;
+		}
+		.header-wrapper .dgwt-wcas-search-wrapp {
+			max-width: none;
+		}
+		.et_b_header-search .dgwt-wcas-ico-magnifier-handler {
+			max-width: 18px;
+			width: 1.5em !important;
+			height: 1.5em !important;
+		}
 	</style>
 	<?php
 } );
 
+// Collecting search types.
+add_filter('search_type', function ($type) {
+	global $dgwt_wcas_xstore_search_types;
+
+	$dgwt_wcas_xstore_search_types[] = $type;
+
+	return $type;
+}, PHP_INT_MAX - 10);
+
 add_action( 'wp_footer', function () {
-	$search_type_desktop      = get_theme_mod( 'search_type_et-desktop', 'input' );
-	$search_type_mobile       = get_theme_mod( 'search_type_et-mobile', 'icon' );
+	global $dgwt_wcas_xstore_search_types;
 
-	if ( $search_type_desktop === 'input' ) {
-		echo '<div id="wcas-desktop-search" style="display: none;">' . do_shortcode( '[fibosearch]' ) . '</div>';
-		?>
-		<script>
-			var desktopSearch = document.querySelector('.header-wrapper .et_b_header-search > form');
-			if (desktopSearch !== null) {
-				desktopSearch.replaceWith(document.querySelector('#wcas-desktop-search > div'));
-			}
-			document.querySelector('#wcas-desktop-search').remove()
-		</script>
-		<style>
-			.header-wrapper .dgwt-wcas-search-wrapp {
-				max-width: none;
-			}
-		</style>
-		<?php
-	} elseif ( $search_type_desktop === 'icon' || $search_type_desktop === 'popup' ) {
-		echo '<div id="wcas-desktop-search" style="display: none;">' . do_shortcode( '[fibosearch layout="icon"]' ) . '</div>';
-		?>
-		<script>
-			var desktopSearch = document.querySelector('.header-wrapper .et_b_header-search > .et_b_search-icon');
-			if (desktopSearch !== null) {
-				desktopSearch.replaceWith(document.querySelector('#wcas-desktop-search > div'));
-				<?php if ($search_type_desktop === 'popup') { ?>
-				document.querySelector('.header-wrapper .et_b_header-search').classList.remove('search-full-width');
-				<?php } ?>
-			}
-			document.querySelector('#wcas-desktop-search').remove();
-		</script>
-		<style>
-			.header-wrapper .et_b_header-search .dgwt-wcas-ico-magnifier-handler {
-				max-width: 18px;
-				width: 1.5em !important;
-				height: 1.5em !important;
-			}
-		</style>
-		<?php
-	}
-
-	if ( $search_type_mobile === 'input' ) {
-		echo '<div id="wcas-mobile-search" style="display: none;">' . do_shortcode( '[fibosearch]' ) . '</div>';
-		?>
-		<script>
-			var mobileSearch = document.querySelector('.mobile-header-wrapper .et_b_header-search > form');
-			if (mobileSearch !== null) {
-				mobileSearch.replaceWith(document.querySelector('#wcas-mobile-search > div'));
-			}
-			document.querySelector('#wcas-mobile-search').remove();
-		</script>
-		<?php
-	} elseif ( $search_type_mobile === 'icon' || $search_type_mobile === 'popup' ) {
-		echo '<div id="wcas-mobile-search" style="display: none;">' . do_shortcode( '[fibosearch layout="icon"]' ) . '</div>';
-		?>
-		<script>
-			var mobileSearch = document.querySelector('.mobile-header-wrapper .et_b_header-search > .et_b_search-icon');
-			if (mobileSearch !== null) {
-				mobileSearch.replaceWith(document.querySelector('#wcas-mobile-search > div'));
-				<?php if ($search_type_mobile === 'popup') { ?>
-				var mobileSearchWrappers = document.querySelectorAll('.mobile-header-wrapper .et_b_header-search');
-				for (let i = 0; i < mobileSearchWrappers.length; ++i) {
-					mobileSearchWrappers[i].classList.remove('search-full-width');
+	foreach ( $dgwt_wcas_xstore_search_types as $index => $type ) {
+		if ( $type === 'input' ) {
+			echo '<div id="wcas-search-' . $index . '" style="display: none;">' . do_shortcode( '[fibosearch]' ) . '</div>';
+			?>
+			<script>
+				var wcasSearch<?php echo $index; ?> = document.querySelector('.et_b_header-search > form.input-input');
+				if (wcasSearch<?php echo $index; ?> !== null) {
+					wcasSearch<?php echo $index; ?>.replaceWith(document.querySelector('#wcas-search-<?php echo $index; ?> > div'));
 				}
-				<?php } ?>
-			}
-			document.querySelector('#wcas-mobile-search').remove();
-		</script>
-		<style>
-			.mobile-header-wrapper .dgwt-wcas-search-wrapp {
-				max-width: 30px !important;
-				min-width: 30px;
-			}
-
-			.mobile-header-wrapper .et_b_header-search .dgwt-wcas-ico-magnifier-handler {
-				max-width: 18px;
-				width: 1.5em !important;
-				height: 1.5em !important;
-			}
-
-			.dgwt-wcas-search-wrapp {
-				color: currentColor;
-			}
-		</style>
-		<?php
+				document.querySelector('#wcas-search-<?php echo $index; ?>').remove()
+			</script>
+			<?php
+		} elseif ( $type === 'icon' || $type === 'popup' ) {
+			echo '<div id="wcas-search-' . $index . '" style="display: none;">' . do_shortcode( '[fibosearch layout="icon"]' ) . '</div>';
+			?>
+			<script>
+				var wcasSearch<?php echo $index; ?> = document.querySelector('.et_b_header-search > .et_b_search-icon');
+				if (wcasSearch<?php echo $index; ?> !== null) {
+					wcasSearch<?php echo $index; ?>.closest('.et_b_header-search').classList.remove('search-full-width');
+					wcasSearch<?php echo $index; ?>.replaceWith(document.querySelector('#wcas-search-<?php echo $index; ?> > div'));
+				}
+				document.querySelector('#wcas-search-<?php echo $index; ?>').remove()
+			</script>
+			<style>
+				.et_b_header-search > .input-icon {
+					display: none;
+				}
+			</style>
+			<?php
+		}
 	}
 	?>
 	<script>

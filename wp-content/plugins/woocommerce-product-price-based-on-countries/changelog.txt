@@ -1,3 +1,12 @@
+= 3.4.6 (2024-06-04) =
+* Added: Tested up WooCommerce 8.9+.
+* Fixed: Compatibility issue with "Variation Swatches For WooCommerce PRO By Emran Ahmed".
+
+= 3.4.5 (2024-05-08) =
+* Added: Tested up WooCommerce 8.8+.
+* Added: Support for the Elementor Pro "Taxonomy Filter" widget.
+* Fixed: Minor bugs on the geolocation setup wizard.
+
 = 3.4.4 (2024-03-13) =
 * Update: Revert the geolocation AJAX call to POST to prevent issues with Sucuri.
 * Tweak: Check the "woocommerce_package_rates" filter parameter is an array to prevent PHP warnings.

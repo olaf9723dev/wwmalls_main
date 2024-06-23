@@ -447,6 +447,10 @@ class Frontend {
 	public function loop_add_to_wishlist_button() {
 		global $product;
 
+		if ( ! $product ) {
+			return;
+		}
+
 		$wishlist = Helper::get_wishlist( get_query_var( 'wishlist_token' ) );
 		$item     = new Wishlist_Item( $product );
 
@@ -465,6 +469,10 @@ class Frontend {
 	public function single_add_to_wishlist_button() {
 		global $product;
 
+		if ( ! $product ) {
+			return;
+		}
+
 		$wishlist = Helper::get_wishlist( get_query_var( 'wishlist_token' ) );
 		$item     = new Wishlist_Item( $product );
 
@@ -480,6 +488,9 @@ class Frontend {
 
 	/**
 	 * Get the button template args.
+	 * Add a new parameter "attributes" since version 1.1.0
+	 *
+	 * @since 1.0.0
 	 *
 	 * @param Wishlist $wishlist
 	 * @param Wishlist_Item $item
@@ -491,6 +502,7 @@ class Frontend {
 			'product_id' => $product->get_id(),
 			'class'      => [ 'wcboost-wishlist-button' ],
 			'url'        => $item->get_add_url(),
+			/* translators: %s product name */
 			'aria-label' => sprintf( __( 'Add %s to the wishlist', 'wcboost-wishlist' ), '&ldquo;' . $product->get_title() . '&rdquo;' ),
 			'label'      => Helper::get_button_text(),
 			'quantity'   => 1,
@@ -526,6 +538,7 @@ class Frontend {
 
 				case 'remove':
 					$args['url']        = $item->get_remove_url();
+					/* translators: %s product name */
 					$args['aria-label'] = sprintf( __( 'Remove %s from the wishlist', 'wcboost-wishlist' ), '&ldquo;' . $product->get_title() . '&rdquo;' );
 					$args['label']      = Helper::get_button_text( 'remove' );
 					break;
@@ -540,7 +553,7 @@ class Frontend {
 			$args['url'] = add_query_arg( [ 'wishlist' => $wishlist->get_id() ], $args['url'] );
 		}
 
-		if ( get_option( 'wcboost_wishlist_allow_adding_variations' ) && $product->is_type( 'variable' ) ) {
+		if ( wc_string_to_bool( get_option( 'wcboost_wishlist_allow_adding_variations' ) ) && $product->is_type( 'variable' ) ) {
 			$variations = $product->get_available_variations( 'objects' );
 			$data       = [];
 
@@ -568,6 +581,19 @@ class Frontend {
 
 		$args = apply_filters( 'wcboost_wishlist_button_template_args', $args, $wishlist, $product );
 		$args['class'] = implode( ' ', (array) $args['class'] );
+
+		// Add a new key "attributes",
+		// but must keep orginal keys to ensure backwards compatibility.
+		$args['attributes'] = [
+			'data-quantity'   => $args['quantity'],
+			'data-product_id' => $args['product_id'],
+			'aria-label'      => $args['aria-label'],
+			'rel'             => 'nofollow',
+		];
+
+		if ( isset( $args['variations_data'] ) ) {
+			$args['attributes']['data-variations'] = json_encode( $args['variations_data'] );
+		}
 
 		return $args;
 	}

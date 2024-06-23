@@ -665,7 +665,9 @@ class MonsterInsights_Rest_Routes {
 			'installed' => array_key_exists('uncanny-automator/uncanny-automator.php', $installed_plugins),
 			'basename'  => 'uncanny-automator/uncanny-automator.php',
 			'slug'      => 'uncanny-automator',
-			'setup_complete'      => (bool) get_option('automator_reporting', false),
+			'setup_complete' => class_exists( 'Uncanny_Automator\Api_Server' ) ? !! \Uncanny_Automator\Api_Server::is_automator_connected() : false,
+			'wizard_url'     => admin_url( 'edit.php?post_type=uo-recipe&page=uncanny-automator-setup-wizard' ),
+			'recipe_url'     => admin_url( 'post-new.php?post_type=uo-recipe' ),
 		);
 
 		// Pretty Links
@@ -1261,6 +1263,11 @@ class MonsterInsights_Rest_Routes {
 	 * Store that the first run notice has been dismissed so it doesn't show up again.
 	 */
 	public function dismiss_first_time_notice() {
+		check_ajax_referer( 'mi-admin-nonce', 'nonce' );
+
+		if ( ! current_user_can( 'monsterinsights_save_settings' ) ) {
+			return;
+		}
 
 		monsterinsights_update_option( 'monsterinsights_first_run_notice', true );
 

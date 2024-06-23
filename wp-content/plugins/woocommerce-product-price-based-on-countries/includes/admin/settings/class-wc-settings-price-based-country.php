@@ -511,8 +511,8 @@ if ( ! class_exists( 'WC_Settings_Price_Based_Country' ) ) :
 						'button_url'   => add_query_arg(
 							array(
 								'utm_medium'   => 'banner',
-								'utm_source'   => 'activate-license',
-								'utm_campaign' => 'Renew',
+								'utm_source'   => 'license-page',
+								'utm_campaign' => 'Activate license',
 							),
 							empty( $license['renewal_url'] ) ? 'https://www.pricebasedcountry.com/pricing/' : $license['renewal_url']
 						),

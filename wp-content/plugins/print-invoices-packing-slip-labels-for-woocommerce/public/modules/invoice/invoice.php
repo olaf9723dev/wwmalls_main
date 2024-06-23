@@ -1661,9 +1661,17 @@ class Wf_Woocommerce_Packing_List_Invoice
     		if(!is_array($order_ids))
     		{
     			return;
-    		}    
+    		}
+
 	        if(!is_null($this->customizer))
 	        {
+				if( count( $order_ids ) > 1 ) {
+					$sort_order = apply_filters( 'wt_pklist_sort_orders', 'desc', $this->module_base, $action ); // To choose the sorting of the orders when doing bulk print or download.
+					if ( 'asc' ===  $sort_order ) {
+						sort( $order_ids );
+					}
+				}
+
 				$pdf_name=$this->customizer->generate_pdf_name($this->module_base, $order_ids);
 	        	if("download_invoice" === $action || "preview_invoice" === $action)
 	        	{
@@ -1722,9 +1730,13 @@ class Wf_Woocommerce_Packing_List_Invoice
     		$document_created = Wf_Woocommerce_Packing_List_Admin::created_document_count($order_id,$template_type);
     	}
 
-		// bulk download page break
-		if($number_of_orders>1)
-		{
+		
+		/**
+		 * bulk download page break
+		 * @since 4.5.1 - [Fix] - mPDF library shows empty pages.
+		 * @since 4.5.2 - [Fix] - The second order over rides to the first page (a4) when bulk printing.
+		 */
+		if( 1 < $number_of_orders && ( "print_invoice" === $action || false === Wf_Woocommerce_Packing_List_Admin::check_if_mpdf_used() ) ) {
 			$out	= str_replace('</body>','<div class="pagebreak"></div></body>',$out);
 		}
 		
@@ -1866,9 +1878,6 @@ class Wf_Woocommerce_Packing_List_Invoice
     	if("" !== $html)
     	{
     		$number_of_orders=count($orders);
-			if($number_of_orders > 1){
-				sort($orders);
-			}
 			$order_inc=0;
 			foreach($orders as $order_id)
 			{

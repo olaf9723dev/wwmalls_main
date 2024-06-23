@@ -266,16 +266,20 @@ function yith_wcan_dependencies_handler_toPropertyKey(arg) { var key = yith_wcan
 function yith_wcan_dependencies_handler_toPrimitive(input, hint) { if (yith_wcan_dependencies_handler_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_dependencies_handler_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var YITH_WCAN_Dependencies_Handler = /*#__PURE__*/function () {
+  // container
+
+  // fields;
+
+  // dependencies tree.
+
+  // context object.
+
   function YITH_WCAN_Dependencies_Handler($container, dependenciesTree, context) {
     var _this$$container, _this$$fields;
     _classCallCheck(this, YITH_WCAN_Dependencies_Handler);
-    // container
     yith_wcan_dependencies_handler_defineProperty(this, "$container", void 0);
-    // fields;
     yith_wcan_dependencies_handler_defineProperty(this, "$fields", void 0);
-    // dependencies tree.
     yith_wcan_dependencies_handler_defineProperty(this, "dependencies", {});
-    // context object.
     yith_wcan_dependencies_handler_defineProperty(this, "context", null);
     yith_wcan_dependencies_handler_defineProperty(this, "checkFieldConditions", function (conditions) {
       var result = true;
@@ -409,19 +413,22 @@ function yith_wcan_filter_term_toPropertyKey(arg) { var key = yith_wcan_filter_t
 function yith_wcan_filter_term_toPrimitive(input, hint) { if (yith_wcan_filter_term_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_filter_term_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var YITH_WCAN_Filter_Term = /*#__PURE__*/function () {
+  /**
+   * Term id
+   */
+
+  /**
+   * Dom object for containing term box
+   */
+
+  /**
+   * Filter object
+   */
+
   function YITH_WCAN_Filter_Term($term, filter) {
     yith_wcan_filter_term_classCallCheck(this, YITH_WCAN_Filter_Term);
-    /**
-     * Term id
-     */
     yith_wcan_filter_term_defineProperty(this, "id", void 0);
-    /**
-     * Dom object for containing term box
-     */
     yith_wcan_filter_term_defineProperty(this, "$term", void 0);
-    /**
-     * Filter object
-     */
     yith_wcan_filter_term_defineProperty(this, "filter", void 0);
     if (!$term.length) {
       return;
@@ -641,19 +648,22 @@ function yith_wcan_filter_range_toPropertyKey(arg) { var key = yith_wcan_filter_
 function yith_wcan_filter_range_toPrimitive(input, hint) { if (yith_wcan_filter_range_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_filter_range_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var yith_wcan_filter_range_YITH_WCAN_Filter = /*#__PURE__*/function () {
+  /**
+   * ID of the range
+   */
+
+  /**
+   * Dom object for containing range box
+   */
+
+  /**
+   * Filter object
+   */
+
   function YITH_WCAN_Filter($range, filter) {
     yith_wcan_filter_range_classCallCheck(this, YITH_WCAN_Filter);
-    /**
-     * ID of the range
-     */
     yith_wcan_filter_range_defineProperty(this, "id", void 0);
-    /**
-     * Dom object for containing range box
-     */
     yith_wcan_filter_range_defineProperty(this, "$range", void 0);
-    /**
-     * Filter object
-     */
     yith_wcan_filter_range_defineProperty(this, "filter", void 0);
     if (!$range.length) {
       return;
@@ -762,27 +772,32 @@ function yith_wcan_filter_toPrimitive(input, hint) { if (yith_wcan_filter_typeof
 
 
 var YITH_WCAN_Filter = /*#__PURE__*/function () {
+  /**
+   * Unique ID of the filter
+   */
+
+  /**
+   * Dom object for containing filter form
+   */
+
+  /**
+   * Preset object
+   */
+
+  /**
+   * Terms map
+   */
+
+  /**
+   * Ranges map
+   */
+
   function YITH_WCAN_Filter($filter, preset) {
     yith_wcan_filter_classCallCheck(this, YITH_WCAN_Filter);
-    /**
-     * Unique ID of the filter
-     */
     yith_wcan_filter_defineProperty(this, "id", void 0);
-    /**
-     * Dom object for containing filter form
-     */
     yith_wcan_filter_defineProperty(this, "$filter", void 0);
-    /**
-     * Preset object
-     */
     yith_wcan_filter_defineProperty(this, "preset", void 0);
-    /**
-     * Terms map
-     */
     yith_wcan_filter_defineProperty(this, "terms", new Map());
-    /**
-     * Ranges map
-     */
     yith_wcan_filter_defineProperty(this, "ranges", new Map());
     if (!$filter.length) {
       return;
@@ -808,8 +823,8 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
       this.initClone();
       this.initTerms();
       this.initRanges();
-      this.initFields();
       this.initDependencies();
+      this.initFields();
       this.$filter.addClass('initialized');
     }
   }, {
@@ -844,6 +859,7 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
   }, {
     key: "initFields",
     value: function initFields() {
+      this.$filter.trigger('yith_fields_init');
       this.initTermSearch();
       this.initCustomizeTerms();
       this.initTaxonomy();
@@ -1269,9 +1285,9 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
   }, {
     key: "populate",
     value: function populate(filterData) {
+      var row_id = this.getId();
       for (var i in filterData) {
-        var row_id = this.getRowIndex(),
-          value = filterData[i];
+        var value = filterData[i];
         var nameId = 'terms' === i ? "filters_".concat(row_id, "_term_ids") : "filters_".concat(row_id, "_").concat(i),
           $input = this.$filter.find("#".concat(nameId));
         if (!$input.length && 'price_ranges' !== i) {
@@ -1370,9 +1386,10 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
   }, {
     key: "getTermsToShow",
     value: function getTermsToShow() {
-      var termsPool = this.getTermsPool();
-      if (termsPool && this.termsPaginated && Object.keys(termsPool).length > yith_wcan_admin.terms_per_page) {
-        termsPool = termsPool.slice(0, yith_wcan_admin.terms_per_page);
+      var termsPool = this.getTermsPool(),
+        perPage = parseInt(yith_wcan_admin.terms_per_page);
+      if (termsPool && this.termsPaginated && perPage && Object.keys(termsPool).length > perPage) {
+        termsPool = termsPool.slice(0, perPage);
       } else {
         this.$filter.find('.show-more-terms').hide();
       }
@@ -1759,12 +1776,12 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
 
 /* global yith_wcan_admin, ajaxurl */
 function yith_wcan_preset_typeof(obj) { "@babel/helpers - typeof"; return yith_wcan_preset_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, yith_wcan_preset_typeof(obj); }
+function yith_wcan_preset_createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = yith_wcan_preset_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function yith_wcan_preset_toConsumableArray(arr) { return yith_wcan_preset_arrayWithoutHoles(arr) || yith_wcan_preset_iterableToArray(arr) || yith_wcan_preset_unsupportedIterableToArray(arr) || yith_wcan_preset_nonIterableSpread(); }
 function yith_wcan_preset_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function yith_wcan_preset_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return yith_wcan_preset_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return yith_wcan_preset_arrayLikeToArray(o, minLen); }
 function yith_wcan_preset_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function yith_wcan_preset_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return yith_wcan_preset_arrayLikeToArray(arr); }
-function yith_wcan_preset_createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = yith_wcan_preset_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-function yith_wcan_preset_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return yith_wcan_preset_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return yith_wcan_preset_arrayLikeToArray(o, minLen); }
 function yith_wcan_preset_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function yith_wcan_preset_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function yith_wcan_preset_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, yith_wcan_preset_toPropertyKey(descriptor.key), descriptor); } }
@@ -1776,18 +1793,21 @@ function yith_wcan_preset_toPrimitive(input, hint) { if (yith_wcan_preset_typeof
 
 
 var YITH_WCAN_Preset = /*#__PURE__*/function () {
+  // status
+
+  // dom objects
+
+  // filters
+
   function YITH_WCAN_Preset($wrapper) {
     yith_wcan_preset_classCallCheck(this, YITH_WCAN_Preset);
-    // status
     yith_wcan_preset_defineProperty(this, "rowIndex", 0);
-    // dom objects
     yith_wcan_preset_defineProperty(this, "$wrapper", void 0);
     yith_wcan_preset_defineProperty(this, "$mainAddNewFilterButton", void 0);
     yith_wcan_preset_defineProperty(this, "$loadMoreFiltersButtons", void 0);
     yith_wcan_preset_defineProperty(this, "$filtersContainer", void 0);
     yith_wcan_preset_defineProperty(this, "$layout", void 0);
     yith_wcan_preset_defineProperty(this, "$page", void 0);
-    // filters
     yith_wcan_preset_defineProperty(this, "filters", new Map());
     if (!$wrapper.length) {
       return;
@@ -1846,7 +1866,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
         block(_this3.$wrapper);
         return ajax.post.call(null, 'save_preset', _this3.getData()).then(function (data) {
           _this3.maybeSetId(data === null || data === void 0 ? void 0 : data.id);
-          var promises = _this3.filters.values().map(function (filter) {
+          var promises = yith_wcan_preset_toConsumableArray(_this3.filters.values()).map(function (filter) {
             return filter.save(false);
           });
           return Promise.all(promises);
@@ -1926,7 +1946,8 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
     value: function addFilter(data, index) {
       var newFilterTemplate = wp.template('yith-wcan-filter'),
         newFilter = newFilterTemplate({
-          id: index || this.nextRowIndex()
+          id: index || this.nextRowIndex(),
+          key: this.filters.size
         }),
         $newFilter = $(newFilter),
         filter = new YITH_WCAN_Filter($newFilter, this);
@@ -1946,7 +1967,6 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
       this.updateRowIndex();
       this.maybeHideEmptyBox();
       this.$mainAddNewFilterButton.show();
-      filter.$filter.trigger('yith_fields_init');
     }
   }, {
     key: "afterFilterDelete",
@@ -1960,7 +1980,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
   }, {
     key: "closeAllFilters",
     value: function closeAllFilters() {
-      var promises = this.filters.values().map(function (filter) {
+      var promises = yith_wcan_preset_toConsumableArray(this.filters.values()).map(function (filter) {
         return filter.close();
       });
       return Promise.all(promises);
@@ -2008,7 +2028,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
   }, {
     key: "validateFilters",
     value: function validateFilters() {
-      return this.filters.values().reduce(function (valid, filter) {
+      return yith_wcan_preset_toConsumableArray(this.filters.values()).reduce(function (valid, filter) {
         return valid && filter.validate();
       }, true);
     }

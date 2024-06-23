@@ -5,10 +5,8 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 // Create a helper function for easy SDK access.
-function dgoraAsfwFs()
-{
-    global  $dgoraAsfwFs ;
-    
+function dgoraAsfwFs() {
+    global $dgoraAsfwFs;
     if ( !isset( $dgoraAsfwFs ) ) {
         // Include Freemius SDK.
         require_once dirname( __FILE__ ) . '/lib/start.php';
@@ -26,20 +24,19 @@ function dgoraAsfwFs()
             'has_addons'     => false,
             'has_paid_plans' => true,
             'menu'           => array(
-            'slug'        => 'dgwt_wcas_settings',
-            'parent'      => array(
-            'slug' => 'woocommerce',
-        ),
-            'account'     => false,
-            'contact'     => false,
-            'support'     => false,
-            'pricing'     => false,
-            'affiliation' => false,
-        ),
+                'slug'        => 'dgwt_wcas_settings',
+                'parent'      => array(
+                    'slug' => 'woocommerce',
+                ),
+                'account'     => false,
+                'contact'     => false,
+                'support'     => false,
+                'pricing'     => false,
+                'affiliation' => false,
+            ),
             'is_live'        => true,
         ) );
     }
-    
     return $dgoraAsfwFs;
 }
 

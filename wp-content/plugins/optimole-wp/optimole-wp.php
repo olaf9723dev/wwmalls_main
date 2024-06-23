@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Image optimization service by Optimole
  * Description:       Complete handling of your website images.
- * Version:           3.12.10
+ * Version:           3.13.3
  * Author:            Optimole
  * Author URI:        https://optimole.com
  * License:           GPL-2.0+
@@ -61,7 +61,7 @@ function optml_php_notice() {
 		/* translators: 1 - opening paragraph tag, 2 - PHP Version, 3 - opening bold tag, 4 - closing bold tag, 5 - opening bold tag, 6 - closing bold tag, 7 - opening anchor tag, 8 - closing anchor tag, 9 - closing paragraph tag */
 			__( '%1$s You\'re using a PHP version lower than %2$s! %3$sOptimole%4$s requires at least %5$sPHP %2$s%6$s to function properly. Plugin has been deactivated. %7$sLearn more here%8$s. %9$s', 'optimole-wp' ),
 			'<p>',
-			'5.4',
+			'7.4',
 			'<b>',
 			'</b>',
 			'<b>',
@@ -81,7 +81,7 @@ function optml_php_notice() {
  * @return Optml_Main|null Optimole instance.
  */
 function optml() {
-	if ( version_compare( PHP_VERSION, '5.4.0', '<' ) ) {
+	if ( version_compare( PHP_VERSION, '7.4.0', '<' ) ) {
 		add_action( 'admin_notices', 'optml_php_notice' );
 		add_action( 'admin_init', 'optml_deactivate' );
 
@@ -89,7 +89,7 @@ function optml() {
 	}
 	define( 'OPTML_URL', plugin_dir_url( __FILE__ ) );
 	define( 'OPTML_PATH', plugin_dir_path( __FILE__ ) );
-	define( 'OPTML_VERSION', '3.12.10' );
+	define( 'OPTML_VERSION', '3.13.3' );
 	define( 'OPTML_NAMESPACE', 'optml' );
 	define( 'OPTML_BASEFILE', __FILE__ );
 	// Fallback for old PHP versions when this constant is not defined.

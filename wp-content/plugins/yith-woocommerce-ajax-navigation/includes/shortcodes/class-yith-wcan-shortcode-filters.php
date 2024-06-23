@@ -54,6 +54,8 @@ if ( ! class_exists( 'YITH_WCAN_Shortcode_Filters' ) ) {
 		 * @return array Array of configuration.
 		 */
 		public static function get_gutenberg_config() {
+			add_action( 'yith_plugin_fw_gutenberg_before_do_shortcode', array( __CLASS__, 'fix_for_gutenberg_block' ), 10, 1 );
+
 			$presets         = YITH_WCAN_Presets_Factory::list_presets();
 			$presets_options = array_merge(
 				array(
@@ -82,6 +84,17 @@ if ( ! class_exists( 'YITH_WCAN_Shortcode_Filters' ) ) {
 			);
 
 			return $blocks;
+		}
+
+		/**
+		 * Prevent lazy loading when we're already rendering the shortcode in Preview mode via AJAX
+		 *
+		 * @param string $shortcode Shortcode being rendered.
+		 *
+		 * @return void
+		 */
+		public static function fix_for_gutenberg_block( $shortcode ) {
+			add_filter( 'yith_wcan_should_lazy_load_filters', '__return_false' );
 		}
 	}
 }

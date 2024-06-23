@@ -2,65 +2,75 @@
 
 namespace DgoraWcas\Analytics;
 
-use  DgoraWcas\Helpers ;
-use  DgoraWcas\Multilingual ;
+use DgoraWcas\Helpers;
+use DgoraWcas\Multilingual;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-class UserInterface
-{
-    const  SECTION_ID = 'dgwt_wcas_analytics' ;
-    const  LOAD_INTERFACE_NONCE = 'analytics-load-interface' ;
-    const  LOAD_MORE_CRITICAL_SEARCHES_NONCE = 'analytics-load-more-critical-searches' ;
-    const  LOAD_MORE_AUTOCOMPLETE_NONCE = 'analytics-load-more-autocomplete' ;
-    const  LOAD_MORE_SEARCH_PAGE_NONCE = 'analytics-load-more-search-page' ;
-    const  CRITICAL_CHECK_NONCE = 'analytics-critical-check' ;
-    const  EXCLUDE_CRITICAL_PHRASE_NONCE = 'analytics-exclude-critical-phrase' ;
-    const  RESET_STATS_NONCE = 'analytics-reset-stats' ;
-    const  EXPORT_STATS_CSV_NONCE = 'analytics-export-stats-csv' ;
-    const  CSS_CLASS_PLACEHOLDER = 'js-dgwt-wcas-stats-placeholder' ;
-    const  CRITICAL_SEARCHES_LOAD_LIMIT = 10 ;
-    const  TABLE_ROW_LIMIT_LIMIT = 10 ;
+class UserInterface {
+    const SECTION_ID = 'dgwt_wcas_analytics';
+
+    const LOAD_INTERFACE_NONCE = 'analytics-load-interface';
+
+    const LOAD_MORE_CRITICAL_SEARCHES_NONCE = 'analytics-load-more-critical-searches';
+
+    const LOAD_MORE_AUTOCOMPLETE_NONCE = 'analytics-load-more-autocomplete';
+
+    const LOAD_MORE_SEARCH_PAGE_NONCE = 'analytics-load-more-search-page';
+
+    const CRITICAL_CHECK_NONCE = 'analytics-critical-check';
+
+    const EXCLUDE_CRITICAL_PHRASE_NONCE = 'analytics-exclude-critical-phrase';
+
+    const RESET_STATS_NONCE = 'analytics-reset-stats';
+
+    const EXPORT_STATS_CSV_NONCE = 'analytics-export-stats-csv';
+
+    const CSS_CLASS_PLACEHOLDER = 'js-dgwt-wcas-stats-placeholder';
+
+    const CRITICAL_SEARCHES_LOAD_LIMIT = 10;
+
+    const TABLE_ROW_LIMIT_LIMIT = 10;
+
     /**
      * @var Analytics
      */
-    private  $analytics ;
+    private $analytics;
+
     /**
      * Constructor
      *
      * @param Analytics $analytics
      */
-    public function __construct( Analytics $analytics )
-    {
+    public function __construct( Analytics $analytics ) {
         $this->analytics = $analytics;
     }
-    
+
     /**
      * Init the class
      *
      * @return void
      */
-    public function init()
-    {
+    public function init() {
         // Draw settings page
-        add_filter( 'dgwt/wcas/settings/sections', array( $this, 'addSettingsSection' ) );
-        add_filter( 'dgwt/wcas/settings', array( $this, 'addSettingsTab' ) );
-        add_filter( 'dgwt/wcas/scripts/admin/localize', array( $this, 'localizeSettings' ) );
+        add_filter( 'dgwt/wcas/settings/sections', array($this, 'addSettingsSection') );
+        add_filter( 'dgwt/wcas/settings', array($this, 'addSettingsTab') );
+        add_filter( 'dgwt/wcas/scripts/admin/localize', array($this, 'localizeSettings') );
         // AJAX callbacks
-        add_action( 'wp_ajax_dgwt_wcas_load_stats_interface', array( $this, 'loadInterface' ) );
-        add_action( 'wp_ajax_dgwt_wcas_laod_more_critical_searches', array( $this, 'loadMoreCriticalSearches' ) );
-        add_action( 'wp_ajax_dgwt_wcas_laod_more_autocomplete', array( $this, 'loadMoreAutocomplete' ) );
-        add_action( 'wp_ajax_dgwt_wcas_laod_more_search_page', array( $this, 'loadMoreSearchPage' ) );
-        add_action( 'wp_ajax_dgwt_wcas_check_critical_phrase', array( $this, 'checkCriticalPhrase' ) );
-        add_action( 'wp_ajax_dgwt_wcas_exclude_critical_phrase', array( $this, 'excludeCriticalPhrase' ) );
-        add_action( 'wp_ajax_dgwt_wcas_reset_stats', array( $this, 'resetStats' ) );
-        add_action( 'wp_ajax_dgwt_wcas_export_stats_csv', array( $this, 'exportStats' ) );
+        add_action( 'wp_ajax_dgwt_wcas_load_stats_interface', array($this, 'loadInterface') );
+        add_action( 'wp_ajax_dgwt_wcas_laod_more_critical_searches', array($this, 'loadMoreCriticalSearches') );
+        add_action( 'wp_ajax_dgwt_wcas_laod_more_autocomplete', array($this, 'loadMoreAutocomplete') );
+        add_action( 'wp_ajax_dgwt_wcas_laod_more_search_page', array($this, 'loadMoreSearchPage') );
+        add_action( 'wp_ajax_dgwt_wcas_check_critical_phrase', array($this, 'checkCriticalPhrase') );
+        add_action( 'wp_ajax_dgwt_wcas_exclude_critical_phrase', array($this, 'excludeCriticalPhrase') );
+        add_action( 'wp_ajax_dgwt_wcas_reset_stats', array($this, 'resetStats') );
+        add_action( 'wp_ajax_dgwt_wcas_export_stats_csv', array($this, 'exportStats') );
         if ( $this->analytics->isModuleEnabled() ) {
-            add_action( DGWT_WCAS_SETTINGS_KEY . '-form_end_' . self::SECTION_ID, array( $this, 'tabContent' ) );
+            add_action( DGWT_WCAS_SETTINGS_KEY . '-form_end_' . self::SECTION_ID, array($this, 'tabContent') );
         }
     }
-    
+
     /**
      * Content of "Analytics" tab on Settings page
      *
@@ -68,15 +78,14 @@ class UserInterface
      *
      * @return array
      */
-    public function addSettingsSection( $sections )
-    {
+    public function addSettingsSection( $sections ) {
         $sections[28] = array(
             'id'    => self::SECTION_ID,
             'title' => __( 'Analytics', 'ajax-search-for-woocommerce' ),
         );
         return $sections;
     }
-    
+
     /**
      * Add "Analytics" tab on Settings page
      *
@@ -84,36 +93,35 @@ class UserInterface
      *
      * @return array
      */
-    public function addSettingsTab( $settings )
-    {
+    public function addSettingsTab( $settings ) {
         $searchAnalyticsLink = 'https://fibosearch.com/documentation/features/fibosearch-analytics/';
         $settings[self::SECTION_ID] = apply_filters( 'dgwt/wcas/settings/section=analytics', array(
             100 => array(
-            'name'  => 'analytics_head',
-            'label' => __( 'Search Analytics', 'ajax-search-for-woocommerce' ),
-            'type'  => 'head',
-            'class' => 'dgwt-wcas-sgs-header',
-        ),
+                'name'  => 'analytics_head',
+                'label' => __( 'Search Analytics', 'ajax-search-for-woocommerce' ),
+                'type'  => 'head',
+                'class' => 'dgwt-wcas-sgs-header',
+            ),
             110 => array(
-            'name'    => 'analytics_enabled',
-            'label'   => __( 'Enable search analytics', 'ajax-search-for-woocommerce' ) . ' ' . Helpers::createQuestionMark( 'enable_search_analytics', sprintf( __( 'Search analytics system helps to eliminate search phrases that don’t return any results. Also, allows to explore trending keywords. <a target="_blank" href="%s">Find our more</a> how to use and customize FiboSearch Analytics.', 'ajax-search-for-woocommerce' ), $searchAnalyticsLink ) ),
-            'type'    => 'checkbox',
-            'class'   => 'dgwt-wcas-options-cb-toggle js-dgwt-wcas-cbtgroup-analytics-critial-searches-widget',
-            'size'    => 'small',
-            'default' => 'off',
-        ),
+                'name'    => 'analytics_enabled',
+                'label'   => __( 'Enable search analytics', 'ajax-search-for-woocommerce' ) . ' ' . Helpers::createQuestionMark( 'enable_search_analytics', sprintf( __( 'Search analytics system helps to eliminate search phrases that don’t return any results. Also, allows to explore trending keywords. <a target="_blank" href="%s">Find our more</a> how to use and customize FiboSearch Analytics.', 'ajax-search-for-woocommerce' ), $searchAnalyticsLink ) ),
+                'type'    => 'checkbox',
+                'class'   => 'dgwt-wcas-options-cb-toggle js-dgwt-wcas-cbtgroup-analytics-critial-searches-widget',
+                'size'    => 'small',
+                'default' => 'off',
+            ),
             120 => array(
-            'name'    => 'analytics_critical_searches_widget_enabled',
-            'label'   => __( 'Show widget with critical searches in Dashboard', 'ajax-search-for-woocommerce' ),
-            'type'    => 'checkbox',
-            'class'   => 'js-dgwt-wcas-cbtgroup-analytics-critial-searches-widget',
-            'size'    => 'small',
-            'default' => 'off',
-        ),
+                'name'    => 'analytics_critical_searches_widget_enabled',
+                'label'   => __( 'Show widget with critical searches in Dashboard', 'ajax-search-for-woocommerce' ),
+                'type'    => 'checkbox',
+                'class'   => 'js-dgwt-wcas-cbtgroup-analytics-critial-searches-widget',
+                'size'    => 'small',
+                'default' => 'off',
+            ),
         ) );
         return $settings;
     }
-    
+
     /**
      * Pass data to JavaScript on the settings page
      *
@@ -121,56 +129,53 @@ class UserInterface
      *
      * @return array
      */
-    public function localizeSettings( $localize )
-    {
+    public function localizeSettings( $localize ) {
         $localize['analytics'] = array(
             'nonce'   => array(
-            'analytics_load_interface'    => wp_create_nonce( self::LOAD_INTERFACE_NONCE ),
-            'load_more_critical_searches' => wp_create_nonce( self::LOAD_MORE_CRITICAL_SEARCHES_NONCE ),
-            'load_more_autocomplete'      => wp_create_nonce( self::LOAD_MORE_AUTOCOMPLETE_NONCE ),
-            'load_more_search_page'       => wp_create_nonce( self::LOAD_MORE_SEARCH_PAGE_NONCE ),
-            'check_critical_phrase'       => wp_create_nonce( self::CRITICAL_CHECK_NONCE ),
-            'exclude_critical_phrase'     => wp_create_nonce( self::EXCLUDE_CRITICAL_PHRASE_NONCE ),
-            'reset_stats'                 => wp_create_nonce( self::RESET_STATS_NONCE ),
-            'export_stats_csv'            => wp_create_nonce( self::EXPORT_STATS_CSV_NONCE ),
-        ),
+                'analytics_load_interface'    => wp_create_nonce( self::LOAD_INTERFACE_NONCE ),
+                'load_more_critical_searches' => wp_create_nonce( self::LOAD_MORE_CRITICAL_SEARCHES_NONCE ),
+                'load_more_autocomplete'      => wp_create_nonce( self::LOAD_MORE_AUTOCOMPLETE_NONCE ),
+                'load_more_search_page'       => wp_create_nonce( self::LOAD_MORE_SEARCH_PAGE_NONCE ),
+                'check_critical_phrase'       => wp_create_nonce( self::CRITICAL_CHECK_NONCE ),
+                'exclude_critical_phrase'     => wp_create_nonce( self::EXCLUDE_CRITICAL_PHRASE_NONCE ),
+                'reset_stats'                 => wp_create_nonce( self::RESET_STATS_NONCE ),
+                'export_stats_csv'            => wp_create_nonce( self::EXPORT_STATS_CSV_NONCE ),
+            ),
             'enabled' => $this->analytics->isModuleEnabled(),
             'images'  => array(
-            'placeholder' => DGWT_WCAS_URL . 'assets/img/admin-stats-placeholder.png',
-        ),
+                'placeholder' => DGWT_WCAS_URL . 'assets/img/admin-stats-placeholder.png',
+            ),
             'labels'  => array(
-            'reset_stats_confirm' => __( 'Are you sure you want to reset stats?', 'ajax-search-for-woocommerce' ),
-        ),
+                'reset_stats_confirm' => __( 'Are you sure you want to reset stats?', 'ajax-search-for-woocommerce' ),
+            ),
         );
         return $localize;
     }
-    
+
     /**
      * Load content for "Analytics" tab on Settings page
      *
      * @return void
      */
-    public function tabContent()
-    {
+    public function tabContent() {
         if ( Multilingual::isMultilingual() ) {
-            echo  $this->getLanguageSwitcher() ;
+            echo $this->getLanguageSwitcher();
         }
-        echo  '<div class="dgwt-wcas-analytics-body ' . self::CSS_CLASS_PLACEHOLDER . '"></div>' ;
+        echo '<div class="dgwt-wcas-analytics-body ' . self::CSS_CLASS_PLACEHOLDER . '"></div>';
     }
-    
+
     /**
      * Get HTML of language switcher
      *
      * @return string
      */
-    private function getLanguageSwitcher()
-    {
+    private function getLanguageSwitcher() {
         $vars = array(
             'multilingual' => array(
-            'is-multilingual' => true,
-            'current-lang'    => Multilingual::getCurrentLanguage(),
-            'langs'           => array(),
-        ),
+                'is-multilingual' => true,
+                'current-lang'    => Multilingual::getCurrentLanguage(),
+                'langs'           => array(),
+            ),
         );
         foreach ( Multilingual::getLanguages() as $lang ) {
             $vars['multilingual']['langs'][$lang] = Multilingual::getLanguageField( $lang, 'name' );
@@ -179,19 +184,18 @@ class UserInterface
         require DGWT_WCAS_DIR . 'partials/admin/stats/langs.php';
         return ob_get_clean();
     }
-    
+
     /**
      * Load an interface (AJAX callback)
      *
      * @return void
      */
-    public function loadInterface()
-    {
+    public function loadInterface() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
         check_ajax_referer( self::LOAD_INTERFACE_NONCE );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
         $data = array(
             'html' => '',
         );
@@ -201,29 +205,27 @@ class UserInterface
         $data['html'] = ob_get_clean();
         wp_send_json_success( $data );
     }
-    
+
     /**
      * Load more critical searches
      *
      * @return void
      */
-    public function loadMoreCriticalSearches()
-    {
+    public function loadMoreCriticalSearches() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
         check_ajax_referer( self::LOAD_MORE_CRITICAL_SEARCHES_NONCE );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
-        $offset = ( !empty($_REQUEST['loaded']) ? absint( $_REQUEST['loaded'] ) : 0 );
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        $offset = ( !empty( $_REQUEST['loaded'] ) ? absint( $_REQUEST['loaded'] ) : 0 );
         $html = '';
         $data = new Data();
-        if ( !empty($lang) ) {
+        if ( !empty( $lang ) ) {
             $data->setLang( $lang );
         }
         $total = $data->getTotalCriticalSearches();
         $critical = $data->getCriticalSearches( self::CRITICAL_SEARCHES_LOAD_LIMIT, $offset );
-        
-        if ( !empty($critical) ) {
+        if ( !empty( $critical ) ) {
             ob_start();
             $i = $offset + 1;
             foreach ( $critical as $row ) {
@@ -232,7 +234,6 @@ class UserInterface
             }
             $html = ob_get_clean();
         }
-        
         $toLoad = $total - $offset - count( $critical );
         $more = min( self::CRITICAL_SEARCHES_LOAD_LIMIT, $toLoad );
         $data = array(
@@ -250,22 +251,21 @@ class UserInterface
         }
         wp_send_json_success( $data );
     }
-    
+
     /**
      * Load more autocomplete searches with results
      *
      * @return void
      */
-    public function loadMoreAutocomplete()
-    {
+    public function loadMoreAutocomplete() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
         check_ajax_referer( self::LOAD_MORE_AUTOCOMPLETE_NONCE );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
         // Autocomplete
         $data = new Data();
-        if ( !empty($lang) ) {
+        if ( !empty( $lang ) ) {
             $data->setLang( $lang );
         }
         $data->setContext( 'autocomplete' );
@@ -282,22 +282,21 @@ class UserInterface
         );
         wp_send_json_success( $data );
     }
-    
+
     /**
      * Load more search page searches with results
      *
      * @return void
      */
-    public function loadMoreSearchPage()
-    {
+    public function loadMoreSearchPage() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
         check_ajax_referer( self::LOAD_MORE_SEARCH_PAGE_NONCE );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
         // Search page
         $data = new Data();
-        if ( !empty($lang) ) {
+        if ( !empty( $lang ) ) {
             $data->setLang( $lang );
         }
         $data->setContext( 'search-results-page' );
@@ -314,14 +313,13 @@ class UserInterface
         );
         wp_send_json_success( $data );
     }
-    
+
     /**
      * Check if the phrase returns results
      *
      * @return void
      */
-    public function checkCriticalPhrase()
-    {
+    public function checkCriticalPhrase() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
@@ -330,17 +328,14 @@ class UserInterface
             'html'   => '',
             'status' => '',
         );
-        $phrase = ( !empty($_REQUEST['phrase']) ? $_REQUEST['phrase'] : '' );
-        if ( empty($phrase) ) {
+        $phrase = ( !empty( $_REQUEST['phrase'] ) ? $_REQUEST['phrase'] : '' );
+        if ( empty( $phrase ) ) {
             wp_send_json_error( 'empty phrase' );
         }
-        
         if ( !dgoraAsfwFs()->is_premium() ) {
             $res = DGWT_WCAS()->nativeSearch->getSearchResults( $phrase, true, 'autocomplete' );
-            
             if ( is_array( $res ) && isset( $res['total'] ) ) {
                 $total = absint( $res['total'] );
-                
                 if ( $total > 0 ) {
                     $data['status'] = 'with-results';
                     $data['html'] = $this->getCriticalPhraseMessage( $data['status'], $total );
@@ -348,18 +343,15 @@ class UserInterface
                     $data['status'] = 'without-results';
                     $data['html'] = $this->getCriticalPhraseMessage( $data['status'] );
                 }
-            
             } else {
                 $data['status'] = 'error';
                 $data['html'] = $this->getCriticalPhraseMessage( $data['status'] );
             }
-        
         } else {
         }
-        
         wp_send_json_success( $data );
     }
-    
+
     /**
      * Check critical phrase - messages on response
      *
@@ -368,8 +360,7 @@ class UserInterface
      *
      * @return string
      */
-    public function getCriticalPhraseMessage( $context = '' )
-    {
+    public function getCriticalPhraseMessage( $context = '' ) {
         $html = '';
         //This phrase returns X products.
         switch ( $context ) {
@@ -402,41 +393,37 @@ class UserInterface
         }
         return $html;
     }
-    
+
     /**
      * Unmark a phrase as critical. AJAX callback
      *
      * @return void
      */
-    public function excludeCriticalPhrase()
-    {
+    public function excludeCriticalPhrase() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
         check_ajax_referer( self::EXCLUDE_CRITICAL_PHRASE_NONCE );
-        $phrase = ( !empty($_REQUEST['phrase']) ? $_REQUEST['phrase'] : '' );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( $_REQUEST['lang'] ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
-        
-        if ( !empty($phrase) ) {
+        $phrase = ( !empty( $_REQUEST['phrase'] ) ? $_REQUEST['phrase'] : '' );
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( $_REQUEST['lang'] ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        if ( !empty( $phrase ) ) {
             $data = new Data();
-            if ( Multilingual::isMultilingual() && !empty($lang) ) {
+            if ( Multilingual::isMultilingual() && !empty( $lang ) ) {
                 $data->setLang( $lang );
             }
             if ( $data->markAsSolved( $phrase ) ) {
                 wp_send_json_success( '<p>' . __( 'This phrase has been resolved! This row will disappear after refreshing the page.', 'ajax-search-for-woocommerce' ) . '</p>' );
             }
         }
-        
         wp_send_json_error( 'empty phrase' );
     }
-    
+
     /**
      * Reset stats. AJAX callback
      *
      * @return void
      */
-    public function resetStats()
-    {
+    public function resetStats() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
@@ -444,14 +431,13 @@ class UserInterface
         Database::wipeAllRecords();
         wp_send_json_success();
     }
-    
+
     /**
      * Export stats. AJAX callback
      *
      * @return void
      */
-    public function exportStats()
-    {
+    public function exportStats() {
         if ( !current_user_can( ( Helpers::shopManagerHasAccess() ? 'manage_woocommerce' : 'manage_options' ) ) ) {
             wp_die( -1, 403 );
         }
@@ -462,13 +448,13 @@ class UserInterface
         $exporter = new CSVExporter();
         $context = ( isset( $_GET['context'] ) ? sanitize_key( $_GET['context'] ) : '' );
         $exporter->set_context( $context );
-        $lang = ( !empty($_REQUEST['lang']) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
-        if ( !empty($lang) ) {
+        $lang = ( !empty( $_REQUEST['lang'] ) && Multilingual::isLangCode( sanitize_key( $_REQUEST['lang'] ) ) ? sanitize_key( $_REQUEST['lang'] ) : '' );
+        if ( !empty( $lang ) ) {
             $exporter->set_lang( $lang );
         }
         $exporter->export();
     }
-    
+
     /**
      * Prepare vars for the view
      *
@@ -476,8 +462,7 @@ class UserInterface
      *
      * @return array
      */
-    private function getVars( $lang = '' )
-    {
+    private function getVars( $lang = '' ) {
         $data = new Data();
         if ( Multilingual::isMultilingual() ) {
             $data->setLang( $lang );
@@ -493,9 +478,9 @@ class UserInterface
             'returning-results-percent'        => 0,
             'returning-results-percent-poorly' => false,
             'links'                            => array(
-            'synonyms' => $mainUrl . '#synonyms',
-            'support'  => 'https://fibosearch.com/contact/',
-        ),
+                'synonyms' => $mainUrl . '#synonyms',
+                'support'  => 'https://fibosearch.com/contact/',
+            ),
             'table-info'                       => Helpers::getTableInfo( Database::getTableName() ),
         );
         // Autocomplete
@@ -524,16 +509,13 @@ class UserInterface
         $vars['search-page']['total-results'] = $vars['search-page']['total-with-results'] + $vars['search-page']['total-without-results'];
         // Common
         $vars['total'] = $vars['autocomplete']['total-results'];
-        
         if ( $vars['total'] > 0 ) {
             $vars['returning-results-percent'] = round( $vars['autocomplete']['total-with-results'] * 100 / $vars['total'] );
             $vars['returning-results-percent-satisfying'] = $data->isSearchesReturningResutlsSatisfying( $vars['returning-results-percent'] );
         }
-        
         // Critical searches
         $critical = $data->getCriticalSearches( self::CRITICAL_SEARCHES_LOAD_LIMIT );
-        
-        if ( !empty($critical) ) {
+        if ( !empty( $critical ) ) {
             $vars['critical-searches'] = $critical;
             $vars['critical-searches-total'] = $data->getTotalCriticalSearches();
             $toLoad = $vars['critical-searches-total'] - count( $critical );
@@ -542,17 +524,15 @@ class UserInterface
                 $vars['critical-searches-more'] = 0;
             }
         }
-        
         return $vars;
     }
-    
+
     /**
      * The records will be removed from the database after passing X days
      *
      * @return int
      */
-    public function getExpirationInDays()
-    {
+    public function getExpirationInDays() {
         $days = Maintenance::ANALYTICS_EXPIRATION_IN_DAYS;
         if ( defined( 'DGWT_WCAS_ANALYTICS_EXPIRATION_IN_DAYS' ) && intval( DGWT_WCAS_ANALYTICS_EXPIRATION_IN_DAYS ) > 0 ) {
             $days = intval( DGWT_WCAS_ANALYTICS_EXPIRATION_IN_DAYS );

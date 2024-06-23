@@ -10,9 +10,10 @@
 /**
  * Variables available for this template:
  *
- * @var $preset    bool|YITH_WCAN_Preset
- * @var $filter    YITH_WCAN_Filter
- * @var $filter_id int
+ * @var $preset     bool|YITH_WCAN_Preset
+ * @var $filter     YITH_WCAN_Filter
+ * @var $filter_id  int
+ * @var $filter_key int
  */
 
 if ( ! defined( 'YITH_WCAN' ) ) {
@@ -20,7 +21,7 @@ if ( ! defined( 'YITH_WCAN' ) ) {
 } // Exit if accessed directly
 ?>
 
-<div id="filter_<?php echo esc_attr( $filter_id ); ?>" class="filter-row ui-sortable-handle" data-item_key="<?php echo esc_attr( $filter_id ); ?>">
+<div id="filter_<?php echo esc_attr( $filter_id ); ?>" class="filter-row ui-sortable-handle" data-item_key="<?php echo esc_attr( $filter_key ); ?>">
 	<div class="yith-toggle-title">
 		<i class="title-arrow yith-icon yith-icon-arrow-right-alt"></i>
 		<h3 class="title">

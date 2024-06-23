@@ -1,16 +1,16 @@
 === WCBoost - Wishlist ===
 Contributors: wcboost
 Tags: woocommerce wishlist, wishlist, products, e-commerce, woocommerce
-Tested up to: 6.4
-Stable tag: 1.0.10
+Tested up to: 6.5
+Stable tag: 1.0.12
 Requires PHP: 7.0
 Requires at least: 4.5
 WC requires at least: 3.0.0
-WC tested up to: 8.5
+WC tested up to: 8.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Our WooCommerce Wishlist plugin enables customers to create personalized collections of products that they like but aren't ready to purchase immediately. Enhance the shopping experience by saving products for further consideration, making decisions easier than ever.
+WCBoost - Wishlist lets shoppers create wishlists for later purchases, reminding them of desired items, driving repeat visits and boost sales.
 
 == Description ==
 
@@ -93,6 +93,17 @@ Following the standards of WordPress and WooCommerce, you can find all the setti
 6. Visual options can be found in the Customizer
 
 == Changelog ==
+
+= 1.0.12 =
+- Fix - The PHP warning of the wishlist button.
+
+= 1.0.11 =
+- Fix - Missing the nofollow attribute in the wishlist buttons.
+- Fix - Fix errors with an old version of WPML.
+- Fix - Remove the Edit Wishlist link for undefined wishlists.
+- Fix - Correct the docs URL.
+- Tweak - Update the Twitter X icon.
+- Tweak – WooCommerce 8.8 compatibility.
 
 = 1.0.10 =
 - Fix - Possible issues if object cache is enabled.

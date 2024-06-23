@@ -2,14 +2,13 @@
 
 namespace DgoraWcas;
 
-use  DgoraWcas\Engines\TNTSearchMySQL\Indexer\Builder ;
-use  DgoraWcas\Engines\TNTSearchMySQL\SearchQuery\SearchResultsPageQuery ;
+use DgoraWcas\Engines\TNTSearchMySQL\Indexer\Builder;
+use DgoraWcas\Engines\TNTSearchMySQL\SearchQuery\SearchResultsPageQuery;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-class Search
-{
+class Search {
     /**
      * Search posts (products, posts or pages)
      *
@@ -29,8 +28,7 @@ class Search
      *
      * @return array|\WP_Error
      */
-    public function searchPosts( $phrase, $args )
-    {
+    public function searchPosts( $phrase, $args ) {
         $args = wp_parse_args( $args, array(
             'post_type' => 'product',
             'fields'    => 'ids',
@@ -55,7 +53,7 @@ class Search
         );
         return json_decode( json_encode( $response ), true );
     }
-    
+
     /**
      * Do a search via WordPress.
      *
@@ -64,8 +62,7 @@ class Search
      *
      * @return array Array with results.
      */
-    private function doSearch( $phrase, $args ) : array
-    {
+    private function doSearch( $phrase, $args ) : array {
         $searchResults = DGWT_WCAS()->nativeSearch->getSearchResults( $phrase, true, 'product-ids' );
         $results = array();
         if ( isset( $searchResults['suggestions'] ) && is_array( $searchResults['suggestions'] ) ) {
@@ -83,24 +80,22 @@ class Search
         if ( $args['page'] > $totalPages ) {
             $args['page'] = $totalPages;
         }
-        
         if ( $args['per_page'] > 0 ) {
             $offset = ($args['page'] - 1) * $args['per_page'] + $args['offset'];
             $results = array_slice( $results, $offset, $args['per_page'] );
         } else {
             $totalPages = 1;
         }
-        
         if ( $totalResults === 0 ) {
             $totalPages = 0;
         }
         if ( $args['fields'] === 'ids' ) {
-            return array( $results, $totalResults, $totalPages );
+            return array($results, $totalResults, $totalPages);
         }
-        $results = DGWT_WCAS()->nativeSearch->getProductsData( $results, -1, array( 'price', 'sku', 'thumb_html' ) );
-        return array( $results, $totalResults, $totalPages );
+        $results = DGWT_WCAS()->nativeSearch->getProductsData( $results, -1, array('price', 'sku', 'thumb_html') );
+        return array($results, $totalResults, $totalPages);
     }
-    
+
     /**
      * Validate search arguments
      *
@@ -108,26 +103,23 @@ class Search
      *
      * @return array|\WP_Error
      */
-    private function validateArgs( $args )
-    {
+    private function validateArgs( $args ) {
         $error = new \WP_Error();
         $args['per_page'] = (int) $args['per_page'];
-        
         if ( $args['per_page'] < -1 ) {
             $args['per_page'] = abs( $args['per_page'] );
         } elseif ( $args['per_page'] === 0 ) {
             $args['per_page'] = 1;
         }
-        
         $args['offset'] = (int) $args['offset'];
         if ( $args['offset'] < 0 ) {
             $args['offset'] = 0;
         }
-        $allowedPostTypes = array( 'product' );
+        $allowedPostTypes = array('product');
         if ( !in_array( $args['post_type'], $allowedPostTypes, true ) ) {
             $error->add( 'dgwt-wcas-invalid-arg-post-type', 'Invalid argument: post_type' );
         }
-        if ( !in_array( $args['fields'], array( 'all', 'ids' ), true ) ) {
+        if ( !in_array( $args['fields'], array('all', 'ids'), true ) ) {
             $error->add( 'dgwt-wcas-invalid-arg-fields', 'Invalid argument: fields' );
         }
         if ( $error->has_errors() ) {

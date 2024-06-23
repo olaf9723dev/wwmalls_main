@@ -4,22 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12
+class ComposerStaticInite7e4b16db1ccf32a3a412c8803a87e3c
 {
-    public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WeDevs\\WeMail\\' => 14,
-        ),
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Stringy\\' => 8,
         ),
         'L' => 
         array (
@@ -35,14 +25,6 @@ class ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12
         'WeDevs\\WeMail\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes',
-        ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Stringy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/danielstjules/stringy/src',
         ),
         'League\\Csv\\' => 
         array (
@@ -73,9 +55,6 @@ class ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12
         'League\\Csv\\Plugin\\SkipNullValuesFormatter' => __DIR__ . '/..' . '/league/csv/src/Plugin/SkipNullValuesFormatter.php',
         'League\\Csv\\Reader' => __DIR__ . '/..' . '/league/csv/src/Reader.php',
         'League\\Csv\\Writer' => __DIR__ . '/..' . '/league/csv/src/Writer.php',
-        'Stringy\\StaticStringy' => __DIR__ . '/..' . '/danielstjules/stringy/src/StaticStringy.php',
-        'Stringy\\Stringy' => __DIR__ . '/..' . '/danielstjules/stringy/src/Stringy.php',
-        'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'WeDevs\\WeMail\\Admin\\Admin' => __DIR__ . '/../..' . '/includes/Admin/Admin.php',
         'WeDevs\\WeMail\\Admin\\Elementor\\FormAction' => __DIR__ . '/../..' . '/includes/Admin/Elementor/FormAction.php',
         'WeDevs\\WeMail\\Admin\\FormPreview' => __DIR__ . '/../..' . '/includes/Admin/FormPreview.php',
@@ -201,6 +180,7 @@ class ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12
         'WeDevs\\WeMail\\Traits\\Core' => __DIR__ . '/../..' . '/includes/Traits/Core.php',
         'WeDevs\\WeMail\\Traits\\Hooker' => __DIR__ . '/../..' . '/includes/Traits/Hooker.php',
         'WeDevs\\WeMail\\Traits\\Singleton' => __DIR__ . '/../..' . '/includes/Traits/Singleton.php',
+        'WeDevs\\WeMail\\Traits\\Stringy' => __DIR__ . '/../..' . '/includes/Traits/Stringy.php',
         'WeDevs\\WeMail\\Uninstall' => __DIR__ . '/../..' . '/includes/Uninstall.php',
         'WeDevs\\WeMail\\Upgrade' => __DIR__ . '/../..' . '/includes/Upgrade.php',
         'WeDevs\\WeMail\\WeMail' => __DIR__ . '/../..' . '/includes/WeMail.php',
@@ -209,9 +189,9 @@ class ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitfea76da0d78db3a4d1611b0cc9032e12::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite7e4b16db1ccf32a3a412c8803a87e3c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite7e4b16db1ccf32a3a412c8803a87e3c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInite7e4b16db1ccf32a3a412c8803a87e3c::$classMap;
 
         }, null, ClassLoader::class);
     }

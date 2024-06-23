@@ -1,6 +1,3 @@
-
-
-
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
@@ -210,6 +207,37 @@ jQuery(document).ready(function() {
         }else{
             alert('die');
         }
+    });
+    jQuery('.header-search__container.motta-type--input-text').css({
+        'color': '#1d2128',
+        'border-width': 'var(--mt-input__border-width)',
+        'border-style': 'solid',
+        'border-color': '#dadfe3',
+        'border-radius': 'var(--mt-border__radius)',
+        'outline': 'none',
+        'transition': '0.4s',
+        'font-weight': '500',
+        'font-size': '14px',
+        'font-size': '0.875rem',
+        'padding': '12px 22px',
+        'height': 'var(--mt-input__height)',
+        'box-shadow': '0px 2px 6px 0px var(--mt-input__box-shadow)',
+        'background-color': 'var(--mt-input__background-color)',
+        '-webkit-appearance': 'none',
+        'height': 'var(--mt-size__header-item)',
+        'display': 'flex',
+        'width': '100%',
+        'position': 'relative',
+        'padding-right': '24px',
+        'padding-left': '0',
+    });
+    jQuery('.header-search__container .header-search__field').css({
+        'height':'auto',
+        'border':'none'
+    });
+    jQuery('.header-search--form .header-search__button').css({
+        'background-color':'var(--mt-color__primary--dark)',
+        'color':'white'
     });
 });
 
@@ -668,7 +696,4 @@ jQuery(document).ready(function($){
         $('.page-header__content').hide();
     }
     
-});
-jQuery(document).ready(function($){
-   $('.sold-by-meta').remove(); 
 });

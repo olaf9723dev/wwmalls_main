@@ -40,10 +40,12 @@ if ( ! defined( 'YITH_WCAN' ) ) {
 			if ( $show_more ) {
 				$filters = array_slice( $filters, 0, YITH_WCAN_Presets::FILTERS_PER_PAGE, true );
 			}
+			$filter_key = 0;
 
-			foreach ( $filters as $filter_key => $filter ) :
+			foreach ( $filters as $filter ) :
 				$filter_id = $filter->get_id();
 				include YITH_WCAN_DIR . 'templates/admin/preset-filter.php';
+				$filter_key++;
 			endforeach;
 		endif;
 		?>
@@ -61,8 +63,9 @@ if ( ! defined( 'YITH_WCAN' ) ) {
 
 <script type="text/template" id="tmpl-yith-wcan-filter">
 	<?php
-	$filter    = yith_wcan_get_filter();
-	$filter_id = '{{data.id}}';
+	$filter     = yith_wcan_get_filter();
+	$filter_id  = '{{data.id}}';
+	$filter_key = '{{data.key}}';
 
 	require YITH_WCAN_DIR . 'templates/admin/preset-filter.php';
 	?>

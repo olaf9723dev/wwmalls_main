@@ -47,7 +47,7 @@ class WCPBC_Setup_Wizard {
 	/**
 	 * Handle redirects to setup/welcome page after install and updates.
 	 *
-	 * For setup wizard, transient must be present, the user must have access rights, and we must ignore the network/bulk plugin updaters.
+	 * For setup wizard, cookie must be present, the user must have access rights, and we must ignore the network/bulk plugin updaters.
 	 */
 	public static function do_admin_redirect() {
 		if ( isset( $_COOKIE['_wcpbc_activation_redirect'] ) && '1' === wc_clean( wp_unslash( $_COOKIE['_wcpbc_activation_redirect'] ) ) ) {
@@ -188,6 +188,7 @@ class WCPBC_Setup_Wizard {
 	 */
 	private static function process_step_geolocation( $postdata ) {
 		if ( ! self::maxmind_geoip_required() ) {
+			update_option( 'woocommerce_default_customer_address', 'geolocation' );
 			return;
 		}
 

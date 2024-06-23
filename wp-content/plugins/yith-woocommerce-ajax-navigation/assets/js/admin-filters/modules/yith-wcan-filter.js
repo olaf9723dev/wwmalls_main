@@ -68,8 +68,8 @@ export default class YITH_WCAN_Filter {
 		this.initClone();
 		this.initTerms();
 		this.initRanges();
-		this.initFields();
 		this.initDependencies();
+		this.initFields();
 
 		this.$filter.addClass( 'initialized' );
 	}
@@ -109,6 +109,8 @@ export default class YITH_WCAN_Filter {
 	}
 
 	initFields() {
+		this.$filter.trigger( 'yith_fields_init' );
+
 		this.initTermSearch();
 		this.initCustomizeTerms();
 		this.initTaxonomy();
@@ -570,9 +572,10 @@ export default class YITH_WCAN_Filter {
 	}
 
 	populate( filterData ) {
+		const row_id = this.getId();
+
 		for ( const i in filterData ) {
-			const row_id = this.getRowIndex(),
-				value = filterData[ i ];
+			const value = filterData[ i ];
 
 			let nameId =
 					'terms' === i
@@ -687,14 +690,16 @@ export default class YITH_WCAN_Filter {
 	}
 
 	getTermsToShow() {
-		let termsPool = this.getTermsPool();
+		let termsPool = this.getTermsPool(),
+			perPage = parseInt( yith_wcan_admin.terms_per_page );
 
 		if (
 			termsPool &&
 			this.termsPaginated &&
-			Object.keys( termsPool ).length > yith_wcan_admin.terms_per_page
+			perPage &&
+			Object.keys( termsPool ).length > perPage
 		) {
-			termsPool = termsPool.slice( 0, yith_wcan_admin.terms_per_page );
+			termsPool = termsPool.slice( 0, perPage );
 		} else {
 			this.$filter.find( '.show-more-terms' ).hide();
 		}

@@ -4,7 +4,7 @@
  * Description: This extension introduces detailed comparison tables that highlight the most significant product details, giving customers the ability to quickly compare products side by side. As you quickly review features, specifications, and more, you can make well-informed decisions.
  * Plugin URI: https://wcboost.com/plugin/woocommerce-products-compare/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
  * Author: WCBoost
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author URI: https://wcboost.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
  *
  * Text Domain: wcboost-products-compare
@@ -12,9 +12,9 @@
  *
  * Requires PHP: 7.0
  * Requires at least: 4.5
- * Tested up to: 6.4
+ * Tested up to: 6.5
  * WC requires at least: 3.0.0
- * WC tested up to: 8.6
+ * WC tested up to: 8.9
  *
  * @package WCBoost
  * @category Products Compare
@@ -24,6 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+define( 'WCBOOST_PRODUCTS_COMPARE_FILE', __FILE__ );
 define( 'WCBOOST_PRODUCTS_COMPARE_FREE', plugin_basename( __FILE__ ) );
 
 require_once plugin_dir_path( __FILE__ ) . 'includes/plugin.php';

@@ -441,7 +441,7 @@ class Wishlist extends \WC_Data {
 			if ( ! $product || ! $product->exists() ) {
 				$message = esc_html__( 'A product has been removed from your wishlist because it does not exist anymore.', 'wcboost-wishlist' );
 			} else {
-				/** Translator: %s is the product name */
+				/* translators: %s product name */
 				$message = sprintf( esc_html__( 'The product "%s" has been removed from your wishlist because it can no longer be purchased.', 'wcboost-wishlist' ), $product->get_title() );
 			}
 
@@ -601,6 +601,10 @@ class Wishlist extends \WC_Data {
 	 * @return bool
 	 */
 	public function can_edit() {
+		if ( ! $this->get_id() ) {
+			return false;
+		}
+
 		if ( is_user_logged_in() ) {
 			$user_id = get_current_user_id();
 

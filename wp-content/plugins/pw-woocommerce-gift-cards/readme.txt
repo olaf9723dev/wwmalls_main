@@ -5,7 +5,7 @@ Tags: woocommerce, gift cards, gift certificates, vouchers, store credit
 Requires at least: 4.5
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.254
+Stable tag: 1.255
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,9 @@ The following currency switcher plugins are supported:
 
 == Changelog ==
 
+= 1.255 =
+* WooCommerce 9.0 compatibility.
+
 = 1.254 =
 * Revised tags in readme.txt Added requirement flag for WooCommerce. Confirmed compatibility with WooCommerce 8.8
 
@@ -116,15 +119,12 @@ The following currency switcher plugins are supported:
 = 1.246 =
 * Included the Dutch Belgium language (nl_BE) based upon the Dutch (nl_NL) translations. WooCommerce 8.1 compatible.
 
-= 1.245 =
-* Fixed a translation in the Dutch language. Compatibility with WordPress 6.3 and WooCommerce 8.0.
-
 = Previous versions =
 * See changelog.txt
 
 == Upgrade Notice ==
 
-= 1.254 =
-* Revised tags in readme.txt Added requirement flag for WooCommerce. Confirmed compatibility with WooCommerce 8.8
+= 1.255 =
+* WooCommerce 9.0 compatibility.
 
 

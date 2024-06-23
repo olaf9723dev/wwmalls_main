@@ -4,10 +4,10 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace Wtpklistpdf\Dompdf\FrameDecorator;
 
-use Dompdf\Dompdf;
-use Dompdf\Frame;
+use Wtpklistpdf\Dompdf\Dompdf;
+use Wtpklistpdf\Dompdf\Frame;
 
 /**
  * Decorates frames for list bullet rendering

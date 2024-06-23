@@ -178,7 +178,7 @@ class WCPBC_Install {
 		$wp_list_table = function_exists( '_get_list_table' ) ? _get_list_table( 'WP_Plugins_List_Table' ) : false;
 
 		if ( false === self::get_install_version() &&
-			is_callable( array( $wp_list_table, 'current_action' ) ) && 'activate' === $wp_list_table->current_action() &&
+			is_callable( array( $wp_list_table, 'current_action' ) ) && in_array( $wp_list_table->current_action(), [ 'activate', 'activate-plugin' ], true ) &&
 			! is_network_admin() &&
 			function_exists( 'WC' )
 		) {

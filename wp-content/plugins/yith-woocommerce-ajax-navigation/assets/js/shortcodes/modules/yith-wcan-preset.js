@@ -135,8 +135,11 @@ export default class YITH_WCAN_Preset {
 						? $currentFilter.find( '.filter-item' ).not( $item )
 						: [];
 
+				if ( $currentFilter.is( '.filter-price-slider' ) ) {
+					return false;
+				}
+
 				if ( $item.is( '.disabled' ) && ! $item.is( '.active' ) ) {
-					ev.preventDefault();
 					return false;
 				}
 
@@ -271,7 +274,7 @@ export default class YITH_WCAN_Preset {
 					'wc-ajax': 'yith_wcan_render_filter',
 					_preset_id: this.getId(),
 					_filter_id: $filter.data( 'filter-id' ),
-					security: yith_wcan_shortcodes.nonces.render_filter,
+					security: yith_wcan_shortcodes.nonces?.render_filter,
 					...this.originalFilters,
 				},
 			} ).then( ( data ) =>
@@ -383,7 +386,7 @@ export default class YITH_WCAN_Preset {
 		this._initDropdownObject( $dropdown, {
 			paginate: true,
 			hasMore,
-			perPage: yith_wcan_shortcodes.terms_per_page,
+			perPage: parseInt( yith_wcan_shortcodes.terms_per_page ),
 			...( hasMore
 				? {
 						async getElements( search ) {

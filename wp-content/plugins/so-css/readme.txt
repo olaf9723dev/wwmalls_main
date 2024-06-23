@@ -1,9 +1,10 @@
 === SiteOrigin CSS ===
 Tags: css, visual css, css editor, design, customize
 Requires at least: 3.9
-Tested up to: 6.4
-Stable tag: 1.5.9
-Build time: 2023-11-11T12:48:57+00:00
+Requires PHP: 7.0.0
+Tested up to: 6.5
+Stable tag: 1.5.10
+Build time: 2024-05-31T21:56:24+01:00
 License: GPLv2 or later
 Contributors: gpriday, alexgso
 Donate link: https://siteorigin.com/downloads/premium/
@@ -70,6 +71,11 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.5.10 - 31 May 2024 =
+* Updated SiteOrigin Installer.
+* Updated Tested up to tag.
+* Updated Required PHP version.
 
 = 1.5.9 - 11 November 2023 =
 * Updated Tested up to tag.

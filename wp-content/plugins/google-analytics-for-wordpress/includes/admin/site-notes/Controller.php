@@ -10,6 +10,9 @@ class MonsterInsights_SiteNotes_Controller
 	 */
 	private $db;
 
+	/**
+	 * @return self
+	 */
 	public static function get_instance()
 	{
 		if (!isset(self::$instance) && !(self::$instance instanceof MonsterInsights_SiteNotes_Controller)) {

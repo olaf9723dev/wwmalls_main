@@ -4,7 +4,7 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace Wtpklistpdf\Dompdf;
 
 /**
  * Main rendering interface
@@ -364,6 +364,16 @@ interface Canvas
      * @param string $value The text to set
      */
     public function add_info(string $label, string $value): void;
+
+    /**
+     * Determines if the font supports the given character
+     *
+     * @param string $font The font file to use
+     * @param string $char The character to check
+     *
+     * @return bool
+     */
+    function font_supports_char(string $font, string $char): bool;
 
     /**
      * Calculates text size, in points

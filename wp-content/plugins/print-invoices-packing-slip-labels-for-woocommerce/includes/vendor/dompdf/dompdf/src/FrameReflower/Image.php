@@ -4,11 +4,11 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace Wtpklistpdf\Dompdf\FrameReflower;
 
-use Dompdf\Helpers;
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\Image as ImageFrameDecorator;
+use Wtpklistpdf\Dompdf\Helpers;
+use Wtpklistpdf\Dompdf\FrameDecorator\Block as BlockFrameDecorator;
+use Wtpklistpdf\Dompdf\FrameDecorator\Image as ImageFrameDecorator;
 
 /**
  * Image reflower class

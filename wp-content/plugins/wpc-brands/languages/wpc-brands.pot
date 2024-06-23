@@ -1,0 +1,345 @@
+# Copyright (C) 2024 WPClever
+# This file is distributed under the same license as the WPC Brands for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Brands for WooCommerce 1.2.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpc-brands\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-04T16:15:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: wpc-brands\n"
+
+#. Plugin Name of the plugin
+msgid "WPC Brands for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr ""
+
+#. Description of the plugin
+msgid "WPC Brands allows you to manage product brands in the easiest."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPClever"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr ""
+
+#: wpc-brands.php:172
+#: wpc-brands.php:174
+#: wpc-brands.php:228
+#: wpc-brands.php:510
+msgid "Brands"
+msgstr ""
+
+#: wpc-brands.php:173
+msgid "Brand"
+msgstr ""
+
+#: wpc-brands.php:175
+msgid "All Brands"
+msgstr ""
+
+#: wpc-brands.php:176
+msgid "Edit Brand"
+msgstr ""
+
+#: wpc-brands.php:177
+msgid "View Brand"
+msgstr ""
+
+#: wpc-brands.php:178
+msgid "Update Brand"
+msgstr ""
+
+#: wpc-brands.php:179
+msgid "Add New Brand"
+msgstr ""
+
+#: wpc-brands.php:180
+msgid "New Brand Name"
+msgstr ""
+
+#: wpc-brands.php:181
+msgid "Parent Brand"
+msgstr ""
+
+#: wpc-brands.php:182
+msgid "Parent Brand:"
+msgstr ""
+
+#: wpc-brands.php:183
+msgid "Search Brands"
+msgstr ""
+
+#: wpc-brands.php:184
+msgid "Popular Brands"
+msgstr ""
+
+#: wpc-brands.php:185
+msgid "&larr; Go to Brands"
+msgstr ""
+
+#: wpc-brands.php:186
+msgid "Separate brands with commas"
+msgstr ""
+
+#: wpc-brands.php:187
+msgid "Add or remove brands"
+msgstr ""
+
+#: wpc-brands.php:188
+msgid "Choose from the most used brands"
+msgstr ""
+
+#: wpc-brands.php:189
+msgid "No brands found"
+msgstr ""
+
+#: wpc-brands.php:228
+#: wpc-brands.php:239
+msgid "WPC Brands"
+msgstr ""
+
+#. translators: stars
+#: wpc-brands.php:242
+msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
+msgstr ""
+
+#: wpc-brands.php:244
+msgid "Reviews"
+msgstr ""
+
+#: wpc-brands.php:245
+msgid "Changelog"
+msgstr ""
+
+#: wpc-brands.php:246
+msgid "Discussion"
+msgstr ""
+
+#: wpc-brands.php:251
+msgid "Settings updated."
+msgstr ""
+
+#: wpc-brands.php:257
+#: wpc-brands.php:476
+msgid "Settings"
+msgstr ""
+
+#: wpc-brands.php:260
+msgid "Shortcodes"
+msgstr ""
+
+#: wpc-brands.php:263
+msgid "Essential Kit"
+msgstr ""
+
+#: wpc-brands.php:277
+msgid "General"
+msgstr ""
+
+#: wpc-brands.php:281
+#: wpc-brands.php:654
+msgid "Slug"
+msgstr ""
+
+#: wpc-brands.php:289
+msgid "Logo size"
+msgstr ""
+
+#: wpc-brands.php:314
+msgid "Products archive"
+msgstr ""
+
+#: wpc-brands.php:318
+#: wpc-brands.php:358
+msgid "Position"
+msgstr ""
+
+#: wpc-brands.php:326
+msgid "Above thumbnail"
+msgstr ""
+
+#: wpc-brands.php:327
+#: wpc-brands.php:366
+msgid "Above title"
+msgstr ""
+
+#: wpc-brands.php:328
+#: wpc-brands.php:367
+msgid "Under title"
+msgstr ""
+
+#: wpc-brands.php:329
+msgid "Under rating"
+msgstr ""
+
+#: wpc-brands.php:330
+#: wpc-brands.php:368
+msgid "Under price"
+msgstr ""
+
+#: wpc-brands.php:331
+#: wpc-brands.php:370
+msgid "Above add to cart button"
+msgstr ""
+
+#: wpc-brands.php:332
+#: wpc-brands.php:371
+msgid "Under add to cart button"
+msgstr ""
+
+#: wpc-brands.php:333
+#: wpc-brands.php:375
+msgid "None (hide it)"
+msgstr ""
+
+#: wpc-brands.php:338
+#: wpc-brands.php:380
+msgid "Type"
+msgstr ""
+
+#: wpc-brands.php:346
+#: wpc-brands.php:388
+msgid "Text"
+msgstr ""
+
+#: wpc-brands.php:347
+#: wpc-brands.php:389
+msgid "Image"
+msgstr ""
+
+#: wpc-brands.php:348
+#: wpc-brands.php:390
+msgid "Text & Image"
+msgstr ""
+
+#: wpc-brands.php:354
+msgid "Single product"
+msgstr ""
+
+#: wpc-brands.php:369
+msgid "Under excerpt"
+msgstr ""
+
+#: wpc-brands.php:372
+msgid "Under meta"
+msgstr ""
+
+#: wpc-brands.php:373
+msgid "Under sharing"
+msgstr ""
+
+#: wpc-brands.php:374
+msgid "In a new tab"
+msgstr ""
+
+#: wpc-brands.php:492
+msgid "Community support"
+msgstr ""
+
+#: wpc-brands.php:554
+#: wpc-brands.php:653
+msgid "Description"
+msgstr ""
+
+#: wpc-brands.php:569
+msgid "Description for the brand archive page. You can include some HTML markup and shortcodes."
+msgstr ""
+
+#: wpc-brands.php:576
+#: wpc-brands.php:651
+msgid "Logo"
+msgstr ""
+
+#: wpc-brands.php:582
+#: wpc-brands.php:599
+msgid "Select image"
+msgstr ""
+
+#: wpc-brands.php:585
+#: wpc-brands.php:602
+msgid "× remove"
+msgstr ""
+
+#: wpc-brands.php:593
+msgid "Banner"
+msgstr ""
+
+#: wpc-brands.php:610
+msgid "Banner link"
+msgstr ""
+
+#: wpc-brands.php:652
+msgid "Name"
+msgstr ""
+
+#: wpc-brands.php:655
+msgid "Count"
+msgstr ""
+
+#: wpc-brands.php:696
+msgid "Filter by brand"
+msgstr ""
+
+#: wpc-brands.php:705
+msgid "Before wrapper"
+msgstr ""
+
+#: wpc-brands.php:706
+msgid "After wrapper"
+msgstr ""
+
+#: wpc-brands.php:707
+msgid "Before brand list"
+msgstr ""
+
+#: wpc-brands.php:708
+msgid "After brand list"
+msgstr ""
+
+#: wpc-brands.php:709
+msgid "Before brand"
+msgstr ""
+
+#: wpc-brands.php:710
+msgid "After brand"
+msgstr ""
+
+#: wpc-brands.php:711
+msgid "Before brand image"
+msgstr ""
+
+#: wpc-brands.php:712
+msgid "After brand image"
+msgstr ""
+
+#: wpc-brands.php:713
+msgid "Before brand name"
+msgstr ""
+
+#: wpc-brands.php:714
+msgid "After brand name"
+msgstr ""
+
+#: wpc-brands.php:715
+msgid "Before brand description"
+msgstr ""
+
+#: wpc-brands.php:716
+msgid "After brand description"
+msgstr ""
+
+#: wpc-brands.php:768
+msgid "Brand: "
+msgstr ""

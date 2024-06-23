@@ -705,6 +705,7 @@ if ( ! class_exists( 'YITH_WCAN_Presets' ) ) {
 				$results[] = array_merge(
 					$filter->get_data(),
 					array(
+						'id'    => $filter->get_id(),
 						'terms' => array_values( $filter->get_terms_options( 'edit' ) ),
 					)
 				);

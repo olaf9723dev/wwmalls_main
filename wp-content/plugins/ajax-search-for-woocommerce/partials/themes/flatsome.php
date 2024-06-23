@@ -38,6 +38,10 @@ add_action( 'wp_head', function () { ?>
 			transition: all 100ms ease-in-out;
 		}
 
+		#search-lightbox .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit:before {
+			top: 21px;
+		}
+
 		.dgwt-wcas-overlay-mobile-on .mfp-wrap .mfp-content {
 			width: 100vw;
 		}
@@ -190,22 +194,27 @@ add_action( 'wp_footer', function () {
 
 						formWrapper.removeClass('dgwt-wcas-flatsome-up');
 						formWrapper.find('.dgwt-wcas-search-input').trigger('focus');
+
+						// Recalc button positions.
+						const plugin = formWrapper.find('.dgwt-wcas-search-input').data('autocomplete');
+						plugin.positionPreloaderAndMic();
 					}, 300);
 				});
 
 				// Mobile
 				$(document).on('click', '.mobile-nav .header-search .icon-search', function () {
-					var $handler = $('.mobile-nav .header-search').find('.js-dgwt-wcas-enable-mobile-form');
+					var $handler = $('.js-dgwt-wcas-enable-mobile-form');
 					if ($handler.length) {
 						$handler[0].click();
+
+						// Close unused modal.
+						setTimeout(function () {
+							var $modalClose = $('.mfp-wrap .mfp-close');
+							if ($modalClose.length) {
+								$modalClose[0].click();
+							}
+						}, 300);
 					}
-					// Close unused modal.
-					setTimeout(function () {
-						var $modalClose = $('.mfp-wrap .mfp-close');
-						if ($modalClose.length) {
-							$modalClose[0].click();
-						}
-					}, 300);
 				});
 			});
 		})(jQuery);

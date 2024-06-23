@@ -353,19 +353,36 @@ class ThemesCompatibility {
 					'forceMobileOverlayBreakpoint' => 959,
 				),
 			),
-			'bricks'          => array(
+			'bricks'           => array(
 				'slug' => 'bricks',
 				'name' => 'Bricks',
 				'args' => array(
 					'alwaysEnabled' => true,
 				),
 			),
-			'betheme'         => array(
+			'betheme'          => array(
 				'slug' => 'betheme',
 				'name' => 'Betheme',
 				'args' => array(
 					'forceMobileOverlay'           => true,
 					'forceMobileOverlayBreakpoint' => 767,
+				),
+			),
+			'rey'              => array(
+				'slug' => 'rey',
+				'name' => 'Rey',
+				'args' => array(
+					'forceMobileOverlay'           => true,
+					'forceMobileOverlayBreakpoint' => 1024,
+					'forceLayoutBreakpoint'        => 1024,
+				),
+			),
+			'cartzilla'         => array(
+				'slug' => 'cartzilla',
+				'name' => 'Cartzilla',
+				'args' => array(
+					'forceMobileOverlay'           => true,
+					'forceMobileOverlayBreakpoint' => 991,
 				),
 			),
 		);

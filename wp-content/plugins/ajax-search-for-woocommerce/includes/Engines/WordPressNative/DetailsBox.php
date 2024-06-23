@@ -2,45 +2,39 @@
 
 namespace DgoraWcas\Engines\WordPressNative;
 
-use  DgoraWcas\Post ;
-use  DgoraWcas\Product ;
-use  DgoraWcas\Helpers ;
-use  DgoraWcas\ProductVariation ;
+use DgoraWcas\Post;
+use DgoraWcas\Product;
+use DgoraWcas\Helpers;
+use DgoraWcas\ProductVariation;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-class DetailsBox
-{
-    public function __construct()
-    {
+class DetailsBox {
+    public function __construct() {
         if ( defined( 'DGWT_WCAS_WC_AJAX_ENDPOINT' ) ) {
             // Searched result details ajax action
-            
             if ( DGWT_WCAS_WC_AJAX_ENDPOINT ) {
-                add_action( 'wc_ajax_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array( $this, 'getResultDetails' ) );
+                add_action( 'wc_ajax_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array($this, 'getResultDetails') );
             } else {
-                add_action( 'wp_ajax_nopriv_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array( $this, 'getResultDetails' ) );
-                add_action( 'wp_ajax_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array( $this, 'getResultDetails' ) );
+                add_action( 'wp_ajax_nopriv_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array($this, 'getResultDetails') );
+                add_action( 'wp_ajax_' . DGWT_WCAS_RESULT_DETAILS_ACTION, array($this, 'getResultDetails') );
             }
-        
         }
     }
-    
+
     /**
      * Get searched result details
      */
-    public function getResultDetails()
-    {
+    public function getResultDetails() {
         if ( !defined( 'DGWT_WCAS_AJAX_DETAILS_PANEL' ) ) {
             define( 'DGWT_WCAS_AJAX_DETAILS_PANEL', true );
         }
         $output = array();
         $items = array();
-        
-        if ( !empty($_POST['items']) && is_array( $_POST['items'] ) ) {
+        if ( !empty( $_POST['items'] ) && is_array( $_POST['items'] ) ) {
             foreach ( $_POST['items'] as $item ) {
-                if ( empty($item['objectID']) ) {
+                if ( empty( $item['objectID'] ) ) {
                     continue;
                 }
                 $suggestionValue = '';
@@ -50,47 +44,41 @@ class DetailsBox
                 $termID = 0;
                 $taxonomy = '';
                 // Suggestion value
-                if ( !empty($item['value']) ) {
+                if ( !empty( $item['value'] ) ) {
                     $suggestionValue = sanitize_text_field( $item['value'] );
                 }
                 $objectID = sanitize_text_field( $item['objectID'] );
                 $parts = explode( '__', $objectID );
-                $type = ( !empty($parts[0]) ? sanitize_key( $parts[0] ) : '' );
-                
+                $type = ( !empty( $parts[0] ) ? sanitize_key( $parts[0] ) : '' );
                 if ( $type === 'taxonomy' ) {
-                    $termID = ( !empty($parts[1]) ? absint( $parts[1] ) : 0 );
-                    $taxonomy = ( !empty($parts[2]) ? sanitize_key( $parts[2] ) : '' );
+                    $termID = ( !empty( $parts[1] ) ? absint( $parts[1] ) : 0 );
+                    $taxonomy = ( !empty( $parts[2] ) ? sanitize_key( $parts[2] ) : '' );
                 } elseif ( $type === 'product' ) {
                     $postType = $type;
-                    $postID = ( !empty($parts[1]) ? absint( $parts[1] ) : 0 );
+                    $postID = ( !empty( $parts[1] ) ? absint( $parts[1] ) : 0 );
                 } elseif ( $type === 'product_variation' ) {
                     $postType = $type;
-                    $postID = ( !empty($parts[1]) ? absint( $parts[1] ) : 0 );
-                    $variationID = ( !empty($parts[2]) ? absint( $parts[2] ) : 0 );
+                    $postID = ( !empty( $parts[1] ) ? absint( $parts[1] ) : 0 );
+                    $variationID = ( !empty( $parts[2] ) ? absint( $parts[2] ) : 0 );
                 } elseif ( $type === 'post' ) {
-                    $postType = ( !empty($parts[2]) ? $parts[2] : 0 );
-                    $postID = ( !empty($parts[1]) ? absint( $parts[1] ) : 0 );
+                    $postType = ( !empty( $parts[2] ) ? $parts[2] : 0 );
+                    $postID = ( !empty( $parts[1] ) ? absint( $parts[1] ) : 0 );
                 }
-                
                 // Get product details
-                
-                if ( !empty($postID) && !empty($postType) && in_array( $postType, array( 'product', 'product_variation' ) ) ) {
-                    
+                if ( !empty( $postID ) && !empty( $postType ) && in_array( $postType, array('product', 'product_variation') ) ) {
                     if ( $postType === 'product_variation' ) {
                         $productDetails = $this->getProductDetails( $postID, $variationID );
                     } else {
                         $productDetails = $this->getProductDetails( $postID );
                     }
-                    
                     $items[] = array(
                         'objectID' => $objectID,
                         'html'     => $productDetails['html'],
                         'price'    => $productDetails['price'],
                     );
                 }
-                
                 // Get taxonomy details
-                if ( !empty($termID) && !empty($taxonomy) ) {
+                if ( !empty( $termID ) && !empty( $taxonomy ) ) {
                     $items[] = array(
                         'objectID' => $objectID,
                         'html'     => $this->getTaxonomyDetails( $termID, $taxonomy, $suggestionValue ),
@@ -98,12 +86,11 @@ class DetailsBox
                 }
             }
             $output['items'] = $items;
-            echo  json_encode( apply_filters( 'dgwt/wcas/suggestion_details/output', $output ) ) ;
+            echo json_encode( apply_filters( 'dgwt/wcas/suggestion_details/output', $output ) );
             die;
         }
-    
     }
-    
+
     /**
      * Prepare products details to the ajax output
      *
@@ -112,17 +99,14 @@ class DetailsBox
      *
      * @return array
      */
-    private function getProductDetails( $productID, $variationID = 0 )
-    {
-        
+    private function getProductDetails( $productID, $variationID = 0 ) {
         if ( $variationID ) {
-            $product = new ProductVariation( $variationID );
+            $product = new ProductVariation($variationID);
             $type = 'product_variation';
         } else {
-            $product = new Product( $productID );
+            $product = new Product($productID);
             $type = 'product';
         }
-        
         $details = array(
             'html'  => '',
             'price' => '',
@@ -166,7 +150,6 @@ class DetailsBox
         ob_start();
         Helpers::loadTemplate( 'details-panel/' . $file . '.php', $vars );
         $details['html'] = ob_get_clean();
-        
         if ( $variationID ) {
             $details['html'] = apply_filters(
                 'dgwt/wcas/suggestion_details/product_variation/html',
@@ -182,11 +165,10 @@ class DetailsBox
                 $product
             );
         }
-        
         $details['price'] = $vars->priceHtml;
         return $details;
     }
-    
+
     /**
      * Prepare category details to the ajax output
      *
@@ -196,14 +178,12 @@ class DetailsBox
      *
      * @return string HTML
      */
-    private function getTaxonomyDetails( $termID, $taxonomy, $termName )
-    {
+    private function getTaxonomyDetails( $termID, $taxonomy, $termName ) {
         $html = '';
         $title = '';
         ob_start();
         $queryArgs = $this->getProductsQueryArgs( $termID, $taxonomy );
-        $products = new \WP_Query( $queryArgs );
-        
+        $products = new \WP_Query($queryArgs);
         if ( $products->have_posts() ) {
             $limit = $queryArgs['posts_per_page'];
             $totalProducts = absint( $products->found_posts );
@@ -222,16 +202,15 @@ class DetailsBox
                 $taxonomy,
                 $termName
             );
-            echo  '<div class="dgwt-wcas-details-inner dgwt-wcas-details-inner-taxonomy dgwt-wcas-details-space">' ;
+            echo '<div class="dgwt-wcas-details-inner dgwt-wcas-details-inner-taxonomy dgwt-wcas-details-space">';
             do_action( 'dgwt/wcas/details_panel/term_products/container_before' );
-            echo  '<div class="dgwt-wcas-products-in-cat">' ;
-            echo  ( !empty($title) ? $title : '' ) ;
+            echo '<div class="dgwt-wcas-products-in-cat">';
+            echo ( !empty( $title ) ? $title : '' );
             $thumbSize = apply_filters( 'dgwt/wcas/suggestion_details/term_products/thumb_size', DGWT_WCAS()->setup->getThumbnailSize() );
             $responsiveImages = apply_filters( 'dgwt/wcas/suggestion_details/responsive_images', true );
             while ( $products->have_posts() ) {
                 $products->the_post();
-                $product = new Product( get_the_ID() );
-                
+                $product = new Product(get_the_ID());
                 if ( $product->isValid() ) {
                     $vars = array(
                         'ID'          => $product->getID(),
@@ -253,20 +232,16 @@ class DetailsBox
                     );
                     Helpers::loadTemplate( 'details-panel/term-product.php', $vars );
                 }
-            
             }
-            echo  '</div>' ;
-            
+            echo '</div>';
             if ( $showMore ) {
                 $showMoreUrl = get_term_link( $termID, $taxonomy );
                 $showMoreUrl = apply_filters( 'dgwt/wcas/suggestion_details/term_products/show_more_url', $showMoreUrl, get_term( $termID, $taxonomy ) );
-                echo  '<a class="dgwt-wcas-details-more-products" href="' . esc_url( $showMoreUrl ) . '">' . esc_html( Helpers::getLabel( 'show_more_details' ) ) . ' (' . $totalProducts . ')</a>' ;
+                echo '<a class="dgwt-wcas-details-more-products" href="' . esc_url( $showMoreUrl ) . '">' . esc_html( Helpers::getLabel( 'show_more_details' ) ) . ' (' . $totalProducts . ')</a>';
             }
-            
             do_action( 'dgwt/wcas/details_panel/term_products/container_after' );
-            echo  '</div>' ;
+            echo '</div>';
         }
-        
         wp_reset_postdata();
         $html = ob_get_clean();
         return apply_filters(
@@ -276,7 +251,7 @@ class DetailsBox
             $taxonomy
         );
     }
-    
+
     /**
      * Get query vars for products that should be displayed in the daxonomy details box
      *
@@ -285,8 +260,7 @@ class DetailsBox
      *
      * @return array
      */
-    private function getProductsQueryArgs( $termID, $taxonomy )
-    {
+    private function getProductsQueryArgs( $termID, $taxonomy ) {
         $productVisibilityTermIds = wc_get_product_visibility_term_ids();
         $queryArgs = array(
             'posts_per_page' => apply_filters( 'dgwt/wcas/suggestion_details/taxonomy/limit', 4 ),

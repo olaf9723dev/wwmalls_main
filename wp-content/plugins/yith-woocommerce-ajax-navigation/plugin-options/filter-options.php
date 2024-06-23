@@ -88,7 +88,7 @@ return apply_filters(
 				'label'    => _x( 'Choose terms', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 				'type'     => 'select-buttons',
 				'multiple' => true,
-				'class'    => 'wc-enhanced-select term-search',
+				'class'    => 'term-search',
 				'options'  => array(),
 				'desc'     => _x( 'Select which terms to use for filtering', '[Admin] Filter edit form', 'yith-woocommerce-ajax-navigation' ),
 			),

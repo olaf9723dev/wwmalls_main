@@ -2,7 +2,8 @@
 
 namespace DgoraWcas\Integrations\Plugins\WooCommerceWholeSalePricesIntegration;
 
-use  DgoraWcas\Helpers ;
+use DgoraWcas\Helpers;
+use DgoraWcas\Multilingual;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -13,21 +14,19 @@ if ( !defined( 'ABSPATH' ) ) {
  * Plugin URL: https://wholesalesuiteplugin.com
  * Author: Rymera Web Co
  */
-class WooCommerceWholeSalePricesIntegration
-{
-    public function init()
-    {
+class WooCommerceWholeSalePricesIntegration {
+    public function init() {
         if ( !class_exists( 'WooCommerceWholeSalePricesPremium' ) ) {
             return;
         }
         if ( version_compare( \WooCommerceWholeSalePricesPremium::VERSION, '1.24.4' ) < 0 ) {
             return;
         }
-        add_filter( 'dgwt/wcas/search_query/args', array( $this, 'filterSearchQueryArgs' ) );
-        add_filter( 'dgwt/wcas/search/product_cat/args', array( $this, 'filterProductCatArgs' ) );
-        add_filter( 'dgwt/wcas/troubleshooting/renamed_plugins', array( $this, 'getFolderRenameInfo' ) );
+        add_filter( 'dgwt/wcas/search_query/args', array($this, 'filterSearchQueryArgs') );
+        add_filter( 'dgwt/wcas/search/product_cat/args', array($this, 'filterProductCatArgs') );
+        add_filter( 'dgwt/wcas/troubleshooting/renamed_plugins', array($this, 'getFolderRenameInfo') );
     }
-    
+
     /**
      * Exclude hidden products from search results (native engine)
      *
@@ -35,15 +34,14 @@ class WooCommerceWholeSalePricesIntegration
      *
      * @return array
      */
-    public function filterSearchQueryArgs( $args )
-    {
-        global  $wc_wholesale_prices_premium ;
+    public function filterSearchQueryArgs( $args ) {
+        global $wc_wholesale_prices_premium;
         if ( current_user_can( 'manage_options' ) || current_user_can( 'manage_woocommerce' ) ) {
             return $args;
         }
         return $wc_wholesale_prices_premium->wwpp_query->pre_get_posts_arg( $args );
     }
-    
+
     /**
      * Exclude hidden categories from search results (native engine)
      *
@@ -51,9 +49,8 @@ class WooCommerceWholeSalePricesIntegration
      *
      * @return array
      */
-    public function filterProductCatArgs( $args )
-    {
-        global  $wc_wholesale_prices_premium ;
+    public function filterProductCatArgs( $args ) {
+        global $wc_wholesale_prices_premium;
         if ( current_user_can( 'manage_options' ) || current_user_can( 'manage_woocommerce' ) ) {
             return $args;
         }
@@ -67,7 +64,7 @@ class WooCommerceWholeSalePricesIntegration
         $args['exclude'] = array_merge( $args['exclude'], $this->getExcludedCategoryIds( $postsArgs ) );
         return $args;
     }
-    
+
     /**
      * Get info about renamed plugin folder
      *
@@ -75,8 +72,7 @@ class WooCommerceWholeSalePricesIntegration
      *
      * @return array
      */
-    public function getFolderRenameInfo( $plugins )
-    {
+    public function getFolderRenameInfo( $plugins ) {
         $filters = new Filters();
         $result = Helpers::getFolderRenameInfo__premium_only( 'WooCommerce Wholesale Prices Premium', $filters->plugin_names );
         if ( $result ) {
@@ -84,11 +80,10 @@ class WooCommerceWholeSalePricesIntegration
         }
         return $plugins;
     }
-    
-    private function getExcludedCategoryIds( $postsArgs )
-    {
+
+    private function getExcludedCategoryIds( $postsArgs ) {
         $categoryIds = array();
-        if ( !empty($postsArgs['tax_query']) ) {
+        if ( !empty( $postsArgs['tax_query'] ) ) {
             foreach ( $postsArgs['tax_query'] as $taxQuery ) {
                 if ( isset( $taxQuery['taxonomy'] ) && $taxQuery['taxonomy'] === 'product_cat' && isset( $taxQuery['operator'] ) && $taxQuery['operator'] === 'NOT IN' ) {
                     $categoryIds = $taxQuery['terms'];

@@ -1,15 +1,15 @@
-# Copyright (C) 2023 WCBoost
+# Copyright (C) 2024 WCBoost
 # This file is distributed under the same license as the WCBoost - Wishlist plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: WCBoost - Wishlist 1.0.9\n"
+"Project-Id-Version: WCBoost - Wishlist 1.0.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wcboost-wishlist\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-11-22T01:24:51+00:00\n"
+"POT-Creation-Date: 2024-05-17T02:38:25+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: wcboost-wishlist\n"
@@ -150,7 +150,7 @@ msgstr ""
 #: includes/admin/settings.php:130
 #: includes/customizer/customizer.php:345
 #: includes/form-handler.php:96
-#: includes/frontend.php:620
+#: includes/frontend.php:646
 #: includes/helper.php:213
 msgid "View wishlist"
 msgstr ""
@@ -429,8 +429,8 @@ msgstr ""
 
 #: includes/customizer/customizer.php:327
 #: includes/helper.php:211
-#: templates/loop/add-to-wishlist.php:30
-#: templates/single-product/add-to-wishlist.php:30
+#: templates/loop/add-to-wishlist.php:26
+#: templates/single-product/add-to-wishlist.php:26
 msgid "Add to wishlist"
 msgstr ""
 
@@ -583,17 +583,17 @@ msgstr ""
 msgid "Delete this wishlist"
 msgstr ""
 
-#: includes/frontend.php:494
-#: templates/loop/add-to-wishlist.php:28
-#: templates/single-product/add-to-wishlist.php:28
+#. translators: %s product name
+#: includes/frontend.php:506
 msgid "Add %s to the wishlist"
 msgstr ""
 
-#: includes/frontend.php:529
+#. translators: %s product name
+#: includes/frontend.php:542
 msgid "Remove %s from the wishlist"
 msgstr ""
 
-#: includes/frontend.php:535
+#: includes/frontend.php:548
 msgid "Open the wishlist"
 msgstr ""
 
@@ -601,34 +601,39 @@ msgstr ""
 msgid "I have some thing to share with you"
 msgstr ""
 
-#: includes/helper.php:317
+#. translators: %s sharing social channel
+#: includes/helper.php:318
 msgid "Share on %s"
 msgstr ""
 
-#: includes/install.php:144
+#: includes/install.php:147
 msgctxt "Page slug"
 msgid "wishlist"
 msgstr ""
 
-#: includes/install.php:146
+#: includes/install.php:149
 msgctxt "Page title"
 msgid "Wishlist"
 msgstr ""
 
-#: includes/install.php:172
+#: includes/install.php:175
 msgid "View wishlist documentation"
 msgstr ""
 
-#: includes/install.php:172
+#: includes/install.php:175
 msgid "Docs"
 msgstr ""
 
-#: includes/install.php:173
+#: includes/install.php:176
 msgid "Visit community forums"
 msgstr ""
 
-#: includes/install.php:173
+#: includes/install.php:176
 msgid "Community support"
+msgstr ""
+
+#: includes/install.php:197
+msgid "WCBoost - Wishlist (Free) has been automatically deactivated because you have installed the Pro version."
 msgstr ""
 
 #: includes/plugin.php:50
@@ -652,6 +657,7 @@ msgstr ""
 msgid "A product has been removed from your wishlist because it does not exist anymore."
 msgstr ""
 
+#. translators: %s product name
 #: includes/wishlist.php:445
 msgid "The product \"%s\" has been removed from your wishlist because it can no longer be purchased."
 msgstr ""
@@ -660,13 +666,13 @@ msgstr ""
 msgid "This item already exists"
 msgstr ""
 
-#: includes/wishlist.php:483
-#: includes/wishlist.php:513
+#: includes/wishlist.php:484
+#: includes/wishlist.php:515
 msgid "You are not allowed to edit the wishlist"
 msgstr ""
 
-#: includes/wishlist.php:487
-#: includes/wishlist.php:519
+#: includes/wishlist.php:488
+#: includes/wishlist.php:521
 msgid "Invalid wishlist item"
 msgstr ""
 
@@ -710,11 +716,11 @@ msgstr ""
 msgid "Share the wishlist"
 msgstr ""
 
-#: templates/wishlist/wishlist-empty.php:17
+#: templates/wishlist/wishlist-empty.php:18
 msgid "The wishlist is empty."
 msgstr ""
 
-#: templates/wishlist/wishlist-empty.php:26
+#: templates/wishlist/wishlist-empty.php:28
 msgid "Return to shop"
 msgstr ""
 

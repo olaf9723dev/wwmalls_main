@@ -34,6 +34,17 @@ add_action( 'wp_footer', function () {
 			mobileSearch.replaceWith(document.querySelector('#wcas-mobile-search-nav > div'));
 		}
 		document.querySelector('#wcas-mobile-search-nav').remove();
+
+		(function ($) {
+			<?php /* Restore the mobile menu layer which allows the user to close it. */ ?>
+			$(document).on('click', '.js-dgwt-wcas-om-return', function () {
+				if ($('.mobile-nav.wd-opened').length > 0) {
+					setTimeout(function () {
+						$('.wd-close-side').addClass('wd-close-side-opened');
+					}, 50);
+				}
+			});
+		}(jQuery));
 	</script>
 
 	<style>

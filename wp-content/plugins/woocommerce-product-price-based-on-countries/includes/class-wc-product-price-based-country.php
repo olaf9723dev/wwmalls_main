@@ -17,7 +17,7 @@ class WC_Product_Price_Based_Country {
 	 *
 	 * @var string
 	 */
-	public $version = '3.4.4';
+	public $version = '3.4.6';
 
 	/**
 	 * The front-end pricing zone
@@ -439,49 +439,34 @@ class WC_Product_Price_Based_Country {
 	}
 
 	/**
-	 * Is Rest API request?.
-	 *
-	 * @since 2.0.0
-	 * @param string $path Path to check. Default ''.
-	 * @return bool
-	 */
-	private function is_rest_api( $path = '' ) {
-		if ( empty( $_SERVER['REQUEST_URI'] ) ) {
-			return false;
-		}
-		$path                = empty( $path ) ? $path : trailingslashit( $path );
-		$rest_prefix         = trailingslashit( rest_get_url_prefix() ) . $path;
-		$is_rest_api_request = ( false !== strpos( $_SERVER['REQUEST_URI'], $rest_prefix ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-
-		return $is_rest_api_request;
-	}
-
-	/**
 	 * Is Rest API frontend request?.
 	 *
 	 * @since 2.0.0
 	 * @return bool
 	 */
 	private function is_rest_api_frontend() {
-		$is_rest_api_frontend = false;
 
-		if ( $this->is_rest_api() && $this->is_referer_type( array( 'frontend', false ) ) ) {
-
-			$frontend_rest_api_routes = array_merge(
-				array( 'wc/store/' ),
-				apply_filters( 'wc_price_based_country_frontend_rest_routes', array() )
-			);
-
-			foreach ( $frontend_rest_api_routes as $route ) {
-				$is_rest_api_frontend = $this->is_rest_api( $route );
-
-				if ( $is_rest_api_frontend ) {
-					break;
-				}
-			}
+		if ( empty( $_SERVER['REQUEST_URI'] ) ) {
+			return false;
 		}
 
-		return $is_rest_api_frontend;
+		$request_uri = wc_clean( wp_unslash( $_SERVER['REQUEST_URI'] ) );
+
+		if ( ! $this->is_referer_type( [ 'frontend', false ] ) ) {
+			return false;
+		}
+
+		$rest_api_routes = [
+			'wc/store/',
+			'elementor-pro/v\d+/refresh-loop',
+			'woo-variation-swatches',
+		] +
+		apply_filters( 'wc_price_based_country_frontend_rest_routes', [] );
+
+		$rest_prefix = '/' . trailingslashit( rest_get_url_prefix() );
+		$pattern     = '/' . str_replace( '/', '\/', $rest_prefix . implode( '|' . $rest_prefix, $rest_api_routes ) ) . '/';
+
+		return 1 === preg_match( $pattern, $request_uri );
 	}
 
 	/**

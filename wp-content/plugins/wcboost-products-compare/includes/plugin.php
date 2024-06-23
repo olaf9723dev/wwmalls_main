@@ -7,11 +7,11 @@ namespace WCBoost\ProductsCompare;
 final class Plugin {
 
 	/**
-	 * Plugin version.
+	 * Plugin properties
 	 *
-	 * @var string
+	 * @var array
 	 */
-	public $version = '1.0.4';
+	private $props = [];
 
 	/**
 	 * The product list to compare
@@ -56,6 +56,31 @@ final class Plugin {
 	}
 
 	/**
+	 * Magic method to load in-accessible properties on demand
+	 *
+	 * @since 1.0.5
+	 *
+	 * @param  string $prop
+	 *
+	 * @return mixed
+	 */
+	public function __get( $prop ) {
+		$value = null;
+
+		switch ( $prop ) {
+			case 'version':
+				if ( empty( $this->props['version'] ) ) {
+					$plugin = get_plugin_data( WCBOOST_PRODUCTS_COMPARE_FILE );
+					$this->props['version'] = $plugin['Version'];
+				}
+				$value = $this->props['version'];
+				break;
+		}
+
+		return $value;
+	}
+
+	/**
 	 * Constructor
 	 */
 	public function __construct() {
@@ -69,7 +94,7 @@ final class Plugin {
 	 * @return string
 	 */
 	public function plugin_url( $path = '/' ) {
-		return untrailingslashit( plugins_url( $path, dirname( __FILE__ ) ) );
+		return untrailingslashit( plugins_url( $path, WCBOOST_PRODUCTS_COMPARE_FILE ) );
 
 	}
 
@@ -79,7 +104,7 @@ final class Plugin {
 	 * @return string
 	 */
 	public function plugin_path() {
-		return untrailingslashit( plugin_dir_path( dirname( __FILE__ ) ) );
+		return untrailingslashit( plugin_dir_path( WCBOOST_PRODUCTS_COMPARE_FILE ) );
 	}
 
 	/**
@@ -88,7 +113,7 @@ final class Plugin {
 	 * @return string
 	 */
 	public function plugin_basename() {
-		return dirname( plugin_basename( __FILE__ ), 2 ) . '/wcboost-products-compare.php';
+		return plugin_basename( WCBOOST_PRODUCTS_COMPARE_FILE );
 	}
 
 	/**

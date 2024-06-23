@@ -30,7 +30,7 @@ require_once 'custom/custom_dokan/custom_product_info.php';
 // Add Custom Style an JavaScript
 add_action( 'wp_enqueue_scripts', 'motta_child_enqueue_scripts', 20 );
 function motta_child_enqueue_scripts() {
-	wp_enqueue_style( 'motta-child', get_stylesheet_uri() );
+// 	wp_enqueue_style( 'motta-child', get_stylesheet_uri() );
 	wp_enqueue_style( 'custom-styles', get_theme_file_uri('custom/custom_assets/css/custom.css'));
 	wp_enqueue_style( 'toaster-styles', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css');
 	wp_enqueue_style( 'modal-styles', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css');
@@ -78,6 +78,11 @@ function admin_page_enqueue_scripts(){
         'nonce' => wp_create_nonce('wp_rest')
     ));
 }
+function remove_unwanted_styles() {
+    wp_deregister_style('motta-child-css');
+    wp_dequeue_style('motta-child-css');
+}
+add_action('wp_enqueue_scripts', 'remove_unwanted_styles', 100);
 // Add dokan custom menu on admin dashboard
 function dokan_vendor_custom_menu() {
     // dokan vendor import page

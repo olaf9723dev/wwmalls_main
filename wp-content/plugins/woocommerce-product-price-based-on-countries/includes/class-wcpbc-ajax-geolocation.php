@@ -168,6 +168,7 @@ class WCPBC_Ajax_Geolocation {
 				'decimal_sep'  => esc_attr( wc_get_price_decimal_separator() ),
 				'thousand_sep' => esc_attr( wc_get_price_thousand_separator() ),
 				'format'       => esc_attr( str_replace( array( '%1$s', '%2$s' ), array( '%s', '%v' ), get_woocommerce_price_format() ) ),
+				'code'         => get_woocommerce_currency(),
 			);
 
 			// Pricing zone ID.

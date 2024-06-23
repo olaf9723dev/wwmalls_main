@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce Shipping &amp; Tax - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-01 11:30:25+0000\n"
+"PO-Revision-Date: 2024-05-03 08:47:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WooCommerce Shipping &amp; Tax - Stable (latest release)\n"
+
+#: woocommerce-services.php:1801
+msgid "Woo Shipping and Woo Tax plugins are already active. Please deactivate WooCommerce Shipping & Tax."
+msgstr "Los plugins Woo Shipping y Woo Tax ya están activos. Por favor, desactiva WooCommerce Shipping & Tax."
 
 #: i18n/strings.php:71
 msgid "WordPress.com Connection"
@@ -495,7 +499,7 @@ msgstr "Slug de servicio de WooCommerce Shipping & Tax no válido proporcionado"
 
 #. Plugin Name of the plugin
 #: woocommerce-services.php classes/class-wc-connect-privacy.php:36
-#: classes/class-wc-connect-settings-pages.php:137 woocommerce-services.php:572
+#: classes/class-wc-connect-settings-pages.php:137 woocommerce-services.php:585
 msgid "WooCommerce Shipping & Tax"
 msgstr "WooCommerce Shipping & Tax"
 
@@ -681,7 +685,7 @@ msgid "You save %s with WooCommerce Shipping"
 msgstr "Ahorras %s con WooCommerce Shipping"
 
 #. translators: %s WC download URL link.
-#: woocommerce-services.php:585
+#: woocommerce-services.php:614
 msgid "WooCommerce Shipping & Tax requires the WooCommerce plugin to be installed and active. You can download %s here."
 msgstr "WooCommerce Shipping & Tax necesita que esté instalado y activado el plugin WooCommerce. Puedes descargarlo aquí: %s."
 
@@ -791,7 +795,7 @@ msgstr "Han sido guardados tus paquetes de envío."
 msgid "0.0"
 msgstr "0.0"
 
-#: woocommerce-services.php:1523
+#: woocommerce-services.php:1552
 msgid "Shipment Tracking"
 msgstr "Seguimiento de envíos"
 
@@ -799,23 +803,23 @@ msgstr "Seguimiento de envíos"
 msgid "Customs information valid"
 msgstr "Información de aduanas válida"
 
-#: woocommerce-services.php:1567
+#: woocommerce-services.php:1596
 msgid "Packing Log:"
 msgstr "Registro de paquetería:"
 
-#: woocommerce-services.php:1554
+#: woocommerce-services.php:1583
 msgid "Chosen Rate:"
 msgstr "Tarifa elegida:"
 
-#: woocommerce-services.php:1550
+#: woocommerce-services.php:1579
 msgid "Shipping Method ID:"
 msgstr "ID del método de envío:"
 
-#: woocommerce-services.php:1546
+#: woocommerce-services.php:1575
 msgid "Shipping Method Name:"
 msgstr "Nombre del método de envío:"
 
-#: woocommerce-services.php:1530
+#: woocommerce-services.php:1559
 msgid "Shipping Debug"
 msgstr "Depuración de envíos"
 
@@ -1513,11 +1517,11 @@ msgstr "Enlaza a una cuenta PayPal"
 msgid "Refresh"
 msgstr "Recargar"
 
-#: woocommerce-services.php:1303
+#: woocommerce-services.php:1332
 msgid "Tracking number"
 msgstr "Número de seguimiento"
 
-#: woocommerce-services.php:1302
+#: woocommerce-services.php:1331
 msgid "Provider"
 msgstr "Proveedor"
 
@@ -1837,7 +1841,7 @@ msgid "#%1$d - %2$s"
 msgstr "#%1$d - %2$s"
 
 #. translators: %s Support url
-#: woocommerce-services.php:1637
+#: woocommerce-services.php:1666
 msgid "<a href=\"%s\">Support</a>"
 msgstr "<a href=\"%s\">Soporte</a>"
 
@@ -1845,8 +1849,8 @@ msgstr "<a href=\"%s\">Soporte</a>"
 msgid "Connected to WordPress.com"
 msgstr "Conectado a WordPress.com"
 
-#: i18n/strings.php:161 woocommerce-services.php:1130
-#: woocommerce-services.php:1133
+#: i18n/strings.php:161 woocommerce-services.php:1159
+#: woocommerce-services.php:1162
 msgid "Shipping Labels"
 msgstr "Etiquetas de envío"
 
@@ -1856,8 +1860,8 @@ msgstr "Etiquetas de envío"
 msgid "https://woocommerce.com/"
 msgstr "https://woocommerce.com/"
 
-#: i18n/strings.php:265 i18n/strings.php:448 woocommerce-services.php:1590
-#: woocommerce-services.php:1618
+#: i18n/strings.php:265 i18n/strings.php:448 woocommerce-services.php:1619
+#: woocommerce-services.php:1647
 msgid "Phone"
 msgstr "Teléfono"
 
@@ -1957,7 +1961,7 @@ msgstr "Ajuste de precio"
 msgid "Saved Packages"
 msgstr "Paquetes guardados"
 
-#: woocommerce-services.php:1291 woocommerce-services.php:1298
+#: woocommerce-services.php:1320 woocommerce-services.php:1327
 msgid "Tracking"
 msgstr "Seguimiento"
 
@@ -2119,11 +2123,11 @@ msgstr "No ha sido posible actualizar los ajustes. %s"
 msgid "Packaging"
 msgstr "Paquetería"
 
-#: woocommerce-services.php:1708
+#: woocommerce-services.php:1737
 msgid "Section not loading? Visit the <a href=\"%s\">status page</a> for troubleshooting steps."
 msgstr "¿No carga la sección? Visita la <a href=\"%s\">página de estado</a> para ver los pasos de solución de problemas."
 
-#: woocommerce-services.php:1525
+#: woocommerce-services.php:1554
 msgid "Shipping Label"
 msgstr "Etiqueta de envío"
 
@@ -2270,7 +2274,7 @@ msgstr "Por favor, establece la ubicación base en Ajustes de WooCommerce > Gene
 msgid "WooCommerce %1$s or higher is required (You are running %2$s)"
 msgstr "Se necesita WooCommerce %1$s o superior (estás ejecutando la versión %2$s)"
 
-#: classes/class-wc-connect-error-notice.php:104 woocommerce-services.php:1744
+#: classes/class-wc-connect-error-notice.php:104 woocommerce-services.php:1773
 msgid "Dismiss this notice"
 msgstr "Descartar este aviso"
 

@@ -80,7 +80,7 @@ class Multilingual {
 	 * @return bool
 	 */
 	public static function isLangCode( $lang ) {
-		return ! empty( $lang ) && is_string( $lang ) && (bool) preg_match( '/^([a-zA-Z]{2,10})$|^([a-zA-Z]{2}[-_][a-zA-Z]{2,4})$/', $lang );
+		return ! empty( $lang ) && is_string( $lang ) && (bool) preg_match( '/^([a-zA-Z]{2,15})$|^([a-zA-Z]{2,15}[-_][a-zA-Z]{2,15})$/', $lang );
 	}
 
 	/**

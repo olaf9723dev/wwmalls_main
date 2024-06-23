@@ -2,9 +2,9 @@
 Contributors: damian-gora, matczar
 Tags: woocommerce search, ajax search, search by sku, product search, woocommerce
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.27.0
+Stable tag: 1.28.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -144,6 +144,25 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 
 == Changelog ==
 
+= 1.28.0, May 27, 2024 =
+* ADDED: New search bar style - a compact version of a “Pirx” style
+* ADDED: Integration with the “Cartzilla theme”
+* ADDED: Integration with the “Rey theme”
+* ADDED: Placeholders to display custom content for new suggestion types like taxonomy, posts, pages, and product variation
+* FIXED: “Woodmart theme” - unable to close the mobile menu after exiting the mobile search overlay
+* FIXED: “Flatsome theme” - disappearing search bar on mobile phones
+* FIXED: “Flatsome” - cannot change search bar style to Pirx
+* FIXED: “Divi theme” - shortcodes are not rendered in the description in the Details Panel for pages
+* FIXED: “XStore theme” - the integration doesn't replace all search forms
+* FIXED: Force disabling transition effect on search input to avoid unexpected layout bouncing
+* FIXED: Allowing to calculate score including one and two-character words
+* FIXED: Better recognition of iOS
+* FIXED: Uncode theme - the search icon doesn't show on the header
+* TWEAK: Removed OPcache invalidation for the shortcode template file
+* UPDATED: The .pot file
+* UPDATED: Freemius SDK to v2.7.2
+
+
 = 1.27.0, January 31, 2024 =
 * ADDED: Integration with the “Betheme theme”
 * ADDED: Highlight words in search results with Greek letters regardless of accent
@@ -160,7 +179,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Incorrect calculation of a product's position in search results when it contains Greek letters
 * FIXED: Incorrect term language detection in the WPML plugin. Replacing `term_id` with `term_taxonomy_id`
 * FIXED: Unwanted ampersand entity in the product description of search results
-
 * UPDATED: Requires PHP: 7.4
 * UPDATED: The `.pot` file
 * UPDATED: Polish translation
@@ -172,16 +190,13 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 = 1.26.0, October 17, 2023 =
 * ADDED: Integration with “Bricks builder”
 * ADDED: Integration with “Brizy builder”
-
 * FIXED: Calc score by comparing every word of the search phrase instead of all search phrase
 * FIXED: WooCommerce Wholesale Prices plugin - invalid search results e.g. not hidden products and categories in the search results
 * FIXED: Flatsome - when there are more search icons, only one is replaced
 * FIXED: WPRocket - in some cases search fields/icons are not replaced immediately after the page load
 * FIXED: Highlight matched words instead of the whole search phrase
-
 * TWEAK: Allowing access to the `Personalization` class via `DGWT_WCAS()` function
 * TWEAK: HUSKY - Products Filter Professional for WooCommerce plugin - disable the test in the Troubleshooting module for newer versions of this plugin
-
 * REFACTOR: Replace `.click()` with `trigger('click')`, `.focus()` with `trigger('focus')`, `.blur()` with `trigger('blur')`
 * REFACTOR: Replace `jQuery.fn.mouseup()` with `$(document).on('mouseup')`
 * REFACTOR: Replace `jQuery.isFunction()` with `typeof fn === 'function'`
@@ -190,13 +205,11 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 = 1.25.0, July 06, 2023 =
 * ADDED: Possibility to search for taxonomy terms regardless of accents in a phrase or term name
 * ADDED: Added some new filters to change URLs of results in autocomplete and details panel
-
 * FIXED: Warnings due to `open_basedir` restrictions
 * FIXED: Integration with the Impreza theme - broken AJAX pagination for Grid element
 * FIXED: Integration with the TheGem theme - missing search results when the “Layout Type” option is set to “Products Grid”
 * FIXED: Integration with the Divi theme - mobile overlay not showing up
 * FIXED: Stronger sanitization of the details panel output
-
 * UPDATED: Freemius SDK v2.5.10
 * UPDATED: Polish translation
 
@@ -207,7 +220,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Possibility to change the color of a search bar underlay. Only for the Pirx style
 * ADDED: New search widget and extended search results for Elementor
 * ADDED: TheGem theme - “Header Builder” support
-
 * FIXED: Wrong position of search icons in the history search module
 * FIXED: Broken suggestions layout and detailed panel visibility when the “Minimum characters” option is set to less than 1
 * FIXED: Compatibility with PHP 8.1
@@ -219,7 +231,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Integration with the Enfold theme - the search engine icon disappears when the page finishes loading
 * FIXED: A HTML tag `<br>` was unnecessarily stripped in the description in the details panel
 * FIXED: The voice search feature - overlapping icons and disabling functionality on Safari
-
 * UPDATED: French translation
 * UPDATED: Freemius SDK v2.5.8
 * TESTS: Two integration tests that check saving phrases in a database table
@@ -233,7 +244,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Integration with the “StoreBiz” theme
 * ADDED: Allows the `Shop manager` role to manage the plugin settings by adding a constant to the `wp.config.php` file
 * ADDED: Allows creating HTML templates instead of displaying simple “No results” message
-
 * IMPROVED: Blocks calculating score if the phrase contains a single character
 * FIXED: More accurate calculation of the order of products in search results. The extra score for an exact match of a sequence of words
 * FIXED: Storefront theme - not working focus event while using a mobile overlay for iPhone devices
@@ -244,12 +254,9 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Flatsome theme - detecting incompatible settings and disappearing search form on hover
 * FIXED: Layout option - hidden triangle icon when a layout is “icon” and style is “Pirx”
 * FIXED: Unnecessary AJAX query on the settings page
-
 * TWEAK: Replacing empty href tag with `#` in Storefront integration because of SEO
 * TWEAK: Trivial CSS changes
-
 * UPDATED: Freemius SDK to v2.5.6
-
 * REFACTOR: Forcing mobile overlay breakpoint and in layout breakpoint in theme integrations
 * REFACTOR: Variables names in the method `Helpers::calcScore()`
 
@@ -275,7 +282,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: RWD for FiboSearch Settings views including Analytics views
 * FIXED: Search bar CSS, especially when Pirx style and Voice Search work together
 * FIXED: A user with permission to edit plugin settings cannot see search analytics
-
 * CHANGE: Updated French translation
 * CHANGE: Hide the Voice Search icon when a user starts typing
 * CHANGE: Updated Freemius SDK to v2.5.3
@@ -285,12 +291,10 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 
 
 
-
 = 1.21.0, November 21, 2022 =
 * ADDED: Integration with Product GTIN (EAN, UPC, ISBN) for WooCommerce plugin
 * ADDED: Integration with EAN for WooCommerce plugin
 * ADDED: Troubleshooting - checks if products thumbnails need to be regenerated
-
 * FIXED: Missing translation domain in some texts
 * FIXED: Support variants of &lt;br&gt; tag in product names in autocomplete
 * FIXED: Unable to embed search bar as a widget
@@ -300,10 +304,7 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: UI_FIXER: check if event listeners were correctly added to search inputs. If no, reinitiate the search instance
 * FIXED: UI_FIXER: rebuild all search bars without correct JS events
 * FIXED: Redundant DB queries related to the existence of plugin tables
-
 * CHANGE: Updated Freemius SDK to v2.5.2
-
-
 
 
 
@@ -314,7 +315,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Include block sources in the plugin package
 * ADDED: Possibility to reset search statistics from the settings page
 * ADDED: Support for &lt;sub&gt; element in autocomplete suggestions
-
 * FIXED: Incorrect display of styles with personalization of the search
 * FIXED: Wrong settings index in Impreza and Enfold theme
 * FIXED: Removed of unnecessary language files
@@ -322,7 +322,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Incorrect verification if the browser supports speech recognition
 * FIXED: FiboSearch Analytics - not working “check” buttons of the latest loading list
 * FIXED: Unnecessary options and transients after uninstalling plugin
-
 
 = 1.19.0, July 27, 2022 =
 * ADDED: New feature - New search layout called “Pirx”
@@ -340,7 +339,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Support all types of layout in widget and embedding via Menu
 * ADDED: Ability to reset plugin settings to default values
 * ADDED: New shortcode params: “submit_btn” and “submit_text”
-
 * FIXED: WOOF – Products Filter for WooCommerce integration: broken counters on the search results page
 * FIXED: Interdependent settings in Settings -> Search bar -> Style -> Design
 * FIXED: Improved darkened background positioning (support for sticky elements as well)
@@ -351,7 +349,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Incorrect elements position after load “iconMode”
 * FIXED: Incorrect adding CSS class as shortcode parameter
 * FIXED: English grammar typos
-
 * CHANGE: Updated Freemius SDK to v2.4.4
 * REFACTOR: Indexer - Replacing “PDO” with WPDB”
 * REFACTOR: Settings page - rebuild the settings section Search Bar -> Appearance to improve UX
@@ -365,7 +362,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Open selected suggestion in new tab by shortcut Cmd+Enter/Ctrl+Enter
 * ADDED: Show score in search results on the Debug page
 * ADDED: Link darkened background and fuzzy search feature to the documentation
-
 * FIXED: Improving ESC key functionality: If there are suggestions, ESC hides them. If there are not suggestions and mobile icon mode is enabled, ESC disables mobile icon mode. If there are not suggestions and darkened overlay is enabled, ESC disables darkened overlay
 * FIXED: Allow recognizing CMD key
 * FIXED: Remove interaction on the TAB key
@@ -374,7 +370,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Prevent displaying search results, if the search icon mode is closed
 * FIXED: Unnecessary closing mobile icon mode and darkened overlay mode after selecting text in the search bar. It used to happen often when users selected text from the search bar to remove it and write something new but clicked outside the search bar (JS mouseup event was outside the bar)
 * FIXED: Better sanitization of the plugin settings
-
 * FACTOR: Retrieving results on the search page without additional HTTP request
 
 = 1.17.0, February 28, 2022 =
@@ -394,21 +389,17 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Add artificial overlay to cover the “Close Button” because SVG elements don't provide information about parents elements in "event.target"
 * CHANGE: General tooltip style on the plugin settings page - more padding, bigger font, right position of the tooltip, auto cursor, wider
 
-
 = 1.16.0, February 03, 2022 =
 * ADDED: Integration with a XStore theme
 * ADDED: Allow customization of the Details Panel with actions and filters
 * ADDED: Templating system to override details panel templates via child-theme
 * ADDED: Troubleshooting - test if product translations are enabled in the Polylang settings
 * ADDED: Add extra CSS classes when search bar is focused
-
 * FIXED: Compatibility with PHP 8.1
 * FIXED: Integration with Astra theme - the “Save Changes” button disappeared after turning on the integration
 * FIXED: JavaScript errors on the plugin activation page
 * FIXED: Bug with enabling and disabling “overlay on mobile” feature during window resizing and reaching a breakpoint
 * FIXED: Missing "Troubleshooting" tab icon with the number of issues
-
-
 
 
 
@@ -418,15 +409,12 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Possibility to submit the search event to Google Analytics in your own way
 * ADDED: Basic support for AMP
 * ADDED: Allow getting search results programmatically
-
 * FIXED: Integration with the Goya theme has stopped working
 * FIXED: Divi theme integration - overlay on mobile was fixed. Support for new Divi ID #et_top_search_mob
 * FIXED: Divi theme integration - search form did not disappear after exiting mobile overlay
 * FIXED: Search suggestions were invisible because of a bug in the old version of jQuery UI. The method outerHeight() returned an object instead of a number
 * FIXED: Simplifying integration with Polylang
-
 * CHANGE: Remove info about rebranding
-
 
 
 
@@ -438,7 +426,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Details Panel - support for responsive images including retina images (2x), sizes, and srcset
 * ADDED: Possibility to insert custom HTML in 5 places in the search suggestion
 * ADDED: New filter and action hooks
-
 * FIXED: Prevent hiding search results on click an Enter key when submit is disabled via a filter
 * FIXED: No results on the search page when WPML is active with “Language name added as a parameter” option
 * FIXED: Support for version v1.3.1 of Open Shop theme
@@ -450,7 +437,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Unclosed tag &lt;a/&gt;
 * FIXED: Typo on Troubleshooting tab
 * FIXED: Clear “alt” attribute in the product thumbnail
-
 * REFACTOR: Escape search terms the way WordPress core does
 * REFACTOR: Replacing image with thumbnails in DgoraWcas\Post class to keep a consistent style compared with DgoraWcas\Product
 
@@ -458,24 +444,20 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 = 1.13.0, July 27, 2021 =
 * ADDED: Integration with “eStore” theme
 * ADDED: Allow to open search result in new tab with Ctrl+left mouse key
-
 * FIXED: Disappearing suggestions and details panel on click when there were more search bars.
 * FIXED: Improved integration with “Avada” theme
 * FIXED: Improved mobile search in new version of “Rehub” theme
 * FIXED: Unable to use context menu and middle mouse button on search results
 * FIXED: “Eletro” theme - Support cases when the search overlay is disabled
-
 * REFACTOR: Clean up composer files
 
 = 1.12.0, June 22, 2021 =
 * ADDED: Integration with Electro theme
 * ADDED: New test for the troubleshooting module - test language codes
 * ADDED: New test for the troubleshooting module - check if the Elementor Pro has defined correct template for search results
-
 * FIXED: “WOOF – Products Filter for WooCommerce” - disappearing filters if “Dynamic recount” and “Hide empty terms” was enabled and other issues
 * FIXED: Remove unnecessary AJAX request on select “See all products ... (X)”
 * FIXED: The search form is now generated without random ID, to be compatible with the LiteSpeed Cache plugin
-
 * REFACTOR: Change .dgwt-wcas-suggestion element from &lt;div&gt; to &lt;a&gt; to allow open a suggestion in a new tab
 
 = 1.11.0, May 24, 2021 =
@@ -483,7 +465,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * ADDED: Integration with Top and Top Store Pro theme
 * ADDED: Keep the state of a details panel in memory instead of replacing it every time using jQuery.html() method. Doesn't clear quantity and "add to cart" states.
 * ADDED: Prevent submit empty form 
-
 * FIXED: W3 validator warning: The type attribute for the style element is not needed and should be omitted.
 * FIXED: Search terms with apostrophes
 * FIXED: Synchronization with the native WooCommerce option "Out of stock visibility" 
@@ -499,11 +480,9 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Add trim on query value
 * FIXED: Clear search title and phrase from escape characters
 
-
 = 1.10.0, April 22, 2021 =
 * ADDED: Possibility to disable select event on suggestions (click and hit the Enter key)
 * ADDED: Possibility to disable submit a search form via a filter
-
 * FIXED: Not working click event on suggestions after using “back arrow” on a Safari browser
 * FIXED: Allow to recognize Chinese lang codes such as zh-hant and zh-hans
 * FIXED: Error on PHP 8. Wrong format for printf function
@@ -512,10 +491,8 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Better checking of nonces
 
 
-
 = 1.9.0, March 15, 2021 =
 * ADDED: Support for WooCommerce Private Store plugin
-
 * CHANGE: Plugin rebranding -  Replace the plugin name AJAX Search for WooCommerce with new name FiboSearch
 * CHANGE: Plugin rebranding -  Replace the old domain ajaxsearch.pro with new fibosearch.com
 * CHANGE: Plugin rebranding -  Update visual assets 
@@ -526,10 +503,8 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Missing of dgwt-wcas-active class when the search was focused too early
 * FIXED: Grammar and spelling errors in texts
 * FIXED: Not firing jQuery onLoad event for some browsers
-
 * REMOVE: Removed useless dgwt-wcas-search-submit name attribute
 * REMOVE: Removed unused search forms from a Avada theme
-
 
 = 1.8.2, February 06, 2021 =
 * ADDED: Support for Astra theme
@@ -546,7 +521,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Adaptation to the new class name convention of WooCommerce Product Table plugin
 * FIXED: Fixed display of category names and tags in the Details Panel when the name contains an apostrophe
 
-
 = 1.8.1, December 04, 2020 =
 * ADDED: Support for Rehub theme
 * ADDED: Support for Supro theme
@@ -559,7 +533,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Better suggestion order for non latin letters
 * FIXED: Action URL in search form when Polylang is active
 * REMOVE: Mobile Detect library 
-
 
 = 1.8.0, October 23, 2020 =
 * ADDED: Support for Sober theme
@@ -580,7 +553,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Mixed Content on the plugin settings page in some cases
 * FIXED: Integration with Flatsome theme
 * FIXED: Broken translations via WPML String Translation
-
 
 
 = 1.7.2, July 12, 2020 =
@@ -608,7 +580,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Fixed for integration with XforWooCommerce plugin
 * FIXED: Error: Undefined index: is_taxonomy in some cases
 
-
 = 1.7.1, May 17, 2020 =
 * FIXED: Selecting suggestions issue
 
@@ -634,7 +605,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Minor CSS improvements
 * FIXED: Broken mobile view on cart page in some cases
 
-
 = 1.6.3, March 11, 2020 =
 * ADDED: Details panel - display stock quantity
 * FIXED: Better support for the Elementor including popups and sticky menu
@@ -646,23 +616,18 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: JS errors Failed to execute 'getComputedStyle' on 'Window' (for some cases)
 * CHANGE: Rename jQuery object from Autocomplete to DgwtWcasAutocompleteSearch because of namespaces conflicts
 
-
 = 1.6.2, February 18, 2020 =
 * ADDED: Details Panel - new layout for product overview and other UX improvements
 * ADDED: Automatically regenerates images after first plugin activation
-
-
 * FIXED: Highlighted no results suggestion
 * FIXED: Better security
 
 = 1.6.1, January 26, 2020 =
-
 * ADDED: Details Panel - grouped load, faster load
 * ADDED: New way to embed search box - embedding by menu
 * ADDED: Details panel - show "more products..." link for taxonomy type suggestion
 * ADDED: Add &lt;form&gt; to quantity elements in a details panel
 * ADDED: New filters and actions hook
-
 * FIXED: Issue related to colors in plugin settings
 * FIXED: Suggestions groups - improved limits
 * FIXED: Pricing for taxonomy term in a details panel
@@ -673,12 +638,10 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: Storefront mobile search - more time for input autofocus
 * FIXED: Disable quantity for Astra Pro theme - there were broken buttons
 * FIXED: Minor CSS improvements
-
 * CHANGE:  Decrease debounce time for better speed effect
 * CHANGE: Updated Freemius SDK v2.3.2
 
 = 1.6.0, December 08, 2019 =
-
 * ADDED: Suggestions groups
 * ADDED: Hide advanced settings
 * ADDED: Better grouping of settings
@@ -691,9 +654,7 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * REMOVE: Remove ontouch event from mobile detect
 
 
-
 = 1.5.0, September 16, 2019 =
-
 * ADDED: Integration with the Flatsome theme. It is possible to replace the Flatsome search form via one checbox in the plugin settings page.
 * FIXED: Overload servers. Optimalization for chain AJAX requests. Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked
 * FIXED: Better support for HTML entities in products title and description
@@ -702,7 +663,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * CHANGE: Settings design
 
 = 1.4.1, August 05, 2019 =
-
 * ADDED: French translations
 * FIXED: Better support for fixed menu
 * FIXED: Add box-sizing to the search input to better implementation for some themes
@@ -713,7 +673,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * CHANGE: Updated Freemius SDK
 
 = 1.4.0, May 04, 2019 =
-
 * ADDED: New modern mobile search UX (beta, disabled by default, enabled only for Storefront theme)
 * ADDED: Italian translations
 * ADDED: Spain translations
@@ -722,7 +681,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * CHANGE: Implementing flexbox grid (CSS)
 
 = 1.3.3, March 02, 2019 =
-
 * FIXED: Deactivate browser native "X" icon for search input
 * FIXED: Products images for tags and categories in Details panel
 * FIXED: Security fix
@@ -730,9 +688,7 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * CHANGE: Updated Freemius SDK
 
 
-
 = 1.3.2, February 16, 2019 =
-
 * ADDED: The text "No results" and "See all results..." can be customized in the plugin settings
 * ADDED: New filters and hooks
 * FIXED: Hide the "Account" link in the free plugin versions
@@ -745,7 +701,6 @@ You can read more and compare Pro and Free features here: [Full comparison - Pro
 * FIXED: PHP error with widget
 
 = 1.3.0, January 06, 2019 =
-
 * ADDED: If there are more results than limit, the "See all results..." link will appear
 * ADDED: Information about the PRO features
 * ADDED: Breadcrumbs for nested product categories

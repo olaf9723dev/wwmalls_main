@@ -6,80 +6,72 @@ namespace DgoraWcas;
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-class Product
-{
-    protected  $productID = 0 ;
+class Product {
+    protected $productID = 0;
+
     /**
      * @var bool|false|\WC_Product|null
      */
-    protected  $wcProduct = null ;
-    protected  $langCode = 'en' ;
-    private  $variations = array() ;
-    public function __construct( $product )
-    {
-        
-        if ( !empty($product) && is_object( $product ) && is_a( $product, 'WC_Product' ) ) {
+    protected $wcProduct = null;
+
+    protected $langCode = 'en';
+
+    private $variations = array();
+
+    public function __construct( $product ) {
+        if ( !empty( $product ) && is_object( $product ) && is_a( $product, 'WC_Product' ) ) {
             $this->productID = $product->get_id();
             $this->wcProduct = $product;
         }
-        
-        
-        if ( !empty($product) && is_object( $product ) && is_a( $product, 'WP_Post' ) ) {
+        if ( !empty( $product ) && is_object( $product ) && is_a( $product, 'WP_Post' ) ) {
             $this->productID = absint( $product->ID );
             $this->wcProduct = wc_get_product( $product );
         }
-        
-        
         if ( is_numeric( $product ) && 'product' === get_post_type( $product ) ) {
             $this->productID = absint( $product );
             $this->wcProduct = wc_get_product( $product );
         }
-        
         $this->setLanguage();
     }
-    
+
     /**
      * Set info about product language
      *
      * @return void
      */
-    public function setLanguage()
-    {
+    public function setLanguage() {
         $this->langCode = Multilingual::getPostLang( $this->getID() );
     }
-    
+
     /**
      * Get product ID (post_id)
      * @return INT
      */
-    public function getID()
-    {
+    public function getID() {
         return $this->productID;
     }
-    
+
     /**
      * Get created date
      *
      * @return mixed
      */
-    public function getCreatedDate()
-    {
+    public function getCreatedDate() {
         $date = $this->wcProduct->get_date_created();
         if ( !$date ) {
             $date = '0000-00-00 00:00:00';
         }
         return $date;
     }
-    
+
     /**
      * Get product name
      * @return string
      */
-    public function getName()
-    {
+    public function getName() {
         return apply_filters( 'dgwt/wcas/product/name', $this->wcProduct->get_name() );
     }
-    
+
     /**
      * Get prepared product description
      *
@@ -88,8 +80,7 @@ class Product
      *
      * @return string
      */
-    public function getDescription( $type = 'full', $forceWordsLimit = 0 )
-    {
+    public function getDescription( $type = 'full', $forceWordsLimit = 0 ) {
         $output = '';
         if ( $type === 'full' ) {
             $output = $this->wcProduct->get_description();
@@ -97,14 +88,12 @@ class Product
         if ( $type === 'short' ) {
             $output = $this->wcProduct->get_short_description();
         }
-        
         if ( $type === 'suggestions' || $type === 'details-panel' ) {
             $desc = $this->wcProduct->get_short_description();
-            if ( empty($desc) ) {
+            if ( empty( $desc ) ) {
                 $desc = $this->wcProduct->get_description();
             }
-            if ( !empty($desc) ) {
-                
+            if ( !empty( $desc ) ) {
                 if ( $type === 'details-panel' ) {
                     $wordsLimit = ( $forceWordsLimit > 0 ? $forceWordsLimit : 20 );
                     $output = Helpers::makeShortDescription(
@@ -117,10 +106,8 @@ class Product
                     $wordsLimit = ( $forceWordsLimit > 0 ? $forceWordsLimit : 30 );
                     $output = Helpers::makeShortDescription( $desc, $wordsLimit, '' );
                 }
-            
             }
         }
-        
         return apply_filters(
             'dgwt/wcas/product/description',
             $output,
@@ -129,14 +116,13 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get product permalink
      *
      * @return string
      */
-    public function getPermalink()
-    {
+    public function getPermalink() {
         $permalink = $this->wcProduct->get_permalink();
         return apply_filters(
             'dgwt/wcas/product/permalink',
@@ -145,7 +131,7 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get product thumbnail url
      *
@@ -153,20 +139,17 @@ class Product
      *
      * @return string
      */
-    public function getThumbnailSrc( $size = '' )
-    {
+    public function getThumbnailSrc( $size = '' ) {
         $src = '';
-        $size = ( empty($size) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
+        $size = ( empty( $size ) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
         $imageID = $this->wcProduct->get_image_id();
-        
-        if ( !empty($imageID) ) {
+        if ( !empty( $imageID ) ) {
             $imageSrc = wp_get_attachment_image_src( $imageID, $size );
-            if ( is_array( $imageSrc ) && !empty($imageSrc[0]) ) {
+            if ( is_array( $imageSrc ) && !empty( $imageSrc[0] ) ) {
                 $src = $imageSrc[0];
             }
         }
-        
-        if ( empty($src) ) {
+        if ( empty( $src ) ) {
             $src = wc_placeholder_img_src();
         }
         return apply_filters(
@@ -176,7 +159,7 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get product thumbnail
      *
@@ -184,11 +167,10 @@ class Product
      *
      * @return string
      */
-    public function getThumbnail( $size = '' )
-    {
+    public function getThumbnail( $size = '' ) {
         return '<img src="' . $this->getThumbnailSrc( $size ) . '" alt="' . wp_strip_all_tags( $this->getName(), true ) . '" />';
     }
-    
+
     /**
      * Get product thumbnail srcset
      *
@@ -196,9 +178,8 @@ class Product
      *
      * @return string
      */
-    public function getThumbnailSrcset( $size = '' )
-    {
-        $size = ( empty($size) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
+    public function getThumbnailSrcset( $size = '' ) {
+        $size = ( empty( $size ) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
         $imageID = $this->wcProduct->get_image_id();
         $srcset = ( function_exists( 'wp_get_attachment_image_srcset' ) ? (string) wp_get_attachment_image_srcset( $imageID, $size ) : '' );
         return apply_filters(
@@ -208,7 +189,7 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get product thumbnail sizes (for srcset)
      *
@@ -216,9 +197,8 @@ class Product
      *
      * @return string
      */
-    public function getThumbnailSizes( $size = '' )
-    {
-        $size = ( empty($size) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
+    public function getThumbnailSizes( $size = '' ) {
+        $size = ( empty( $size ) ? DGWT_WCAS()->setup->getThumbnailSize() : $size );
         $imageID = $this->wcProduct->get_image_id();
         $sizes = ( function_exists( 'wp_get_attachment_image_sizes' ) ? (string) wp_get_attachment_image_sizes( $imageID, $size ) : false );
         return apply_filters(
@@ -228,16 +208,15 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get HTML code with the product price
      *
      * @return string
      */
-    public function getPriceHTML()
-    {
+    public function getPriceHTML() {
         $price = $this->wcProduct->get_price_html();
-        if ( !empty($price) && is_string( $price ) ) {
+        if ( !empty( $price ) && is_string( $price ) ) {
             $price = preg_replace( '/(?<=\\d)\\s+(?=\\d|\\-)/', '&nbsp;', $price );
         }
         return (string) apply_filters(
@@ -247,63 +226,57 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get price
      *
      * @return string
      */
-    public function getPrice()
-    {
+    public function getPrice() {
         return (string) $this->wcProduct->get_price();
     }
-    
+
     /**
      * Get average rating
      *
      * @return float
      */
-    public function getAverageRating()
-    {
-        return (double) $this->wcProduct->get_average_rating();
+    public function getAverageRating() {
+        return (float) $this->wcProduct->get_average_rating();
     }
-    
+
     /**
      * Get review count
      *
      * @return int
      */
-    public function getReviewCount()
-    {
+    public function getReviewCount() {
         return (int) $this->wcProduct->get_review_count();
     }
-    
+
     /**
      * Get rating HTML
      *
      * @return string
      */
-    public function getRatingHtml()
-    {
+    public function getRatingHtml() {
         return (string) wc_get_rating_html( $this->getAverageRating() );
     }
-    
+
     /**
      * Get total sales
      *
      * @return int
      */
-    public function getTotalSales()
-    {
+    public function getTotalSales() {
         return (int) $this->wcProduct->get_total_sales();
     }
-    
+
     /**
      * Get SKU
      * @return string
      */
-    public function getSKU()
-    {
+    public function getSKU() {
         return (string) apply_filters(
             'dgwt/wcas/product/sku',
             $this->wcProduct->get_sku(),
@@ -311,17 +284,18 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get available variations
      * @return array
      */
-    public function getAvailableVariations()
-    {
-        global  $wpdb ;
-        
-        if ( empty($this->variations) && is_a( $this->wcProduct, 'WC_Product_Variable' ) ) {
-            $sql = $wpdb->prepare( "\n\t\t\t\tSELECT {$wpdb->posts}.ID AS variation_id, postmeta.meta_value AS variation_description, wc_product_meta_lookup.sku\n\t\t\t\tFROM {$wpdb->posts}\n                LEFT JOIN {$wpdb->wc_product_meta_lookup} wc_product_meta_lookup ON {$wpdb->posts}.ID = wc_product_meta_lookup.product_id\n\t\t\t\tLEFT JOIN {$wpdb->postmeta} postmeta ON {$wpdb->posts}.ID = postmeta.post_id AND postmeta.meta_key = '_variation_description'\n\t\t\t\tWHERE {$wpdb->posts}.post_parent = %d AND wc_product_meta_lookup.min_price > 0\n\t\t\t", $this->getID() );
+    public function getAvailableVariations() {
+        global $wpdb;
+        if ( empty( $this->variations ) && is_a( $this->wcProduct, 'WC_Product_Variable' ) ) {
+            $sql = $wpdb->prepare( "\n\t\t\t\tSELECT {$wpdb->posts}.ID AS variation_id, postmeta.meta_value AS variation_description, wc_product_meta_lookup.sku\n\t\t\t\tFROM {$wpdb->posts}\n                LEFT JOIN {$wpdb->wc_product_meta_lookup} wc_product_meta_lookup ON {$wpdb->posts}.ID = wc_product_meta_lookup.product_id\n\t\t\t\tLEFT JOIN {$wpdb->postmeta} postmeta ON {$wpdb->posts}.ID = postmeta.post_id AND postmeta.meta_key = '_variation_description'\n\t\t\t\tWHERE {$wpdb->posts}.post_parent = %d\n\t\t\t", $this->getID() );
+            if ( apply_filters( 'dgwt/wcas/indexer/include_variations_with_zero_price', false ) === false ) {
+                $sql .= " AND wc_product_meta_lookup.min_price > 0";
+            }
             if ( DGWT_WCAS()->settings->getOption( 'exclude_out_of_stock' ) === 'on' ) {
                 $sql .= " AND wc_product_meta_lookup.stock_status = 'instock'";
             }
@@ -335,20 +309,18 @@ class Product
             $this->variations = $result;
             return $this->variations;
         }
-        
         return $this->variations;
     }
-    
+
     /**
      * Get all SKUs for variations
      * @return array
      */
-    public function getVariationsSKUs()
-    {
+    public function getVariationsSKUs() {
         $skus = array();
         $variations = $this->getAvailableVariations();
         foreach ( $variations as $variation ) {
-            if ( is_array( $variation ) && !empty($variation['sku']) ) {
+            if ( is_array( $variation ) && !empty( $variation['sku'] ) ) {
                 $skus[] = sanitize_text_field( $variation['sku'] );
             }
         }
@@ -359,24 +331,23 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get description of all product variations
      *
      * @return array
      */
-    public function getVariationsDescriptions()
-    {
+    public function getVariationsDescriptions() {
         $descriptions = array();
         $variations = $this->getAvailableVariations();
         foreach ( $variations as $variation ) {
-            if ( is_array( $variation ) && !empty($variation['variation_description']) ) {
+            if ( is_array( $variation ) && !empty( $variation['variation_description'] ) ) {
                 $descriptions[] = sanitize_text_field( $variation['variation_description'] );
             }
         }
         return $descriptions;
     }
-    
+
     /**
      * Get attributes
      *
@@ -384,8 +355,7 @@ class Product
      *
      * @return array
      */
-    public function getAttributes( $onlyNames = false )
-    {
+    public function getAttributes( $onlyNames = false ) {
         $terms = array();
         $attributes = apply_filters(
             'dgwt/wcas/product/attributes',
@@ -394,13 +364,11 @@ class Product
             $this
         );
         foreach ( $attributes as $attribute ) {
-            
             if ( $onlyNames ) {
-                
                 if ( $attribute->is_taxonomy() ) {
                     // Global attributes
                     $attrTerms = $attribute->get_terms();
-                    if ( !empty($attrTerms) && is_array( $attrTerms ) ) {
+                    if ( !empty( $attrTerms ) && is_array( $attrTerms ) ) {
                         foreach ( $attrTerms as $attrTerm ) {
                             $terms[] = $attrTerm->name;
                         }
@@ -408,21 +376,17 @@ class Product
                 } else {
                     // Custom attributes
                     $attrOptions = $attribute->get_options();
-                    
-                    if ( !empty($attrOptions) && is_array( $attrOptions ) ) {
+                    if ( !empty( $attrOptions ) && is_array( $attrOptions ) ) {
                         // Use external static method for keeping always the same filters = self::getCustomAttributes($productID);
                         $customAttributesValues = self::getCustomAttributes( $this->productID );
-                        if ( !empty($customAttributesValues) ) {
+                        if ( !empty( $customAttributesValues ) ) {
                             $terms = array_merge( $terms, $customAttributesValues );
                         }
                     }
-                
                 }
-            
             } else {
                 //@TODO future use
             }
-        
         }
         return apply_filters(
             'dgwt/wcas/product/attribute_terms',
@@ -431,17 +395,16 @@ class Product
             $this
         );
     }
-    
+
     /**
      * Get product language
      *
      * @return string
      */
-    public function getLanguage()
-    {
+    public function getLanguage() {
         return $this->langCode;
     }
-    
+
     /**
      * Get custom field value
      *
@@ -449,8 +412,7 @@ class Product
      *
      * @return string
      */
-    public function getCustomField( $metaKey )
-    {
+    public function getCustomField( $metaKey ) {
         $result = apply_filters(
             'dgwt/wcas/product/custom_field',
             false,
@@ -462,27 +424,24 @@ class Product
         }
         return get_post_meta( $this->productID, sanitize_key( $metaKey ), true );
     }
-    
+
     /**
      * Get brand name
      *
      * @return string
      */
-    public function getBrand()
-    {
+    public function getBrand() {
         $brand = '';
         $taxonomy = DGWT_WCAS()->brands->getBrandTaxonomy();
-        
-        if ( !empty($taxonomy) ) {
+        if ( !empty( $taxonomy ) ) {
             $terms = get_the_terms( $this->productID, $taxonomy );
             if ( $terms && !is_wp_error( $terms ) ) {
-                $brand = ( !empty($terms[0]->name) ? $terms[0]->name : '' );
+                $brand = ( !empty( $terms[0]->name ) ? $terms[0]->name : '' );
             }
         }
-        
         return $brand;
     }
-    
+
     /**
      * Get terms form specific taxonomy
      *
@@ -492,53 +451,46 @@ class Product
      * @return string|array
      *
      */
-    public function getTerms( $taxonomy = 'product_cat', $format = 'array' )
-    {
+    public function getTerms( $taxonomy = 'product_cat', $format = 'array' ) {
         $items = array();
-        
-        if ( !empty($taxonomy) ) {
+        if ( !empty( $taxonomy ) ) {
             $terms = get_the_terms( $this->productID, $taxonomy );
-            if ( !empty($terms) && is_array( $terms ) ) {
+            if ( !empty( $terms ) && is_array( $terms ) ) {
                 foreach ( $terms as $term ) {
-                    if ( !empty($term->name) ) {
-                        
-                        if ( apply_filters( 'dgwt/wcas/tnt/source_query/term_description', false ) && !empty($term->description) ) {
+                    if ( !empty( $term->name ) ) {
+                        if ( apply_filters( 'dgwt/wcas/tnt/source_query/term_description', false ) && !empty( $term->description ) ) {
                             $items[] = $term->name . ' | ' . $term->description;
                         } else {
                             $items[] = $term->name;
                         }
-                    
                     }
                 }
             }
         }
-        
         return ( $format === 'string' ? implode( ' | ', $items ) : $items );
     }
-    
+
     /**
      * Check, if class is initialized correctly
      * @return bool
      */
-    public function isValid()
-    {
+    public function isValid() {
         $isValid = false;
         if ( is_a( $this->wcProduct, 'WC_Product' ) ) {
             $isValid = true;
         }
         return $isValid;
     }
-    
+
     /**
      * WooCommerce raw product object
      *
      * @return \WC_Product
      */
-    public function getWooObject()
-    {
+    public function getWooObject() {
         return $this->wcProduct;
     }
-    
+
     /**
      * Get custom attributes
      *
@@ -548,118 +500,98 @@ class Product
      *
      * @return array
      */
-    public static function getCustomAttributes( $productID )
-    {
-        global  $wpdb ;
+    public static function getCustomAttributes( $productID ) {
+        global $wpdb;
         $terms = array();
         $sql = $wpdb->prepare( "SELECT meta_value\n                                      FROM {$wpdb->postmeta}\n                                      WHERE post_id = %d\n                                      AND meta_key = '_product_attributes'\n                                     ", $productID );
         $optValue = $wpdb->get_var( $sql );
-        
-        if ( !empty($optValue) && strpos( $optValue, 'a:' ) === 0 ) {
+        if ( !empty( $optValue ) && strpos( $optValue, 'a:' ) === 0 ) {
             $rawAttributes = unserialize( $optValue );
-            
-            if ( is_array( $rawAttributes ) && !empty($rawAttributes) ) {
+            if ( is_array( $rawAttributes ) && !empty( $rawAttributes ) ) {
                 $rawAttributes = apply_filters( 'dgwt/wcas/product/custom_attributes', $rawAttributes, $productID );
                 foreach ( $rawAttributes as $rawAttribute ) {
-                    
-                    if ( array_key_exists( 'is_taxonomy', $rawAttribute ) && $rawAttribute['is_taxonomy'] == 0 && !empty($rawAttribute['value']) ) {
+                    if ( is_array( $rawAttribute ) && array_key_exists( 'is_taxonomy', $rawAttribute ) && $rawAttribute['is_taxonomy'] == 0 && !empty( $rawAttribute['value'] ) ) {
                         $partTerms = explode( ' | ', $rawAttribute['value'] );
                         $terms = array_merge( $terms, $partTerms );
                     }
-                
                 }
             }
-        
         }
-        
         return $terms;
     }
-    
+
     /**
      * Get product currency
      *
      * @return string
      */
-    public function getCurrency()
-    {
+    public function getCurrency() {
         $currency = get_woocommerce_currency();
-        
         if ( Multilingual::isMultilingual() ) {
             $currencyByLang = Multilingual::getCurrencyForLang( $this->getLanguage() );
-            if ( !empty($currencyByLang) ) {
+            if ( !empty( $currencyByLang ) ) {
                 $currency = $currencyByLang;
             }
         }
-        
         return $currency;
     }
-    
+
     /**
      * Stock quantity message
      *
      * @return string
      */
-    public function getStockAvailability()
-    {
+    public function getStockAvailability() {
         $html = '';
-        
         if ( 'yes' === get_option( 'woocommerce_manage_stock' ) && $this->wcProduct->get_manage_stock() ) {
             $data = $this->wcProduct->get_availability();
-            
-            if ( !empty($data) && is_array( $data ) ) {
-                $text = ( !empty($data['availability']) ? $data['availability'] : '' );
-                $class = ( !empty($data['class']) ? ' ' . $data['class'] : '' );
-                
+            if ( !empty( $data ) && is_array( $data ) ) {
+                $text = ( !empty( $data['availability'] ) ? $data['availability'] : '' );
+                $class = ( !empty( $data['class'] ) ? ' ' . $data['class'] : '' );
                 if ( $text ) {
                     $html .= '<span class="dgwt-wcas-stock' . $class . '">';
                     $html .= $text;
                     $html .= '</span>';
                 }
-            
             }
-        
         }
-        
         return $html;
     }
-    
+
     /**
      * Check product type
      *
      * @return bool
      */
-    public function isType( $type )
-    {
+    public function isType( $type ) {
         return $this->wcProduct->is_type( $type );
     }
-    
+
     /**
      * Check if the object was initialized properly
      *
      * @return bool
      */
-    public function isCorrect()
-    {
+    public function isCorrect() {
         $correct = true;
-        if ( empty($this->wcProduct) ) {
+        if ( empty( $this->wcProduct ) ) {
             $correct = false;
         }
         return $correct;
     }
-    
+
     /**
      * Check if the product is published and visible for catalog or search
      *
      * @return bool
      */
-    public function isPublishedAndVisible()
-    {
+    public function isPublishedAndVisible() {
         $result = false;
         if ( !$this->isValid() ) {
             return $result;
         }
         if ( $this->getWooObject()->get_status() === 'publish' ) {
-            if ( in_array( $this->getWooObject()->get_catalog_visibility(), array( 'visible', 'search' ) ) ) {
+            if ( in_array( $this->getWooObject()->get_catalog_visibility(), array('visible', 'search') ) ) {
                 $result = true;
             }
         }

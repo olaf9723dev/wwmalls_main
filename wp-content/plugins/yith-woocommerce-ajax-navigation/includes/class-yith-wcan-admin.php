@@ -157,12 +157,28 @@ if ( ! class_exists( 'YITH_WCAN_Admin' ) ) {
 		}
 
 		/**
+		 * Returns url to the doc
+		 *
+		 * @return string Documentation url.
+		 */
+		public function get_doc_url() {
+			if ( defined( 'YITH_WCAN_PREMIUM_INIT' ) ) {
+				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter/';
+			} elseif ( defined( 'YITH_WCAN_EXTENDED_INIT' ) ) {
+				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter-extended/';
+			} else {
+				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter/category/free-settings/';
+			}
+
+			return $doc_url;
+		}
+
+		/**
 		 * Add a panel under YITH Plugins tab
 		 *
 		 * @return   void
 		 * @since    1.0
 		 * @use      /Yit_Plugin_Panel class
-		 * @see      plugin-fw/lib/yit-plugin-panel.php
 		 */
 		public function register_panel() {
 
@@ -214,14 +230,6 @@ if ( ! class_exists( 'YITH_WCAN_Admin' ) ) {
 				'main_image_url'   => YITH_WCAN_ASSETS . 'images/get-premium-ajax-product-filter.jpg',
 			);
 
-			if ( defined( 'YITH_WCAN_PREMIUM_INIT' ) ) {
-				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter/';
-			} elseif ( defined( 'YITH_WCAN_EXTENDED_INIT' ) ) {
-				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter-extended/';
-			} else {
-				$doc_url = 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter/category/free-settings/';
-			}
-
 			$help_tab = array_merge(
 				array(
 					'main_video' => array(
@@ -238,38 +246,8 @@ if ( ! class_exists( 'YITH_WCAN_Admin' ) ) {
 						'es' => 'https://www.youtube.com/watch?v=7kX7nxBD2BA&list=PL9Ka3j92PYJOyeFNJRdW9oLPkhfyrXmL1',
 					),
 					'hc_url'     => 'https://support.yithemes.com/hc/en-us/categories/360003474618-YITH-WOOCOMMERCE-AJAX-PRODUCT-FILTER',
-					'doc_url'    => $doc_url
+					'doc_url'    => $this->get_doc_url(),
 				),
-			);
-
-			$modals = array(
-				'welcome' => array(
-					'type'        => 'welcome',
-					'description' => __( 'Enable a powerful filter tool in your shop and help your customers find the products they need', 'yith-woocommerce-ajax-navigation' ),
-					'show'        => get_option( 'yith_wcan_show_welcome_modal', 'yes' ) === 'yes',
-					'items'       => array(
-						'documentation'  => array(
-							'title'       => __( 'Read the <mark>plugin documentation</mark>', 'yith-woocommerce-ajax-navigation' ),
-							'description' => __( 'Learn what you can really do with this tool', 'yith-woocommerce-ajax-navigation' ),
-							'url'         => $doc_url,
-						),
-						'how-to-video'   => array(
-							'title'       => __( 'Watch our <mark>first steps video</mark>', 'yith-woocommerce-ajax-navigation' ),
-							'description' => __( 'See how it works before you start using it', 'yith-woocommerce-ajax-navigation' ),
-							'url' => array(
-								'en' => 'https://www.youtube.com/watch?v=o-ZhSVR4HvU',
-								'it' => 'https://www.youtube.com/watch?v=cgQo2Cxux4M',
-								'es' => 'https://www.youtube.com/watch?v=KGnJW_zUBRY',
-							),
-						),
-						'create-preset'  => array(
-							'title'       => __( '<mark>Create your preset</mark> of filters or customize the default one', 'yith-woocommerce-ajax-navigation' ),
-							'description' => __( 'so your customers can easily find the products they love', 'yith-woocommerce-ajax-navigation' ),
-							'url'         => $this->get_panel_url(),
-						),
-					),
-				),
-
 			);
 
 			/**
@@ -327,10 +305,6 @@ if ( ! class_exists( 'YITH_WCAN_Admin' ) ) {
 						'is_premium'         => defined( 'YITH_WCAN_PREMIUM' ),
 						'page'               => $this->panel_page,
 						'help_tab'           => $help_tab,
-						'welcome_modals'     => array(
-							'on_close' => fn () =>  update_option( 'yith_wcan_show_welcome_modal', 'no' ),
-							'modals'   => $modals,
-						),
 					),
 					! defined( 'YITH_WCAN_PREMIUM' ) ? array( 'premium_tab' => $premium_tab ) : array()
 				)
@@ -644,15 +618,36 @@ if ( ! class_exists( 'YITH_WCAN_Admin' ) ) {
 				return $new_row_meta_args;
 			}
 
-			$new_row_meta_args['slug']        = 'yith-woocommerce-ajax-product-filter';
-			$new_row_meta_args['is_premium']  = defined( 'YITH_WCAN_PREMIUM' );
-			$new_row_meta_args['is_extended'] = defined( 'YITH_WCAN_EXTENDED' );
-
-			if ( defined( 'YITH_WCAN_FREE_INIT' ) ) {
-				$new_row_meta_args['support'] = array(
-					'url' => 'https://wordpress.org/support/plugin/yith-woocommerce-ajax-navigation',
-				);
-			}
+			$new_row_meta_args = array_merge(
+				$new_row_meta_args,
+				array(
+					'slug'          => YITH_WCAN_SLUG,
+					'is_premium'    => defined( 'YITH_WCAN_PREMIUM' ),
+					'is_extended'   => defined( 'YITH_WCAN_EXTENDED' ),
+					'documentation' => array(
+						'url' => 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter',
+					),
+					'live_demo'     => array(
+						'url' => 'https://plugins.yithemes.com/yith-woocommerce-ajax-product-filter-free',
+					),
+					'premium_version' => array(
+						'url' => 'https://yithemes.com/themes/plugins/yith-woocommerce-ajax-product-filter/',
+					)
+				),
+				defined( 'YITH_WCAN_EXTENDED' ) ? array(
+					'documentation' => array(
+						'url' => 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter-extended',
+					),
+					'support'       => array(
+						'url' => 'https://docs.yithemes.com/yith-woocommerce-ajax-product-filter-extended/overview/need-support/',
+					),
+				) : array(),
+				defined( 'YITH_WCAN_PREMIUM' ) ? array(
+					'live_demo' => array(
+						'url' => 'https://plugins.yithemes.com/yith-woocommerce-ajax-product-filter',
+					),
+				) : array()
+			);
 
 			return $new_row_meta_args;
 		}

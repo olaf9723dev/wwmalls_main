@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-13T09:17:57+00:00\n"
+"POT-Creation-Date: 2024-05-25T03:42:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: wcboost-products-compare\n"
@@ -145,8 +145,8 @@ msgstr ""
 #: includes/customizer.php:87
 #: includes/form-handler.php:52
 #: includes/helper.php:109
-#: templates/loop/add-to-compare.php:28
-#: templates/single-product/add-to-compare.php:28
+#: templates/loop/add-to-compare.php:27
+#: templates/single-product/add-to-compare.php:27
 msgid "Compare"
 msgstr ""
 
@@ -228,8 +228,6 @@ msgstr ""
 
 #. translators: %s Product name
 #: includes/frontend.php:197
-#: templates/loop/add-to-compare.php:26
-#: templates/single-product/add-to-compare.php:26
 msgid "Compare %s"
 msgstr ""
 
@@ -243,58 +241,58 @@ msgstr ""
 msgid "Open the compare list"
 msgstr ""
 
-#: includes/frontend.php:349
+#: includes/frontend.php:357
 msgid "Clear list"
 msgstr ""
 
-#: includes/frontend.php:396
-#: includes/frontend.php:442
+#: includes/frontend.php:404
+#: includes/frontend.php:450
 msgid "Compare products"
 msgstr ""
 
-#: includes/frontend.php:409
+#: includes/frontend.php:417
 msgid "Close"
 msgstr ""
 
-#: includes/frontend.php:440
+#: includes/frontend.php:448
 msgid "View compared products"
 msgstr ""
 
-#: includes/frontend.php:478
+#: includes/frontend.php:486
 msgid "Rating"
 msgstr ""
 
-#: includes/frontend.php:479
+#: includes/frontend.php:487
 msgid "Price"
 msgstr ""
 
-#: includes/frontend.php:480
+#: includes/frontend.php:488
 msgid "Availability"
 msgstr ""
 
-#: includes/frontend.php:481
+#: includes/frontend.php:489
 msgid "SKU"
 msgstr ""
 
-#: includes/frontend.php:482
+#: includes/frontend.php:490
 msgid "Dimensions"
 msgstr ""
 
-#: includes/frontend.php:483
+#: includes/frontend.php:491
 msgid "Weight"
 msgstr ""
 
-#: includes/frontend.php:540
+#: includes/frontend.php:548
 msgid "Remove this item"
 msgstr ""
 
-#: includes/frontend.php:576
+#: includes/frontend.php:584
 msgid "In stock"
 msgstr ""
 
-#: includes/frontend.php:581
-#: includes/frontend.php:588
+#: includes/frontend.php:589
 #: includes/frontend.php:596
+#: includes/frontend.php:604
 msgid "N/A"
 msgstr ""
 

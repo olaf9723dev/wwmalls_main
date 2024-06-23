@@ -243,6 +243,14 @@ class Frontend {
 
 		$args['class'] = implode( ' ', (array) $args['class'] );
 
+		// Add a new key "attributes",
+		// but must keep orginal keys to ensure backwards compatibility.
+		$args['attributes'] = [
+			'data-product_id' => $args['product_id'],
+			'aria-label'      => $args['aria-label'],
+			'rel'             => 'nofollow',
+		];
+
 		return $args;
 	}
 
@@ -343,7 +351,7 @@ class Frontend {
 		echo apply_filters(
 			'wcboost_products_compare_clear_link', // XSS: ok.
 			sprintf(
-				'<a href="%s" class="%s">%s</a>',
+				'<a href="%s" class="%s" rel="nofollow">%s</a>',
 				esc_url( Helper::get_clear_url() ),
 				esc_attr( implode( ' ', $args['class'] ) ),
 				esc_html__( 'Clear list', 'wcboost-products-compare' )
@@ -378,7 +386,7 @@ class Frontend {
 		echo apply_filters(
 			'wcboost_products_compare_open_link', // XSS: ok.
 			sprintf(
-				'<a href="%s" class="%s">%s</a>',
+				'<a href="%s" class="%s" rel="nofollow">%s</a>',
 				esc_url( wc_get_page_permalink( 'compare' ) ),
 				esc_attr( implode( ' ', $args['class'] ) ),
 				esc_html( 'Compare now', 'wcboost-products-compare' )
@@ -535,7 +543,7 @@ class Frontend {
 				echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'wcboost_products_compare_item_remove_link',
 					sprintf(
-						'<a href="%s" class="remove wcboost-products-compare-remove" aria-label="%s">&times;</a>',
+						'<a href="%s" class="remove wcboost-products-compare-remove" aria-label="%s" rel="nofollow">&times;</a>',
 						esc_url( \WCBoost\ProductsCompare\Helper::get_remove_url( $product ) ),
 						esc_html__( 'Remove this item', 'wcboost-products-compare' )
 					),

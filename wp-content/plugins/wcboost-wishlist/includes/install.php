@@ -18,6 +18,7 @@ class Install {
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'check_version' ], 5 );
 		add_filter( 'plugin_row_meta', [ __CLASS__, 'plugin_row_meta' ], 10, 2 );
+		add_action( 'admin_notices', [ __CLASS__, 'deactivate_notice' ] );
 	}
 
 	/**
@@ -54,6 +55,8 @@ class Install {
 		flush_rewrite_rules();
 
 		delete_transient( 'wcboost_wishlist_installing' );
+
+		do_action( 'wcboost_wishlist_installed' );
 	}
 
 	/**
@@ -169,10 +172,31 @@ class Install {
 		}
 
 		$row_meta = [
-			'docs'    => '<a href="https://docs.wcboost.com/plugin/woocommerce-wishlist/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash" aria-label="' . esc_attr__( 'View wishlist documentation', 'wcboost-wishlist' ) . '">' . esc_html__( 'Docs', 'wcboost-wishlist' ) . '</a>',
+			'docs'    => '<a href="https://wcboost.com/docs-category/wcboost-wishlists/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash" aria-label="' . esc_attr__( 'View wishlist documentation', 'wcboost-wishlist' ) . '">' . esc_html__( 'Docs', 'wcboost-wishlist' ) . '</a>',
 			'support' => '<a href="https://wordpress.org/support/plugin/wcboost-wishlist/" aria-label="' . esc_attr__( 'Visit community forums', 'wcboost-wishlist' ) . '">' . esc_html__( 'Community support', 'wcboost-wishlist' ) . '</a>',
 		];
 
 		return array_merge( $links, $row_meta );
+	}
+
+	/**
+	 * The admin notice that inform the free version of plugin has been automatically deactivated.
+	 *
+	 * @since 1.0.11
+	 *
+	 * @return void
+	 */
+	public static function deactivate_notice() {
+		$auto_deactivated = get_transient( 'wcboost_wishlist_auto_deactivate_free_version' );
+
+		if ( ! $auto_deactivated ) {
+			return;
+		}
+		?>
+		<div class="notice is-dismissible">
+			<p><?php esc_html_e( 'WCBoost - Wishlist (Free) has been automatically deactivated because you have installed the Pro version.', 'wcboost-wishlist' ); ?></p>
+		</div>
+		<?php
+		delete_transient( 'wcboost_wishlist_auto_deactivate_free_version' );
 	}
 }

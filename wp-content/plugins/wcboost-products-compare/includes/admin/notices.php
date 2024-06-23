@@ -24,7 +24,7 @@ class Notices {
 		add_action( 'admin_init', [ $this, 'reset_notices_on_request' ] );
 
 		if ( current_user_can( 'manage_woocommerce' ) ) {
-			add_action( 'admin_init', [ $this, 'template_files_notice' ], 20 );
+			add_action( 'admin_print_styles', [ $this, 'template_files_notice' ] );
 		}
 	}
 
@@ -75,7 +75,7 @@ class Notices {
 			\WC_Admin_Notices::remove_notice( static::TEMPLATES_NOTICE_NAME );
 
 			// Update the option to avoid multiple checkings.
-			\update_option( static::TEMPLATES_NOTICE_NAME . '_check', time() );
+			\update_option( static::TEMPLATES_NOTICE_NAME . '_check', time(), false );
 		}
 	}
 

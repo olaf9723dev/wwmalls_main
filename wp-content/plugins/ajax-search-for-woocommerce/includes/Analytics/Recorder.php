@@ -2,25 +2,23 @@
 
 namespace DgoraWcas\Analytics;
 
-use  DgoraWcas\Helpers ;
-use  DgoraWcas\Multilingual ;
+use DgoraWcas\Helpers;
+use DgoraWcas\Multilingual;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-class Recorder
-{
-    public function listen()
-    {
+class Recorder {
+    public function listen() {
         Database::registerTables();
         add_action(
             'dgwt/wcas/analytics/after_searching',
-            array( $this, 'listener' ),
+            array($this, 'listener'),
             10,
             3
         );
     }
-    
+
     /**
      * Validate input data and save them to the index
      *
@@ -30,11 +28,10 @@ class Recorder
      *
      * @return void
      */
-    public function listener( $phrase, $hits, $lang )
-    {
+    public function listener( $phrase, $hits, $lang ) {
         $autocomplete = true;
         // Break early the search phrase is empty or has a specific shape
-        if ( empty($phrase) || !is_string( $phrase ) || $phrase === 'fibotests' ) {
+        if ( empty( $phrase ) || !is_string( $phrase ) || $phrase === 'fibotests' ) {
             return;
         }
         if ( !is_numeric( $hits ) || $hits < 0 ) {
@@ -45,17 +42,15 @@ class Recorder
             return;
         }
         // Allow to exclude critical phrases.
-        
         if ( $hits === 0 ) {
             $excludedPhrases = apply_filters( 'dgwt/wcas/analytics/excluded_critical_phrases', array() );
             if ( is_array( $excludedPhrases ) && in_array( $phrase, $excludedPhrases, true ) ) {
                 return;
             }
         }
-        
         // Break early when a user has specific roles.
         $roles = apply_filters( 'dgwt/wcas/analytics/exclude_roles', array() );
-        if ( !empty($roles) ) {
+        if ( !empty( $roles ) ) {
             foreach ( $roles as $role ) {
                 if ( current_user_can( $role ) ) {
                     return;
@@ -66,7 +61,7 @@ class Recorder
             $autocomplete = false;
         }
         $phrase = strtolower( substr( $phrase, 0, 255 ) );
-        $lang = ( !empty($lang) && Multilingual::isLangCode( $lang ) ? $lang : '' );
+        $lang = ( !empty( $lang ) && Multilingual::isLangCode( $lang ) ? $lang : '' );
         $this->push(
             $phrase,
             $hits,
@@ -74,7 +69,7 @@ class Recorder
             $lang
         );
     }
-    
+
     /**
      * Push a record to the index.
      *
@@ -90,9 +85,8 @@ class Recorder
         $hits,
         $autocomplete,
         $lang
-    )
-    {
-        global  $wpdb ;
+    ) {
+        global $wpdb;
         $data = array(
             'phrase'       => $phrase,
             'hits'         => $hits,
@@ -105,12 +99,10 @@ class Recorder
             '%s',
             '%d'
         );
-        
-        if ( !empty($lang) ) {
+        if ( !empty( $lang ) ) {
             $data['lang'] = $lang;
             $format[] = '%s';
         }
-        
         $wpdb->insert( $wpdb->dgwt_wcas_stats, $data, $format );
     }
 

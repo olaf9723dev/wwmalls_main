@@ -105,18 +105,23 @@ function yith_wcan_filter_toPropertyKey(arg) { var key = yith_wcan_filter_toPrim
 function yith_wcan_filter_toPrimitive(input, hint) { if (yith_wcan_filter_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_filter_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var YITH_WCAN_Filter = /*#__PURE__*/function () {
+  // currently executing xhr
+
+  // flag set during ajax call handling
+
+  // register original url search param
+
+  // flag set once init has executed
+
+  // flag set when page has at least one active filter.
+
   // init object
   function YITH_WCAN_Filter() {
     _classCallCheck(this, YITH_WCAN_Filter);
-    // currently executing xhr
     yith_wcan_filter_defineProperty(this, "xhr", null);
-    // flag set during ajax call handling
     yith_wcan_filter_defineProperty(this, "doingAjax", false);
-    // register original url search param
     yith_wcan_filter_defineProperty(this, "originalSearch", location.search);
-    // flag set once init has executed
     yith_wcan_filter_defineProperty(this, "initialized", false);
-    // flag set when page has at least one active filter.
     yith_wcan_filter_defineProperty(this, "filtered", false);
     this.initPopState();
     this.initialized = true;
@@ -404,10 +409,11 @@ function yith_wcan_reset_button_toPropertyKey(arg) { var key = yith_wcan_reset_b
 function yith_wcan_reset_button_toPrimitive(input, hint) { if (yith_wcan_reset_button_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_reset_button_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var YITH_WCAN_Reset_Button = /*#__PURE__*/yith_wcan_reset_button_createClass(
+// current button
+
 // init object
 function YITH_WCAN_Reset_Button(el) {
   yith_wcan_reset_button_classCallCheck(this, YITH_WCAN_Reset_Button);
-  // current button
   yith_wcan_reset_button_defineProperty(this, "$reset", null);
   // current button
   this.$reset = el;
@@ -444,37 +450,51 @@ function yith_wcan_dropdown_toPropertyKey(arg) { var key = yith_wcan_dropdown_to
 function yith_wcan_dropdown_toPrimitive(input, hint) { if (yith_wcan_dropdown_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (yith_wcan_dropdown_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var YITH_WCAN_Dropdown = /*#__PURE__*/function () {
+  // current button
+
+  // list of current items.
+
+  // main element
+
+  // label element
+
+  // dropdown
+
+  // search input
+
+  // show more link
+
+  // items list
+
+  // whether select should paginate.
+
+  // whether select has more items than those shown.
+
+  // whether items list needs update.
+
+  // whether select is multiple
+
+  // current page
+
+  // options
+
   // init object
   function YITH_WCAN_Dropdown(el, opts) {
     var _yith_wcan_shortcodes, _yith_wcan_shortcodes2, _yith_wcan_shortcodes3, _yith_wcan_shortcodes4;
     yith_wcan_dropdown_classCallCheck(this, YITH_WCAN_Dropdown);
-    // current button
     yith_wcan_dropdown_defineProperty(this, "$originalSelect", null);
-    // list of current items.
     yith_wcan_dropdown_defineProperty(this, "_items", []);
-    // main element
     yith_wcan_dropdown_defineProperty(this, "$_main", null);
-    // label element
     yith_wcan_dropdown_defineProperty(this, "$_label", null);
-    // dropdown
     yith_wcan_dropdown_defineProperty(this, "$_dropdown", null);
-    // search input
     yith_wcan_dropdown_defineProperty(this, "$_search", null);
-    // show more link
     yith_wcan_dropdown_defineProperty(this, "$_showMore", null);
-    // items list
     yith_wcan_dropdown_defineProperty(this, "$_items", null);
-    // whether select should paginate.
     yith_wcan_dropdown_defineProperty(this, "paginate", false);
-    // whether select has more items than those shown.
     yith_wcan_dropdown_defineProperty(this, "hasMore", false);
-    // whether items list needs update.
     yith_wcan_dropdown_defineProperty(this, "needsRefresh", true);
-    // whether select is multiple
     yith_wcan_dropdown_defineProperty(this, "multiple", false);
-    // current page
     yith_wcan_dropdown_defineProperty(this, "currentPage", 1);
-    // options
     yith_wcan_dropdown_defineProperty(this, "options", {});
     this.$originalSelect = el;
     if (!this.$originalSelect.is('select')) {
@@ -1085,33 +1105,44 @@ function yith_wcan_preset_toPrimitive(input, hint) { if (yith_wcan_preset_typeof
 
 
 var YITH_WCAN_Preset = /*#__PURE__*/function () {
+  // main preset node
+
+  // target of the filter, if any
+
+  // filters node
+
+  // filter button
+
+  // nodes created just for modal layout
+
+  // retains current status of filters
+
+  // mobile flag
+
+  // slider timeout
+
+  // registers when status has changed
+
+  // promise resolved when all async loading is complete.
+
+  // flag to disable filtering
+
   // init object
   function YITH_WCAN_Preset(el) {
     yith_wcan_preset_classCallCheck(this, YITH_WCAN_Preset);
-    // main preset node
     yith_wcan_preset_defineProperty(this, "preset", false);
     yith_wcan_preset_defineProperty(this, "$preset", false);
-    // target of the filter, if any
     yith_wcan_preset_defineProperty(this, "target", false);
     yith_wcan_preset_defineProperty(this, "$target", false);
-    // filters node
     yith_wcan_preset_defineProperty(this, "$filters", false);
-    // filter button
     yith_wcan_preset_defineProperty(this, "$filterButtons", false);
-    // nodes created just for modal layout
     yith_wcan_preset_defineProperty(this, "modalElements", {});
-    // retains current status of filters
     yith_wcan_preset_defineProperty(this, "activeFilters", false);
-    // mobile flag
     yith_wcan_preset_defineProperty(this, "isMobile", false);
-    // slider timeout
     yith_wcan_preset_defineProperty(this, "sliderTimeout", false);
-    // registers when status has changed
     yith_wcan_preset_defineProperty(this, "originalFilters", null);
     yith_wcan_preset_defineProperty(this, "dirty", false);
-    // promise resolved when all async loading is complete.
     yith_wcan_preset_defineProperty(this, "loaded", void 0);
-    // flag to disable filtering
     yith_wcan_preset_defineProperty(this, "inhibitFilters", false);
     // main preset node
     this.preset = '#' + el.attr('id');
@@ -1196,8 +1227,10 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
             multiple = $currentFilter.length ? 'yes' === $currentFilter.data('multiple') : false,
             $item = t.closest('.filter-item'),
             $items = $item.length ? $currentFilter.find('.filter-item').not($item) : [];
+          if ($currentFilter.is('.filter-price-slider')) {
+            return false;
+          }
           if ($item.is('.disabled') && !$item.is('.active')) {
-            ev.preventDefault();
             return false;
           }
           ev.preventDefault();
@@ -1303,6 +1336,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
 
       // otherwise load filter via AJAX.
       return new Promise(function (resolve) {
+        var _yith_wcan_shortcodes;
         $.ajax({
           method: 'GET',
           url: yith_wcan_shortcodes.base_url,
@@ -1310,7 +1344,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
             'wc-ajax': 'yith_wcan_render_filter',
             _preset_id: _this6.getId(),
             _filter_id: $filter.data('filter-id'),
-            security: yith_wcan_shortcodes.nonces.render_filter
+            security: (_yith_wcan_shortcodes = yith_wcan_shortcodes.nonces) === null || _yith_wcan_shortcodes === void 0 ? void 0 : _yith_wcan_shortcodes.render_filter
           }, _this6.originalFilters)
         }).then(function (data) {
           var _data$data;
@@ -1395,7 +1429,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
       this._initDropdownObject($dropdown, _objectSpread({
         paginate: true,
         hasMore: hasMore,
-        perPage: yith_wcan_shortcodes.terms_per_page
+        perPage: parseInt(yith_wcan_shortcodes.terms_per_page)
       }, hasMore ? {
         getElements: function getElements(search) {
           var _this7 = this;
@@ -2525,13 +2559,13 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
     key: "formatPrice",
     value: function formatPrice(price) {
       if ('undefined' !== typeof accounting) {
-        var _yith_wcan_shortcodes, _yith_wcan_shortcodes2, _yith_wcan_shortcodes3, _yith_wcan_shortcodes4;
+        var _yith_wcan_shortcodes2, _yith_wcan_shortcodes3, _yith_wcan_shortcodes4, _yith_wcan_shortcodes5;
         price = accounting.formatMoney(price, {
-          symbol: (_yith_wcan_shortcodes = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes === void 0 ? void 0 : _yith_wcan_shortcodes.symbol,
-          decimal: (_yith_wcan_shortcodes2 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes2 === void 0 ? void 0 : _yith_wcan_shortcodes2.decimal,
-          thousand: (_yith_wcan_shortcodes3 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes3 === void 0 ? void 0 : _yith_wcan_shortcodes3.thousand,
+          symbol: (_yith_wcan_shortcodes2 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes2 === void 0 ? void 0 : _yith_wcan_shortcodes2.symbol,
+          decimal: (_yith_wcan_shortcodes3 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes3 === void 0 ? void 0 : _yith_wcan_shortcodes3.decimal,
+          thousand: (_yith_wcan_shortcodes4 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes4 === void 0 ? void 0 : _yith_wcan_shortcodes4.thousand,
           precision: 0,
-          format: (_yith_wcan_shortcodes4 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes4 === void 0 ? void 0 : _yith_wcan_shortcodes4.format
+          format: (_yith_wcan_shortcodes5 = yith_wcan_shortcodes.currency_format) === null || _yith_wcan_shortcodes5 === void 0 ? void 0 : _yith_wcan_shortcodes5.format
         });
       }
       return price;

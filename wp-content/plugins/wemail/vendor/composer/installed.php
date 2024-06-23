@@ -19,15 +19,6 @@
             'reference' => '5c3fdc4945c8680bca6fb01eee1ec5dc4f22de87',
             'dev_requirement' => false,
         ),
-        'danielstjules/stringy' => array(
-            'pretty_version' => '3.1.0',
-            'version' => '3.1.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../danielstjules/stringy',
-            'aliases' => array(),
-            'reference' => 'df24ab62d2d8213bbbe88cc36fc35a4503b4bd7e',
-            'dev_requirement' => false,
-        ),
         'league/csv' => array(
             'pretty_version' => '7.2.0',
             'version' => '7.2.0.0',
@@ -35,15 +26,6 @@
             'install_path' => __DIR__ . '/../league/csv',
             'aliases' => array(),
             'reference' => '69bafa6ff924fbf9effe4275d6eb16be81a853ef',
-            'dev_requirement' => false,
-        ),
-        'symfony/polyfill-mbstring' => array(
-            'pretty_version' => 'v1.26.0',
-            'version' => '1.26.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
-            'aliases' => array(),
-            'reference' => '9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e',
             'dev_requirement' => false,
         ),
         'wemail/wemail' => array(

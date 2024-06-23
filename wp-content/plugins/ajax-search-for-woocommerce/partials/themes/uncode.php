@@ -46,6 +46,10 @@ add_action( 'wp_footer', function () {
 			fill: rgba(255, 255, 255, 0.5);
 		}
 
+		header ul li.search-icon .dgwt-wcas-search-wrapp {
+			z-index: 100;
+		}
+
 		@media (max-width: 959px) {
 			.menu-icons .dgwt-wcas-search-wrapp {
 				padding: 9px 36px 9px 36px;

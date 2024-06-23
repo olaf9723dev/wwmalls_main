@@ -218,14 +218,9 @@
                     return this.isBrowser('Safari') && !this.isBrowser('Chrome');
                 },
                 isIOS: function () {
-                    return [
-                            'iPad Simulator',
-                            'iPhone Simulator',
-                            'iPod Simulator',
-                            'iPad',
-                            'iPhone',
-                            'iPod'
-                        ].includes(navigator.platform)
+                    var platform = navigator?.userAgent || navigator?.platform || 'unknown';
+
+                    return /iPhone|iPod|iPad/.test(platform)
                         // iPad on iOS 13 detection
                         || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
                 },
@@ -2155,7 +2150,11 @@
 
             $('body').removeClass('dgwt-wcas-open');
             if (!$('html').hasClass('dgwt-wcas-overlay-mobile-on')) {
-                $('html').removeClass('dgwt-wcas-open-' + that.getSearchStyle());
+                var searchStyle = that.getSearchStyle();
+                $('html').removeClass('dgwt-wcas-open-' + searchStyle);
+                if (searchStyle === 'pirx') {
+                    $('html').removeClass('dgwt-wcas-open-pirx-compact');
+                }
             }
             $('body').removeClass('dgwt-wcas-block-scroll');
             $('body').removeClass('dgwt-wcas-is-details');
@@ -2379,6 +2378,10 @@
                             isImg = true;
                         }
 
+                        // Custom content before title (3rd party)
+                        prepend += that.apply3rdPartyPlaceholder('title_before', suggestion);
+                        append += that.apply3rdPartyPlaceholder('title_after', suggestion);
+
                         title = title.length > 0 ? ' title="' + title + '"' : '';
 
                         html += '<a href="' + url + '" class="' + classes + '" data-index="' + i + '">';
@@ -2433,7 +2436,11 @@
 
             // Add class on show
             $('body').addClass('dgwt-wcas-open');
-            $('html').addClass('dgwt-wcas-open-' + that.getSearchStyle());
+            var searchStyle = that.getSearchStyle();
+            $('html').addClass('dgwt-wcas-open-' + searchStyle);
+            if (searchStyle === 'pirx') {
+                $('html').addClass('dgwt-wcas-open-pirx-compact');
+            }
 
             // Reset the latest mousedown position
             that.isMouseDownOnSearchElements = false;
@@ -2519,17 +2526,13 @@
             html += '<div class="dgwt-wcas-st">';
 
             // Custom content before title (3rd party)
-            if (typeof suggestion.title_before != 'undefined' && suggestion.title_before) {
-                html += suggestion.title_before;
-            }
+            html += that.apply3rdPartyPlaceholder('title_before', suggestion);
 
             // Title
             html += '<span class="dgwt-wcas-st-title">' + formatResult(suggestion.value, value, true, options) + parent + '</span>';
 
             // Custom content after title (3rd party)
-            if (typeof suggestion.title_after != 'undefined' && suggestion.title_after) {
-                html += suggestion.title_after;
-            }
+            html += that.apply3rdPartyPlaceholder('title_after', suggestion);
 
             // SKU
             if (options.showSKU === true && typeof suggestion.sku != 'undefined' && suggestion.sku.length > 0) {
@@ -2555,9 +2558,7 @@
             }
 
             // Custom content after description (3rd party)
-            if (typeof suggestion.content_after != 'undefined' && suggestion.content_after) {
-                html += suggestion.content_after;
-            }
+            html += that.apply3rdPartyPlaceholder('content_after', suggestion);
 
             // Close title wrapper
             html += '</div>';
@@ -2574,7 +2575,7 @@
 
             // Custom content before meta (3rd party)
             if (showMetaBefore) {
-                html += suggestion.meta_before;
+                html += that.apply3rdPartyPlaceholder('meta_before', suggestion);
             }
 
             // Price
@@ -2584,7 +2585,7 @@
 
             // Custom content after meta (3rd party)
             if (showMetaAfter) {
-                html += suggestion.meta_after;
+                html += that.apply3rdPartyPlaceholder('meta_after', suggestion);
             }
 
             // Close Meta
@@ -2594,6 +2595,13 @@
             html += '</a>';
 
             return html;
+        },
+        apply3rdPartyPlaceholder: function (name, suggestion) {
+            var content = '';
+            if (typeof suggestion[name] != 'undefined' && suggestion[name]) {
+                content = suggestion[name];
+            }
+            return content;
         },
         getSearchStyle: function () {
             var that = this,
@@ -2605,6 +2613,10 @@
                     style = this.replace(/dgwt-wcas-style-/i, '');
                 }
             });
+
+            if (style === 'pirx-compact') {
+                style = 'pirx';
+            }
 
             return style;
         },
@@ -3285,7 +3297,11 @@
             // Add class on show
             $('body').addClass('dgwt-wcas-open');
             $('body').addClass('dgwt-wcas-open-pre-suggestions');
+            var searchStyle = that.getSearchStyle();
             $('html').addClass('dgwt-wcas-open-' + that.getSearchStyle());
+            if (searchStyle === 'pirx') {
+                $('html').addClass('dgwt-wcas-open-pirx-compact');
+            }
 
             // Reset the latest mousedown position
             that.isMouseDownOnSearchElements = false;

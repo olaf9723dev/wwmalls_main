@@ -9,7 +9,12 @@ add_filter( 'slicewp_list_table_payout_commissions_column_reference', 'slicewp_l
 
 // Insert a new pending commission
 add_action( 'woocommerce_checkout_update_order_meta', 'slicewp_insert_pending_commission_woo', 10, 1 );
-add_action( 'woocommerce_store_api_checkout_update_order_meta', 'slicewp_insert_pending_commission_woo' );
+
+if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '6.4.0', '>=' ) ) {
+	add_action( 'woocommerce_store_api_checkout_order_processed', 'slicewp_insert_pending_commission_woo' );
+} else {
+	add_action( 'woocommerce_blocks_checkout_order_processed', 'slicewp_insert_pending_commission_woo' );
+}
 
 // Update the status of the commission to "unpaid", thus marking it as complete
 add_action( 'woocommerce_order_status_completed', 'slicewp_accept_pending_commission_woo', 10, 1 );

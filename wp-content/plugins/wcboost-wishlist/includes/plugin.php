@@ -13,7 +13,7 @@ final class Plugin {
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.10';
+	public $version = '1.0.11';
 
 	/**
 	 * Query instance.
@@ -63,6 +63,7 @@ final class Plugin {
 	public function __construct() {
 		$this->includes();
 		$this->init();
+		$this->init_hooks();
 	}
 
 	/**
@@ -90,7 +91,7 @@ final class Plugin {
 	 * @return string
 	 */
 	public function plugin_basename() {
-		return dirname( plugin_basename( __FILE__ ), 2 ) . '/wcboost-wishlist.php';
+		return defined( 'WCBOOST_WISHLIST_PRO' ) ? WCBOOST_WISHLIST_PRO : WCBOOST_WISHLIST_FREE;
 	}
 
 	/**
@@ -99,20 +100,21 @@ final class Plugin {
 	 * @return void
 	 */
 	protected function includes() {
-		include_once 'helper.php';
-		include_once 'query.php';
-		include_once 'action-scheduler.php';
-		include_once 'form-handler.php';
-		include_once 'ajax-handler.php';
-		include_once 'frontend.php';
-		include_once 'shortcodes.php';
-		include_once 'compatibility.php';
-		include_once 'wishlist.php';
-		include_once 'wishlist-item.php';
-		include_once 'data-stores/wishlist.php';
-		include_once 'data-stores/wishlist-item.php';
-		include_once 'customizer/customizer.php';
-		include_once 'widgets/wishlist.php';
+		include_once __DIR__ . '/helper.php';
+		include_once __DIR__ . '/install.php';
+		include_once __DIR__ . '/query.php';
+		include_once __DIR__ . '/action-scheduler.php';
+		include_once __DIR__ . '/form-handler.php';
+		include_once __DIR__ . '/ajax-handler.php';
+		include_once __DIR__ . '/frontend.php';
+		include_once __DIR__ . '/shortcodes.php';
+		include_once __DIR__ . '/compatibility.php';
+		include_once __DIR__ . '/wishlist.php';
+		include_once __DIR__ . '/wishlist-item.php';
+		include_once __DIR__ . '/data-stores/wishlist.php';
+		include_once __DIR__ . '/data-stores/wishlist-item.php';
+		include_once __DIR__ . '/customizer/customizer.php';
+		include_once __DIR__ . '/widgets/wishlist.php';
 	}
 
 	/**
@@ -131,8 +133,6 @@ final class Plugin {
 
 		Customize\Customizer::instance();
 		Frontend::instance();
-
-		$this->init_hooks();
 	}
 
 	/**
@@ -213,6 +213,11 @@ final class Plugin {
 		return $pages;
 	}
 
+	/**
+	 * Register widgets
+	 *
+	 * @return void
+	 */
 	public function register_widgets() {
 		register_widget( '\WCBoost\Wishlist\Widget\Wishlist' );
 	}

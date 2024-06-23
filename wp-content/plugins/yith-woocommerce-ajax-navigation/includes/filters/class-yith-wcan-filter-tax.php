@@ -526,10 +526,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 					$children_result = $this->get_term_children( $term_id );
 
 					$term['children'] = $children_result['formatted_children'];
-					$term['products'] = $children_result['products'];
-
-					// set count.
-					$term['count'] = count( $term['products'] );
+					$term['count']    = $children_result['count'];
 
 					// if we need to remove empty terms, skip here when count is 0.
 					if ( $this->is_term_hidden( $term ) ) {
@@ -615,7 +612,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 					 * @return int
 					 */
 					'number'     => apply_filters( 'yith_wcan_filter_tax_term_limit', 0 ),
-					'fields'     => 'ids',
+					'fields'     => $this->is_hierarchical() ? 'id=>parent' : 'ids',
 					'hide_empty' => $hide_empty,
 					'orderby'    => $this->get_order_by(),
 				),
@@ -628,11 +625,21 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 				) : array(
 					'orderby' => $this->get_order_by(),
 				),
-				$this->is_hierarchical() ? array( 'parent' => 0 ) : array(),
+				'parents_only' === $this->get_hierarchical() ? array( 'parent' => 0 ) : array(),
 			);
 
 			// retrieve all terms in the correct order.
-			$term_ids = get_terms( $query_args );
+			$result = get_terms( $query_args );
+
+			if ( $this->is_hierarchical() ) {
+				foreach ( $result as $term_id => $parent_id ) {
+					if ( 0 === $parent_id || ! in_array( $parent_id, array_keys( $result ) ) ) {
+						$term_ids[] = $term_id;
+					}
+				}
+			} else {
+				$term_ids = $result;
+			}
 
 			// if we have some active filters, and we're paginating terms, make sure to include those (or their ancestors) as first results.
 			if ( $this->is_active() && $this->is_terms_pagination_required() ) {
@@ -674,7 +681,6 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 			$terms              = $this->get_terms_options();
 			$formatted_children = array();
 			$children           = array();
-			$products           = $this->get_term_products( $term_id );
 
 			$child_terms = get_terms(
 				array_merge(
@@ -697,6 +703,12 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 				)
 			);
 
+			$count = YITH_WCAN_Cache_Helper::get_for_current_query( 'products_in_term_count', $term_id );
+
+			if ( false === $count ) {
+				$products = $this->get_term_products( $term_id );
+			}
+
 			foreach ( $child_terms as $child_id ) {
 				if ( ! isset( $terms[ $child_id ] ) && ! $this->use_all_terms() ) {
 					continue;
@@ -707,9 +719,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 				// set hierarchical data.
 				$children_result   = $this->get_term_children( $child_id );
 				$child['children'] = $children_result['formatted_children'];
-
-				// set count.
-				$child['count'] = count( $children_result['products'] );
+				$child['count']    = $children_result['count'];
 
 				if ( $this->is_term_hidden( $child ) ) {
 					continue;
@@ -719,13 +729,22 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 
 				$children[] = $child_id;
 				$children   = array_merge( $children, $children_result['children'] );
-				$products   = array_unique( array_merge( $products, $children_result['products'] ) );
+
+				if ( false === $count ) {
+					$products = array_unique( array_merge( $products, $children_result['products'] ) );
+				}
+			}
+
+			if ( false === $count ) {
+				$count = ! empty( $products ) ? count( $products ) : 0;
+				YITH_WCAN_Cache_Helper::set_for_current_query( 'products_in_term_count', $count, $term_id );
 			}
 
 			return array(
 				'children'           => $children,
 				'formatted_children' => $formatted_children,
-				'products'           => $products,
+				'count'              => $count,
+				'products'           => $products ?? array(),
 			);
 		}
 
@@ -733,7 +752,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 		 * Retrieves products for passed term_id that matches current query
 		 *
 		 * @param int $term_id Term id.
-		 * @return array Array of matcihing product ids.
+		 * @return array Array of matching product ids.
 		 */
 		protected function get_term_products( $term_id ) {
 			$filter_by_current_values = 'yes' === $this->get_multiple() && 'and' === $this->get_relation();

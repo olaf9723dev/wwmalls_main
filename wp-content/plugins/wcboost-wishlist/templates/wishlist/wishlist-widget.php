@@ -6,7 +6,7 @@
  *
  * @author  WCBoost
  * @package WCBoost\Wishlist\Templates
- * @version 1.0
+ * @version 1.1
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -33,7 +33,7 @@ if ( ! $wishlist->is_empty() ) {
 			<li class="wcboost-wishlist-widget__item wcboost-wishlist-widget-item">
 				<?php do_action( 'wcboost_wishlist_widget_item_start', $_product, $item, $wishlist ); ?>
 
-				<a href="<?php echo esc_url( $item->get_remove_url() ) ?>" class="wcboost-wishlist-widget-item__remove remove">&times;</a>
+				<a href="<?php echo esc_url( $item->get_remove_url() ) ?>" class="wcboost-wishlist-widget-item__remove remove" rel="nofollow">&times;</a>
 
 				<?php if ( $_product->is_visible() ) : ?>
 					<a href="<?php echo esc_url( $_product->get_permalink() ); ?>" class="wcboost-wishlist-widget-item__link">

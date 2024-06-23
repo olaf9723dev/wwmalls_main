@@ -1,3 +1,6 @@
+= 1.255 =
+* WooCommerce 9.0 compatibility.
+
 = 1.254 =
 * Revised tags in readme.txt Added requirement flag for WooCommerce. Confirmed compatibility with WooCommerce 8.8
 

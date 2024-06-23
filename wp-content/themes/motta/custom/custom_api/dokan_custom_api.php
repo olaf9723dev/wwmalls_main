@@ -338,7 +338,6 @@
     });
     
     function update_nonc_products_rest_endpoint_callback(WP_REST_Request $request){
-        
         if (!wp_verify_nonce($request->get_header('X-WP-Nonce'), 'wp_rest')) {
             return new WP_REST_Response(array('message' => 'Invalid nonce'), 403);
         }
@@ -354,43 +353,73 @@
         }
         
         $product_infos = get_ext_product_infos($ext_product_ids);
+        
+        $debug_value = [];
         $updated_ext_datas = [];
-        // foreach($ext_product_ids as $ext_product_id){
-
-        //     if(!$product_info || !isset($product_info->wwmall_id)){
-        //         // Create
-        //         $values = create_new_product($product_info, $fee_rate); 
-        //         $wwmall_product_id = $values[0]; 
-        //         $wwmall_category_id = $values[1];
-        //         $updated_row = update_status($ext_product_id, $wwmall_product_id, $wwmall_category_id, $fee_rate, 'create');
-        //         array_push($updated_ext_datas, $updated_row);
-        //     }else{
-        //         // Update
-        //         if (is_exist_product($product_info->wwmall_id)){
-        //             $value = update_exist_product($product_info, $fee_rate);
-        //             $updated_row = update_status($ext_product_id, $product_info->wwmall_id, $value, $fee_rate, 'update');
-        //             array_push($updated_ext_datas, $updated_row);
-        //         }else{
-        //             $values = create_new_product($product_info, $fee_rate); 
-        //             $wwmall_product_id = $values[0]; 
-        //             $wwmall_category_id = $values[1];
-        //             $updated_row = update_status($ext_product_id, $wwmall_product_id, $wwmall_category_id, $fee_rate, 'create');
-        //             array_push($updated_ext_datas, $updated_row);
-        //         }
-        //     }
-        // }
-        return new WP_REST_Response(array('message' => 'success', 'data' => $product_infos), 200);
+        
+        foreach($product_infos as $product_info){
+            if(!isset($product_info->wwmall_id)){
+                $values = create_new_product($product_info, $fee_rate);
+                array_push($debug_value, $values[2]);
+                $wwmall_product_id = $values[0];
+                $wwmall_category_id = $values[1];
+                $updated_row = update_status($product_info->id, $wwmall_product_id, $wwmall_category_id, $fee_rate, 'create');
+                array_push($updated_ext_datas, $updated_row);
+                
+            }else{
+                // Update
+                if (is_exist_product($product_info->wwmall_id)){
+                    $value = update_exist_product($product_info, $fee_rate);
+                    $updated_row = update_status($product_info->id, $product_info->wwmall_id, $value, $fee_rate, 'update');
+                    array_push($updated_ext_datas, $updated_row);
+                    
+                }else{
+                    $values = create_new_product($product_info, $fee_rate); 
+                    $wwmall_product_id = $values[0]; 
+                    $wwmall_category_id = $values[1];
+                    $updated_row = update_status($product_info->id, $wwmall_product_id, $wwmall_category_id, $fee_rate, 'create');
+                    array_push($updated_ext_datas, $updated_row);
+                    
+                }
+            }
+        } 
+        return new WP_REST_Response(array('message' => 'success', 'data' => $updated_ext_datas, 'debug_value' => $debug_value), 200);
     }
 
-    function get_ext_product_info($ext_product_ids){
+    function get_ext_product_infos($ext_product_ids){
         global $wpdb;
-        $ids = implode(',', array_fill(0, count($ext_product_ids), '%d'));
-        $results = $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_products WHERE id IN ($ids)", ...$ext_product_ids));
+        
+        if (!is_array($ext_product_ids) || empty($ext_product_ids)) {
+            return [];
+        }
+        $ids = implode(',', array_fill(0, count($ext_product_ids), '%s'));
+        $query = $wpdb->prepare("SELECT * FROM wp_products WHERE id IN ($ids)", ...$ext_product_ids);
+        $results = $wpdb->get_results($query);
         return $results;
     }
     
-    function create_new_product($product_info, $fee_rate){
+    function set_product_brand($product_id, $brand_name){
+        if (!taxonomy_exists('product_brand')) {
+            return;
+        }
         
+        $term = term_exists($brand_name, 'product_brand');
+    
+        if ($term !== 0 && $term !== null) {
+            $term_id = $term['term_id'];
+        } else {
+            $new_term = wp_insert_term($brand_name, 'product_brand');
+            
+            if (is_wp_error($new_term)) {
+                return;
+            }
+            $term_id = $new_term['term_id'];
+        }
+    
+        wp_set_post_terms($product_id, array($term_id), 'product_brand');
+    }
+    
+    function create_new_product($product_info, $fee_rate){
         $product = new WC_Product_Simple();
         
         $product->set_name($product_info->name);
@@ -415,20 +444,24 @@
         
         $image_urls = json_decode($product_info->images, true);
         
-        $attachment_id = upload_image_to_media_library($image_urls[0]);
+        $attachment_id = upload_one_image_to_media_library($image_urls[0]);
+        
         $product->set_image_id($attachment_id);
         
         $gallery_image_ids = [];
-        
+
         foreach ($image_urls as $url) {
-            $gallery_image_ids[] = upload_image_to_media_library($url);
+            $gallery_image_ids[] = upload_product_gallery_image($url);
         }
-    
+        
         // Set the product gallery images
         $product->set_gallery_image_ids($gallery_image_ids);
         
         $product_id = $product->save();
         
+        set_product_brand($product_id, $product_info->brand);
+        
+        // return $gallery_image_ids;
         return [$product_id, $category_id];
     }
     
@@ -441,11 +474,11 @@
             return;
         }
         
-        // $product->set_name($product_info->name);
+        $product->set_name($product_info->name);
         
-        // $product->set_description($product_info->description);
+        $product->set_description($product_info->description);
         
-        // $product->set_short_description($product_info->description);
+        $product->set_short_description($product_info->description);
         
         $price = ($product_info->sale_price) * (1 + $fee_rate/100);
         
@@ -473,10 +506,12 @@
         
         $product->save();
         
+        // set_product_brand($product_id, $product_info->brand);
+        
         return $category_id;
     }
     
-    function upload_image_to_media_library($image_url) {
+    function upload_one_image_to_media_library($image_url) {
         $upload_dir = wp_upload_dir(); // Set upload folder
         $image_data = file_get_contents($image_url); // Get image data
         $filename = basename($image_url); // Create image file name
@@ -503,6 +538,50 @@
         wp_update_attachment_metadata($attach_id, $attach_data);
     
         return $attach_id;
+    }
+    
+    function upload_product_gallery_image($image_url){
+        $upload = upload_product_image_from_url(esc_url_raw($image_url));
+        
+        if ( is_wp_error( $upload ) ) {
+			throw new WC_API_Exception( 'woocommerce_api_cannot_upload_product_image', $upload->get_error_message(), 400 );
+		}
+		
+		$info    = wp_check_filetype( $upload['file'] );
+		$title   = '';
+		$content = '';
+
+		if ( $image_meta = @wp_read_image_metadata( $upload['file'] ) ) {
+			if ( trim( $image_meta['title'] ) && ! is_numeric( sanitize_title( $image_meta['title'] ) ) ) {
+				$title = wc_clean( $image_meta['title'] );
+			}
+			if ( trim( $image_meta['caption'] ) ) {
+				$content = wc_clean( $image_meta['caption'] );
+			}
+		}
+
+		$attachment = array(
+			'post_mime_type' => $info['type'],
+			'guid'           => $upload['url'],
+			'post_parent'    => $id,
+			'post_title'     => $title,
+			'post_content'   => $content,
+		);
+
+		$attachment_id = wp_insert_attachment( $attachment, $upload['file'], $id );
+		if ( ! is_wp_error( $attachment_id ) ) {
+			wp_update_attachment_metadata( $attachment_id, wp_generate_attachment_metadata( $attachment_id, $upload['file'] ) );
+		}
+
+		return $attachment_id;
+    }
+    
+    function upload_product_image_from_url( $image_url, $upload_for = 'product_image' ) {
+        $upload = wc_rest_upload_image_from_url( $image_url );
+		if ( is_wp_error( $upload ) ) {
+			throw new WC_API_Exception( 'woocommerce_api_' . $upload_for . '_upload_error', $upload->get_error_message(), 400 );
+		}
+		return $upload;
     }
     
     function update_status($ext_product_id, $wwmall_product_id, $wwmall_category_id, $fee_rate, $type){

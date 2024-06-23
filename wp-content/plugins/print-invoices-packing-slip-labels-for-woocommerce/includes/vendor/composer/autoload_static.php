@@ -4,13 +4,28 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb
+class ComposerStaticInitf7aa495248bc2ea80facf425c4db4f10
 {
+    public static $files = array (
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Wtpklistpdf\\Dompdf\\' => 19,
+        ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Iconv\\' => 23,
             'Svg\\' => 4,
             'Sabberworm\\CSS\\' => 15,
+        ),
+        'P' => 
+        array (
+            'Picqer\\Barcode\\' => 15,
         ),
         'M' => 
         array (
@@ -20,20 +35,32 @@ class ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb
         array (
             'FontLib\\' => 8,
         ),
-        'D' => 
-        array (
-            'Dompdf\\' => 7,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Wtpklistpdf\\Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Iconv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-iconv',
+        ),
         'Svg\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+            0 => __DIR__ . '/..' . '/dompdf/php-svg-lib/src/Svg',
         ),
         'Sabberworm\\CSS\\' => 
         array (
             0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
+        ),
+        'Picqer\\Barcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/picqer/php-barcode-generator/src',
         ),
         'Masterminds\\' => 
         array (
@@ -41,25 +68,21 @@ class ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb
         ),
         'FontLib\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
-        ),
-        'Dompdf\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
+            0 => __DIR__ . '/..' . '/dompdf/php-font-lib/src/FontLib',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
+        'Wtpklistpdf\\Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita93271dd13b797bc42be7fa85eb30ecb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf7aa495248bc2ea80facf425c4db4f10::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf7aa495248bc2ea80facf425c4db4f10::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf7aa495248bc2ea80facf425c4db4f10::$classMap;
 
         }, null, ClassLoader::class);
     }

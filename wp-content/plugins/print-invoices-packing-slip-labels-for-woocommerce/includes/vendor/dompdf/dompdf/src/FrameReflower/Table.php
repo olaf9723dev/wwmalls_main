@@ -4,11 +4,11 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace Wtpklistpdf\Dompdf\FrameReflower;
 
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\Table as TableFrameDecorator;
-use Dompdf\Helpers;
+use Wtpklistpdf\Dompdf\FrameDecorator\Block as BlockFrameDecorator;
+use Wtpklistpdf\Dompdf\FrameDecorator\Table as TableFrameDecorator;
+use Wtpklistpdf\Dompdf\Helpers;
 
 /**
  * Reflows tables

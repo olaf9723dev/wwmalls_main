@@ -135,6 +135,8 @@ if ( ! class_exists( 'YITH_WCAN_Install' ) ) {
 			// do incremental upgrade.
 			version_compare( self::$stored_version, '4.0.0', '<' ) && self::do_400_upgrade();
 			version_compare( self::$stored_version, '4.1.0', '<' ) && self::do_410_upgrade();
+			version_compare( self::$stored_version, '5.0.0', '<' ) && self::do_500_upgrade();
+			version_compare( self::$stored_version, '5.1.0', '<' ) && self::do_510_upgrade();
 
 			// space for future revisions.
 
@@ -277,6 +279,17 @@ if ( ! class_exists( 'YITH_WCAN_Install' ) ) {
 			 * Triggered after upgrade to version 5.0.0.
 			 */
 			do_action( 'yith_wcan_did_500_upgrade' );
+		}
+
+		/**
+		 * Upgrade options to version 5.1.0
+		 *
+		 * @return void.
+		 */
+		protected static function do_510_upgrade() {
+			$attribute_lookup_table = get_option( 'woocommerce_attribute_lookup_enabled' );
+
+			update_option( 'yith_woocommerce_variations_filtering', $attribute_lookup_table );
 		}
 
 		/**

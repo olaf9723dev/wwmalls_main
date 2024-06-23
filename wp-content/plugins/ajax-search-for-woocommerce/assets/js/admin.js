@@ -1580,7 +1580,7 @@
         },
         onChangeSearchStyle: function ($el, value) {
             var _this = this,
-                themes = ['solaris', 'pirx'],
+                themes = ['solaris', 'pirx', 'pirx-compact'],
                 $inputSubmitButton = $('input[id*="show_submit_button"]'),
                 $inputSubmitBgColor = $('label[for*="bg_submit_color"]'),
                 i;
@@ -1596,6 +1596,10 @@
 
             $('.js-dgwt-wcas-preview').addClass('dgwt-wcas-open-' + value);
             $('.js-dgwt-wcas-search-wrapp').addClass('dgwt-wcas-style-' + value);
+            if (value === 'pirx-compact') {
+                $('.js-dgwt-wcas-search-wrapp').addClass('dgwt-wcas-style-pirx');
+                $('.js-dgwt-wcas-ico-magnifier-pirx').removeClass('dgwt-wcas-hidden');
+            }
 
             $('label[for*="bg_input_underlay_color"]').closest('tr').removeClass('dgwt-wcas-hidden');
 
@@ -1620,7 +1624,7 @@
                 }, 300);
             }
 
-            if (value === 'pirx') {
+            if (value === 'pirx' || value === 'pirx-compact') {
                 $('label[for*="show_submit_button"] .js-dgwt-wcas-tooltip').removeClass('dgwt-wcas-hidden');
                 $('label[for*="search_submit_text"]').closest('tr').addClass('dgwt-wcas-hidden');
                 $('input[id*="search_submit_text"]').prop("disabled", true);
@@ -1630,7 +1634,7 @@
                 $('input[id*="search_submit_text"]').val('');
 
                 var $cPicker = $inputSubmitBgColor.closest('tr').find('.wp-picker-clear');
-                if($cPicker.length > 0){
+                if ($cPicker.length > 0) {
                     $cPicker[0].click();
                 }
                 _this.onColorBgSubmitColor();
@@ -1946,11 +1950,11 @@
                 style = $("select[id*='search_style'] option:selected").val(),
                 right = ($submit.width() + 35);
 
-            if (style == 'pirx') {
+            if (style === 'pirx' || style === 'pirx-compact') {
                 right = 38;
             }
 
-            if (!visible && style == 'solaris') {
+            if (!visible && style === 'solaris') {
                 right = 7;
             }
 
@@ -2030,7 +2034,7 @@
             });
 
         },
-        getSearchLayout: function(){
+        getSearchLayout: function () {
             return $("select[id*='search_layout'] option:selected").val();
         },
         startAnimateTyping: function () {

@@ -3,8 +3,8 @@ Contributors: optimole
 Tags: image optimization, convert webp, image optimizer, lazy load, image, optimization, convert AVIF, resize, free cdn, compress images, optimize images
 Requires at least: 5.5
 Tested up to: 6.5
-Requires PHP: 5.4
-Stable tag: 3.12.10
+Requires PHP: 7.4
+Stable tag: 3.13.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -44,7 +44,7 @@ You'll be free to concentrate on other aspects of your site with Optimole's set 
 So, if you have been looking for one plugin that provides lazy loading with a CDN and perfectly sized images, then Optimole is perfect for you.
 
 ### Checkout a quick overview of Optimole plugin
-https://youtu.be/nR9iGNJFxnE
+https://youtu.be/siCm0fhNes0
 
 ### How does it do all these great things?
 
@@ -150,9 +150,10 @@ Discover how to make the most of Optimole with our detailed and user-friendly [d
 
 == Changelog ==
 
-##### [Version 3.12.10](https://github.com/Codeinwp/optimole-wp/compare/v3.12.9...v3.12.10) (2024-04-19)
+##### [Version 3.13.3](https://github.com/Codeinwp/optimole-wp/compare/v3.13.2...v3.13.3) (2024-05-24)
 
-- Addressed an issue with offloading/rollback transfers getting stuck by adding a check for scheduled cron jobs. If no cron is scheduled and a transfer is in progress, the cron will be rescheduled.
+* Update dependencies
+* Improve API error handling to display more helpful messages.
 
 
 

@@ -9,7 +9,7 @@ class Action_Scheduler {
 	 * Init actions scheduler
 	 */
 	public static function init() {
-		add_filter( 'admin_init', [ __CLASS__, 'schedule' ] );
+		add_action( 'admin_init', [ __CLASS__, 'schedule' ] );
 
 		add_action( 'wcboost_wishlist_cleanup', [ __CLASS__, 'delete_expired_lists' ] );
 	}

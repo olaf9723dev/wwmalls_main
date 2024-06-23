@@ -12,14 +12,13 @@ if ( !defined( 'ABSPATH' ) ) {
  * Plugin URL: https://wordpress.org/plugins/product-gtin-ean-upc-isbn-for-woocommerce/
  * Author: Emanuela Castorina
  */
-class ProductGTINForWooCommerce
-{
+class ProductGTINForWooCommerce {
     /**
      * @var string EAN field key
      */
-    private  $eanField = '_wpm_gtin_code' ;
-    public function init()
-    {
+    private $eanField = '_wpm_gtin_code';
+
+    public function init() {
         if ( !defined( 'WPM_PRODUCT_GTIN_WC_VERSION' ) ) {
             return;
         }
@@ -31,25 +30,21 @@ class ProductGTINForWooCommerce
         }
         // Disable plugin hook on WP_Query.
         if ( !is_admin() ) {
-            
             if ( isset( wpm_product_gtin_wc()->frontend ) && get_option( 'wpm_pgw_search_by_code', 'no' ) === 'yes' ) {
-                remove_action( 'pre_get_posts', array( wpm_product_gtin_wc()->frontend, 'extend_product_search' ), 10 );
-                
+                remove_action( 'pre_get_posts', array(wpm_product_gtin_wc()->frontend, 'extend_product_search'), 10 );
                 if ( !dgoraAsfwFs()->is_premium() ) {
-                    add_filter( 'dgwt/wcas/native/search_query/join', array( $this, 'searchQueryJoin' ) );
+                    add_filter( 'dgwt/wcas/native/search_query/join', array($this, 'searchQueryJoin') );
                     add_filter(
                         'dgwt/wcas/native/search_query/search_or',
-                        array( $this, 'searchQueryOr' ),
+                        array($this, 'searchQueryOr'),
                         10,
                         2
                     );
                 }
-            
             }
-        
         }
     }
-    
+
     /**
      * Prepare join for EAN lookup
      *
@@ -57,15 +52,14 @@ class ProductGTINForWooCommerce
      *
      * @return string
      */
-    public function searchQueryJoin( $join )
-    {
-        global  $wpdb ;
+    public function searchQueryJoin( $join ) {
+        global $wpdb;
         if ( !strpos( $join, 'dgwt_wcasmsku' ) !== false ) {
             $join .= " INNER JOIN {$wpdb->postmeta} AS dgwt_wcasmean ON ( {$wpdb->posts}.ID = dgwt_wcasmean.post_id )";
         }
         return $join;
     }
-    
+
     /**
      * Inject EAN lookup into search query
      *
@@ -74,16 +68,13 @@ class ProductGTINForWooCommerce
      *
      * @return string
      */
-    public function searchQueryOr( $search, $like )
-    {
-        global  $wpdb ;
-        
+    public function searchQueryOr( $search, $like ) {
+        global $wpdb;
         if ( strpos( $search, 'dgwt_wcasmsku' ) !== false ) {
             $search .= $wpdb->prepare( " OR (dgwt_wcasmsku.meta_key=%s AND dgwt_wcasmsku.meta_value LIKE %s)", $this->eanField, $like );
         } else {
             $search .= $wpdb->prepare( " OR (dgwt_wcasmean.meta_key=%s AND dgwt_wcasmean.meta_value LIKE %s)", $this->eanField, $like );
         }
-        
         return $search;
     }
 

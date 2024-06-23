@@ -1,12 +1,12 @@
 === WCBoost - Products Compare ===
 Contributors: wcboost
 Tags: woocommerce, compare, product, product compare, woocommerce compare
-Tested up to: 6.4
-Stable tag: 1.0.4
+Tested up to: 6.5
+Stable tag: 1.0.5
 Requires PHP: 7.0
 Requires at least: 4.5
 WC requires at least: 3.0.0
-WC tested up to: 8.6
+WC tested up to: 8.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,25 +110,30 @@ Following the standards of WordPress and WooCommerce, you can find all the setti
 
 == Changelog ==
 
+= 1.0.5 =
+* Fix - Adds the nofollow attribute to compare buttons
+* Tweak - WordPress 6.5 compatibility.
+- Tweak – WooCommerce 8.9 compatibility.
+
 = 1.0.4 =
-* Update the shortcode and allow to select specific attributes for comparison.
-* Adds a new module to track products that users have compared.
-* Display a notice if themes include outdated templates of the plugin.
-* Support for WooCommerce 8.6
+* New - Adds a new module to track products that users have compared (optional).
+* New - Display a notice if themes include outdated templates of the plugin.
+* Update - Allows selecting attributes to compare in the shortcode.
+* Tweak - WooCommerce 8.6 compatibility.
 
 = 1.0.3 =
-* Resolve potential caching issues.
-* Support for WordPress 6.4
-* Support for WooCommerce 8.5
+* Fix - Resolve potential caching issues.
+* Tweak - WordPress 6.4 compatibility.
+* Tweak - WooCommerce 8.5 compatibility.
 
 = 1.0.2 =
-* Declare compatibility with the WooCommerce HPOS feature.
-* Support for WordPress 6.3
-* Support for WooCommerce 8.0
+* Tweak - Declare compatibility with the WooCommerce HPOS feature.
+* Tweak - WordPress 6.3 compatibility.
+* Tweak - WooCommerce 8.0 compatibility.
 
 = 1.0.1 =
-* Fix PHP warning when updating the widget.
-* Fix untranslatable words.
+* Fix - PHP warning when updating the widget.
+* Fix - Fix untranslatable words.
 
 = 1.0.0 =
 * Initial release.

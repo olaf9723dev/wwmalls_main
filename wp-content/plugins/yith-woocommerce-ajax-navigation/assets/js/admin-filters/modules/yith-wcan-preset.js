@@ -81,9 +81,9 @@ export default class YITH_WCAN_Preset {
 				.then( ( data ) => {
 					this.maybeSetId( data?.id );
 
-					const promises = this.filters
-						.values()
-						.map( ( filter ) => filter.save( false ) );
+					const promises = [ ...this.filters.values() ].map(
+						( filter ) => filter.save( false )
+					);
 
 					return Promise.all( promises );
 				} )
@@ -142,6 +142,7 @@ export default class YITH_WCAN_Preset {
 		const newFilterTemplate = wp.template( 'yith-wcan-filter' ),
 			newFilter = newFilterTemplate( {
 				id: index || this.nextRowIndex(),
+				key: this.filters.size,
 			} ),
 			$newFilter = $( newFilter ),
 			filter = new YITH_WCAN_Filter( $newFilter, this );
@@ -161,8 +162,6 @@ export default class YITH_WCAN_Preset {
 		this.maybeHideEmptyBox();
 
 		this.$mainAddNewFilterButton.show();
-
-		filter.$filter.trigger( 'yith_fields_init' );
 	}
 
 	afterFilterDelete( filter ) {
@@ -175,9 +174,9 @@ export default class YITH_WCAN_Preset {
 	}
 
 	closeAllFilters() {
-		const promises = this.filters
-			.values()
-			.map( ( filter ) => filter.close() );
+		const promises = [ ...this.filters.values() ].map( ( filter ) =>
+			filter.close()
+		);
 
 		return Promise.all( promises );
 	}
@@ -219,9 +218,10 @@ export default class YITH_WCAN_Preset {
 	}
 
 	validateFilters() {
-		return this.filters
-			.values()
-			.reduce( ( valid, filter ) => valid && filter.validate(), true );
+		return [ ...this.filters.values() ].reduce(
+			( valid, filter ) => valid && filter.validate(),
+			true
+		);
 	}
 
 	goToFilter( filter, $target ) {

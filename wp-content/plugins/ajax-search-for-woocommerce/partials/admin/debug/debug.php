@@ -13,7 +13,7 @@ $prefix = 'fibosearch-debug_page-';
 			<div class="dgwt-wcas-settings__title-top">
 				<div class="dgwt-wcas-settings-logo-wrapper">
 					<img class="dgwt-wcas-settings-logo" src="<?php 
-echo  DGWT_WCAS_URL . 'assets/img/logo-30.png' ;
+echo DGWT_WCAS_URL . 'assets/img/logo-30.png';
 ?>"/>
 					<span class="dgwt-wcas-settings-logo-pro">Pro</span>
 				</div>
@@ -36,7 +36,7 @@ $active = 'analytics';
 ?>
 
 	<div class="dgwt-wcas-settings-body js-dgwt-wcas-settings-body" data-dgwt-wcas-active="<?php 
-echo  esc_attr( $active ) ;
+echo esc_attr( $active );
 ?>">
 		<?php 
 ?>
@@ -66,19 +66,19 @@ include_once DGWT_WCAS_DIR . 'partials/admin/debug/body-maintenance.php';
 
 		// Switches option sections
 		$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>group').hide();
 		var activetab = '';
 
 		if (typeof (localStorage) != 'undefined') {
 			maybe_active = localStorage.getItem('<?php 
-echo  $prefix ;
+echo $prefix;
 ?>settings-active-tab');
 
 			if (maybe_active) {
 				// Check if tabs exists
 				$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').each(function () {
 
 					if ($(this).attr('href') === maybe_active) {
@@ -93,15 +93,15 @@ echo  $prefix ;
 			markActiveGroup($(activetab));
 		} else {
 			$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>group:first').fadeIn();
 			markActiveGroup($('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>group:first'));
 		}
 
 		$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>group .collapsed').each(function () {
 			$(this).find('input:checked').parent().parent().parent().nextAll().each(
 				function () {
@@ -117,29 +117,29 @@ echo  $prefix ;
 			$(activetab + '-tab').addClass('nav-tab-active');
 		} else {
 			$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>nav-tab-wrapper a:first').addClass('nav-tab-active');
 		}
 
 		$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').on('click', function (evt) {
 
 			if (typeof (localStorage) != 'undefined') {
 				localStorage.setItem('<?php 
-echo  $prefix ;
+echo $prefix;
 ?>settings-active-tab', $(this).attr('href'));
 			}
 
 			$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>nav-tab-wrapper a').removeClass('nav-tab-active');
 
 			$(this).addClass('nav-tab-active').trigger('blur');
 			var clicked_group = $(this).attr('href');
 
 			$('.<?php 
-echo  $prefix ;
+echo $prefix;
 ?>group').hide();
 			$(clicked_group).fadeIn();
 			markActiveGroup($(clicked_group));

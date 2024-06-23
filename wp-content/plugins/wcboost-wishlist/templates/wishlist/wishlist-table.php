@@ -6,7 +6,7 @@
  *
  * @author  WCBoost
  * @package WCBoost\Wishlist\Templates
- * @version 1.0
+ * @version 1.1
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -63,7 +63,7 @@ if ( ! isset( $wishlist ) ) {
 						echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							'wcboost_wishlist_item_remove_link',
 							sprintf(
-								'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+								'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s" rel="nofollow">&times;</a>',
 								esc_url( $item->get_remove_url() ),
 								esc_html__( 'Remove this item', 'wcboost-wishlist' ),
 								esc_attr( $_product->get_id() ),

@@ -4,15 +4,15 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace Wtpklistpdf\Dompdf\FrameReflower;
 
-use Dompdf\FrameDecorator\AbstractFrameDecorator;
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\TableCell as TableCellFrameDecorator;
-use Dompdf\FrameDecorator\Text as TextFrameDecorator;
-use Dompdf\Exception;
-use Dompdf\Css\Style;
-use Dompdf\Helpers;
+use Wtpklistpdf\Dompdf\FrameDecorator\AbstractFrameDecorator;
+use Wtpklistpdf\Dompdf\FrameDecorator\Block as BlockFrameDecorator;
+use Wtpklistpdf\Dompdf\FrameDecorator\TableCell as TableCellFrameDecorator;
+use Wtpklistpdf\Dompdf\FrameDecorator\Text as TextFrameDecorator;
+use Wtpklistpdf\Dompdf\Exception;
+use Wtpklistpdf\Dompdf\Css\Style;
+use Wtpklistpdf\Dompdf\Helpers;
 
 /**
  * Reflows block frames
@@ -273,9 +273,9 @@ class Block extends AbstractFrameReflower
      *
      * @return float
      */
-    protected function _calculate_content_height()
+    protected function _calculate_content_height(): float
     {
-        $height = 0;
+        $height = 0.0;
         $lines = $this->_frame->get_line_boxes();
         if (count($lines) > 0) {
             $last_line = end($lines);

@@ -2,7 +2,7 @@
 
 namespace DgoraWcas\Admin;
 
-use  DgoraWcas\Helpers ;
+use DgoraWcas\Helpers;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -20,96 +20,92 @@ if ( !defined( 'ABSPATH' ) ) {
  * @link http://tareq.weDevs.com Tareq's Planet
  * @example src/settings-api.php How to use the class
  */
-class SettingsAPI
-{
+class SettingsAPI {
     /**
      * settings sections array
      *
      * @var array
      */
-    private  $settings_sections = array() ;
+    private $settings_sections = array();
+
     /**
      * Settings fields array
      *
      * @var array
      */
-    private  $settingsFields = array() ;
+    private $settingsFields = array();
+
     /**
      * Singleton instance
      *
      * @var object
      */
-    private static  $_instance ;
+    private static $_instance;
+
     /*
      * Name
      */
-    private  $name ;
+    private $name;
+
     /*
      * Prefix
      */
-    private  $prefix ;
+    private $prefix;
+
     /*
      * Constructor
      *
      * @param string $prefix - unique prefix for CSS classes and other names
      */
-    public function __construct( $name = '' )
-    {
-        add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+    public function __construct( $name = '' ) {
+        add_action( 'admin_enqueue_scripts', array($this, 'admin_enqueue_scripts') );
         $this->name = sanitize_title( $name );
         $this->prefix = sanitize_title( $name ) . '-';
     }
-    
+
     /**
      * Enqueue scripts and styles
      */
-    function admin_enqueue_scripts()
-    {
-        
+    function admin_enqueue_scripts() {
         if ( Helpers::isSettingsPage() ) {
             wp_enqueue_style( 'wp-color-picker' );
             wp_enqueue_media();
             wp_enqueue_script( 'wp-color-picker' );
             wp_enqueue_script( 'jquery' );
         }
-    
     }
-    
+
     /**
      * Set settings sections
      *
      * @param array $sections setting sections array
      */
-    function set_sections( $sections )
-    {
+    function set_sections( $sections ) {
         $this->settings_sections = $sections;
         return $this;
     }
-    
+
     /**
      * Add a single section
      *
      * @param array $section
      */
-    function add_section( $section )
-    {
+    function add_section( $section ) {
         $this->settings_sections[] = $section;
         return $this;
     }
-    
+
     /**
      * Set settings fields
      *
      * @param array $fields settings fields array
      */
-    function set_fields( $fields )
-    {
+    function set_fields( $fields ) {
         $this->settingsFields = $fields;
         return $this;
     }
-    
-    function add_field( $section, $field )
-    {
+
+    function add_field( $section, $field ) {
         $defaults = array(
             'name'  => '',
             'label' => '',
@@ -120,7 +116,7 @@ class SettingsAPI
         $this->settingsFields[$section][] = $arg;
         return $this;
     }
-    
+
     /**
      * Initialize and registers the settings sections and fileds to WordPress
      *
@@ -129,25 +125,22 @@ class SettingsAPI
      * This function gets the initiated settings sections and fields. Then
      * registers them to WordPress and ready for use.
      */
-    public function settings_init()
-    {
+    public function settings_init() {
         if ( false == get_option( $this->name ) ) {
             add_option( $this->name );
         }
         //Register settings sections
         foreach ( $this->settings_sections as $section ) {
-            
-            if ( isset( $section['desc'] ) && !empty($section['desc']) ) {
+            if ( isset( $section['desc'] ) && !empty( $section['desc'] ) ) {
                 $section['desc'] = '<div class="inside">' . $section['desc'] . '</div>';
-                $callback = function () use( $section ) {
-                    echo  $section['desc'] ;
+                $callback = function () use($section) {
+                    echo $section['desc'];
                 };
             } elseif ( isset( $section['callback'] ) ) {
                 $callback = $section['callback'];
             } else {
                 $callback = null;
             }
-            
             add_settings_section(
                 $section['id'],
                 $section['title'],
@@ -180,7 +173,7 @@ class SettingsAPI
                 add_settings_field(
                     "{$this->name}[" . $option['name'] . ']',
                     $option['label'],
-                    array( $this, 'callback_' . $type ),
+                    array($this, 'callback_' . $type),
                     $section,
                     $section,
                     $args
@@ -189,43 +182,38 @@ class SettingsAPI
         }
         // Creates our settings in the options table
         foreach ( $this->settings_sections as $section ) {
-            register_setting( $section['id'], $this->name, array( $this, 'sanitize_options' ) );
+            register_setting( $section['id'], $this->name, array($this, 'sanitize_options') );
         }
     }
-    
+
     /**
      * Get field description for display
      *
      * @param array $args settings field args
      */
-    public function get_field_description( $args )
-    {
-        
-        if ( !empty($args['desc']) ) {
+    public function get_field_description( $args ) {
+        if ( !empty( $args['desc'] ) ) {
             $css_class = $this->prefix . 'description-field';
             $desc = sprintf( '<p class="%s">%s</p>', $css_class, $args['desc'] );
         } else {
             $desc = '';
         }
-        
         return $desc;
     }
-    
+
     /**
      * Head
      */
-    function callback_head( $args )
-    {
-        echo  '<span class="dgwt-wcas-settings-hr"></span>' ;
+    function callback_head( $args ) {
+        echo '<span class="dgwt-wcas-settings-hr"></span>';
     }
-    
+
     /**
      * Displays a text field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_text( $args )
-    {
+    function callback_text( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             esc_attr( $this->get_option( $args['id'], $args['std'] ) ),
@@ -234,7 +222,7 @@ class SettingsAPI
         );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
         $type = ( isset( $args['type'] ) ? $args['type'] : 'text' );
-        $disabled = ( !empty($args['disabled']) ? 'disabled' : '' );
+        $disabled = ( !empty( $args['disabled'] ) ? 'disabled' : '' );
         $numberMin = ( isset( $args['number_min'] ) ? ' min="' . $args['number_min'] . '"' : '' );
         $numberMax = ( isset( $args['number_max'] ) ? ' min="' . $args['number_max'] . '"' : '' );
         $html = '<fieldset class="dgwt-wcas-fieldset">';
@@ -251,44 +239,41 @@ class SettingsAPI
         );
         $html .= $this->get_field_description( $args );
         $html .= '</fieldset>';
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a url field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_url( $args )
-    {
+    function callback_url( $args ) {
         $this->callback_text( $args );
     }
-    
+
     /**
      * Displays a number field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_number( $args )
-    {
+    function callback_number( $args ) {
         $this->callback_text( $args );
     }
-    
+
     /**
      * Displays a checkbox for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_checkbox( $args )
-    {
+    function callback_checkbox( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             esc_attr( $this->get_option( $args['id'], $args['std'] ) ),
             $args['std'],
             $args
         );
-        $disabled = ( !empty($args['disabled']) ? 'disabled' : '' );
-        $moveDest = ( empty($args['move_dest']) ? '' : sprintf(
+        $disabled = ( !empty( $args['disabled'] ) ? 'disabled' : '' );
+        $moveDest = ( empty( $args['move_dest'] ) ? '' : sprintf(
             'data-move-dest="%1$s[%2$s]" class="%3$s"',
             $this->name,
             $args['move_dest'],
@@ -312,16 +297,15 @@ class SettingsAPI
         );
         $html .= sprintf( '<p class="%1$s-description-field">%2$s</p></label>', $this->name, $args['desc'] );
         $html .= '</fieldset>';
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a multicheckbox a settings field
      *
      * @param array $args settings field args
      */
-    function callback_multicheck( $args )
-    {
+    function callback_multicheck( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             $this->get_option( $args['id'], $args['std'] ),
@@ -348,16 +332,15 @@ class SettingsAPI
         }
         $html .= $this->get_field_description( $args );
         $html .= '</fieldset>';
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a multicheckbox a settings field
      *
      * @param array $args settings field args
      */
-    function callback_radio( $args )
-    {
+    function callback_radio( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             $this->get_option( $args['id'], $args['std'], false ),
@@ -385,16 +368,15 @@ class SettingsAPI
         }
         $html .= $this->get_field_description( $args );
         $html .= '</fieldset>';
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a selectbox for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_select( $args )
-    {
+    function callback_select( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             esc_attr( $this->get_option( $args['id'], $args['std'] ) ),
@@ -418,23 +400,22 @@ class SettingsAPI
         }
         $html .= sprintf( '</select>' );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a selectize multiple select for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_selectize( $args )
-    {
+    function callback_selectize( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             esc_attr( $this->get_option( $args['id'], $args['std'] ) ),
             $args['std'],
             $args
         );
-        $options = ( !empty($args['options']) && is_array( $args['options'] ) ? $args['options'] : array() );
+        $options = ( !empty( $args['options'] ) && is_array( $args['options'] ) ? $args['options'] : array() );
         $nonce = wp_create_nonce( 'dgwt_wcas_get_custom_fields' );
         $html = sprintf(
             '<input type="select-multiple" data-options="%4$s" class="dgwt-wcas-selectize" autocomplete="off" id="%1$s[%2$s]" name="%1$s[%2$s]" value="%3$s" data-security="%5$s"/>',
@@ -445,16 +426,15 @@ class SettingsAPI
             $nonce
         );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a textarea for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_textarea( $args )
-    {
+    function callback_textarea( $args ) {
         $value = apply_filters(
             'dgwt/wcas/settings/option_value',
             esc_textarea( $this->get_option( $args['id'], $args['std'] ) ),
@@ -462,7 +442,7 @@ class SettingsAPI
             $args
         );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
-        $rows = ( !empty($args['textarea_rows']) && is_numeric( $args['textarea_rows'] ) ? absint( $args['textarea_rows'] ) : 5 );
+        $rows = ( !empty( $args['textarea_rows'] ) && is_numeric( $args['textarea_rows'] ) ? absint( $args['textarea_rows'] ) : 5 );
         $html = sprintf(
             '<textarea rows="%5$d" cols="55" class="%1$s-text" id="%2$s[%3$s]" name="%2$s[%3$s]">%4$s</textarea>',
             $size,
@@ -472,9 +452,9 @@ class SettingsAPI
             $rows
         );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a textarea for a settings field
      *
@@ -482,29 +462,25 @@ class SettingsAPI
      *
      * @return void
      */
-    function callback_html( $args )
-    {
-        
-        if ( !empty($args['desc']) ) {
+    function callback_html( $args ) {
+        if ( !empty( $args['desc'] ) ) {
             $css_class = $this->prefix . 'description-row';
             $desc = sprintf( '<div class="%s">%s</div>', $css_class, $args['desc'] );
         } else {
             $desc = '';
         }
-        
-        echo  $desc ;
+        echo $desc;
     }
-    
+
     /**
      * Displays a rich text textarea for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_wysiwyg( $args )
-    {
+    function callback_wysiwyg( $args ) {
         $value = $this->get_option( $args['id'], $args['std'] );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : '500px' );
-        echo  '<div style="max-width: ' . $size . ';">' ;
+        echo '<div style="max-width: ' . $size . ';">';
         $editor_settings = array(
             'teeny'         => true,
             'textarea_name' => $this->name . '[' . $args['id'] . ']',
@@ -514,17 +490,16 @@ class SettingsAPI
             $editor_settings = array_merge( $editor_settings, $args['options'] );
         }
         wp_editor( $value, $this->name . '-' . $args['id'], $editor_settings );
-        echo  '</div>' ;
-        echo  $this->get_field_description( $args ) ;
+        echo '</div>';
+        echo $this->get_field_description( $args );
     }
-    
+
     /**
      * Displays a file upload field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_file( $args )
-    {
+    function callback_file( $args ) {
         $value = esc_attr( $this->get_option( $args['id'], $args['std'] ) );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
         $id = $this->name . '[' . $args['id'] . ']';
@@ -539,16 +514,15 @@ class SettingsAPI
         );
         $html .= '<input type="button" class="button ' . $this->prefix . 'browse" value="' . $label . '" />';
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a password field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_password( $args )
-    {
+    function callback_password( $args ) {
         $value = esc_attr( $this->get_option( $args['id'], $args['std'] ) );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
         $html = sprintf(
@@ -559,16 +533,15 @@ class SettingsAPI
             $value
         );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a color picker field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_color( $args )
-    {
+    function callback_color( $args ) {
         $value = esc_attr( $this->get_option( $args['id'], $args['std'] ) );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
         $html = sprintf(
@@ -580,34 +553,30 @@ class SettingsAPI
             $args['std']
         );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a color picker field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_desc( $args )
-    {
+    function callback_desc( $args ) {
         $html = '';
-        
-        if ( isset( $args['desc'] ) && !empty($args['desc']) ) {
+        if ( isset( $args['desc'] ) && !empty( $args['desc'] ) ) {
             $html .= '<div class="dgwt-wcas-settings-info">';
             $html .= $args['desc'];
             $html .= '</div>';
         }
-        
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays a color picker field for a settings field
      *
      * @param array $args settings field args
      */
-    function callback_datepicker( $args )
-    {
+    function callback_datepicker( $args ) {
         $value = esc_attr( $this->get_option( $args['id'], $args['std'] ) );
         $size = ( isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular' );
         $html = sprintf(
@@ -618,16 +587,15 @@ class SettingsAPI
             $value
         );
         $html .= $this->get_field_description( $args );
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Displays filters rules in settings
      *
      * @param array $args settings field args
      */
-    function callback_filters_rules_plug( $args )
-    {
+    function callback_filters_rules_plug( $args ) {
         ob_start();
         ?>
 		<div id="dgwt-wcas-settings-filters-rules">
@@ -642,30 +610,27 @@ class SettingsAPI
         ?></button>
 		</div>
 		<?php 
-        echo  ob_get_clean() ;
+        echo ob_get_clean();
     }
-    
+
     /**
      * Sanitize callback for Settings API
      */
-    function sanitize_options( $options )
-    {
-        if ( !isset( $options ) || empty($options) || !is_array( $options ) ) {
+    function sanitize_options( $options ) {
+        if ( !isset( $options ) || empty( $options ) || !is_array( $options ) ) {
             return $options;
         }
         foreach ( $options as $option_slug => $option_value ) {
             $sanitize_callback = $this->get_sanitize_callback( $option_slug );
             // If callback is set, call it
-            
             if ( $sanitize_callback ) {
                 $options[$option_slug] = call_user_func( $sanitize_callback, $option_value );
                 continue;
             }
-        
         }
         return $options;
     }
-    
+
     /**
      * Get sanitization callback for given option slug
      *
@@ -673,9 +638,8 @@ class SettingsAPI
      *
      * @return mixed string or bool false
      */
-    function get_sanitize_callback( $slug = '' )
-    {
-        if ( empty($slug) ) {
+    function get_sanitize_callback( $slug = '' ) {
+        if ( empty( $slug ) ) {
             return false;
         }
         // Iterate over registered fields and see if we can find proper callback
@@ -685,13 +649,13 @@ class SettingsAPI
                     continue;
                 }
                 // First check if sanitize_callback was added directly to the option
-                if ( !empty($option['sanitize_callback']) && is_callable( $option['sanitize_callback'] ) ) {
+                if ( !empty( $option['sanitize_callback'] ) && is_callable( $option['sanitize_callback'] ) ) {
                     return $option['sanitize_callback'];
                 }
                 // Not added? Sanitize it based on a type
                 switch ( $option['type'] ) {
                     case 'checkbox':
-                        $sanitize_callback = array( __CLASS__, 'sanitize_checkbox' );
+                        $sanitize_callback = array(__CLASS__, 'sanitize_checkbox');
                         break;
                     case 'number':
                         $sanitize_callback = 'intval';
@@ -701,7 +665,7 @@ class SettingsAPI
                         $sanitize_callback = 'wp_kses_post';
                         break;
                     case 'color':
-                        $sanitize_callback = array( __CLASS__, 'sanitize_color' );
+                        $sanitize_callback = array(__CLASS__, 'sanitize_color');
                         break;
                     case 'select':
                         $sanitize_callback = 'sanitize_key';
@@ -712,12 +676,12 @@ class SettingsAPI
                     default:
                         $sanitize_callback = 'wp_kses_post';
                 }
-                return ( !empty($sanitize_callback) && is_callable( $sanitize_callback ) ? $sanitize_callback : false );
+                return ( !empty( $sanitize_callback ) && is_callable( $sanitize_callback ) ? $sanitize_callback : false );
             }
         }
         return false;
     }
-    
+
     /**
      * Sanitize checkbox
      *
@@ -725,11 +689,10 @@ class SettingsAPI
      *
      * @return string
      */
-    public static function sanitize_checkbox( $value )
-    {
-        return ( in_array( $value, array( 'on', 'off' ) ) ? $value : '' );
+    public static function sanitize_checkbox( $value ) {
+        return ( in_array( $value, array('on', 'off') ) ? $value : '' );
     }
-    
+
     /**
      * Sanitize color
      *
@@ -737,11 +700,10 @@ class SettingsAPI
      *
      * @return string
      */
-    public static function sanitize_color( $value )
-    {
+    public static function sanitize_color( $value ) {
         return ( preg_match( '/^#[a-f0-9]{6}$/i', $value ) ? $value : '' );
     }
-    
+
     /**
      * Sanitize text for "No results" field.
      *
@@ -749,11 +711,10 @@ class SettingsAPI
      *
      * @return string
      */
-    public static function sanitize_no_results_field( $value )
-    {
+    public static function sanitize_no_results_field( $value ) {
         return Helpers::ksesNoResults( $value );
     }
-    
+
     /**
      * Strip all tags
      *
@@ -761,11 +722,10 @@ class SettingsAPI
      *
      * @return string
      */
-    public static function strip_all_tags( $value )
-    {
+    public static function strip_all_tags( $value ) {
         return wp_strip_all_tags( $value, true );
     }
-    
+
     /**
      * Sanitize natural numbers
      *
@@ -773,12 +733,11 @@ class SettingsAPI
      *
      * @return int
      */
-    public static function sanitize_natural_numbers( $value )
-    {
+    public static function sanitize_natural_numbers( $value ) {
         $number = absint( $value );
         return ( $number === 0 ? 1 : $number );
     }
-    
+
     /**
      * Get the value of a settings field
      *
@@ -788,31 +747,27 @@ class SettingsAPI
      *
      * @return string
      */
-    function get_option( $option, $default = '', $allow_empty = true )
-    {
+    function get_option( $option, $default = '', $allow_empty = true ) {
         $options = get_option( $this->name );
         $value = $default;
         if ( isset( $options[$option] ) ) {
-            
             if ( $allow_empty ) {
                 $value = $options[$option];
             } else {
-                if ( !empty($options[$option]) ) {
+                if ( !empty( $options[$option] ) ) {
                     $value = $options[$option];
                 }
             }
-        
         }
         return apply_filters( 'dgwt/wcas/settings/load_value/key=' . $option, $value );
     }
-    
+
     /**
      * Show navigations as tab
      *
      * Shows all the settings section labels as tab
      */
-    function show_navigation()
-    {
+    function show_navigation() {
         $html = '<h2 class="nav-tab-wrapper ' . $this->prefix . 'nav-tab-wrapper">';
         foreach ( $this->settings_sections as $tab ) {
             $html .= sprintf( '<a href="#%1$s" class="nav-tab" id="%1$s-tab">%2$s</a>', $tab['id'], $tab['title'] );
@@ -824,16 +779,15 @@ class SettingsAPI
             $html .= '<a target="_blank" href="https://fibosearch.com/showcase/?utm_source=wp-admin&utm_medium=referral&utm_campaign=settings&utm_content=showcase&utm_gen=utmdc" class="js-nav-tab-minor nav-tab-minor nav-tab-minor-showcase" >' . __( 'Showcase', 'ajax-search-for-woocommerce' ) . '</a>';
         }
         $html .= '</h2>';
-        echo  $html ;
+        echo $html;
     }
-    
+
     /**
      * Show the section settings forms
      *
      * This function displays every sections in a different form
      */
-    function show_forms()
-    {
+    function show_forms() {
         ?>
 		<div class="metabox-holder">
 			<form class="dgwt-eq-settings-form" method="post" action="options.php">
@@ -841,9 +795,9 @@ class SettingsAPI
         foreach ( $this->settings_sections as $form ) {
             ?>
 					<div id="<?php 
-            echo  $form['id'] ;
+            echo $form['id'];
             ?>" class="<?php 
-            echo  $this->prefix ;
+            echo $this->prefix;
             ?>group"
 						 style="display: none;">
 
@@ -870,7 +824,7 @@ class SettingsAPI
 		<?php 
         $this->script();
     }
-    
+
     /**
      * Tabbable JavaScript codes & Initiate Color Picker
      *
@@ -878,8 +832,7 @@ class SettingsAPI
      *
      * @return void
      */
-    public function script()
-    {
+    public function script() {
         ?>
 		<script>
 			jQuery(document).ready(function ($) {
@@ -947,19 +900,19 @@ class SettingsAPI
 
 				// Switches option sections
 				$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>group').hide();
 				var activetab = '';
 				var maybe_active = '';
 
 				if (typeof (localStorage) !== 'undefined') {
 					maybe_active = localStorage.getItem('<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>settings-active-tab');
 					if (maybe_active) {
 						// Check if tabs exists
 						$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').each(function () {
 							if ($(this).attr('href') === maybe_active) {
 								activetab = maybe_active;
@@ -972,7 +925,7 @@ class SettingsAPI
 					var maybe_active_href = getOldTabHref(window.location.hash);
 					// Check if tabs exists
 					$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').each(function () {
 						if ($(this).attr('href') === maybe_active_href) {
 							activetab = maybe_active_href;
@@ -985,14 +938,14 @@ class SettingsAPI
 					markActiveGroup($(activetab));
 				} else {
 					$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>group:first').fadeIn();
 					markActiveGroup($('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>group:first'));
 				}
 				$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>group .collapsed').each(function () {
 					$(this).find('input:checked').parent().parent().parent().nextAll().each(
 						function () {
@@ -1009,22 +962,22 @@ class SettingsAPI
 					history.pushState({}, "", getNewTabHref(activetab));
 				} else {
 					$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>nav-tab-wrapper a:first').addClass('nav-tab-active');
 				}
 				$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>nav-tab-wrapper a:not(.js-nav-tab-minor)').on('click', function (evt) {
 					if (typeof (localStorage) !== 'undefined') {
 						localStorage.setItem('<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>settings-active-tab', $(this).attr('href'));
 					}
 
 					history.pushState({}, "", getNewTabHref($(this).attr('href')));
 
 					$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>nav-tab-wrapper a').removeClass('nav-tab-active');
 
 					$(this).addClass('nav-tab-active').blur();
@@ -1032,7 +985,7 @@ class SettingsAPI
 
 
 					$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>group').hide();
 					$(clicked_group).fadeIn();
 					markActiveGroup($(clicked_group));
@@ -1040,7 +993,7 @@ class SettingsAPI
 				});
 
 				$('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>browse').on('click', function (event) {
 					event.preventDefault();
 
@@ -1059,7 +1012,7 @@ class SettingsAPI
 						attachment = file_frame.state().get('selection').first().toJSON();
 
 						self.prev('.<?php 
-        echo  $this->prefix ;
+        echo $this->prefix;
         ?>url').val(attachment.url);
 					});
 

@@ -4,12 +4,11 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace Wtpklistpdf\Dompdf\FrameDecorator;
 
-use Dompdf\Dompdf;
-use Dompdf\Frame;
-use Dompdf\Helpers;
-use Dompdf\Image\Cache;
+use Wtpklistpdf\Dompdf\Dompdf;
+use Wtpklistpdf\Dompdf\Frame;
+use Wtpklistpdf\Dompdf\Image\Cache;
 
 /**
  * Decorates frames for list bullets with custom images

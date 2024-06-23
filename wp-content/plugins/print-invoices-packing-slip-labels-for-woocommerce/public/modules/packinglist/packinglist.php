@@ -309,6 +309,13 @@ class Wf_Woocommerce_Packing_List_Packinglist
 	    		}    
 		        if(!is_null($this->customizer))
 		        {
+					if( count( $order_ids ) > 1 ) {
+						$sort_order = apply_filters( 'wt_pklist_sort_orders', 'desc', $this->module_base, $action ); // To choose the sorting of the orders when doing bulk print or download.
+						if ( 'asc' ===  $sort_order ) {
+							sort( $order_ids );
+						}
+					}
+					
 		        	$pdf_name=$this->customizer->generate_pdf_name($this->module_base, $order_ids);
 		        	$this->customizer->template_for_pdf=("download_packinglist" === $action ? true : false);	        	
 		        	$html=$this->generate_order_template($order_ids,$pdf_name);				

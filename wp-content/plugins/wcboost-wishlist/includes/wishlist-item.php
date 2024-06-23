@@ -377,8 +377,13 @@ class Wishlist_Item extends \WC_Data {
 	 * @return string
 	 */
 	public function get_add_url() {
-		$referer = is_feed() || is_404() ? $this->get_product()->get_permalink() : '';
-		$url     = add_query_arg( [ 'add-to-wishlist' => $this->get_product()->get_id() ], $referer );
+		$url = remove_query_arg(
+			'added-to-wishlist',
+			add_query_arg(
+				[ 'add-to-wishlist' => $this->get_product()->get_id() ],
+				is_feed() || is_404() ? $this->get_product()->get_permalink() : ''
+			)
+		);
 
 		return apply_filters( 'wcboost_wishlist_add_to_wishlist_url', $url, $this );
 	}
@@ -389,11 +394,16 @@ class Wishlist_Item extends \WC_Data {
 	 * @return string
 	 */
 	public function get_remove_url() {
-		$referer = is_feed() || is_404() ? $this->get_product()->get_permalink() : '';
-		$url     = add_query_arg( [
-			'remove-wishlist-item' => $this->get_item_key(),
-			'_wpnonce' => wp_create_nonce( 'wcboost-wishlist-remove-item' )
-		], $referer );
+		$url = remove_query_arg(
+			'removed-wishlist-item',
+			add_query_arg(
+				[
+					'remove-wishlist-item' => $this->get_item_key(),
+					'_wpnonce' => wp_create_nonce( 'wcboost-wishlist-remove-item' )
+				],
+				is_feed() || is_404() ? $this->get_product()->get_permalink() : ''
+			)
+		);
 
 		return apply_filters( 'wcboost_wishlist_remove_from_wishlist_url', $url, $this );
 	}

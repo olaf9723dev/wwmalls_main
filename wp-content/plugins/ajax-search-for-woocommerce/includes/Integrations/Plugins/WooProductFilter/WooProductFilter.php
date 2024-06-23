@@ -2,7 +2,7 @@
 
 namespace DgoraWcas\Integrations\Plugins\WooProductFilter;
 
-use  DgoraWcas\Helpers ;
+use DgoraWcas\Helpers;
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -13,10 +13,8 @@ if ( !defined( 'ABSPATH' ) ) {
  * Plugin URL: https://wordpress.org/plugins/woo-product-filter/
  * Author: WooBeWoo
  */
-class WooProductFilter
-{
-    public function init()
-    {
+class WooProductFilter {
+    public function init() {
         if ( !defined( 'WPF_VERSION' ) ) {
             return;
         }
@@ -24,10 +22,10 @@ class WooProductFilter
             return;
         }
         // TODO This filter must be added by the plugin author
-        add_filter( 'wpf_getFilteredPriceSql', array( $this, 'filter_price_sql' ) );
-        add_action( 'pre_get_posts', array( $this, 'pre_get_posts' ) );
+        add_filter( 'wpf_getFilteredPriceSql', array($this, 'filter_price_sql') );
+        add_action( 'pre_get_posts', array($this, 'pre_get_posts') );
     }
-    
+
     /**
      * Narrowing the list of products for determining edge prices to those returned by our search engine
      *
@@ -35,16 +33,15 @@ class WooProductFilter
      *
      * @return string
      */
-    public function filter_price_sql( $sql )
-    {
-        global  $wpdb ;
+    public function filter_price_sql( $sql ) {
+        global $wpdb;
         $post_ids = apply_filters( 'dgwt/wcas/search_page/result_post_ids', array() );
         if ( $post_ids ) {
             $sql .= " AND {$wpdb->posts}.ID IN(" . implode( ',', $post_ids ) . ")";
         }
         return $sql;
     }
-    
+
     /**
      * Narrow the list of products in the AJAX search to those returned by our search engine
      *
@@ -52,8 +49,7 @@ class WooProductFilter
      *
      * @param \WP_Query $query
      */
-    public function pre_get_posts( $query )
-    {
+    public function pre_get_posts( $query ) {
         if ( !defined( 'DOING_AJAX' ) ) {
             return;
         }
@@ -74,17 +70,17 @@ class WooProductFilter
         // parse args from url passed as POST var
         $url_query = wp_parse_url( $_POST['currenturl'] );
         $url_query_args = array();
-        if ( empty($url_query['query']) ) {
+        if ( empty( $url_query['query'] ) ) {
             return;
         }
         wp_parse_str( $url_query['query'], $url_query_args );
         if ( !isset( $url_query_args['dgwt_wcas'] ) || !isset( $url_query_args['s'] ) ) {
             return;
         }
-        if ( !empty($url_query_args['orderby']) ) {
+        if ( !empty( $url_query_args['orderby'] ) ) {
             $orderby = wc_clean( wp_unslash( $url_query_args['orderby'] ) );
         }
-        if ( !empty($url_query_args['order']) ) {
+        if ( !empty( $url_query_args['order'] ) ) {
             $order = strtolower( wc_clean( wp_unslash( $url_query_args['order'] ) ) );
         }
         if ( $orderby === 'price' ) {
@@ -94,7 +90,6 @@ class WooProductFilter
         if ( !dgoraAsfwFs()->is_premium() ) {
             $post_ids = Helpers::searchProducts( $url_query_args['s'] );
         }
-        
         if ( $post_ids ) {
             if ( version_compare( WPF_VERSION, '1.4.8', '>=' ) ) {
                 $query->set( 's', '' );
@@ -102,7 +97,6 @@ class WooProductFilter
             $query->set( 'post__in', $post_ids );
             $query->set( 'orderby', 'post__in' );
         }
-    
     }
 
 }

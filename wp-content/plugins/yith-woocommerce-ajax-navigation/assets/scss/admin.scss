@@ -465,6 +465,7 @@ $item_row_hover_border: #c4cfd3;
 
 			& > label {
 				width: 180px;
+				margin-bottom: 8px;
 			}
 
 			input {
@@ -522,12 +523,15 @@ $item_row_hover_border: #c4cfd3;
 					.wp-picker-container {
 						background-color: #fff;
 						display: block;
+						white-space: nowrap;
+						overflow: hidden;
 
 						label {
 							margin-bottom: 0;
 						}
 
 						.wp-picker-default-custom {
+							background: white;
 							position: absolute;
 							right: 10px;
 							top: 10px;
@@ -755,6 +759,25 @@ $item_row_hover_border: #c4cfd3;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+	}
+}
+
+@media ( max-width: 1440px ) {
+	#yith_wcan_panel_filter-preset-edit {
+		.filter-row {
+			.yith-toggle-content-row {
+				.yith-plugin-fw-onoff-field-wrapper {
+					float: right;
+					margin-top: -40px;
+				}
+
+				.terms-wrapper {
+					.term-box {
+						width: calc(50% - 20px);
+					}
+				}
+			}
 		}
 	}
 }

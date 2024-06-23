@@ -43,14 +43,14 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 		protected $supported_taxonomies = array();
 
 		/**
-		 * Products retrieved by by last query
+		 * An array of product ids matching current query
 		 *
 		 * @var array
 		 */
-		protected $products = array();
+		protected $products_per_query = array();
 
 		/**
-		 * An array of product ids matcing current query, per filter
+		 * An array of product ids matching current query, per filter
 		 *
 		 * @var array
 		 */
@@ -93,7 +93,6 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 
 			// let's start filtering.
 			add_action( 'wp', array( $this, 'start_filtering' ) );
-			add_action( 'wp', array( $this, 'register_products' ) );
 
 			// alter default wc query.
 			add_action( 'woocommerce_product_query', array( $this, 'alter_product_query' ), 10, 1 );
@@ -499,7 +498,7 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			}
 
 			$calculate_hash = md5( http_build_query( $query_vars ) );
-			$product_ids    = YITH_WCAN_Cache_Helper::get( 'queried_products', $calculate_hash );
+			$product_ids    = $this->products_per_query[ $calculate_hash ] ?? array();
 
 			if ( ! $product_ids ) {
 				// store original query values, and switch to current context.
@@ -540,7 +539,7 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 				$product_ids = $query->get_posts();
 
 				// save result set to stored queries.
-				YITH_WCAN_Cache_Helper::set( 'queried_products', $product_ids, $calculate_hash );
+				$this->products_per_query[ $calculate_hash ] = $product_ids;
 
 				// reset original query values.
 				$this->query_vars        = $tmp_query_vars;
@@ -1020,28 +1019,6 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			return $redirect;
 		}
 
-		/**
-		 * Register an array of filtered products
-		 *
-		 * @return void
-		 */
-		public function register_products() {
-			/**
-			 * APPLY_FILTERS: yith_wcan_process_filters_intersection
-			 *
-			 * Whether to process intersections between current product list and filter result set
-			 *
-			 * @param bool $process Whether to process intersection.
-			 *
-			 * @return bool
-			 */
-			if ( ! $this->is_filtered() || ! empty( $this->products ) || ! apply_filters( 'yith_wcan_process_filters_intersection', true ) ) {
-				return;
-			}
-
-			$this->products = $this->get_filtered_products_by_query_vars();
-		}
-
 		/* === ALTER DEFAULT WC QUERY === */
 
 		/**
@@ -1259,14 +1236,7 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			if ( isset( $this->products_per_filter[ $taxonomy ][ $term_id ] ) ) {
 				return $this->products_per_filter[ $taxonomy ][ $term_id ];
 			} else {
-				$posts = YITH_WCAN_Cache_Helper::get( 'object_in_terms', $term_id );
-
-				if ( ! $posts ) {
-					$posts = get_objects_in_term( $term_id, $taxonomy );
-
-					// save result set to stored queries.
-					YITH_WCAN_Cache_Helper::set( 'object_in_terms', $posts, $term_id );
-				}
+				$posts = get_objects_in_term( $term_id, $taxonomy );
 
 				if ( is_wp_error( $posts ) ) {
 					return array();

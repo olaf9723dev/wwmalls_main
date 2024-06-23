@@ -408,6 +408,7 @@
 }
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row > label {
   width: 180px;
+  margin-bottom: 8px;
 }
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row input {
   height: auto;
@@ -461,6 +462,8 @@
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .ranges-wrapper .term-box .wp-picker-container {
   background-color: #fff;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .terms-wrapper .term-box .wp-picker-container label,
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .ranges-wrapper .term-box .wp-picker-container label {
@@ -468,6 +471,7 @@
 }
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .terms-wrapper .term-box .wp-picker-container .wp-picker-default-custom,
 #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .ranges-wrapper .term-box .wp-picker-container .wp-picker-default-custom {
+  background: white;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -705,6 +709,15 @@
   transform: translateY(-50%);
 }
 
+@media (max-width: 1440px) {
+  #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .yith-plugin-fw-onoff-field-wrapper {
+    float: right;
+    margin-top: -40px;
+  }
+  #yith_wcan_panel_filter-preset-edit .filter-row .yith-toggle-content-row .terms-wrapper .term-box {
+    width: calc(50% - 20px);
+  }
+}
 /* === Widget Area === */
 .yith_wcan_placeholder + .spinner {
   background-position: center;

@@ -12,7 +12,7 @@ add_filter( 'et_builder_load_requests', function ( $requests ) {
 	$requests['wc-ajax'][] = 'dgwt_wcas_result_details';
 
 	return $requests;
-} );
+}, 15 );
 
 add_action( 'wp_footer', function () {
 	echo '<div id="wcas-divi-search" style="display: block;">' . do_shortcode( '[wcas-search-form layout="classic" mobile_overlay="1" mobile_breakpoint="980" ]' ) . '</div>';

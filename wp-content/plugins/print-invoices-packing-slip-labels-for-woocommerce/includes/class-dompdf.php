@@ -18,10 +18,6 @@ class Wt_Pklist_Dompdf
 	{
 		$path=plugin_dir_path(__FILE__).'vendor/';
         include_once($path.'autoload.php');
-
-        // initiate dompdf class
-        $this->dompdf = new Dompdf\Dompdf();
-        $this->option = new Dompdf\Options();
 	}
 
     /**
@@ -50,7 +46,8 @@ class Wt_Pklist_Dompdf
         $paper_size         = ( true === $dompdf_options_set && isset( $dompdf_options['paper_size'] ) && !empty( $dompdf_options['paper_size'] ) ) ? $dompdf_options['paper_size'] : $dompdf_options_default['paper_size'];
         $paper_orientation  = ( true === $dompdf_options_set && isset( $dompdf_options['paper_orientation'] ) && !empty( $dompdf_options['paper_orientation'] ) ) ? $dompdf_options['paper_orientation'] : $dompdf_options_default['paper_orientation'];
 
-        $this->dompdf->setPaper($paper_size, $paper_orientation);
+        // initiate dompdf option.
+        $this->option = new Wtpklistpdf\Dompdf\Options();
         $this->option->set('isHtml5ParserEnabled', true);
         $this->option->set('enableCssFloat', true);
         $this->option->set('isRemoteEnabled', true);
@@ -59,7 +56,10 @@ class Wt_Pklist_Dompdf
         $this->option->set('enable_font_subsetting', true);
         $this->option->set('isFontSubsettingEnabled',true);
         $this->option = apply_filters( 'wt_pklist_alter_dompdf_options', $this->option, $template_type);
-        $this->dompdf->setOptions($this->option);
+       
+        // initialize the dompdf with required options.
+        $this->dompdf = new \Wtpklistpdf\Dompdf\Dompdf( $this->option );
+        $this->dompdf->setPaper($paper_size, $paper_orientation);
 
         // (Optional) Setup the paper size and orientation
         $this->dompdf->loadHtml($html);

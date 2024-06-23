@@ -97,7 +97,7 @@ if ( ! class_exists( 'YITH_WCAN_Cache_Helper' ) ) {
 		}
 
 		/**
-		 *  Sets a specific value in a transient
+		 * Sets a specific value in a transient
 		 *
 		 * @param string $transient Transient name.
 		 * @param mixed  $value     Value to set; could be the entire transient value, or value of a specific index of the transient, assuming it is an array.
@@ -273,6 +273,69 @@ if ( ! class_exists( 'YITH_WCAN_Cache_Helper' ) ) {
 			$wpdb->query( $wpdb->prepare( $query, $args ) ); // phpcs:ignore WordPress.DB
 		}
 
+		/* === QUERY RELATED CACHE === */
+
+		/**
+		 * Returns a query-related index to be used in the cache
+		 *
+		 * @param array $query_vars Array of query vars used to generate cache index,
+		 * @return string
+		 */
+		public static function get_query_index( $query_vars = array() ) {
+			$query_vars = $query_vars ? $query_vars : YITH_WCAN_Query()->get_query_vars();
+
+			return md5( http_build_query( $query_vars ) );
+		}
+
+		/**
+		 * Returns a specific value in a transient, indexed by an hash that is sensible to current query
+		 *
+		 * @param string $transient Transient name.
+		 * @param string $index     Optional transient's index to return (assumes transient is an array).
+		 *
+		 * @return mixed Value of the transient (or value of the specific index inside transient).
+		 */
+		public static function get_for_current_query( $transient, $index = null ) {
+			$query_index     = self::get_query_index();
+			$transient_value = self::get( $transient, $query_index );
+
+			if ( ! $index ) {
+				return $transient_value;
+			}
+
+			if ( ! isset( $transient_value[ $index ] ) ) {
+				return false;
+			}
+
+			return apply_filters( 'yith_wcan_get_transient_for_current_query', $transient_value[ $index ], $transient, $index, $query_index );
+		}
+
+		/**
+		 * Sets a specific value in a transient, indexed by an hash that is sensible to current query
+		 *
+		 * @param string $transient Transient name.
+		 * @param mixed  $value     Value to set; could be the entire transient value, or value of a specific index of the transient, assuming it is an array.
+		 * @param string $index     Optional transient's index to set (assumes transient is an array).
+		 * @param bool   $now       Whether to save transient immediately or allow system to do it at shutdown.
+		 *
+		 * @return bool|mixed False on failure, new value otherwise.
+		 */
+		public static function set_for_current_query( $transient, $value, $index = null, $now = false ) {
+			$query_index     = self::get_query_index();
+			$transient_value = self::get( $transient, $query_index );
+
+			if ( is_null( $index ) ) {
+				$transient_value = $value;
+			} else {
+				if ( empty( $transient_value ) ) {
+					$transient_value = array();
+				}
+				$transient_value[ $index ] = $value;
+			}
+
+			return self::set( $transient, $transient_value, $query_index, $now );
+		}
+
 		/**
 		 * Init supported transients
 		 *
@@ -284,10 +347,17 @@ if ( ! class_exists( 'YITH_WCAN_Cache_Helper' ) ) {
 
 			$transient_array    = array();
 			$builtin_transients = array(
-				'queried_products',
-				'queried_products_or_variations',
-				'object_in_terms',
+				'single_matching_variation',
 				'products_instock',
+
+				'products_in_term_count',
+				'products_in_stock_count',
+				'products_on_sale_count',
+				'products_featured_count',
+				'products_rated_count',
+
+				'min_price',
+				'max_price',
 			);
 
 			foreach ( $builtin_transients as $transient ) {

@@ -4,11 +4,11 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace Wtpklistpdf\Dompdf\FrameDecorator;
 
-use Dompdf\Dompdf;
-use Dompdf\Frame;
-use Dompdf\LineBox;
+use Wtpklistpdf\Dompdf\Dompdf;
+use Wtpklistpdf\Dompdf\Frame;
+use Wtpklistpdf\Dompdf\LineBox;
 
 /**
  * Decorates frames for block layout
@@ -166,7 +166,7 @@ class Block extends AbstractFrameDecorator
         $i = $this->_cl;
         $j = null;
 
-        while ($i > 0) {
+        while ($i >= 0) {
             $line = $this->_line_boxes[$i];
             foreach ($line->get_frames() as $index => $f) {
                 if ($frame === $f) {

@@ -7,8 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WeDevs\\WeMail\\' => array($baseDir . '/includes'),
-    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
-    'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'League\\Csv\\' => array($vendorDir . '/league/csv/src'),
     'Appsero\\' => array($vendorDir . '/appsero/client/src'),
 );

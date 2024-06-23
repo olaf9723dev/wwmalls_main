@@ -235,7 +235,7 @@ function slicewp_output_select2_user_search( $args, $return = false ) {
 
 
 /**
- * Outputs a select field containing a list of posts
+ * Outputs a select field containing a list of posts.
  * 
  * @param array $args
  * @param bool  $return
@@ -260,8 +260,12 @@ function slicewp_output_select2_posts_search( $args, $return = false ) {
 
 	// Query arguments defaults.
 	$query_args_defaults = array(
-		'post_type'	   => array( 'post', 'page' ),
-		'numberposts'  => -1
+		'post_type' => array(
+			'post',
+			'page',
+			'e-landing-page' // Elementor post type for landing pages.
+		),
+		'numberposts' => -1
 	);
 
 	$args['query_args'] = wp_parse_args( ( ! empty( $args['query_args'] ) && is_array( $args['query_args'] ) ? $args['query_args'] : array() ), $query_args_defaults );
@@ -279,7 +283,7 @@ function slicewp_output_select2_posts_search( $args, $return = false ) {
 
 		$output .= '<option value=""></option>';
 
-		foreach( $wp_query->posts as $post ) {
+		foreach ( $wp_query->posts as $post ) {
 
 			$output .= '<option value="' . absint( $post->ID ) . '"' . ( in_array( $post->ID, $selected ) ? 'selected' : '' ) . '>' . esc_html( $post->post_title ) . '</option>';
 

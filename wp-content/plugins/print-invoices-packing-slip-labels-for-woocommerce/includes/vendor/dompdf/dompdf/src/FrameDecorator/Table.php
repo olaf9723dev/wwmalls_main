@@ -4,13 +4,13 @@
  * @link    https://github.com/dompdf/dompdf
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace Wtpklistpdf\Dompdf\FrameDecorator;
 
-use Dompdf\Cellmap;
+use Wtpklistpdf\Dompdf\Cellmap;
 use DOMNode;
-use Dompdf\Css\Style;
-use Dompdf\Dompdf;
-use Dompdf\Frame;
+use Wtpklistpdf\Dompdf\Css\Style;
+use Wtpklistpdf\Dompdf\Dompdf;
+use Wtpklistpdf\Dompdf\Frame;
 
 /**
  * Decorates Frames for table layout
